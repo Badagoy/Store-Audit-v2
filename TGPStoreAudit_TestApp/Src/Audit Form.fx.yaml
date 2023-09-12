@@ -1,0 +1,328 @@
+"'Audit Form' As screen":
+    OnVisible: |-
+        =ClearCollect(FRS, {Result: "All"});
+        Collect(
+            FRS, ["FR1234","FR4567","FR8910"]
+        )
+
+    Dropdown1 As dropdown:
+        Height: =70
+        Items: =FRS
+        Size: =21
+        Tooltip: ="FR CODE"
+        Width: =575
+        X: =36
+        Y: =108
+        ZIndex: =1
+
+    Button5 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(picPopup, "true")
+            //Navigate('Picture Screen')
+        Size: =24
+        Text: ="Take Picture"
+        Width: =282
+        X: =336
+        Y: =755
+        ZIndex: =2
+
+    Button5_1 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(signing, "true");
+            UpdateContext({clearPenInputFlag:true});UpdateContext({clearPenInputFlag:false})
+            //Navigate('Picture Screen')
+        Size: =24
+        Text: ="Signature"
+        Width: =280
+        X: =24
+        Y: =755
+        ZIndex: =3
+
+    storePic As image:
+        BorderThickness: =2
+        Height: =275
+        Image: =TakePic
+        Width: =275
+        X: =339
+        Y: =469
+        ZIndex: =4
+
+    sign As image:
+        BorderThickness: =2
+        Height: =275
+        Image: =signImage
+        Width: =284
+        X: =22
+        Y: =469
+        ZIndex: =5
+
+    Button10 As button:
+        Height: =48
+        Size: =24
+        Text: ="Submit"
+        Width: =192
+        X: =16
+        Y: =982
+        ZIndex: =6
+
+    Button11 As button:
+        Height: =49
+        OnSelect: |-
+            =Collect(OfflineAudit, 
+                {
+                    FRCode:Dropdown1.SelectedText,
+                    OwnerName:TextInput3.Text,
+                    RPHName:TextInput3_1.Text,
+                    latitude:Label8.Text,
+                    longitude:Label8_1.Text,
+                    sign: signImage,
+                    storePic: TakePic
+                }
+            );
+            SaveData(OfflineAudit, "OfflineAudit");
+            Reset([@Dropdown1]);
+            Reset(TextInput3);
+            Reset(TextInput3_1);
+            Set(TakePic, Blank());
+            Set(signImage, Blank());
+            Reset([@Dropdown1]);
+            Reset(TextInput3);
+            Reset(TextInput3_1);
+            Set(TakePic, Blank());
+            Set(signImage, Blank());
+            Set(lat, Blank());
+            Set(long, Blank());
+        Size: =24
+        Text: ="Save Draft"
+        Width: =198
+        X: =234
+        Y: =981
+        ZIndex: =7
+
+    Button12 As button:
+        Height: =43
+        OnSelect: |-
+            =Reset([@Dropdown1]);
+            Reset(TextInput3);
+            Reset(TextInput3_1);
+            Set(TakePic, Blank());
+            Set(signImage, Blank());
+            Set(lat, Blank());
+            Set(long, Blank())
+        Size: =24
+        Text: ="Clear"
+        Width: =172
+        X: =451
+        Y: =984
+        ZIndex: =8
+
+    TextInput3 As text:
+        Default: =
+        Height: =70
+        HintText: ="Owner's name"
+        Size: =21
+        Width: =560
+        X: =43
+        Y: =241
+        ZIndex: =9
+
+    TextInput3_1 As text:
+        Default: =
+        Height: =70
+        HintText: ="Pharmacist's name"
+        Size: =21
+        Width: =560
+        X: =43
+        Y: =363
+        ZIndex: =10
+
+    Button14 As button:
+        Height: =43
+        OnSelect: =Navigate(Menu)
+        Size: =24
+        Text: ="Back to Menu"
+        Width: =294
+        X: =184
+        Y: =1070
+        ZIndex: =11
+
+    Picture As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =11
+
+        Rectangle2 As rectangle:
+            Fill: =RGBA(26, 26, 26, 1)
+            Height: =1136
+            Visible: =picPopup
+            Width: =640
+            ZIndex: =22
+
+        Camera1_3 As camera:
+            Camera: =0
+            Height: =522
+            StreamRate: =100
+            Visible: =picPopup
+            Width: =544
+            X: =59
+            Y: =35
+            ZIndex: =23
+
+        Icon7_3 As icon.CameraApertureFocus:
+            Color: =RGBA(241, 244, 249, 1)
+            Icon: =Icon.CameraAperture
+            OnSelect: |-
+                =Set(TakePic, Camera1_3.Stream);
+                //ClearCollect(picButton,["false","true"])
+            Visible: =picPopup
+            X: =297
+            Y: =557
+            ZIndex: =24
+
+        Image8_3 As image:
+            Height: =403
+            Image: =TakePic
+            Visible: =picPopup
+            Width: =547
+            X: =59
+            Y: =94
+            ZIndex: =25
+
+        Button6_1 As button:
+            Height: =57
+            OnSelect: =Set(TakePic, Blank())
+            Size: =24
+            Text: |-
+                ="Retake
+                "
+            Visible: =picPopup
+            Width: =229
+            X: =374
+            Y: =686
+            ZIndex: =26
+
+        Button7_1 As button:
+            Height: =57
+            OnSelect: |-
+                =Set(picPopup, "false")
+                //Navigate('Audit Form')
+            Size: =24
+            Text: ="Save"
+            Visible: =picPopup
+            Width: =228
+            X: =59
+            Y: =686
+            ZIndex: =27
+
+    Label7 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        Size: =21
+        Text: =If(Connection.Connected, "Online", "Offline")
+        Width: =560
+        X: =40
+        Y: =13
+        ZIndex: =12
+
+    Icon3 As icon.Map:
+        Icon: =Icon.Location
+        OnSelect: |-
+            =Set(lat, Location.Latitude);
+            Set(long, Location.Longitude)
+        X: =456
+        Y: =871
+        ZIndex: =13
+
+    Label8 As label:
+        Align: =Align.Right
+        Height: =50
+        Size: =18
+        Text: =lat
+        Width: =181
+        X: =24
+        Y: =895
+        ZIndex: =14
+
+    Label8_1 As label:
+        Height: =50
+        Size: =18
+        Text: =long
+        Width: =203
+        X: =229
+        Y: =895
+        ZIndex: =15
+
+    Label8_2 As label:
+        Height: =56
+        Size: =21
+        Text: |-
+            =":"
+        Width: =25
+        X: =208
+        Y: =889
+        ZIndex: =16
+
+    Sign As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =16
+
+        Rectangle2_1 As rectangle:
+            Fill: =RGBA(26, 26, 26, 1)
+            Height: =1136
+            Visible: =signing
+            Width: =640
+            ZIndex: =18
+
+        PenInput1_1 As inkControl:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =311
+            Reset: =clearPenInputFlag
+            ShowControls: =false
+            Visible: =signing
+            Width: =575
+            X: =36
+            Y: =228
+            ZIndex: =19
+
+        Button8 As button:
+            Height: =59
+            OnSelect: |-
+                =UpdateContext({clearPenInputFlag:true});UpdateContext({clearPenInputFlag:false})
+            Size: =24
+            Text: ="Clear"
+            Visible: =signing
+            Width: =239
+            X: =364
+            Y: =592
+            ZIndex: =20
+
+        Button9 As button:
+            Height: =59
+            OnSelect: |-
+                =Set(signing,"false");
+                Set(signImage, PenInput1_1.Image)
+            Size: =24
+            Text: ="Save"
+            Visible: =signing
+            Width: =236
+            X: =36
+            Y: =592
+            ZIndex: =21
+
+    Label8_3 As label:
+        Height: =50
+        Size: =21
+        Text: ="Location"
+        Width: =140
+        X: =166
+        Y: =845
+        ZIndex: =17
+

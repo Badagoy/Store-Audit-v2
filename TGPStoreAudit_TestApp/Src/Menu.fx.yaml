@@ -1,0 +1,93 @@
+Menu As screen:
+
+    Button3 As button:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =200
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate('Audit Form')
+        PressedFill: =RGBA(255, 0, 0, 1)
+        Size: =24
+        Text: ="Audit Store"
+        Width: =248
+        X: =40
+        Y: =204
+        ZIndex: =1
+
+    Icon2 As icon.Hamburger:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =45
+        Icon: =Icon.Hamburger
+        Width: =45
+        X: =40
+        Y: =33
+        ZIndex: =3
+
+    Button3_1 As button:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =200
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate('Local Audits')
+        PressedFill: =RGBA(255, 0, 0, 1)
+        Size: =24
+        Text: ="Audit History"
+        Width: =248
+        X: =343
+        Y: =204
+        ZIndex: =4
+
+    Label2 As label:
+        BorderThickness: =1
+        Height: =113
+        Size: =21
+        Text: =Map1.GeoJSON
+        Width: =605
+        X: =17
+        Y: =976
+        ZIndex: =6
+
+    "Map1 As 'Map (preview)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        BorderRadius: =1
+        BorderThickness: =0
+        CurrentLocation: =false
+        DisplayMode: =DisplayMode.Edit
+        Height: =235
+        MapStyle: ='Map.MapStyle'.Road
+        PinColor: =RGBA(29, 114, 169, 1)
+        RouteMaintainOrder: =false
+        RouteOptimization: ='Map.RouteOptimization'.None
+        ShapeDrawing: =true
+        ShapeEditingDeleting: =true
+        ShapeGeoJSONObjects: |
+            =""
+        ShowRoutePins: =true
+        ShowShapeLabels: =true
+        ShowShapes: =true
+        UseRouting: =false
+        Width: =292
+        X: =330
+        Y: =722
+        ZIndex: =8
+
+    Button3_2 As button:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =200
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: |-
+            =Navigate('Customer Master'
+            )
+        PressedFill: =RGBA(255, 0, 0, 1)
+        Size: =24
+        Text: ="Customer Master"
+        Width: =248
+        X: =40
+        Y: =439
+        ZIndex: =9
+

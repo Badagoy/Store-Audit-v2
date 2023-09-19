@@ -56,7 +56,7 @@ Menu As screen:
         BorderThickness: =0
         CurrentLocation: =false
         DisplayMode: =DisplayMode.Edit
-        Height: =501
+        Height: =237
         MapStyle: ='Map.MapStyle'.Road
         PinColor: =RGBA(29, 114, 169, 1)
         RouteMaintainOrder: =false
@@ -69,9 +69,9 @@ Menu As screen:
         ShowShapeLabels: =true
         ShowShapes: =true
         UseRouting: =false
-        Width: =293
-        X: =327
-        Y: =456
+        Width: =521
+        X: =99
+        Y: =720
         ZIndex: =8
 
     Button3_2 As button:

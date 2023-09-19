@@ -1,6 +1,8 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =LoadData(OfflineAudit, "OfflineAudit", true)
+    OnStart: |-
+        =LoadData(OfflineAudit, "OfflineAudit", true);
+        ClearCollect(colQuestion,lstSA_Question)
     StartScreen: =
     Theme: =RedTheme
 

@@ -1,4 +1,7 @@
 "'Question 001' As screen":
+    OnVisible: |-
+        =
+        Filter(colQuestion,Question_ID >= 1 And Question_ID <= 10)
 
     "Map4 As 'Map (preview)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)

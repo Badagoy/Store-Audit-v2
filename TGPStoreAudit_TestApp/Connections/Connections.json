@@ -112,7 +112,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23091.14",
-        "modifiedOn": "2023-09-19 10:22:59",
+        "modifiedOn": "2023-09-19 10:33:22",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },
@@ -144,5 +144,27 @@
       "tgpserver-sql-dev.database.windows.net,tgpdb-sql-dev"
     ],
     "id": "e4ba1250-88c2-4ef7-89d1-7169284c1a27"
+  },
+  "f9a02d70-fcc0-4944-9abf-1bc3d62efd85": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1656/1.0.1656.3429/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://jgsoffice.sharepoint.com/sites/StoreAudit": {
+        "dataSources": {
+          "lstSA_Question": {
+            "tableName": "f6b67d52-fdf9-468c-b1bd-24b249151d7f"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "lstSA_Question"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
   }
 }

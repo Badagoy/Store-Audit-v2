@@ -103,9 +103,9 @@ Menu As screen:
     Label5 As label:
         Height: =70
         Size: =21
-        Text: ="Text"
-        Width: =297
-        X: =343
-        Y: =106
+        Text: ="11111"
+        Width: =560
+        X: =17
+        Y: =655
         ZIndex: =11
 

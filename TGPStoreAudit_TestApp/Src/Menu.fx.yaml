@@ -109,3 +109,8 @@ Menu As screen:
         Y: =655
         ZIndex: =11
 
+    Rectangle3 As rectangle:
+        X: =392
+        Y: =466
+        ZIndex: =12
+

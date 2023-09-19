@@ -94,9 +94,9 @@ Menu As screen:
     Label4 As label:
         Height: =70
         Size: =21
-        Text: ="Text"
+        Text: ="Test text"
         Width: =560
-        X: =31
-        Y: =655
+        X: =80
+        Y: =145
         ZIndex: =10
 

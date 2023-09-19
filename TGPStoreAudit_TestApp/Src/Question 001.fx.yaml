@@ -1,7 +1,7 @@
 "'Question 001' As screen":
     OnVisible: |-
         =
-        Filter(colQuestion,Question_ID >= 1 And Question_ID <= 10)
+        ClearCollect(colQues1_10,Filter(colQuestion,Question_ID >= 1 And Question_ID <= 10))
 
     "Map4 As 'Map (preview)'.pcfdataset":
         BorderColor: =RGBA(0, 18, 107, 1)
@@ -24,12 +24,12 @@
         ZIndex: =1
 
     Label11 As label:
-        Height: =70
+        Height: =117
         Size: =21
-        Text: ="Text"
+        Text: =LookUp(colQuestion,Question_ID = 1,Question_Desc)
         Width: =560
         X: =28
-        Y: =202
+        Y: =192
         ZIndex: =2
 
     Label13 As label:

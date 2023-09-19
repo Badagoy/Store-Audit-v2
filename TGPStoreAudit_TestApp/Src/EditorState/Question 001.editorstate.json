@@ -956,7 +956,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HeaderContainer",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1732,7 +1732,14 @@
       "ControlPropertyState": [
         "Live",
         "Overflow",
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Text\"",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         "Color",
         "DisabledColor",
@@ -3099,7 +3106,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Map4",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PcfServiceDependencies": [
         "SpatialServices"
       ],

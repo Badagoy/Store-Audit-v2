@@ -2,7 +2,14 @@ App As appinfo:
     BackEnabled: =false
     OnStart: |-
         =LoadData(OfflineAudit, "OfflineAudit", true);
-        ClearCollect(colQuestion,lstSA_Question)
+        
+        ClearCollect(colQuestion,lstSA_Question);
+        
+        // Global Variables
+        //=================//
+        
+        Set(leftMargin ,10);
+        //=================//
     StartScreen: =
     Theme: =RedTheme
 

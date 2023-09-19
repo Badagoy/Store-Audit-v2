@@ -100,3 +100,12 @@ Menu As screen:
         Y: =145
         ZIndex: =10
 
+    Label5 As label:
+        Height: =70
+        Size: =21
+        Text: ="Text"
+        Width: =297
+        X: =343
+        Y: =106
+        ZIndex: =11
+

@@ -50,6 +50,22 @@
           "InvariantPropertyName": "CurrentLocation",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "0",
+          "InvariantPropertyName": "CurrentLocationLatitude",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "0",
+          "InvariantPropertyName": "CurrentLocationLongitude",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -96,6 +112,16 @@
         {
           "Category": "Data",
           "PropertyName": "CurrentLocation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "CurrentLocationLatitude",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "CurrentLocationLongitude",
           "RuleProviderType": "Unknown"
         },
         {

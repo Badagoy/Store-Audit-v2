@@ -199,3 +199,12 @@
         Y: =26
         ZIndex: =6
 
+    Label9 As label:
+        Height: =70
+        Size: =21
+        Text: ="Text"
+        Width: =223
+        X: =416
+        Y: =83
+        ZIndex: =7
+

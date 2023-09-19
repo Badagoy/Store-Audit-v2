@@ -5,6 +5,9 @@
         CurrentLocation: =true
         CurrentLocationLatitude: =Location.Latitude
         CurrentLocationLongitude: =Location.Longitude
+        DefaultLatitude: =Location.Latitude
+        DefaultLocation: =true
+        DefaultLongitude: =Location.Longitude
         DisplayMode: =DisplayMode.Edit
         Height: =400
         PinColor: =RGBA(29, 114, 169, 1)

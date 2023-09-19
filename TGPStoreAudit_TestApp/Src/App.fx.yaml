@@ -8,7 +8,7 @@ App As appinfo:
         // Global Variables
         //=================//
         
-        Set(leftMargin ,10);
+        Set(leftMargin ,20);
         //=================//
     StartScreen: =
     Theme: =RedTheme

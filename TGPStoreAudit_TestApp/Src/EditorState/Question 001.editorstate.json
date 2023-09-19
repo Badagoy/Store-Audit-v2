@@ -58,6 +58,14 @@
           "InvariantPropertyName": "DefaultLongitude",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "16",
+          "InvariantPropertyName": "DefaultZoomLevel",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -109,6 +117,11 @@
         {
           "Category": "Data",
           "PropertyName": "DefaultLongitude",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "DefaultZoomLevel",
           "RuleProviderType": "Unknown"
         },
         {

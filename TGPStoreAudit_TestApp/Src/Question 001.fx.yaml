@@ -8,11 +8,12 @@
         DefaultLatitude: =Location.Latitude
         DefaultLocation: =true
         DefaultLongitude: =Location.Longitude
+        DefaultZoomLevel: =10
         DisplayMode: =DisplayMode.Edit
-        Height: =400
+        Height: =447
         PinColor: =RGBA(29, 114, 169, 1)
         Width: =640
         X: =0
-        Y: =362
+        Y: =314
         ZIndex: =1
 

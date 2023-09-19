@@ -1,5 +1,7 @@
 App As appinfo:
     BackEnabled: =false
+    MinScreenHeight: =1586
+    MinScreenWidth: =786
     OnStart: |-
         =LoadData(OfflineAudit, "OfflineAudit", true);
         

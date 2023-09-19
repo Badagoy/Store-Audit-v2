@@ -20,7 +20,7 @@
         Shapes_Items: =
         Width: =72
         X: =568
-        Y: =462
+        Y: =1035
         ZIndex: =1
 
     Label11 As label:
@@ -32,15 +32,6 @@
         Y: =192
         ZIndex: =2
 
-    Label13 As label:
-        Height: =70
-        Size: =21
-        Text: ="Text"
-        Width: =560
-        X: =28
-        Y: =371
-        ZIndex: =3
-
     HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
         Fill: =App.Theme.Colors.Primary
         Height: =130
@@ -51,7 +42,7 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =Parent.Width
-        ZIndex: =4
+        ZIndex: =3
 
         Container5 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -214,4 +205,22 @@
                 X: =0.00
                 Y: =0.00
                 ZIndex: =1
+
+    Label11_1 As label:
+        Height: =132
+        Size: =21
+        Text: =LookUp(colQuestion,Question_ID = 6,Question_Desc)
+        Width: =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =431
+        ZIndex: =4
+
+    Label11_2 As label:
+        Height: =132
+        Size: =21
+        Text: =LookUp(colQuestion,Question_ID = 6,Question_Desc)
+        Width: =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =700
+        ZIndex: =5
 

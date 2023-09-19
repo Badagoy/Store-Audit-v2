@@ -92,11 +92,11 @@ Menu As screen:
         ZIndex: =9
 
     Label4 As label:
-        Height: =70
+        Height: =59
         Size: =21
         Text: ="Test text"
-        Width: =560
-        X: =80
+        Width: =248
+        X: =40
         Y: =145
         ZIndex: =10
 

@@ -2,7 +2,7 @@ App As appinfo:
     BackEnabled: =false
     OnStart: =LoadData(OfflineAudit, "OfflineAudit", true)
     StartScreen: =
-    Theme: =PowerAppsTheme
+    Theme: =RedTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

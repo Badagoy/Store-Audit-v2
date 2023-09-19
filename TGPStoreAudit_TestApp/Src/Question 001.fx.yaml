@@ -125,7 +125,7 @@
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =Color.AntiqueWhite
+                Color: =Color.White
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 Fill: =App.Theme.Colors.Primary
                 FocusedBorderThickness: =4
@@ -138,9 +138,9 @@
                 PaddingRight: =5.84
                 PaddingTop: =5.84
                 Size: =24
-                Text: ="Hello!!"
+                Text: =User().FullName
                 VerticalAlign: =VerticalAlign.Bottom
-                Width: =200
+                Width: =300
                 X: =0.00
                 Y: =22.61
                 ZIndex: =1
@@ -150,7 +150,7 @@
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =Color.AntiqueWhite
+                Color: =Color.White
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 Fill: =App.Theme.Colors.Primary
                 FocusedBorderThickness: =4

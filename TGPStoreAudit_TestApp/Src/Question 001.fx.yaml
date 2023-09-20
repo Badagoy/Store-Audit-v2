@@ -284,7 +284,7 @@
         Icon4 As icon.Trash:
             Height: =28
             Icon: =Icon.Trash
-            OnSelect: =Select(Parent)
+            OnSelect: =Remove(colNamePos,LookUp(colNamePos, Name = ThisItem.Name))
             Width: =40
             X: =icnNameSave.X
             Y: =7

@@ -9,8 +9,11 @@ App As appinfo:
         
         // Global Variables
         //=================//
+            //Screens
+            Set(leftMargin ,20);
         
-        Set(leftMargin ,20);
+            //Fonts
+            Set(fontSize,21)
         //=================//
     StartScreen: =
     Theme: =RedTheme

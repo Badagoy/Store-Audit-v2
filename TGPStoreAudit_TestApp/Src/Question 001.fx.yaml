@@ -25,7 +25,7 @@
 
     Label11 As label:
         Height: =117
-        Size: =21
+        Size: =fontSize
         Text: =LookUp(colQuestion,Question_ID = 1,Question_Desc)
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
@@ -208,7 +208,7 @@
 
     Label11_1 As label:
         Height: =132
-        Size: =21
+        Size: =fontSize
         Text: =LookUp(colQuestion,Question_ID = 6,Question_Desc)
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
@@ -217,10 +217,21 @@
 
     Label11_2 As label:
         Height: =132
-        Size: =21
+        Size: =fontSize
         Text: =LookUp(colQuestion,Question_ID = 6,Question_Desc)
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =700
         ZIndex: =5
+
+    Toggle1 As toggleSwitch:
+        FalseText: ="No"
+        Height: =79
+        Size: =fontSize
+        TextPosition: =TextPosition.Left
+        TrueText: ="Yes"
+        Width: =274
+        X: =leftMargin
+        Y: =309
+        ZIndex: =6
 

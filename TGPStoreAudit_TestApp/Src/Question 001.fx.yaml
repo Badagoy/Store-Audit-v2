@@ -279,12 +279,21 @@
             X: =408
             ZIndex: =3
 
-    TextInput4 As text:
+    txtName As text:
         Default: ="Text input"
         Height: =44
         Size: =fontSize
-        Width: =433
+        Width: =(Parent.Width * .55)
         X: =20
-        Y: =388
+        Y: =370
         ZIndex: =8
+
+    TextInput4_1 As text:
+        Default: ="Text input"
+        Height: =44
+        Size: =fontSize
+        Width: =(Parent.Width - Self.X -leftMargin)
+        X: =leftMargin +txtName.Width + 10
+        Y: =370
+        ZIndex: =9
 

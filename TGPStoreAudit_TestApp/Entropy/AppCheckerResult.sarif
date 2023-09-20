@@ -1373,19 +1373,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 001'.TextInput4.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 001'.txtName.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 001'.TextInput4.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 001'.txtName.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 001",
-                "type": "'Question 001'.TextInput4"
+                "type": "'Question 001'.txtName"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 001'.TextInput4_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 001'.TextInput4_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 001",
+                "type": "'Question 001'.TextInput4_1"
               }
             }
           ],

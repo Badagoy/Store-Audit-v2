@@ -313,7 +313,7 @@
         Height: =34
         Icon: =Icon.Save
         OnSelect: |-
-            =Patch(colNamePos,Defaults(colNamePos),{Name:txtName,Position:txtPosition})
+            =Patch(colNamePos,Defaults(colNamePos),{Name:txtName.Text,Position:txtPosition.Text})
         Width: =39
         X: =Parent.Width-Self.Width -leftMargin
         Y: =346

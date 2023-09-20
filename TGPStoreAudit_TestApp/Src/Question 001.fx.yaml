@@ -243,8 +243,7 @@
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =38
-        Width: =Parent.Width - (leftMargin * 2)
-        X: =leftMargin
+        Width: =Parent.Width
         Y: =432
         ZIndex: =7
 
@@ -259,8 +258,8 @@
             Size: =fontSize
             Text: =ThisItem.SampleHeading
             VerticalAlign: =VerticalAlign.Top
-            Width: =400
-            X: =3
+            Width: =txtName.Width
+            X: =txtName.X
             Y: =3
             ZIndex: =2
 
@@ -275,8 +274,8 @@
             Size: =fontSize
             Text: =ThisItem.SampleText
             VerticalAlign: =VerticalAlign.Top
-            Width: =324
-            X: =408
+            Width: =txtPosition.Width
+            X: =txtPosition.X
             ZIndex: =3
 
     txtName As text:
@@ -288,7 +287,7 @@
         Y: =370
         ZIndex: =8
 
-    TextInput4_1 As text:
+    txtPosition As text:
         Default: ="Text input"
         Height: =44
         Size: =fontSize

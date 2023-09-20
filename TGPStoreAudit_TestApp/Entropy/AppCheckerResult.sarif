@@ -1403,19 +1403,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 001'.TextInput4_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 001'.txtPosition.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 001'.TextInput4_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 001'.txtPosition.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 001",
-                "type": "'Question 001'.TextInput4_1"
+                "type": "'Question 001'.txtPosition"
               }
             }
           ],

@@ -123,7 +123,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/20/2023 08:29:45",
+  "HeaderLastSavedDateTimeUTC": "09/20/2023 08:36:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3fc8d54c-4037-40a2-aea1-752bc65dc2a5": "\"/providers/microsoft.powerapps/apis/shared_accuweatherip/connections/23b749611a2341d38dd29225f7cccd2b\"",
@@ -146,6 +146,7 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
+    "colNamePos": 13,
     "colQues1_10": 12,
     "colQuestion": 11,
     "CustomGallerySample": 3,

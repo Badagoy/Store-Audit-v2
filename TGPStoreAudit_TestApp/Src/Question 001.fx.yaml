@@ -227,6 +227,8 @@
     Toggle1 As toggleSwitch:
         FalseText: ="No"
         Height: =44
+        OnSelect: |-
+            =ClearCollect(colNamePos,{Name:"X",Position:"Y"}) 
         Size: =fontSize
         TextPosition: =TextPosition.Left
         TrueText: ="Yes"
@@ -239,7 +241,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(241, 244, 249, 1)
         Height: =113
-        Items: =CustomGallerySample
+        Items: =colNamePos
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -257,7 +259,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =fontSize
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =txtName.Width
             X: =txtName.X
@@ -273,7 +275,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =fontSize
-            Text: =ThisItem.SampleText
+            Text: =ThisItem.Position
             VerticalAlign: =VerticalAlign.Top
             Width: =txtPosition.Width
             X: =txtPosition.X

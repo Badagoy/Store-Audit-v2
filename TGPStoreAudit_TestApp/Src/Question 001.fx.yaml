@@ -285,7 +285,7 @@
             Height: =28
             Icon: =Icon.Trash
             OnSelect: =Remove(colNamePos,LookUp(colNamePos, Name = ThisItem.Name))
-            Visible: =If(CountRows(colNamePos)> 0 ,0,1)
+            Visible: =If(CountRows(colNamePos)> 0 ,1,0)
             Width: =40
             X: =icnNameSave.X
             Y: =7

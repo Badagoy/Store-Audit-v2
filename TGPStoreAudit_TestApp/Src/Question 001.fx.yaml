@@ -297,3 +297,11 @@
         Y: =370
         ZIndex: =9
 
+    Icon1 As icon.Save:
+        Height: =28
+        Icon: =Icon.Save
+        Width: =39
+        X: =Parent.Width-Self.Width -leftMargin
+        Y: =342
+        ZIndex: =10
+

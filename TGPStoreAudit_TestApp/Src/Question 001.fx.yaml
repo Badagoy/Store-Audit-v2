@@ -24,12 +24,12 @@
         ZIndex: =1
 
     Label11 As label:
-        Height: =117
+        Height: =99
         Size: =fontSize
         Text: ="1. " & LookUp(colQuestion,Question_ID = 1,Question_Desc)
-        Width: =Parent.Width - (leftMargin * 2)
+        Width: =746
         X: =leftMargin
-        Y: =192
+        Y: =188
         ZIndex: =2
 
     HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
@@ -207,12 +207,12 @@
                 ZIndex: =1
 
     Label11_1 As label:
-        Height: =114
+        Height: =102
         Size: =fontSize
         Text: =LookUp(colQuestion,Question_ID = 6,Question_Desc)
         Width: =746
         X: =leftMargin
-        Y: =497
+        Y: =503
         ZIndex: =4
 
     Label11_2 As label:
@@ -313,7 +313,9 @@
         Height: =34
         Icon: =Icon.Save
         OnSelect: |-
-            =Patch(colNamePos,Defaults(colNamePos),{Name:txtName.Text,Position:txtPosition.Text})
+            =Patch(colNamePos,Defaults(colNamePos),{Name:txtName.Text,Position:txtPosition.Text});
+            Reset(txtName);
+            Reset(txtPosition);
         Width: =39
         X: =Parent.Width-Self.Width -leftMargin
         Y: =346

@@ -245,7 +245,7 @@
         TemplatePadding: =0
         TemplateSize: =38
         Width: =Parent.Width
-        Y: =432
+        Y: =390
         ZIndex: =7
 
         Name As label:
@@ -295,7 +295,7 @@
         Size: =fontSize
         Width: =(Parent.Width * .55)
         X: =20
-        Y: =370
+        Y: =342
         ZIndex: =8
 
     txtPosition As text:
@@ -304,8 +304,8 @@
         HintText: ="Position"
         Size: =fontSize
         Width: =(Parent.Width - Self.X - icnNameSave.Width -leftMargin)
-        X: =txtName.Width + (leftMargin *2)
-        Y: =370
+        X: =472
+        Y: =342
         ZIndex: =9
 
     icnNameSave As icon.Save:
@@ -313,6 +313,6 @@
         Icon: =Icon.Save
         Width: =39
         X: =Parent.Width-Self.Width -leftMargin
-        Y: =374
+        Y: =346
         ZIndex: =10
 

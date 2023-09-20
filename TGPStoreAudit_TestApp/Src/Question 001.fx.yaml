@@ -289,8 +289,9 @@
             ZIndex: =4
 
     txtName As text:
-        Default: ="Text input"
+        Default: =""
         Height: =44
+        HintText: ="Name"
         Size: =fontSize
         Width: =(Parent.Width * .55)
         X: =20
@@ -300,6 +301,7 @@
     txtPosition As text:
         Default: ="Text input"
         Height: =44
+        HintText: ="Position"
         Size: =fontSize
         Width: =(Parent.Width - Self.X - icnNameSave.Width -leftMargin)
         X: =txtName.Width + (leftMargin *2)

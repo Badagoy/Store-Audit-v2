@@ -292,16 +292,16 @@
         Default: ="Text input"
         Height: =44
         Size: =fontSize
-        Width: =(Parent.Width - Self.X -leftMargin)
-        X: =leftMargin +txtName.Width + 10
+        Width: =(Parent.Width - Self.X - icnNameSave.Width -leftMargin)
+        X: =txtName.Width + (leftMargin *2)
         Y: =370
         ZIndex: =9
 
-    Icon1 As icon.Save:
-        Height: =28
+    icnNameSave As icon.Save:
+        Height: =34
         Icon: =Icon.Save
         Width: =39
         X: =Parent.Width-Self.Width -leftMargin
-        Y: =342
+        Y: =374
         ZIndex: =10
 

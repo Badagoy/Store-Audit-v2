@@ -312,8 +312,15 @@
     icnNameSave As icon.Save:
         Height: =34
         Icon: =Icon.Save
-        OnSelect: |-
-            =Patch(colNamePos,Defaults(colNamePos),{Name:txtName.Text,Position:txtPosition.Text});
+        OnSelect: |
+            =Patch(
+                colNamePos,
+                Defaults(colNamePos),
+                {
+                    Name: txtName.Text,
+                    Position: txtPosition.Text
+                }
+            );
             Reset(txtName);
             Reset(txtPosition);
         Width: =39

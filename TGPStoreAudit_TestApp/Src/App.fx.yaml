@@ -5,10 +5,14 @@ App As appinfo:
     OnStart: |-
         =LoadData(OfflineAudit, "OfflineAudit", true);
         
-        ClearCollect(colQuestion,lstSA_Question);
+        
         
         // Global Variables
         //=================//
+            //Collections
+            ClearCollect(colNamePos,{Name:"x",Position:""}) ;  //Create Collection 
+            Remove(colNamePos,LookUp(colNamePos, Name = "x")); //Empty  Collection
+            ClearCollect(colQuestion,lstSA_Question);
             //Screens
             Set(leftMargin ,20);
         

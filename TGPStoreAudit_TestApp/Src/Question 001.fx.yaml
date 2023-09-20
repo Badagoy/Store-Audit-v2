@@ -207,12 +207,12 @@
                 ZIndex: =1
 
     Label11_1 As label:
-        Height: =132
+        Height: =114
         Size: =fontSize
         Text: =LookUp(colQuestion,Question_ID = 6,Question_Desc)
-        Width: =Parent.Width - (leftMargin * 2)
+        Width: =746
         X: =leftMargin
-        Y: =590
+        Y: =497
         ZIndex: =4
 
     Label11_2 As label:

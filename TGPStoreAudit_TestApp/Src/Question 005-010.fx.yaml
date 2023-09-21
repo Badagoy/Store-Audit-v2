@@ -130,7 +130,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =fontSize
-                        Text: =ThisItem.Amount
+                        Text: ="ThisItem.Amount"
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Q5_txtSNo.Width
                         ZIndex: =1
@@ -150,7 +150,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =fontSize
-                        Text: =ThisItem.CtrlNo
+                        Text: ="ThisItem.CtrlNo"
                         VerticalAlign: =VerticalAlign.Top
                         Width: =1
                         X: =Q5_txtSDate.X

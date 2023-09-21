@@ -3,6 +3,141 @@
         =
         ClearCollect(colQues1_10,Filter(colQuestion,Question_ID >= 1 And Question_ID <= 10))
 
+    Q4_Container As groupContainer.manualLayoutContainer:
+        Height: =343
+        Width: |
+            =Parent.Width - (leftMargin * 2)
+        X: =20
+        Y: =1090
+        ZIndex: =1
+
+        Q4_icnNameSave As icon.Save:
+            Height: =34
+            Icon: =Icon.Save
+            OnSelect: |
+                =Patch(
+                    colCashCtrl,
+                    Defaults(colCashCtrl),
+                    {
+                        CtrlNo: Q4_txtCtrlNo.Text,
+                        Amount: Q4_txtAmount.Text
+                    }
+                );
+                Reset(Q4_txtCtrlNo);
+                Reset(Q4_txtAmount);
+            Width: =39
+            X: =Parent.Width-Self.Width 
+            Y: =150
+            ZIndex: =1
+
+        Q4_txtAmount As text:
+            Default: =""
+            Height: =44
+            HintText: ="Position"
+            Size: =fontSize
+            Width: =(Parent.Width - Self.X - Q4_icnNameSave.Width)
+            X: |
+                =Q4_txtCtrlNo.Width + leftMargin
+            Y: =150
+            ZIndex: =2
+
+        Q4_txtCtrlNo As text:
+            Default: =""
+            Height: =44
+            HintText: ="Name"
+            Size: =fontSize
+            Width: =(Parent.Width * .50)
+            X: |
+                =0
+            Y: =150
+            ZIndex: =3
+
+        "Q4_galNamePos As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Fill: =RGBA(241, 244, 249, 1)
+            Height: =113
+            Items: =colCashCtrl
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =42
+            Width: =Parent.Width
+            Y: =200
+            ZIndex: =4
+
+            Amount As label:
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderStyle: =BorderStyle.Dotted
+                BorderThickness: =1
+                FocusedBorderThickness: =1
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =38
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =12
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =fontSize
+                Text: =ThisItem.CtrlNo
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Q4_txtCtrlNo.Width
+                X: =Q4_txtCtrlNo.X
+                Y: =3
+                ZIndex: =2
+
+            CtrlNo As label:
+                BorderThickness: =1
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =41
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =12
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =fontSize
+                Text: =ThisItem.Amount
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Q4_txtAmount.Width
+                X: =Q4_txtAmount.X
+                ZIndex: =3
+
+            icnGalDel_1 As icon.Trash:
+                Height: =28
+                Icon: =Icon.Trash
+                OnSelect: =Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = ThisItem.CtrlNo))
+                Visible: =If(CountRows(colNamePos)> 0 ,1,0)
+                Width: =40
+                X: =Q4_icnNameSave.X
+                Y: =7
+                ZIndex: =4
+
+            Rectangle6_1 As rectangle:
+                BorderThickness: =1
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =603
+                Y: =40
+                ZIndex: =5
+
+        Q4_YesNo As toggleSwitch:
+            FalseText: ="No"
+            Height: =44
+            Size: =fontSize
+            TextPosition: =TextPosition.Left
+            TrueText: ="Yes"
+            Width: =160
+            Y: =100
+            ZIndex: =5
+
+        Q4_lbl As label:
+            Height: =114
+            Size: =fontSize
+            Text: ="4. " & LookUp(colQuestion,Question_ID = 10,Question_Desc)
+            Width: =Parent.Width
+            X: |
+                =0
+            ZIndex: =6
+
     Q3_Container As groupContainer.horizontalAutoLayoutContainer:
         Height: =185
         LayoutMode: =LayoutMode.Auto
@@ -10,7 +145,7 @@
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =900
-        ZIndex: =3
+        ZIndex: =2
 
         cntQ3S_4 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -158,7 +293,7 @@
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =798
-        ZIndex: =4
+        ZIndex: =3
 
     Q2_Container As groupContainer.horizontalAutoLayoutContainer:
         Height: =185
@@ -167,7 +302,7 @@
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =610
-        ZIndex: =5
+        ZIndex: =4
 
         cntQ2S As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -315,7 +450,7 @@
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =516
-        ZIndex: =6
+        ZIndex: =5
 
     "Q1_galNamePos As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
@@ -328,7 +463,7 @@
         TemplateSize: =42
         Width: =Parent.Width
         Y: =400
-        ZIndex: =7
+        ZIndex: =6
 
         Name As label:
             BorderColor: =RGBA(128, 128, 128, 1)
@@ -393,7 +528,7 @@
         Width: =(Parent.Width - Self.X - Q1_icnNameSave.Width -leftMargin)
         X: =472
         Y: =342
-        ZIndex: =8
+        ZIndex: =7
 
     Q1_icnNameSave As icon.Save:
         Height: =34
@@ -412,7 +547,7 @@
         Width: =39
         X: =Parent.Width-Self.Width -leftMargin
         Y: =346
-        ZIndex: =9
+        ZIndex: =8
 
     Q1_txtName As text:
         Default: =""
@@ -422,7 +557,7 @@
         Width: =(Parent.Width * .55)
         X: =20
         Y: =342
-        ZIndex: =10
+        ZIndex: =9
 
     Q1_YesNo As toggleSwitch:
         FalseText: ="No"
@@ -433,7 +568,7 @@
         Width: =160
         X: =leftMargin
         Y: =291
-        ZIndex: =11
+        ZIndex: =10
 
     Q1_lbl As label:
         Height: =99
@@ -442,7 +577,56 @@
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =188
+        ZIndex: =11
+
+    Bottom_CNT As groupContainer.horizontalAutoLayoutContainer:
+        Height: =141
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =20
+        PaddingRight: =20
+        Width: =786
+        Y: =1444
         ZIndex: =12
+
+        Button4 As button:
+            Color: =Color.White
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            RadiusBottomLeft: |
+                =50
+            RadiusTopLeft: |
+                =50
+            Size: =24
+            Text: ="Previous"
+            Width: =180
+            ZIndex: =1
+
+        Label11 As label:
+            Align: =Align.Center
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =21
+            Text: ="1/100"
+            Width: =100
+            ZIndex: =2
+
+        Button16 As button:
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            RadiusBottomRight: |
+                =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: ="Next"
+            Width: =180
+            ZIndex: =3
 
     HeaderContainer As groupContainer.horizontalAutoLayoutContainer:
         Fill: =App.Theme.Colors.Primary
@@ -617,188 +801,4 @@
                 X: =0.00
                 Y: =0.00
                 ZIndex: =1
-
-    Q4_Container As groupContainer.manualLayoutContainer:
-        Height: =343
-        Width: |
-            =Parent.Width - (leftMargin * 2)
-        X: =20
-        Y: =1090
-        ZIndex: =18
-
-        Q4_icnNameSave As icon.Save:
-            Height: =34
-            Icon: =Icon.Save
-            OnSelect: |
-                =Patch(
-                    colCashCtrl,
-                    Defaults(colCashCtrl),
-                    {
-                        CtrlNo: Q4_txtCtrlNo.Text,
-                        Amount: Q4_txtAmount.Text
-                    }
-                );
-                Reset(Q4_txtCtrlNo);
-                Reset(Q4_txtAmount);
-            Width: =39
-            X: =Parent.Width-Self.Width 
-            Y: =150
-            ZIndex: =1
-
-        Q4_txtAmount As text:
-            Default: =""
-            Height: =44
-            HintText: ="Position"
-            Size: =fontSize
-            Width: =(Parent.Width - Self.X - Q4_icnNameSave.Width)
-            X: |
-                =Q4_txtCtrlNo.Width + leftMargin
-            Y: =150
-            ZIndex: =2
-
-        Q4_txtCtrlNo As text:
-            Default: =""
-            Height: =44
-            HintText: ="Name"
-            Size: =fontSize
-            Width: =(Parent.Width * .50)
-            X: |
-                =0
-            Y: =150
-            ZIndex: =3
-
-        "Q4_galNamePos As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-            DelayItemLoading: =true
-            Fill: =RGBA(241, 244, 249, 1)
-            Height: =113
-            Items: =colCashCtrl
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =42
-            Width: =Parent.Width
-            Y: =200
-            ZIndex: =4
-
-            Amount As label:
-                BorderColor: =RGBA(128, 128, 128, 1)
-                BorderStyle: =BorderStyle.Dotted
-                BorderThickness: =1
-                FocusedBorderThickness: =1
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =38
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =12
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =fontSize
-                Text: =ThisItem.CtrlNo
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Q4_txtCtrlNo.Width
-                X: =Q4_txtCtrlNo.X
-                Y: =3
-                ZIndex: =2
-
-            CtrlNo As label:
-                BorderThickness: =1
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =41
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =12
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =fontSize
-                Text: =ThisItem.Amount
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Q4_txtAmount.Width
-                X: =Q4_txtAmount.X
-                ZIndex: =3
-
-            icnGalDel_1 As icon.Trash:
-                Height: =28
-                Icon: =Icon.Trash
-                OnSelect: =Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = ThisItem.CtrlNo))
-                Visible: =If(CountRows(colNamePos)> 0 ,1,0)
-                Width: =40
-                X: =Q4_icnNameSave.X
-                Y: =7
-                ZIndex: =4
-
-            Rectangle6_1 As rectangle:
-                BorderThickness: =1
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =603
-                Y: =40
-                ZIndex: =5
-
-        Q4_YesNo As toggleSwitch:
-            FalseText: ="No"
-            Height: =44
-            Size: =fontSize
-            TextPosition: =TextPosition.Left
-            TrueText: ="Yes"
-            Width: =160
-            Y: =100
-            ZIndex: =5
-
-        Q4_lbl As label:
-            Height: =114
-            Size: =fontSize
-            Text: ="4. " & LookUp(colQuestion,Question_ID = 10,Question_Desc)
-            Width: =Parent.Width
-            X: |
-                =0
-            ZIndex: =6
-
-    Bottom_CNT As groupContainer.horizontalAutoLayoutContainer:
-        Height: =141
-        LayoutAlignItems: =LayoutAlignItems.Center
-        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-        LayoutMode: =LayoutMode.Auto
-        PaddingLeft: =20
-        PaddingRight: =20
-        Width: =786
-        Y: =1444
-        ZIndex: =19
-
-        Button4 As button:
-            Color: =Color.White
-            Fill: =App.Theme.Colors.Primary
-            Height: =70
-            LayoutMinHeight: =70
-            LayoutMinWidth: =280
-            RadiusBottomLeft: |
-                =50
-            RadiusTopLeft: |
-                =50
-            Size: =24
-            Text: ="Previous"
-            Width: =180
-            ZIndex: =1
-
-        Label11 As label:
-            Align: =Align.Center
-            Height: =70
-            LayoutMinHeight: =70
-            LayoutMinWidth: =560
-            Size: =21
-            Text: ="1/100"
-            Width: =100
-            ZIndex: =2
-
-        Button16 As button:
-            Fill: =App.Theme.Colors.Primary
-            Height: =70
-            LayoutMinHeight: =70
-            LayoutMinWidth: =280
-            RadiusBottomRight: |
-                =50
-            RadiusTopRight: =50
-            Size: =24
-            Text: ="Next"
-            Width: =180
-            ZIndex: =3
 

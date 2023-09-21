@@ -2063,49 +2063,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.galCon.dtSales1.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.galCon.dtSales1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.galCon.dtSales1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.icnGalDel_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.icnGalDel_2.TabIndex",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.icnGalDel_2"
+                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1"
               }
             }
           ],
@@ -2123,19 +2093,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_txtSDate.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.icnGalDel_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_txtSDate.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.icnGalDel_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_txtSDate"
+                "type": "'Question 005-010'.Q5_galSalesTable.icnGalDel_2"
               }
             }
           ],
@@ -2153,19 +2123,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_txtSNo.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_DaysDelayed_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_txtSNo.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_DaysDelayed_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_txtSNo"
+                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_DaysDelayed_1"
               }
             }
           ],
@@ -2183,19 +2153,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_icnNameSave.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_icnNameSave.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_icnNameSave"
+                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1"
               }
             }
           ],
@@ -2213,49 +2183,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_icnSave.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_icnNameSave.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_icnNameSave.TabIndex",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_icnSave.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_icnNameSave"
+                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_icnSave"
               }
             }
           ],
@@ -2273,19 +2213,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.icnGalDel_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.icnGalDel_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_galSalesTable"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_icnSave.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_icnSave.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.icnGalDel_2"
+                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_icnSave"
               }
             }
           ],
@@ -2297,6 +2267,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.icnGalDel_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.icnGalDel_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_galSalesTable.icnGalDel_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2333,19 +2333,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.TabIndex"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.TabIndex",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable"
+                "type": "'Question 005-010'.Q5_galSalesTable"
               }
             }
           ],
@@ -2355,8 +2355,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2376,6 +2376,186 @@
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
                 "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_dtSales"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_SalesNo.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_SalesNo.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_SalesNo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_Amount.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_Amount.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_Amount"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_DaysDelayed.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_DaysDelayed.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_ConH01.Q5_DaysDelayed"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_Amount_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_Amount_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_Amount_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_SalesNo_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_SalesNo_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_SalesNo_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_dtSales_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_dtSales_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_dtSales_1"
               }
             }
           ],

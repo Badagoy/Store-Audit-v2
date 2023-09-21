@@ -49,97 +49,111 @@
             Y: =150
             ZIndex: =3
 
-        "Q5_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-            DelayItemLoading: =true
-            Fill: =RGBA(241, 244, 249, 1)
-            Height: =113
-            Items: =colCashCtrl
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =42
-            Width: =Parent.Width
-            Y: =200
-            ZIndex: =4
-
-            Amount_1 As label:
-                BorderColor: =RGBA(128, 128, 128, 1)
-                BorderStyle: =BorderStyle.Dotted
-                BorderThickness: =1
-                FocusedBorderThickness: =1
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =38
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =12
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =fontSize
-                Text: =ThisItem.CtrlNo
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Q5_txtSDate.Width
-                X: =Q5_txtSDate.X
-                Y: =3
-                ZIndex: =2
-
-            CtrlNo_1 As label:
-                BorderThickness: =1
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =41
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =12
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =fontSize
-                Text: =ThisItem.Amount
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Q5_txtSNo.Width
-                X: =Q5_txtSNo.X
-                ZIndex: =3
-
-            icnGalDel_2 As icon.Trash:
-                Height: =28
-                Icon: =Icon.Trash
-                OnSelect: =Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = ThisItem.CtrlNo))
-                Visible: =If(CountRows(colNamePos)> 0 ,1,0)
-                Width: =40
-                X: =706
-                Y: =7
-                ZIndex: =4
-
-            Rectangle6_2 As rectangle:
-                BorderThickness: =1
-                Height: =1
-                OnSelect: =Select(Parent)
-                Width: =603
-                Y: =40
-                ZIndex: =5
-
-        Q5_YesNo As toggleSwitch:
-            FalseText: ="No"
-            Height: =44
-            Size: =fontSize
-            TextPosition: =TextPosition.Left
-            TrueText: ="Yes"
-            Width: =160
-            Y: =100
-            ZIndex: =5
-
-        Q5_lbl As label:
-            Height: =114
-            Size: =fontSize
-            Text: ="5. " & LookUp(colQuestion,Question_ID = 15,Question_Desc)
-            Width: =Parent.Width
-            X: |
-                =0
-            ZIndex: =6
-
-        Container3 As groupContainer.verticalAutoLayoutContainer:
+        Q5_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =225
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             Width: =Parent.Width
             Y: =40
             ZIndex: =7
+
+            Q5_lbl As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="5. " & LookUp(colQuestion,Question_ID = 15,Question_Desc)
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
+
+            Q5_YesNo As toggleSwitch:
+                FalseText: ="No"
+                Height: =44
+                LayoutMinHeight: =49
+                LayoutMinWidth: =154
+                Size: =fontSize
+                TextPosition: =TextPosition.Left
+                TrueText: ="Yes"
+                Width: =160
+                Y: =100
+                ZIndex: =2
+
+            "Q5_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.Start
+                DelayItemLoading: =true
+                Fill: =RGBA(241, 244, 249, 1)
+                Height: =113
+                Items: =colCashCtrl
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =287
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =42
+                Width: =Parent.Width
+                Y: =200
+                ZIndex: =3
+
+                icnGalDel_2 As icon.Trash:
+                    Height: =28
+                    Icon: =Icon.Trash
+                    OnSelect: =Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = ThisItem.CtrlNo))
+                    Visible: =If(CountRows(colNamePos)> 0 ,1,0)
+                    Width: =40
+                    Y: =7
+                    ZIndex: =4
+
+                Rectangle6_2 As rectangle:
+                    BorderThickness: =1
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =1
+                    Y: =40
+                    ZIndex: =5
+
+                galCon As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =42
+                    LayoutMode: =LayoutMode.Auto
+                    ZIndex: =6
+
+                    CtrlNo_1 As label:
+                        BorderThickness: =1
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =41
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        OnSelect: =
+                        PaddingBottom: =0
+                        PaddingLeft: =12
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =fontSize
+                        Text: =ThisItem.Amount
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Q5_txtSNo.Width
+                        ZIndex: =1
+
+                    Amount_1 As label:
+                        BorderColor: =RGBA(128, 128, 128, 1)
+                        BorderStyle: =BorderStyle.Dotted
+                        BorderThickness: =1
+                        FocusedBorderThickness: =1
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =38
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        OnSelect: =
+                        PaddingBottom: =0
+                        PaddingLeft: =12
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =fontSize
+                        Text: =ThisItem.CtrlNo
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =1
+                        X: =Q5_txtSDate.X
+                        Y: =3
+                        ZIndex: =2
 

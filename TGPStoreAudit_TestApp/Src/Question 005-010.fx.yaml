@@ -1,11 +1,11 @@
 "'Question 005-010' As screen":
 
-    Q5_Container_1 As groupContainer.manualLayoutContainer:
+    Q6_Container As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =600
+        Y: =530
         ZIndex: =1
 
         Q5_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
@@ -39,6 +39,88 @@
                 Width: =160
                 Y: =100
                 ZIndex: =2
+
+            Q5_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =60
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =10
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMinHeight: =50
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Q5_dtSales_1 As datepicker:
+                    AlignInContainer: =AlignInContainer.Center
+                    Height: =70
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =575
+                    Size: =22
+                    Width: =220
+                    ZIndex: =1
+
+                Q5_SalesNo_3 As text:
+                    Default: =""
+                    Height: =44
+                    HintText: ="Sales No"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: |
+                        =150
+                    X: |
+                        =0
+                    Y: =150
+                    ZIndex: =2
+
+                Q5_Amount_3 As text:
+                    Default: =""
+                    Height: =44
+                    HintText: ="Amount"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: |
+                        =150
+                    X: |
+                        =0
+                    Y: =150
+                    ZIndex: =3
+
+                Q5_DaysDelayed_3 As text:
+                    Default: =""
+                    Height: =44
+                    HintText: |-
+                        ="# Delayed"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: |
+                        =150
+                    X: |
+                        =0
+                    Y: =150
+                    ZIndex: =5
+
+                Q5_icnSave_1 As icon.Save:
+                    Height: =34
+                    Icon: =Icon.Save
+                    OnSelect: |
+                        =Patch(
+                            colCashCtrl,
+                            Defaults(colCashCtrl),
+                            {
+                                CtrlNo: "",
+                                Amount: ""
+                            }
+                        );
+                        //Reset(Q5_txtSDate);
+                        //Reset(Q5_txtSNo);
+                    Width: =39
+                    X: =Parent.Width-Self.Width 
+                    Y: =150
+                    ZIndex: =6
 
             "Q5_galSalesTable_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
@@ -143,87 +225,6 @@
                         X: =Parent.Width-Self.Width 
                         Y: =150
                         ZIndex: =5
-
-            Q5_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
-                FillPortions: =0
-                Height: =60
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutGap: =10
-                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
-                LayoutMinHeight: =50
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                ZIndex: =8
-
-                Q5_dtSales_1 As datepicker:
-                    Height: =70
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =575
-                    Size: =22
-                    Width: =220
-                    ZIndex: =1
-
-                Q5_SalesNo_3 As text:
-                    Default: =""
-                    Height: =44
-                    HintText: ="Sales No"
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =560
-                    Size: =fontSize
-                    Width: |
-                        =150
-                    X: |
-                        =0
-                    Y: =150
-                    ZIndex: =2
-
-                Q5_Amount_3 As text:
-                    Default: =""
-                    Height: =44
-                    HintText: ="Amount"
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =560
-                    Size: =fontSize
-                    Width: |
-                        =150
-                    X: |
-                        =0
-                    Y: =150
-                    ZIndex: =3
-
-                Q5_DaysDelayed_3 As text:
-                    Default: =""
-                    Height: =44
-                    HintText: |-
-                        ="# Delayed"
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =560
-                    Size: =fontSize
-                    Width: |
-                        =150
-                    X: |
-                        =0
-                    Y: =150
-                    ZIndex: =5
-
-                Q5_icnSave_1 As icon.Save:
-                    Height: =34
-                    Icon: =Icon.Save
-                    OnSelect: |
-                        =Patch(
-                            colCashCtrl,
-                            Defaults(colCashCtrl),
-                            {
-                                CtrlNo: "",
-                                Amount: ""
-                            }
-                        );
-                        //Reset(Q5_txtSDate);
-                        //Reset(Q5_txtSNo);
-                    Width: =39
-                    X: =Parent.Width-Self.Width 
-                    Y: =150
-                    ZIndex: =6
 
     Q5_Container As groupContainer.manualLayoutContainer:
         Height: =338

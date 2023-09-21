@@ -9,9 +9,10 @@
         ZIndex: =2
 
         Q5_SubCon As groupContainer.verticalAutoLayoutContainer:
-            Height: =568
+            Height: =404
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
             Width: =Parent.Width
             Y: =40
             ZIndex: =7

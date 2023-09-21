@@ -4637,7 +4637,14 @@
         "LayoutAlignItems",
         "LayoutJustifyContent",
         "LayoutGap",
-        "LayoutOverflowX",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "LayoutOverflowX",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutOverflowY",
         "LayoutWrap",
         "DropShadow",

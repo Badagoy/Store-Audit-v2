@@ -641,7 +641,7 @@
                 Reset(Q4_txtName);
                 Reset(Q4_txtPosition);
             Width: =39
-            X: =Parent.Width-Self.Width -leftMargin
+            X: =Parent.Width-Self.Width 
             Y: =150
             ZIndex: =1
 
@@ -651,7 +651,8 @@
             HintText: ="Position"
             Size: =fontSize
             Width: =(Parent.Width - Self.X - Q4_icnNameSave.Width -leftMargin)
-            X: =452
+            X: |
+                =420
             Y: =150
             ZIndex: =2
 
@@ -661,7 +662,8 @@
             HintText: ="Name"
             Size: =fontSize
             Width: =(Parent.Width * .55)
-            X: =20
+            X: |
+                =0
             Y: =150
             ZIndex: =3
 
@@ -739,7 +741,6 @@
             TextPosition: =TextPosition.Left
             TrueText: ="Yes"
             Width: =160
-            X: =leftMargin
             Y: =100
             ZIndex: =5
 
@@ -748,6 +749,7 @@
             Size: =fontSize
             Text: ="4. " & LookUp(colQuestion,Question_ID = 10,Question_Desc)
             Width: =Parent.Width
-            X: =leftMargin
+            X: |
+                =0
             ZIndex: =6
 

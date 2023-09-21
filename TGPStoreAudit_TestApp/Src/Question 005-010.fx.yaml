@@ -4,7 +4,7 @@
         Height: =343
         Width: |
             =Parent.Width - (leftMargin * 2)
-        X: =40
+        X: =leftMargin
         Y: =1110
         ZIndex: =2
 

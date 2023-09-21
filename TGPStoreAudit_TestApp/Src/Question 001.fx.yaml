@@ -753,7 +753,7 @@
                 =0
             ZIndex: =6
 
-    Container2 As groupContainer.horizontalAutoLayoutContainer:
+    Bottom_CNT As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -765,6 +765,8 @@
         ZIndex: =19
 
         Button4 As button:
+            Color: =Color.White
+            Fill: =App.Theme.Colors.Primary
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
@@ -777,7 +779,18 @@
             Width: =180
             ZIndex: =1
 
+        Label11 As label:
+            Align: =Align.Center
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =21
+            Text: ="1/100"
+            Width: =100
+            ZIndex: =2
+
         Button16 As button:
+            Fill: =App.Theme.Colors.Primary
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
@@ -787,5 +800,5 @@
             Size: =24
             Text: ="Next"
             Width: =180
-            ZIndex: =2
+            ZIndex: =3
 

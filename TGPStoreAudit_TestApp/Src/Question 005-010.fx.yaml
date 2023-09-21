@@ -5,7 +5,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =1110
+        Y: =300
         ZIndex: =2
 
         Q5_icnNameSave As icon.Save:
@@ -80,6 +80,42 @@
                 Y: =100
                 ZIndex: =2
 
+            Q5_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+                Height: =225
+                LayoutMinHeight: =60
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Q5_dtSales As datepicker:
+                    Height: =70
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =575
+                    Size: =24
+                    Width: =220
+                    ZIndex: =1
+
+                Q5_Amount As label:
+                    BorderColor: =RGBA(128, 128, 128, 1)
+                    BorderStyle: =BorderStyle.Dotted
+                    BorderThickness: =1
+                    FocusedBorderThickness: =1
+                    FontWeight: =
+                    Height: =38
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    OnSelect: =
+                    PaddingBottom: =0
+                    PaddingLeft: =12
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =fontSize
+                    Text: ="ThisItem.CtrlNo"
+                    VerticalAlign: =VerticalAlign.Top
+                    X: =Q5_txtSDate.X
+                    Y: =3
+                    ZIndex: =2
+
             "Q5_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 AlignInContainer: =AlignInContainer.Start
                 DelayItemLoading: =true
@@ -94,7 +130,7 @@
                 TemplateSize: =42
                 Width: =Parent.Width
                 Y: =200
-                ZIndex: =3
+                ZIndex: =4
 
                 icnGalDel_2 As icon.Trash:
                     Height: =28
@@ -115,8 +151,17 @@
 
                 galCon As groupContainer.horizontalAutoLayoutContainer:
                     Height: =42
+                    LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutMode: =LayoutMode.Auto
                     ZIndex: =6
+
+                    dtSales1 As datepicker:
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =575
+                        Size: =24
+                        Width: =220
+                        ZIndex: =1
 
                     CtrlNo_1 As label:
                         BorderThickness: =1
@@ -133,7 +178,7 @@
                         Text: ="ThisItem.Amount"
                         VerticalAlign: =VerticalAlign.Top
                         Width: =Q5_txtSNo.Width
-                        ZIndex: =1
+                        ZIndex: =2
 
                     Amount_1 As label:
                         BorderColor: =RGBA(128, 128, 128, 1)
@@ -152,8 +197,7 @@
                         Size: =fontSize
                         Text: ="ThisItem.CtrlNo"
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =1
                         X: =Q5_txtSDate.X
                         Y: =3
-                        ZIndex: =2
+                        ZIndex: =3
 

@@ -2543,19 +2543,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_dtSales_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_date_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_dtSales_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_date_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_dtSales_1"
+                "type": "'Question 005-010'.Q5_galSalesTable.Q5_ConH01_1.Q5_date_1"
               }
             }
           ],

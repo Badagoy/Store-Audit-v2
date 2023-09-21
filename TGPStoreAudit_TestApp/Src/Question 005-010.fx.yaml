@@ -128,7 +128,7 @@
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =42
-        Width: =Parent.Width
+        Width: =Parent.Width -(leftMargin *2)
         Y: =218
         ZIndex: =3
 
@@ -158,16 +158,24 @@
             Width: =Parent.TemplateWidth
             ZIndex: =6
 
-            Q5_dtSales_1 As datepicker:
-                Height: =70
+            Q5_date_1 As text:
+                Default: =""
+                DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                Height: =44
+                HintText: ="Sales No"
                 LayoutMinHeight: =70
-                LayoutMinWidth: =575
-                Size: =24
-                Width: =220
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Width: |
+                    =150
+                X: |
+                    =0
+                Y: =150
                 ZIndex: =1
 
             Q5_SalesNo_1 As text:
                 Default: =""
+                DisabledBorderColor: =RGBA(0, 134, 208, 1)
                 Height: =44
                 HintText: ="Sales No"
                 LayoutMinHeight: =70
@@ -182,6 +190,7 @@
 
             Q5_Amount_1 As text:
                 Default: =""
+                DisabledBorderColor: =RGBA(0, 134, 208, 1)
                 Height: =44
                 HintText: ="Amount"
                 LayoutMinHeight: =70
@@ -196,6 +205,7 @@
 
             Q5_DaysDelayed_1 As text:
                 Default: =""
+                DisabledBorderColor: =RGBA(0, 134, 208, 1)
                 Height: =44
                 HintText: |-
                     ="# Delayed"
@@ -207,7 +217,7 @@
                 X: |
                     =0
                 Y: =150
-                ZIndex: =5
+                ZIndex: =4
 
             Q5_icnSave_1 As icon.Save:
                 Height: =34
@@ -226,5 +236,5 @@
                 Width: =39
                 X: =Parent.Width-Self.Width 
                 Y: =150
-                ZIndex: =6
+                ZIndex: =5
 

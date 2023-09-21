@@ -747,7 +747,7 @@
             Height: =114
             Size: =fontSize
             Text: ="4. " & LookUp(colQuestion,Question_ID = 10,Question_Desc)
-            Width: =Parent.Width - (leftMargin * 2)
+            Width: =Parent.Width
             X: =leftMargin
             ZIndex: =6
 

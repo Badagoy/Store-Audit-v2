@@ -403,7 +403,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =300
                 Size: =21
-                Text: ="Text"
+                Text: ="Cash on Hand"
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =300
                 Y: =9
@@ -436,7 +436,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =300
                 Size: =21
-                Text: ="Text"
+                Text: ="Total Accountability"
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =300
                 Y: =9

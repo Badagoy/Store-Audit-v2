@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 3,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -117,7 +117,7 @@
     "ManualOfflineProfileId": "",
     "Name": "TGPStoreAudit_TestApp",
     "OriginatingVersion": "1.332",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 1,
     "ShowStatusBar": false
   },
   "PublishInfo": {

@@ -207,19 +207,19 @@
                 ZIndex: =1
 
     Label11_2 As label:
-        Height: =132
+        Height: =114
         Size: =fontSize
-        Text: =LookUp(colQuestion,Question_ID = 6,Question_Desc)
+        Text: ="3. " & LookUp(colQuestion,Question_ID = 6,Question_Desc)
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =925
+        Y: =798
         ZIndex: =4
 
     lblQ2 As label:
         Height: =102
         Size: =fontSize
         Text: ="2. " & LookUp(colQuestion,Question_ID = 6,Question_Desc)
-        Width: =746
+        Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =516
         ZIndex: =5
@@ -436,13 +436,47 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =300
                 Size: =21
-                Text: ="Total Accountability"
+                Text: ="Unreimbursed Expenses"
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =300
                 Y: =9
                 ZIndex: =1
 
             Q2_TilFund_txt_2 As text:
+                Align: =Align.Justify
+                Default: =""
+                Height: =70
+                LayoutMinHeight: =70
+                LayoutMinWidth: =288
+                Size: =21
+                Width: =300
+                ZIndex: =2
+
+        cntQ2S_3 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =225
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =112
+            LayoutMinWidth: =300
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            Width: =300
+            ZIndex: =4
+
+            Q2_TilFund_Lbl_3 As label:
+                Align: =Align.Justify
+                Height: =52
+                LayoutMinHeight: =70
+                LayoutMinWidth: =300
+                Size: =21
+                Text: ="Variance "
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =300
+                Y: =9
+                ZIndex: =1
+
+            Q2_TilFund_txt_3 As text:
                 Align: =Align.Justify
                 Default: =""
                 Height: =70

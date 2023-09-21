@@ -2513,19 +2513,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnDel.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnDel.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1"
+                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnDel"
               }
             }
           ],
@@ -2543,19 +2543,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.TabIndex"
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnDel.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1.TabIndex",
+                  "fullyQualifiedName": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnDel.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnSave_1"
+                "type": "'Question 005-010'.Q5_Container.Q5_SubCon.Q5_galSalesTable.Q5_ConH01_1.Q5_icnDel"
               }
             }
           ],

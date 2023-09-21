@@ -153,7 +153,7 @@
                     ZIndex: =5
 
                 Q5_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =42
+                    Height: =50
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -221,9 +221,9 @@
                         Y: =150
                         ZIndex: =4
 
-                    Q5_icnSave_1 As icon.Save:
+                    Q5_icnDel As icon.Save:
                         Height: =34
-                        Icon: =Icon.Save
+                        Icon: =Icon.Trash
                         OnSelect: |
                             =Patch(
                                 colCashCtrl,

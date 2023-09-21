@@ -12,6 +12,10 @@ App As appinfo:
             //Collections
             ClearCollect(colNamePos,{Name:"x",Position:""}) ;  //Create Collection 
             Remove(colNamePos,LookUp(colNamePos, Name = "x")); //Empty  Collection
+        
+            ClearCollect(colCashCtrl,{CtrlNo:"x",Amount:""}) ;  //Create Collection 
+            Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = "x")); //Empty  Collection
+        
             ClearCollect(colQuestion,lstSA_Question);
             //Screens
             Set(leftMargin ,20);

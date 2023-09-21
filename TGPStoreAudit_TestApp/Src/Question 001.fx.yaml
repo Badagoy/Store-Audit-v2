@@ -671,7 +671,7 @@
             DelayItemLoading: =true
             Fill: =RGBA(241, 244, 249, 1)
             Height: =113
-            Items: =colNamePos
+            Items: =colCashCtrl
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -693,7 +693,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =fontSize
-                Text: =ThisItem.Name
+                Text: =ThisItem.Amount
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Q4_txtName.Width
                 X: =Q4_txtName.X
@@ -710,7 +710,7 @@
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =fontSize
-                Text: =ThisItem.Position
+                Text: =ThisItem.CtrlNo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Q4_txtPosition.Width
                 X: =Q4_txtPosition.X
@@ -719,7 +719,7 @@
             icnGalDel_1 As icon.Trash:
                 Height: =28
                 Icon: =Icon.Trash
-                OnSelect: =Remove(colNamePos,LookUp(colNamePos, Name = ThisItem.Name))
+                OnSelect: =Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = ThisItem.CtrlNo))
                 Visible: =If(CountRows(colNamePos)> 0 ,1,0)
                 Width: =40
                 X: =Q4_icnNameSave.X

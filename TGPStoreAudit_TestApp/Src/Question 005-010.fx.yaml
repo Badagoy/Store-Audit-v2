@@ -8,7 +8,7 @@
         Y: =530
         ZIndex: =1
 
-        Q5_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
+        Q6_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =324
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -16,7 +16,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q5_lbl_1 As label:
+            Q6_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -28,7 +28,7 @@
                     =0
                 ZIndex: =1
 
-            Q5_YesNo_1 As toggleSwitch:
+            Q6_YesNo As toggleSwitch:
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -40,7 +40,8 @@
                 Y: =100
                 ZIndex: =2
 
-            Q5_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
+            Q6_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =60
                 LayoutAlignItems: =LayoutAlignItems.Center
@@ -49,10 +50,10 @@
                 LayoutMinHeight: =50
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =3
 
                 Q5_dtSales_1 As datepicker:
-                    AlignInContainer: =AlignInContainer.Center
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =575
@@ -122,7 +123,8 @@
                     Y: =150
                     ZIndex: =6
 
-            "Q5_galSalesTable_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "Q6_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0

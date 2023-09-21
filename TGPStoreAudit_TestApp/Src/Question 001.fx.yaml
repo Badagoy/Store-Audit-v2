@@ -209,7 +209,7 @@
     Label11_2 As label:
         Height: =114
         Size: =fontSize
-        Text: ="3. " & LookUp(colQuestion,Question_ID = 6,Question_Desc)
+        Text: ="3. " & LookUp(colQuestion,Question_ID = 8,Question_Desc)
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =798

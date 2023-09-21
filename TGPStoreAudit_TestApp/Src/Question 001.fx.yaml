@@ -753,3 +753,39 @@
                 =0
             ZIndex: =6
 
+    Container2 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =141
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =20
+        PaddingRight: =20
+        Width: =786
+        Y: =1444
+        ZIndex: =19
+
+        Button4 As button:
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            RadiusBottomLeft: |
+                =50
+            RadiusTopLeft: |
+                =50
+            Size: =24
+            Text: ="Previous"
+            Width: =180
+            ZIndex: =1
+
+        Button16 As button:
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            RadiusBottomRight: |
+                =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: ="Next"
+            Width: =180
+            ZIndex: =2
+

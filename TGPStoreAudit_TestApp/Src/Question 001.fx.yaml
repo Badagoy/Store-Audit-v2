@@ -342,61 +342,13 @@
         Y: =346
         ZIndex: =10
 
-    "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =148
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =578
-        Width: =751
-        Y: =660
-        ZIndex: =11
-
-        TextInput4 As text:
-            Default: ="Text input"
-            Height: =58
-            OnSelect: =Select(Parent)
-            Size: =21
-            Width: =258
-            Y: =69
-            ZIndex: =1
-
-        Label13 As label:
-            Height: =58
-            OnSelect: =Select(Parent)
-            Size: =21
-            Text: ="Reserved/Till Fund"
-            Width: =258
-            Y: =11
-            ZIndex: =2
-
-        TextInput4_1 As text:
-            Default: ="Text input"
-            Height: =58
-            OnSelect: =Select(Parent)
-            Size: =21
-            Width: =258
-            X: =269
-            Y: =69
-            ZIndex: =3
-
-        Label13_1 As label:
-            Height: =58
-            OnSelect: =Select(Parent)
-            Size: =21
-            Text: ="Reserved/Till Fund"
-            Width: =258
-            X: =269
-            Y: =11
-            ZIndex: =4
-
     cntQ2 As groupContainer.horizontalAutoLayoutContainer:
         Height: =185
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =1057
+        Y: =610
         ZIndex: =12
 
         cntQ2S As groupContainer.verticalAutoLayoutContainer:
@@ -407,6 +359,8 @@
             LayoutMinHeight: =112
             LayoutMinWidth: =300
             LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =10
+            PaddingRight: =5
             Width: =300
             ZIndex: =1
 
@@ -422,10 +376,10 @@
                 ZIndex: =1
 
             Q2_TilFund_txt As text:
-                Default: ="Text input"
+                Default: =""
                 Height: =70
                 LayoutMinHeight: =70
-                LayoutMinWidth: =300
+                LayoutMinWidth: =288
                 Size: =21
                 Width: =300
                 ZIndex: =2
@@ -438,7 +392,8 @@
             LayoutMinHeight: =112
             LayoutMinWidth: =300
             LayoutMode: =LayoutMode.Auto
-            LayoutWrap: =true
+            PaddingLeft: =10
+            PaddingRight: =5
             Width: =300
             ZIndex: =2
 
@@ -455,11 +410,10 @@
                 ZIndex: =1
 
             Q2_TilFund_txt_1 As text:
-                Align: =Align.Justify
-                Default: ="Text input"
+                Default: =""
                 Height: =70
                 LayoutMinHeight: =70
-                LayoutMinWidth: =300
+                LayoutMinWidth: =288
                 Size: =21
                 Width: =300
                 ZIndex: =2
@@ -472,7 +426,7 @@
             LayoutMinHeight: =112
             LayoutMinWidth: =300
             LayoutMode: =LayoutMode.Auto
-            LayoutWrap: =true
+            PaddingLeft: =10
             Width: =300
             ZIndex: =3
 
@@ -490,10 +444,10 @@
 
             Q2_TilFund_txt_2 As text:
                 Align: =Align.Justify
-                Default: ="Text input"
+                Default: =""
                 Height: =70
                 LayoutMinHeight: =70
-                LayoutMinWidth: =300
+                LayoutMinWidth: =288
                 Size: =21
                 Width: =300
                 ZIndex: =2

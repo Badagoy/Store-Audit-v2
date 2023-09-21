@@ -631,21 +631,21 @@
             Icon: =Icon.Save
             OnSelect: |
                 =Patch(
-                    colNamePos,
-                    Defaults(colNamePos),
+                    colCashCtrl,
+                    Defaults(colCashCtrl),
                     {
-                        Name: Q4_txtName.Text,
-                        Position: Q4_txtPosition.Text
+                        CtrlNo: Q4_txtCtrlNo.Text,
+                        Amount: Q4_txtAmount.Text
                     }
                 );
-                Reset(Q4_txtName);
-                Reset(Q4_txtPosition);
+                Reset(Q4_txtCtrlNo);
+                Reset(Q4_txtAmount);
             Width: =39
             X: =Parent.Width-Self.Width 
             Y: =150
             ZIndex: =1
 
-        Q4_txtPosition As text:
+        Q4_txtAmount As text:
             Default: =""
             Height: =44
             HintText: ="Position"
@@ -656,7 +656,7 @@
             Y: =150
             ZIndex: =2
 
-        Q4_txtName As text:
+        Q4_txtCtrlNo As text:
             Default: =""
             Height: =44
             HintText: ="Name"
@@ -680,7 +680,7 @@
             Y: =200
             ZIndex: =4
 
-            Name_1 As label:
+            Amount As label:
                 BorderColor: =RGBA(128, 128, 128, 1)
                 BorderStyle: =BorderStyle.Dotted
                 BorderThickness: =1
@@ -695,12 +695,12 @@
                 Size: =fontSize
                 Text: =ThisItem.Amount
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Q4_txtName.Width
-                X: =Q4_txtName.X
+                Width: =Q4_txtCtrlNo.Width
+                X: =Q4_txtCtrlNo.X
                 Y: =3
                 ZIndex: =2
 
-            Position_1 As label:
+            CtrlNo As label:
                 BorderThickness: =1
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =41
@@ -712,8 +712,8 @@
                 Size: =fontSize
                 Text: =ThisItem.CtrlNo
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Q4_txtPosition.Width
-                X: =Q4_txtPosition.X
+                Width: =Q4_txtAmount.Width
+                X: =Q4_txtAmount.X
                 ZIndex: =3
 
             icnGalDel_1 As icon.Trash:

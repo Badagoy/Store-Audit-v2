@@ -113,7 +113,7 @@ Menu As screen:
             Fill: =RGBA(237, 212, 213, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
-            Height: =189
+            Height: =Parent.Height
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
             PaddingBottom: =0.85
@@ -129,13 +129,13 @@ Menu As screen:
             RadiusTopRight: =35
             Size: =4.76
             Text: =""
-            Width: =192
-            X: =40
-            Y: =36
+            Width: =Parent.Width
+            Y: |
+                =0
             ZIndex: =1
 
         AS_icn As icon.DocumentwithContent:
-            BorderColor: =btn1.BorderColor
+            BorderColor: =AS_btnAuditStore.BorderColor
             Color: =AS_btnAuditStore.BorderColor
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(220, 220, 220, 1)

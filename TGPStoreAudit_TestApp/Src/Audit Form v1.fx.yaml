@@ -288,21 +288,12 @@
         Y: =887
         ZIndex: =16
 
-    "DatePickerCanvas1 As 'Date picker'":
-        DisplayMode: =DisplayMode.Edit
-        Format: ='DatePickerCanvas.Format'.Short
-        Height: =32
-        Width: =196
-        X: =20
-        Y: =933
-        ZIndex: =17
-
     DatePicker1 As datepicker:
         Format: =DateTimeFormat.LongDateTime
-        Height: =70
+        Height: =62
         Size: =24
-        Width: =575
+        Width: =746
         X: =20
-        Y: =965
+        Y: =929
         ZIndex: =18
 

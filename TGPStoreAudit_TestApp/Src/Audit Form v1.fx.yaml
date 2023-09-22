@@ -59,7 +59,7 @@
         Size: =21
         Width: =Parent.Width * .65
         X: =20
-        Y: =512
+        Y: =500
         ZIndex: =7
 
     BGeoLoc_lbl As label:
@@ -68,7 +68,7 @@
             ="Geo Location (Longtitude:Latitude)"
         Width: =BGeoLoc_txt.Width
         X: =20
-        Y: =476
+        Y: =464
         ZIndex: =8
 
     HeaderContainer_2 As groupContainer.horizontalAutoLayoutContainer:

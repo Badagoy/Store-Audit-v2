@@ -39,7 +39,7 @@
         Height: =108
         Mode: =TextMode.MultiLine
         Size: =21
-        Width: =727
+        Width: =Parent.Width - (leftMargin * 2)
         X: =20
         Y: =338
         ZIndex: =5
@@ -313,8 +313,8 @@
             ="Start Survey
             "
         Width: =280
-        X: =467
-        Y: =1397
+        X: =486
+        Y: =1252
         ZIndex: =19
 
     BInCharge_txt_1 As text:

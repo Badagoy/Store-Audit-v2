@@ -222,3 +222,20 @@
                 Y: =0.00
                 ZIndex: =1
 
+    BCode_txt_1 As text:
+        Default: ="Text input"
+        Height: =52
+        Size: =21
+        Width: =Parent.Width * .25
+        X: =leftMargin
+        Y: =611
+        ZIndex: =10
+
+    BCode_lbl_1 As label:
+        Size: =21
+        Text: ="Area Operations Supervisor/"
+        Width: =Parent.Width -leftMargin
+        X: =leftMargin
+        Y: =563
+        ZIndex: =11
+

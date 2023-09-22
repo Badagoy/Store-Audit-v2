@@ -142,7 +142,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BAdd_lbl",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -417,7 +417,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BAdd_txt",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -688,7 +688,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BArea_lbl",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -971,7 +971,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BArea_txt",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1247,7 +1247,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BCode_lbl",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1515,7 +1515,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BCode_txt",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1791,7 +1791,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BDateVisit_dtp",
-      "ParentIndex": 17,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2092,7 +2092,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BDateVisit_lbl",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2368,7 +2368,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BDistrict_lbl",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2651,7 +2651,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BDistrict_txt",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2920,7 +2920,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BGeoLoc_lbl",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3195,7 +3195,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BGeoLoc_txt",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3466,7 +3466,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BInCharge_lbl",
-      "ParentIndex": 14,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3749,7 +3749,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BInCharge_txt",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4025,7 +4025,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BName_lbl",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4300,7 +4300,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BName_txt",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4500,7 +4500,14 @@
     "Button17": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"Button\"",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderColor",
         "DisabledBorderColor",
         "PressedBorderColor",
@@ -4554,7 +4561,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button17",
-      "ParentIndex": 0,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5697,7 +5704,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HeaderContainer_2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

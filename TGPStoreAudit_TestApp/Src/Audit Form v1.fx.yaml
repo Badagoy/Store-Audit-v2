@@ -308,9 +308,11 @@
                 )
             );
         Size: =24
-        Text: ="Button"
+        Text: |-
+            ="Start Survey
+            "
         Width: =280
-        X: =216
-        Y: =1177
+        X: =467
+        Y: =1397
         ZIndex: =19
 

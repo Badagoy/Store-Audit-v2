@@ -1,20 +1,38 @@
 "'Audit Form v1' As screen":
 
-    BranchDesc_lbl As label:
+    BranchName_txt As text:
+        Default: ="Text input"
+        Height: =52
+        Size: =21
+        Width: =Parent.Width * .65
+        X: =BranchCode_txt.Width + (leftMargin*2)
+        Y: =243
+        ZIndex: =1
+
+    BranchName_lbl As label:
         Size: =21
         Text: ="Name"
         Width: =552
         X: =216
         Y: =183
-        ZIndex: =1
+        ZIndex: =2
+
+    BranchCode_txt As text:
+        Default: ="Text input"
+        Height: =52
+        Size: =21
+        Width: =Parent.Width * .25
+        X: =leftMargin
+        Y: =243
+        ZIndex: =3
 
     BranchCode_lbl As label:
         Size: =21
         Text: ="Branch Code"
-        Width: =196
+        Width: =Parent.Width * .25
         X: =leftMargin
         Y: =183
-        ZIndex: =2
+        ZIndex: =4
 
     HeaderContainer_2 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =App.Theme.Colors.Primary
@@ -26,7 +44,7 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =Parent.Width
-        ZIndex: =3
+        ZIndex: =5
 
         Container5_2 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -166,11 +184,4 @@
                 X: =0.00
                 Y: =0.00
                 ZIndex: =1
-
-    TextInput4 As text:
-        Default: ="Text input"
-        Size: =21
-        Width: =560
-        Y: =249
-        ZIndex: =4
 

@@ -103,23 +103,20 @@ Menu As screen:
     AS_Container As groupContainer.manualLayoutContainer:
         Width: =248
         X: =40
-        Y: =204
+        Y: =664
         ZIndex: =13
 
         AS_btnAuditStore As button:
             BorderColor: =RGBA(203, 102, 102, 1)
-            BorderThickness: =5
+            BorderThickness: =10
+            Color: =AS_btnAuditStore.BorderColor
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(237, 212, 213, 1)
+            Fill: =RGBA(238, 204, 204, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             Height: =Parent.Height
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
-            PaddingBottom: =0.85
-            PaddingLeft: =0.85
-            PaddingRight: =5.84
-            PaddingTop: =5.84
             PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
@@ -127,8 +124,9 @@ Menu As screen:
             RadiusBottomRight: =35
             RadiusTopLeft: =35
             RadiusTopRight: =35
-            Size: =4.76
-            Text: =""
+            Size: =22
+            Text: ="Audit Store"
+            VerticalAlign: =VerticalAlign.Bottom
             Width: =Parent.Width
             Y: |
                 =0
@@ -141,7 +139,7 @@ Menu As screen:
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =83
+            Height: =115
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
@@ -154,6 +152,5 @@ Menu As screen:
             PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =Parent.Width
-            Y: =32
             ZIndex: =2
 

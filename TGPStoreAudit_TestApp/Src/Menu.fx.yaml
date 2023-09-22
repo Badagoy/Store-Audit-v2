@@ -101,9 +101,9 @@ Menu As screen:
         ZIndex: =10
 
     AS_Container As groupContainer.manualLayoutContainer:
-        Height: =225
-        X: =60
-        Y: =60
+        Width: =248
+        X: =40
+        Y: =204
         ZIndex: =13
 
         AS_btnAuditStore As button:
@@ -153,8 +153,7 @@ Menu As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =195
-            X: =60
-            Y: =36
+            Width: =Parent.Width
+            Y: =32
             ZIndex: =2
 

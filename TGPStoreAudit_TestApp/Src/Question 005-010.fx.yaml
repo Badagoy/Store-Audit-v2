@@ -41,10 +41,11 @@
                 ZIndex: =5
 
                 Q7_chkYes As checkbox:
+                    Default: =If(Q7_chkNA.Value = true Or Q7_chkNA.Value = true,0,1)
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
-                    OnCheck: =Q7_chkNo.Value = true
+                    OnCheck: =
                     Size: =21
                     Text: ="Yes"
                     Width: =200

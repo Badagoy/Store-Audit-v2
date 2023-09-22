@@ -1,8 +1,9 @@
 "'Audit Form v1' As screen":
 
     BName_txt As text:
-        Default: ="Text input"
+        Default: =""
         Height: =52
+        HintText: ="Branch Name"
         Size: =21
         Width: =Parent.Width * .65
         X: =237
@@ -18,8 +19,9 @@
         ZIndex: =2
 
     BCode_txt As text:
-        Default: ="Text input"
+        Default: =""
         Height: =52
+        HintText: ="Code"
         Size: =21
         Width: =Parent.Width * .25
         X: =leftMargin
@@ -35,8 +37,9 @@
         ZIndex: =4
 
     BAdd_txt As text:
-        Default: ="Text input"
+        Default: =""
         Height: =108
+        HintText: ="Address"
         Mode: =TextMode.MultiLine
         Size: =21
         Width: =Parent.Width - (leftMargin * 2)

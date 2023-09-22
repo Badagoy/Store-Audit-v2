@@ -267,7 +267,7 @@
         Size: =21
         Width: =Parent.Width -(leftMargin * 2)
         X: =leftMargin
-        Y: =807
+        Y: =819
         ZIndex: =14
 
     BInCharge_lbl As label:
@@ -276,6 +276,24 @@
         Width: |
             =Parent.Width -(leftMargin * 2)
         X: =leftMargin
-        Y: =771
+        Y: =783
         ZIndex: =15
+
+    BDateVisit_lbl As label:
+        Size: =21
+        Text: ="Date Visit"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =887
+        ZIndex: =16
+
+    "DatePickerCanvas1 As 'Date picker'":
+        DisplayMode: =DisplayMode.Edit
+        Format: ='DatePickerCanvas.Format'.Short
+        Height: =32
+        Width: =196
+        X: =20
+        Y: =933
+        ZIndex: =17
 

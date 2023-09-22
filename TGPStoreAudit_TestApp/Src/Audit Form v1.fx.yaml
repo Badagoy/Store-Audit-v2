@@ -316,3 +316,22 @@
         Y: =1397
         ZIndex: =19
 
+    BInCharge_txt_1 As text:
+        Default: =""
+        Height: =52
+        HintText: ="Full Name"
+        Size: =21
+        Width: =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =1049
+        ZIndex: =20
+
+    BInCharge_lbl_1 As label:
+        Size: =21
+        Text: ="Survey Title"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =1013
+        ZIndex: =21
+

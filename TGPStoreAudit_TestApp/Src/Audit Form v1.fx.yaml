@@ -222,7 +222,7 @@
                 Y: =0.00
                 ZIndex: =1
 
-    BCode_txt_1 As text:
+    BArea_txt As text:
         Default: =""
         Height: =52
         HintText: ="Full Name"
@@ -232,7 +232,7 @@
         Y: =611
         ZIndex: =10
 
-    BCode_lbl_1 As label:
+    BArea_lbl As label:
         Size: =21
         Text: ="Area Operations Supervisor/Officer/Manager"
         Width: |
@@ -241,7 +241,7 @@
         Y: =575
         ZIndex: =11
 
-    BCode_txt_2 As text:
+    BDistrict_txt As text:
         Default: =""
         Height: =52
         HintText: ="Full Name"
@@ -251,7 +251,7 @@
         Y: =715
         ZIndex: =12
 
-    BCode_lbl_2 As label:
+    BDistrict_lbl As label:
         Size: =21
         Text: ="District Supervisor"
         Width: |
@@ -259,4 +259,23 @@
         X: =leftMargin
         Y: =679
         ZIndex: =13
+
+    BInCharge_txt As text:
+        Default: =""
+        Height: =52
+        HintText: ="Full Name"
+        Size: =21
+        Width: =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =807
+        ZIndex: =14
+
+    BInCharge_lbl As label:
+        Size: =21
+        Text: ="Store InCharge"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =771
+        ZIndex: =15
 

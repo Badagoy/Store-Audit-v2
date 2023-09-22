@@ -1,14 +1,14 @@
 "'Question 005-010' As screen":
 
     Q7_Container As groupContainer.manualLayoutContainer:
-        Height: =338
+        Height: =268
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =810
         ZIndex: =1
 
-        Q6_SubCon__2 As groupContainer.verticalAutoLayoutContainer:
+        Q7_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =264
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -16,7 +16,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q6_lbl__2 As label:
+            Q7_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -28,7 +28,7 @@
                     =0
                 ZIndex: =1
 
-            Q6_YesNo__2 As toggleSwitch:
+            Q7_YesNo As toggleSwitch:
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -40,7 +40,7 @@
                 Y: =100
                 ZIndex: =2
 
-            Q6_ConH01__2 As groupContainer.horizontalAutoLayoutContainer:
+            Q7_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
                 LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -53,7 +53,7 @@
                 Y: =610
                 ZIndex: =5
 
-                Checkbox1 As checkbox:
+                Q7_chkYes As checkbox:
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
@@ -62,7 +62,7 @@
                     Width: =200
                     ZIndex: =2
 
-                Checkbox1_1 As checkbox:
+                Q7_chkNo As checkbox:
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
@@ -71,7 +71,7 @@
                     Width: =200
                     ZIndex: =3
 
-                Checkbox1_2 As checkbox:
+                Q7_chkNA As checkbox:
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280

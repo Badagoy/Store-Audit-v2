@@ -2633,19 +2633,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q6_SubCon__2.Q6_YesNo__2.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_YesNo.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q6_SubCon__2.Q6_YesNo__2.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_YesNo.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 005-010",
-                "type": "'Question 005-010'.Q7_Container.Q6_SubCon__2.Q6_YesNo__2"
+                "type": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_YesNo"
               }
             }
           ],

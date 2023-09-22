@@ -53,7 +53,8 @@
         ZIndex: =6
 
     BGeoLoc_txt As text:
-        Default: ="Text input"
+        Default: |-
+            =Location.Longitude & " : "  & Location.Latitude
         Height: =52
         Size: =21
         Width: =Parent.Width * .65
@@ -63,7 +64,8 @@
 
     BGeoLoc_lbl As label:
         Size: =21
-        Text: ="Name"
+        Text: |-
+            ="Geo Location (Longtitude:Latitude)"
         Width: =BGeoLoc_txt.Width
         X: =20
         Y: =476

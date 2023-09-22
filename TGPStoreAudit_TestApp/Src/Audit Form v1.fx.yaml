@@ -195,7 +195,7 @@
         Y: =338
         ZIndex: =6
 
-    BranchCode_lbl_1 As label:
+    BranchAdd_lbl As label:
         Size: =21
         Text: ="Address"
         Width: =Parent.Width * .25

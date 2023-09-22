@@ -1,6 +1,6 @@
 "'Question 005-010' As screen":
 
-    Q6_Container As groupContainer.manualLayoutContainer:
+    Q5_Container As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -8,7 +8,7 @@
         Y: =200
         ZIndex: =1
 
-        Q6_SubCon As groupContainer.verticalAutoLayoutContainer:
+        Q5_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =324
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -50,6 +50,7 @@
                 LayoutMinHeight: =50
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
                 ZIndex: =3
 
                 Q5_dtSales As datepicker:

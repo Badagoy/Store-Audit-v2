@@ -12,8 +12,8 @@
     BranchName_lbl As label:
         Size: =21
         Text: ="Name"
-        Width: =552
-        X: =234
+        Width: =BranchName_txt.Width
+        X: =BranchName_txt.X
         Y: =195
         ZIndex: =2
 
@@ -185,7 +185,7 @@
                 Y: =0.00
                 ZIndex: =1
 
-    BranchName_txt_1 As text:
+    BranchAdd_txt As text:
         Default: ="Text input"
         Height: =108
         Mode: =TextMode.MultiLine

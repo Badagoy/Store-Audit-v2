@@ -5,7 +5,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =900
+        Y: =550
         ZIndex: =1
 
         Q5_SubCon__1 As groupContainer.verticalAutoLayoutContainer:

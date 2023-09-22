@@ -318,7 +318,8 @@
                 Branch_AreaOP:BArea_txt.Text,
                 Branch_DisSup:BDistrict_txt.Text,
                 Branch_OIC:BInCharge_txt.Text,
-                Date_Visit:BDateVisit_dtp.SelectedDate
+                Date_Visit:BDateVisit_dtp.SelectedDate,
+                Title:BTitle_txt.Text
             })
         Size: =24
         Text: |-
@@ -329,7 +330,7 @@
         Y: =1252
         ZIndex: =19
 
-    BInCharge_txt_1 As text:
+    BTitle_txt As text:
         Default: =""
         Height: =52
         HintText: ="Short Description"

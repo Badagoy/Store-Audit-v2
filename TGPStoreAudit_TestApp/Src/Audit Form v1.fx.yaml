@@ -297,3 +297,12 @@
         Y: =933
         ZIndex: =17
 
+    DatePicker1 As datepicker:
+        Format: =DateTimeFormat.LongDateTime
+        Height: =70
+        Size: =24
+        Width: =575
+        X: =20
+        Y: =965
+        ZIndex: =18
+

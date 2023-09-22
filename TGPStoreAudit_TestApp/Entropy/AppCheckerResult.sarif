@@ -424,6 +424,47 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_ConH01.Q7_chkYes.OnCheck"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_ConH01.Q7_chkYes.OnCheck",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnCheck",
+                "module": "Question 005-010",
+                "type": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_ConH01.Q7_chkYes"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Boolean",
+              "Number"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Local Audits'.OnVisible"
                 }
               ],

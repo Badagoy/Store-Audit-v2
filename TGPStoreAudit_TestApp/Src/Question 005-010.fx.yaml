@@ -5,11 +5,11 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =1000
+        Y: =810
         ZIndex: =1
 
         Q6_SubCon__2 As groupContainer.verticalAutoLayoutContainer:
-            Height: =324
+            Height: =264
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
@@ -43,7 +43,8 @@
             Q6_ConH01__2 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
-                LayoutMinHeight: =112
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMinHeight: =80
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
@@ -84,7 +85,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =550
+        Y: =480
         ZIndex: =2
 
         Q6_SubCon__1 As groupContainer.verticalAutoLayoutContainer:
@@ -240,7 +241,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =20
-        Y: =200
+        Y: =140
         ZIndex: =3
 
         Q5_SubCon As groupContainer.verticalAutoLayoutContainer:

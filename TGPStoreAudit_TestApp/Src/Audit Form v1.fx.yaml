@@ -308,6 +308,17 @@
                     "[$-en-US]yymmddhhmmss"
                 )
             );
+            
+            Patch(lstSA_ResponseHDR,Defaults(lstSA_ResponseHDR),{
+                Batch_ID:batch_no,
+                Branch_Code:BCode_txt.Text,
+                Branch_Name:BName_txt.Text,
+                Branch_Address:BAdd_txt.Text,
+                Branch_GeoLoc:BGeoLoc_txt,
+                Branch_AreaOP:BArea_txt.Text,
+                Branch_DisSup:BDistrict_txt.Text,
+                Branch_OIC:BInCharge_txt.Text
+            })
         Size: =24
         Text: |-
             ="Start Survey

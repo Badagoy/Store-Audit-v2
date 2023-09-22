@@ -142,7 +142,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BAdd_lbl",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -417,7 +417,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BAdd_txt",
-      "ParentIndex": 8,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -964,7 +964,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BCode_lbl_1",
-      "ParentIndex": 2,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1232,7 +1232,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BCode_txt",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1495,7 +1495,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BCode_txt_1",
-      "ParentIndex": 5,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1759,7 +1759,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BGeoLoc_lbl",
-      "ParentIndex": 9,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2034,7 +2034,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BGeoLoc_txt",
-      "ParentIndex": 10,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2305,7 +2305,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BName_lbl",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2580,7 +2580,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BName_txt",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

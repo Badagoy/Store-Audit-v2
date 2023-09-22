@@ -226,14 +226,14 @@
         Default: ="Text input"
         Height: =52
         Size: =21
-        Width: =Parent.Width * .25
+        Width: =Parent.Width -(leftMargin * 2)
         X: =leftMargin
         Y: =611
         ZIndex: =10
 
     BCode_lbl_1 As label:
         Size: =21
-        Text: ="Area Operations Supervisor/"
+        Text: ="Area Operations Supervisor/Officer/Manager"
         Width: =Parent.Width -leftMargin
         X: =leftMargin
         Y: =563

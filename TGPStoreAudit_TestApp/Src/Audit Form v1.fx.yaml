@@ -297,3 +297,20 @@
         Y: =929
         ZIndex: =18
 
+    Button17 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(
+                batch_no,
+                Text(
+                    Now(),
+                    "[$-en-US]yymmddhhmmss"
+                )
+            );
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =216
+        Y: =1177
+        ZIndex: =19
+

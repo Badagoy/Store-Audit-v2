@@ -44,7 +44,7 @@
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
-                    OnCheck: =Q7_chkYes.Value =1
+                    OnCheck: =Q7_chkYes.Value = true
                     Size: =21
                     Text: ="Yes"
                     Width: =200

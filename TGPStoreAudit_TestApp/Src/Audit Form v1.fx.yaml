@@ -107,7 +107,7 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 Fill: =App.Theme.Colors.Primary
                 FocusedBorderThickness: =4
-                Font: =Font.'Patrick Hand'
+                Font: =Font.Georgia
                 Height: =50
                 LayoutMinHeight: =70
                 LayoutMinWidth: =100
@@ -116,35 +116,12 @@
                 PaddingRight: =5.84
                 PaddingTop: =5.84
                 Size: =24
-                Text: =User().FullName
+                Text: ="Audit Branch "
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =300
                 X: =0.00
                 Y: =22.61
                 ZIndex: =1
-
-            lbl_Name_2 As label:
-                AlignInContainer: =AlignInContainer.Stretch
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =Color.White
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =App.Theme.Colors.Primary
-                FocusedBorderThickness: =4
-                LayoutMinHeight: =70
-                LayoutMinWidth: =100
-                PaddingBottom: =0.85
-                PaddingLeft: =0.85
-                PaddingRight: =5.84
-                PaddingTop: =5.84
-                Size: =16
-                Text: =User().Email
-                VerticalAlign: =VerticalAlign.Top
-                Width: =569.17
-                X: =0.00
-                Y: =27.35
-                ZIndex: =2
 
         Container7_2 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer

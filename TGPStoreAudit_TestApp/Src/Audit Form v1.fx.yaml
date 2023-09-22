@@ -1,6 +1,6 @@
 "'Audit Form v1' As screen":
 
-    BranchName_txt As text:
+    BName_txt As text:
         Default: ="Text input"
         Height: =52
         Size: =21
@@ -9,15 +9,15 @@
         Y: =231
         ZIndex: =1
 
-    BranchName_lbl As label:
+    BName_lbl As label:
         Size: =21
         Text: ="Name"
-        Width: =BranchName_txt.Width
-        X: =BranchName_txt.X
+        Width: =BName_txt.Width
+        X: =BName_txt.X
         Y: =195
         ZIndex: =2
 
-    BranchCode_txt As text:
+    BCode_txt As text:
         Default: ="Text input"
         Height: =52
         Size: =21
@@ -26,7 +26,7 @@
         Y: =231
         ZIndex: =3
 
-    BranchCode_lbl As label:
+    BCode_lbl As label:
         Size: =21
         Text: ="Branch Code"
         Width: =Parent.Width * .25
@@ -134,7 +134,7 @@
                 PaddingRight: =5.84
                 PaddingTop: =5.84
                 Size: =24
-                Text: ="Audit Branch "
+                Text: ="Audit B "
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =300
                 X: =0.00
@@ -185,7 +185,7 @@
                 Y: =0.00
                 ZIndex: =1
 
-    BranchAdd_txt As text:
+    BAdd_txt As text:
         Default: ="Text input"
         Height: =108
         Mode: =TextMode.MultiLine
@@ -195,11 +195,28 @@
         Y: =338
         ZIndex: =6
 
-    BranchAdd_lbl As label:
+    BAdd_lbl As label:
         Size: =21
         Text: ="Address"
         Width: =Parent.Width * .25
         X: =leftMargin
         Y: =299
         ZIndex: =7
+
+    BGeoLoc_txt As text:
+        Default: ="Text input"
+        Height: =52
+        Size: =21
+        Width: =Parent.Width * .65
+        X: =20
+        Y: =512
+        ZIndex: =8
+
+    BGeoLoc_lbl As label:
+        Size: =21
+        Text: ="Name"
+        Width: =BGeoLoc_txt.Width
+        X: =20
+        Y: =476
+        ZIndex: =9
 

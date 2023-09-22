@@ -1076,19 +1076,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Audit Form v1'.BranchCode_txt.AccessibleLabel"
+                  "fullyQualifiedName": "'Audit Form v1'.BCode_txt.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Audit Form v1'.BranchCode_txt.AccessibleLabel",
+                  "fullyQualifiedName": "'Audit Form v1'.BCode_txt.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Audit Form v1",
-                "type": "'Audit Form v1'.BranchCode_txt"
+                "type": "'Audit Form v1'.BCode_txt"
               }
             }
           ],
@@ -2663,19 +2663,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Audit Form v1'.BranchName_txt.AccessibleLabel"
+                  "fullyQualifiedName": "'Audit Form v1'.BName_txt.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Audit Form v1'.BranchName_txt.AccessibleLabel",
+                  "fullyQualifiedName": "'Audit Form v1'.BName_txt.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Audit Form v1",
-                "type": "'Audit Form v1'.BranchName_txt"
+                "type": "'Audit Form v1'.BName_txt"
               }
             }
           ],
@@ -2693,19 +2693,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Audit Form v1'.BranchAdd_txt.AccessibleLabel"
+                  "fullyQualifiedName": "'Audit Form v1'.BAdd_txt.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Audit Form v1'.BranchAdd_txt.AccessibleLabel",
+                  "fullyQualifiedName": "'Audit Form v1'.BAdd_txt.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Audit Form v1",
-                "type": "'Audit Form v1'.BranchAdd_txt"
+                "type": "'Audit Form v1'.BAdd_txt"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Audit Form v1'.BGeoLoc_txt.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Audit Form v1'.BGeoLoc_txt.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Audit Form v1",
+                "type": "'Audit Form v1'.BGeoLoc_txt"
               }
             }
           ],

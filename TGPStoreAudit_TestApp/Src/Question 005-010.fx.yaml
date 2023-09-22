@@ -1,14 +1,14 @@
 "'Question 005-010' As screen":
 
-    Q5_Container_1 As groupContainer.manualLayoutContainer:
+    Q7_Container As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =550
+        Y: =1000
         ZIndex: =1
 
-        Q5_SubCon__1 As groupContainer.verticalAutoLayoutContainer:
+        Q6_SubCon__2 As groupContainer.verticalAutoLayoutContainer:
             Height: =324
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -16,19 +16,19 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q5_lbl__1 As label:
+            Q6_lbl__2 As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="6. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
+                Text: ="7. " & LookUp(colQuestion,Question_ID = 25,Question_Desc)
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =Parent.Width
                 X: |
                     =0
                 ZIndex: =1
 
-            Q5_YesNo__1 As toggleSwitch:
+            Q6_YesNo__2 As toggleSwitch:
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -40,7 +40,86 @@
                 Y: =100
                 ZIndex: =2
 
-            Q5_ConH01__1 As groupContainer.horizontalAutoLayoutContainer:
+            Q6_ConH01__2 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Height: =185
+                LayoutMinHeight: =112
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =Parent.Width
+                X: =leftMargin
+                Y: =610
+                ZIndex: =5
+
+                Checkbox1 As checkbox:
+                    Height: =85
+                    LayoutMinHeight: =85
+                    LayoutMinWidth: =280
+                    Size: =21
+                    Text: ="Option"
+                    Width: =200
+                    ZIndex: =2
+
+                Checkbox1_1 As checkbox:
+                    Height: =85
+                    LayoutMinHeight: =85
+                    LayoutMinWidth: =280
+                    Size: =21
+                    Text: ="Option"
+                    Width: =200
+                    ZIndex: =3
+
+                Checkbox1_2 As checkbox:
+                    Height: =85
+                    LayoutMinHeight: =85
+                    LayoutMinWidth: =280
+                    Size: =21
+                    Text: ="Option"
+                    Width: =200
+                    ZIndex: =4
+
+    Q6_Container As groupContainer.manualLayoutContainer:
+        Height: =338
+        Width: |
+            =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =550
+        ZIndex: =2
+
+        Q6_SubCon__1 As groupContainer.verticalAutoLayoutContainer:
+            Height: =324
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            Width: =Parent.Width
+            ZIndex: =7
+
+            Q6_lbl__1 As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="6. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
+
+            Q6_YesNo__1 As toggleSwitch:
+                FalseText: ="No"
+                Height: =44
+                LayoutMinHeight: =49
+                LayoutMinWidth: =154
+                Size: =fontSize
+                TextPosition: =TextPosition.Left
+                TrueText: ="Yes"
+                Width: =160
+                Y: =100
+                ZIndex: =2
+
+            Q6_ConH01__1 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
                 LayoutMinHeight: =112
@@ -52,7 +131,8 @@
                 Y: =610
                 ZIndex: =5
 
-                cntQ5S_1 As groupContainer.verticalAutoLayoutContainer:
+                cntQ6S_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -65,7 +145,7 @@
                     Width: =300
                     ZIndex: =1
 
-                    Q5_TilFund_Lbl_6 As label:
+                    Q6_TilFund_Lbl_6 As label:
                         Height: =52
                         LayoutMinHeight: =70
                         LayoutMinWidth: =300
@@ -76,7 +156,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q5_TilFund_txt_6 As text:
+                    Q6_TilFund_txt_6 As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -85,7 +165,8 @@
                         Width: =300
                         ZIndex: =2
 
-                cntQ5S1_1 As groupContainer.verticalAutoLayoutContainer:
+                cntQ6S1_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -98,7 +179,7 @@
                     Width: =300
                     ZIndex: =2
 
-                    Q5_TilFund_Lbl_9 As label:
+                    Q6_TilFund_Lbl_9 As label:
                         Align: =Align.Justify
                         Height: =52
                         LayoutMinHeight: =70
@@ -110,7 +191,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q5_TilFund_txt_9 As text:
+                    Q6_TilFund_txt_9 As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -120,6 +201,7 @@
                         ZIndex: =2
 
                 cntQ5S3_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -159,7 +241,7 @@
             =Parent.Width - (leftMargin * 2)
         X: =20
         Y: =200
-        ZIndex: =2
+        ZIndex: =3
 
         Q5_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =324
@@ -390,7 +472,7 @@
         PaddingRight: =20
         Width: =786
         Y: =1444
-        ZIndex: =3
+        ZIndex: =4
 
         Button4_1 As button:
             Color: =Color.White
@@ -440,7 +522,7 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =Parent.Width
-        ZIndex: =4
+        ZIndex: =5
 
         Container5_1 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer

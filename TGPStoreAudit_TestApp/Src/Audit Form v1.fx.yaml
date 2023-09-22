@@ -319,7 +319,8 @@
                 Branch_DisSup:BDistrict_txt.Text,
                 Branch_OIC:BInCharge_txt.Text,
                 Date_Visit:BDateVisit_dtp.SelectedDate,
-                Title:BTitle_txt.Text
+                Title:BTitle_txt.Text,
+                Survey_Status:"New"
             })
         Size: =24
         Text: |-

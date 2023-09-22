@@ -57,7 +57,7 @@
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     Size: =21
-                    Text: ="Option"
+                    Text: ="Yes"
                     Width: =200
                     ZIndex: =2
 
@@ -66,7 +66,7 @@
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     Size: =21
-                    Text: ="Option"
+                    Text: ="No"
                     Width: =200
                     ZIndex: =3
 
@@ -75,7 +75,7 @@
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     Size: =21
-                    Text: ="Option"
+                    Text: ="NA"
                     Width: =200
                     ZIndex: =4
 

@@ -241,3 +241,22 @@
         Y: =575
         ZIndex: =11
 
+    BCode_txt_2 As text:
+        Default: =""
+        Height: =52
+        HintText: ="Full Name"
+        Size: =21
+        Width: =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =715
+        ZIndex: =12
+
+    BCode_lbl_2 As label:
+        Size: =21
+        Text: ="District Supervisor"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =679
+        ZIndex: =13
+

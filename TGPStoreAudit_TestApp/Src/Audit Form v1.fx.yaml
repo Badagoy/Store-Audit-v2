@@ -314,10 +314,11 @@
                 Branch_Code:BCode_txt.Text,
                 Branch_Name:BName_txt.Text,
                 Branch_Address:BAdd_txt.Text,
-                Branch_GeoLoc:BGeoLoc_txt,
+                Branch_GeoLoc:BGeoLoc_txt.Text,
                 Branch_AreaOP:BArea_txt.Text,
                 Branch_DisSup:BDistrict_txt.Text,
-                Branch_OIC:BInCharge_txt.Text
+                Branch_OIC:BInCharge_txt.Text,
+                Date_Visit:BDateVisit_dtp.SelectedDate
             })
         Size: =24
         Text: |-

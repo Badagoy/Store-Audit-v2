@@ -13,7 +13,7 @@
         Size: =21
         Text: ="Name"
         Width: =552
-        X: =216
+        X: =BranchName_txt.X
         Y: =183
         ZIndex: =2
 

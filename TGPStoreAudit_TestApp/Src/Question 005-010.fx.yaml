@@ -1,7 +1,7 @@
 "'Question 005-010' As screen":
 
     Q7_Container As groupContainer.manualLayoutContainer:
-        Height: =268
+        Height: =248
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
@@ -9,7 +9,6 @@
         ZIndex: =1
 
         Q7_SubCon As groupContainer.verticalAutoLayoutContainer:
-            Height: =264
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
@@ -28,23 +27,11 @@
                     =0
                 ZIndex: =1
 
-            Q7_YesNo As toggleSwitch:
-                FalseText: ="No"
-                Height: =44
-                LayoutMinHeight: =49
-                LayoutMinWidth: =154
-                Size: =fontSize
-                TextPosition: =TextPosition.Left
-                TrueText: ="Yes"
-                Width: =160
-                Y: =100
-                ZIndex: =2
-
             Q7_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
                 LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutMinHeight: =80
+                LayoutMinHeight: =70
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
@@ -57,6 +44,7 @@
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
+                    OnCheck: =true
                     Size: =21
                     Text: ="Yes"
                     Width: =200

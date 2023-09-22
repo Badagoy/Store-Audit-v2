@@ -2633,36 +2633,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_YesNo.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_YesNo.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Question 005-010",
-                "type": "'Question 005-010'.Q7_Container.Q7_SubCon.Q7_YesNo"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Question 005-010'.Q6_Container.Q6_SubCon__1.Q6_ConH01__1.cntQ5S3_1.Q2_TilFund_txt_12.AccessibleLabel"
                 }
               ],

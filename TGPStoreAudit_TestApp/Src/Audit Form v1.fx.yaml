@@ -5,8 +5,8 @@
         Height: =52
         Size: =21
         Width: =Parent.Width * .65
-        X: =BranchCode_txt.Width + (leftMargin*2)
-        Y: =243
+        X: =237
+        Y: =231
         ZIndex: =1
 
     BranchName_lbl As label:
@@ -23,7 +23,7 @@
         Size: =21
         Width: =Parent.Width * .25
         X: =leftMargin
-        Y: =243
+        Y: =231
         ZIndex: =3
 
     BranchCode_lbl As label:

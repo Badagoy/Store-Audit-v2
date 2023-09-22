@@ -298,6 +298,7 @@
         ZIndex: =18
 
     Button17 As button:
+        Fill: =App.Theme.Colors.Primary
         Height: =70
         OnSelect: |-
             =Set(

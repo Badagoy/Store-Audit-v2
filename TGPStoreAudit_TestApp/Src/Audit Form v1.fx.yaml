@@ -288,7 +288,7 @@
         Y: =887
         ZIndex: =16
 
-    DatePicker1 As datepicker:
+    BDateVisit_dtp As datepicker:
         Format: =DateTimeFormat.LongDateTime
         Height: =62
         Size: =24

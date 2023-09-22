@@ -292,8 +292,8 @@
         Format: =DateTimeFormat.LongDateTime
         Height: =62
         Size: =24
-        Width: =746
-        X: =20
+        Width: =704
+        X: =leftMargin
         Y: =929
         ZIndex: =18
 

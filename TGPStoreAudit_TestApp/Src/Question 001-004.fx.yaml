@@ -620,7 +620,19 @@
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
-            OnSelect: =Navigate('Question 005-010')
+            OnSelect: |-
+                =Patch(lstSA_ResponseDTL,Defaults(lstSA_ResponseDTL),{
+                    Title:"",
+                    Batch_No: batch_no,
+                    'Question ID':1,
+                    'Response ID': 1,
+                    'Response Desc': JSON(colNamePos),
+                    Branch_Code:""
+                
+                }
+                );
+                
+                Navigate('Question 005-010')
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

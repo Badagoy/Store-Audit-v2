@@ -337,7 +337,8 @@
                     NotificationType.Success,
                     2000
                 );
-                ,
+                Navigate('Question 001-004');
+                , // ELSE
                 ClearCollect(colResponseHDR,{
                         Batch_ID: batch_no,
                         Branch_Code: BCode_txt.Text,

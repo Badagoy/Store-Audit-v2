@@ -43,7 +43,7 @@
 
         Q4_txtCtrlNo As text:
             Default: |-
-                ="{""Q2_txt1"":1212},{""Q2_txt2"":22},{""Q2_txt3"":33},{""Q2_txt4"":44}"
+                ="{""Q2_txt1"": 1212},{""Q2_txt2"": 22},{""Q2_txt3"": 33},{""Q2_txt4"": 44}"
             Height: =44
             HintText: ="Name"
             Size: =fontSize
@@ -651,10 +651,10 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 6,
-                        'Response Desc': "[{" & Char(34) & "Q2_txt1" & Char(34) & ":" & Q2_txt1.Text & "}," & 
-                      "{" & Char(34) & "Q2_txt2" & Char(34) & ":" & Q2_txt2.Text & "}," &
-                      "{" & Char(34) & "Q2_txt3" & Char(34) & ":" & Q2_txt3.Text & "}," &
-                      "{" & Char(34) & "Q2_txt4" & Char(34) & ":" & Q2_txt4.Text & "}" 
+                        'Response Desc': "[{" & Char(34) & "Q2_txt1" & Char(34) & ":" & Q2_txt1.Text & "," & 
+                      "" & Char(34) & "Q2_txt2" & Char(34) & ":" & Q2_txt2.Text & "," &
+                      "" & Char(34) & "Q2_txt3" & Char(34) & ":" & Q2_txt3.Text & "," &
+                      "" & Char(34) & "Q2_txt4" & Char(34) & ":" & Q2_txt4.Text & "}" 
                       &"]",
                         Branch_Code: ""
                     }

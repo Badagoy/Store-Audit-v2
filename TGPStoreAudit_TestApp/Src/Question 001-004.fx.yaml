@@ -305,7 +305,6 @@
         ZIndex: =4
 
         cntQ2S As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -329,7 +328,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q2_TilFund_txt As text:
+            Q2_txt1 As text:
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
@@ -339,7 +338,6 @@
                 ZIndex: =2
 
         cntQ2S_1 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -352,7 +350,7 @@
             Width: =300
             ZIndex: =2
 
-            Q2_TilFund_Lbl_1 As label:
+            Q2_COH_lbl As label:
                 Align: =Align.Justify
                 Height: =52
                 LayoutMinHeight: =70
@@ -364,7 +362,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q2_TilFund_txt_1 As text:
+            Q2_txt2 As text:
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
@@ -374,7 +372,6 @@
                 ZIndex: =2
 
         cntQ2S_2 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -386,7 +383,7 @@
             Width: =300
             ZIndex: =3
 
-            Q2_TilFund_Lbl_2 As label:
+            Q2_UnReim_lbl As label:
                 Align: =Align.Justify
                 Height: =52
                 LayoutMinHeight: =70
@@ -398,7 +395,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q2_TilFund_txt_2 As text:
+            Q2_txt3 As text:
                 Align: =Align.Justify
                 Default: =""
                 Height: =70
@@ -409,7 +406,6 @@
                 ZIndex: =2
 
         cntQ2S_3 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -421,7 +417,7 @@
             Width: =300
             ZIndex: =4
 
-            Q2_TilFund_Lbl_3 As label:
+            Q2_Var_lbl As label:
                 Align: =Align.Justify
                 Height: =52
                 LayoutMinHeight: =70
@@ -433,7 +429,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q2_TilFund_txt_3 As text:
+            Q2_txt4 As text:
                 Align: =Align.Justify
                 Default: =""
                 Height: =70
@@ -621,17 +617,31 @@
             LayoutMinHeight: =70
             LayoutMinWidth: =280
             OnSelect: |-
-                =Patch(lstSA_ResponseDTL,Defaults(lstSA_ResponseDTL),{
-                    Title:"",
-                    Batch_No: batch_no,
-                    'Question ID':1,
-                    //'Response ID': 1,
-                    'Response Desc': JSON(colNamePos),
-                    Branch_Code:""
-                
-                }
+                =//Q1 OR Question ID = 1 
+                Patch(
+                    lstSA_ResponseDTL,
+                    Defaults(lstSA_ResponseDTL),
+                    {
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 1,
+                        'Response Desc': JSON(colNamePos),
+                        Branch_Code: ""
+                    }
                 );
-                
+                //Q2 OR Question ID = 6
+                Patch(
+                    lstSA_ResponseDTL,
+                    Defaults(lstSA_ResponseDTL),
+                    { 
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 6,
+                        'Response Desc': "[{" & Char(34) & "Q2_txt1" & Char(34) & ":" & Q2_txt1.Text & "}," & 
+                      "{" & Char(34) & "Q2_txt2" & Char(34) & ":" & Q2_txt2.Text & "}," &"]",
+                        Branch_Code: ""
+                    }
+                );
                 //Navigate('Question 005-010')
             RadiusBottomRight: |
                 =50

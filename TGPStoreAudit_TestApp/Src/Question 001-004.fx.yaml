@@ -42,7 +42,8 @@
             ZIndex: =2
 
         Q4_txtCtrlNo As text:
-            Default: =""
+            Default: |-
+                ="{ ""Name"": ""Heba Kamal"" ,""Age"": 22, ""Active"":false,""ReleaseDate"" : ""2022-09-01""}"
             Height: =44
             HintText: ="Name"
             Size: =fontSize
@@ -592,6 +593,19 @@
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
+            OnSelect: |-
+                =Set(
+                    x,
+                    LookUp(
+                        lstSA_ResponseDTL,
+                        ID = 10,
+                        'Response Desc'
+                    )
+                );
+                Set(
+                    y,
+                    Text(ParseJSON(Q4_txtCtrlNo.Text).Name)
+                )
             RadiusBottomLeft: |
                 =50
             RadiusTopLeft: |

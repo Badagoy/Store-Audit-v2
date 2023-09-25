@@ -43,7 +43,7 @@
 
         Q4_txtCtrlNo As text:
             Default: |-
-                ="{ ""Name"": ""Heba Kamal"" ,""Age"": 22, ""Active"":false,""ReleaseDate"" : ""2022-09-01""}"
+                ="{""Q2_txt1"":1212},{""Q2_txt2"":22},{""Q2_txt3"":33},{""Q2_txt4"":44}"
             Height: =44
             HintText: ="Name"
             Size: =fontSize
@@ -604,7 +604,7 @@
                 );
                 Set(
                     y,
-                    Text(ParseJSON(Q4_txtCtrlNo.Text).Name)
+                    Value(ParseJSON(Q4_txtCtrlNo.Text).Q2_txt1)
                 )
             RadiusBottomLeft: |
                 =50

@@ -651,11 +651,11 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 6,
-                        'Response Desc': "[{" & Char(34) & "Q2_txt1" & Char(34) & ":" & Q2_txt1.Text & "," & 
+                        'Response Desc': "{" & Char(34) & "Q2_txt1" & Char(34) & ":" & Q2_txt1.Text & "," & 
                       "" & Char(34) & "Q2_txt2" & Char(34) & ":" & Q2_txt2.Text & "," &
                       "" & Char(34) & "Q2_txt3" & Char(34) & ":" & Q2_txt3.Text & "," &
                       "" & Char(34) & "Q2_txt4" & Char(34) & ":" & Q2_txt4.Text & "}" 
-                      &"]",
+                      &"",
                         Branch_Code: ""
                     }
                 );

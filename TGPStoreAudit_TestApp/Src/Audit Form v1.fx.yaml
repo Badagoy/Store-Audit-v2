@@ -332,6 +332,11 @@
                         Survey_Status: "New"
                     }
                 );
+                Notify(
+                    "Successfully Saved",
+                    NotificationType.Success,
+                    2000
+                );
                 ,
                 ClearCollect(colResponseHDR,{
                         Batch_ID: batch_no,

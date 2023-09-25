@@ -1,5 +1,5 @@
 {
-  "3ddd8fd5-8a53-4dcf-b2d2-0e5107657f9a": {
+  "3e1938ef-8abd-4944-a9c4-073bb1147c30": {
     "connectionRef": {
       "displayName": "Spatial Services",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
@@ -11,7 +11,7 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "3ddd8fd5-8a53-4dcf-b2d2-0e5107657f9a"
+    "id": "3e1938ef-8abd-4944-a9c4-073bb1147c30"
   },
   "3fc8d54c-4037-40a2-aea1-752bc65dc2a5": {
     "connectionRef": {
@@ -112,7 +112,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23092.13",
-        "modifiedOn": "2023-09-22 19:46:15",
+        "modifiedOn": "2023-09-25 13:54:08",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

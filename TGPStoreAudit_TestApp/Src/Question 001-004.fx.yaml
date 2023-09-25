@@ -43,7 +43,7 @@
 
         Q4_txtCtrlNo As text:
             Default: |-
-                ="{""Q2_txt1"": 1212},{""Q2_txt2"": 22},{""Q2_txt3"": 33},{""Q2_txt4"": 44}"
+                ="{""Q2_txt1"":1212,""Q2_txt2"":22,""Q2_txt3"":33,""Q2_txt4"":44}"
             Height: =44
             HintText: ="Name"
             Size: =fontSize
@@ -598,13 +598,13 @@
                     x,
                     LookUp(
                         lstSA_ResponseDTL,
-                        ID = 10,
+                        ID = 12,
                         'Response Desc'
                     )
                 );
                 Set(
                     y,
-                    Value(ParseJSON(Q4_txtCtrlNo.Text).Q2_txt1)
+                    Value(ParseJSON(x).Q2_txt1)
                 )
             RadiusBottomLeft: |
                 =50

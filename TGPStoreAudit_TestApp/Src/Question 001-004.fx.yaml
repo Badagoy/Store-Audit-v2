@@ -149,7 +149,6 @@
         ZIndex: =2
 
         cntQ3S_4 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -183,7 +182,6 @@
                 ZIndex: =2
 
         cntQ3S_6 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -218,7 +216,6 @@
                 ZIndex: =2
 
         cntQ3S2 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -253,7 +250,6 @@
                 ZIndex: =2
 
         cntQ3s3 As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
             LayoutAlignItems: =LayoutAlignItems.Stretch

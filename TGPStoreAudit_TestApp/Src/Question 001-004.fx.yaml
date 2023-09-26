@@ -660,6 +660,25 @@
                       &""
                     }
                 );
+                
+                //Q3 OR Question ID = 8
+                Patch(
+                    lstSA_ResponseDTL,
+                    Defaults(lstSA_ResponseDTL),
+                    {   
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 8,
+                        'Response Desc': 
+                            "{""Q3_txt1"":" & Q3_txt1.Text & "," & 
+                             """Q3_txt2"":" & Q3_txt2.Text & "," &
+                             """Q3_txt3"":" & Q3_txt3.Text & "," &
+                             """Q3_txt4"":" & Q3_txt4.Text & "}" 
+                      &""
+                    }
+                );
                 //Navigate('Question 005-010')
             RadiusBottomRight: |
                 =50

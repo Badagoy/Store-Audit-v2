@@ -652,9 +652,9 @@
                         Batch_No: batch_no,
                         'Question ID': 6,
                         'Response Desc': "{" & Char(34) & "Q2_txt1" & Char(34) & ":" & Q2_txt1.Text & "," & 
-                      """Q2_txt2" & Char(34) & ":" & Q2_txt2.Text & "," &
-                      """Q2_txt3" & Char(34) & ":" & Q2_txt3.Text & "," &
-                      "" & Char(34) & "Q2_txt4" & Char(34) & ":" & Q2_txt4.Text & "}" 
+                      """Q2_txt2"":" & Q2_txt2.Text & "," &
+                      """Q2_txt3"":" & Q2_txt3.Text & "," &
+                      """Q2_txt4"":" & Q2_txt4.Text & "}" 
                       &"",
                         Branch_Code: branch_code
                     }

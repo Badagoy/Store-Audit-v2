@@ -98,7 +98,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23092.13",
-        "modifiedOn": "2023-09-26 14:11:55",
+        "modifiedOn": "2023-09-26 14:25:01",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

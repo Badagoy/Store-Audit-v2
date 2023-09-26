@@ -314,13 +314,14 @@
              
             If(
                 Connection.Connected,
+                Set(branch_code, BCode_txt.Text);
                 Patch(
                     lstSA_ResponseHDR,
                     Defaults(lstSA_ResponseHDR),
                     {
                         //ClearCollect(colResponseHDR,{
                         Batch_ID: batch_no,
-                        Branch_Code: BCode_txt.Text,
+                        Branch_Code: branch_code,
                         Branch_Name: BName_txt.Text,
                         Branch_Address: BAdd_txt.Text,
                         Branch_GeoLoc: BGeoLoc_txt.Text,
@@ -337,6 +338,7 @@
                     NotificationType.Success,
                     2000
                 );
+            
                 Navigate('Question 001-004');
                 , // ELSE
                 ClearCollect(colResponseHDR,{

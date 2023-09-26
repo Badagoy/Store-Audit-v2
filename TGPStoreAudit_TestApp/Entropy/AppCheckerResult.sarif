@@ -105,7 +105,7 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charOffset": 92,
+                  "charOffset": 91,
                   "snippet": {
                     "text": ""
                   }
@@ -145,10 +145,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 9,
+                  "charLength": 8,
                   "charOffset": 59,
                   "snippet": {
-                    "text": "User_Info"
+                    "text": "User_Inf"
                   }
                 }
               },
@@ -161,7 +161,7 @@
           ],
           "message": {
             "arguments": [
-              "User_Info"
+              "User_Inf"
             ],
             "id": "issue"
           },
@@ -186,7 +186,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 69,
+                  "charOffset": 68,
                   "snippet": {
                     "text": "="
                   }

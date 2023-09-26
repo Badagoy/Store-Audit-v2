@@ -651,7 +651,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 6,
-                        'Response Desc': "{" & Char(34) & "Q2_txt1" & Char(34) & ":" & Q2_txt1.Text & "," & 
+                        'Response Desc': "{""Q2_txt1"":" & Q2_txt1.Text & "," & 
                       """Q2_txt2"":" & Q2_txt2.Text & "," &
                       """Q2_txt3"":" & Q2_txt3.Text & "," &
                       """Q2_txt4"":" & Q2_txt4.Text & "}" 

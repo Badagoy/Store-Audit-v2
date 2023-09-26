@@ -640,7 +640,8 @@
                         Batch_No: batch_no,
                         'Question ID': 1,
                         'Response Desc': JSON(colNamePos),
-                        Branch_Code: branch_code
+                        Branch_Code: branch_code,
+                        UserInfo: userInfo
                     }
                 );
                 //Q2 OR Question ID = 6
@@ -656,7 +657,8 @@
                       """Q2_txt3"":" & Q2_txt3.Text & "," &
                       """Q2_txt4"":" & Q2_txt4.Text & "}" 
                       &"",
-                        Branch_Code: branch_code
+                        Branch_Code: branch_code,
+                        User:userInfo
                     }
                 );
                 //Navigate('Question 005-010')

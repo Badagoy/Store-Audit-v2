@@ -17,6 +17,10 @@ App As appinfo:
             Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = "x")); //Empty  Collection
         
             ClearCollect(colQuestion,lstSA_Question);
+        
+            //User
+            Set(userInfo ,User().FullName);
+        
             //Screens
             Set(leftMargin ,20);
         

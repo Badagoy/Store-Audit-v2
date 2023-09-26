@@ -36,6 +36,7 @@
       "OData__ColorTag": "Color Tag",
       "QuestionID": "Question ID",
       "ResponseDesc": "Response Desc",
+      "ResponseID": "Response ID",
       "Title": "Title"
     },
     "DatasetName": "https://jgsoffice.sharepoint.com/sites/StoreAudit",

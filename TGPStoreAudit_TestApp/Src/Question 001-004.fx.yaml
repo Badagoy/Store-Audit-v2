@@ -42,8 +42,7 @@
             ZIndex: =2
 
         Q4_txtCtrlNo As text:
-            Default: |-
-                ="{""Q2_txt1"":1212,""Q2_txt2"":22,""Q2_txt3"":33,""Q2_txt4"":44}"
+            Default: =""
             Height: =44
             HintText: ="Name"
             Size: =fontSize

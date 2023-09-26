@@ -22,6 +22,7 @@
         Default: =""
         Height: =52
         HintText: ="Code"
+        OnChange: =LookUp(lstSA_ResponseHDR,Branch_Code = BCode_txt.Text And  User_Info = User().FullName,true 
         Size: =21
         Width: =Parent.Width * .25
         X: =leftMargin

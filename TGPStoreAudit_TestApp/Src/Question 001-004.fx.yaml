@@ -640,7 +640,8 @@
                         Batch_No: batch_no,
                         'Question ID': 1,
                         'Response Desc': JSON(colNamePos),
-                        Branch_Code: branch_code 
+                        Branch_Code: branch_code,
+                        User_Info: userInfo
                         
                     }
                 );

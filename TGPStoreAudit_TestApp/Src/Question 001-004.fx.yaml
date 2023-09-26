@@ -162,7 +162,7 @@
             Width: =300
             ZIndex: =1
 
-            Q2_TilFund_Lbl_4 As label:
+            Q3_TilFund_Lbl_4 As label:
                 Height: =52
                 LayoutMinHeight: =70
                 LayoutMinWidth: =300
@@ -173,7 +173,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q2_TilFund_txt_4 As text:
+            Q3_txt1 As text:
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
@@ -208,7 +208,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q2_TilFund_txt_6 As text:
+            Q3_txt2 As text:
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
@@ -217,7 +217,7 @@
                 Width: =300
                 ZIndex: =2
 
-        cntQ3S_5 As groupContainer.verticalAutoLayoutContainer:
+        cntQ3S2 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
@@ -242,7 +242,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q3_TilFund_txt_5 As text:
+            Q3_txt3 As text:
                 Align: =Align.Justify
                 Default: =""
                 Height: =70
@@ -252,7 +252,7 @@
                 Width: =300
                 ZIndex: =2
 
-        cntQ2S_7 As groupContainer.verticalAutoLayoutContainer:
+        cntQ3s3 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =225
@@ -277,7 +277,7 @@
                 Y: =9
                 ZIndex: =1
 
-            Q2_TilFund_txt_7 As text:
+            Q3_txt4 As text:
                 Align: =Align.Justify
                 Default: =""
                 Height: =70

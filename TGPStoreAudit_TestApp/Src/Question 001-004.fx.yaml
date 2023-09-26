@@ -679,6 +679,22 @@
                       &""
                     }
                 );
+                
+                //Q4 OR Question ID = 10
+                Patch(
+                    lstSA_ResponseDTL,
+                    Defaults(lstSA_ResponseDTL),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 10,
+                        'Response Desc': JSON(colCashCtrl)
+                        
+                        
+                    }
+                );
                 //Navigate('Question 005-010')
             RadiusBottomRight: |
                 =50

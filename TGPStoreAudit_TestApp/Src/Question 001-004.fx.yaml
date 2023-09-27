@@ -655,10 +655,10 @@
                         Batch_No: batch_no,
                         'Question ID': 6,
                         'Response Desc': 
-                            "{""Q2_txt1"":" & Q2_txt1.Text & "," & 
-                             """Q2_txt2"":" & Q2_txt2.Text & "," &
-                             """Q2_txt3"":" & Q2_txt3.Text & "," &
-                             """Q2_txt4"":" & Q2_txt4.Text & "}" 
+                            "{""Q2_txt1"":" & If(IsBlank(Q2_txt1.Text),0,Q2_txt1.Text) & "," & 
+                             """Q2_txt2"":" & If(IsBlank(Q2_txt2.Text),0,Q2_txt2.Text) & "," &
+                             """Q2_txt3"":" & If(IsBlank(Q2_txt3.Text),0,Q2_txt3.Text) & "," &
+                             """Q2_txt4"":" & If(IsBlank(Q2_txt4.Text),0,Q2_txt4.Text) & "}" 
                       &""
                     }
                 );

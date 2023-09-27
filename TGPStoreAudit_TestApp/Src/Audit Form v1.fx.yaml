@@ -382,7 +382,7 @@
                 SaveData(colResponseHDR,"localResponseHDR")
             );
             
-            ClearCollect(colResponseDTL,Filter(lstSA_ResponseDTL,Batch_No=batch_no And ID = 37))
+            ClearCollect(colResponseDTL,Filter(lstSA_ResponseDTL,Batch_No=batch_no And ID = 36))
         Size: =24
         Text: |-
             ="Start Survey

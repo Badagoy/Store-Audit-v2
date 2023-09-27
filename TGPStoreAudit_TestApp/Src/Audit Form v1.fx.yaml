@@ -1,7 +1,7 @@
 "'Audit Form v1' As screen":
 
     BName_txt As text:
-        Default: =""
+        Default: =testvar
         Height: =52
         HintText: ="Branch Name"
         Size: =21
@@ -22,7 +22,9 @@
         Default: =""
         Height: =52
         HintText: ="Code"
-        OnChange: =LookUp(lstSA_ResponseHDR,Branch_Code = BCode_txt.Text And  User_Inf = User().FullName,true 
+        OnChange: |-
+            =If (LookUp(lstSA_ResponseHDR,Branch_Code = BCode_txt.Text And User_Info = User().FullName,true),
+                Set(testvar,"True"),Set(testvar,"False")) 
         Size: =21
         Width: =Parent.Width * .25
         X: =leftMargin

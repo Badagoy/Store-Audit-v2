@@ -42,7 +42,8 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "Survey_Status": "Survey_Status",
-      "Title": "Title"
+      "Title": "Title",
+      "User_Info": "User_Info"
     },
     "DatasetName": "https://jgsoffice.sharepoint.com/sites/StoreAudit",
     "EncodeDataset": true,

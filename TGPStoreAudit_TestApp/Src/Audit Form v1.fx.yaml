@@ -330,20 +330,17 @@
         Fill: =App.Theme.Colors.Primary
         Height: =70
         OnSelect: |-
-            =Set(
-                batch_no,
-                Text(
-                    Now(),
-                    "[$-en-US]yymmddhhmmss"
-                )
-            );
-             
+            = 
             If(
                 Connection.Connected,
                 Set(branch_code, BCode_txt.Text);
                 Patch(
                     lstSA_ResponseHDR,
-                    Defaults(lstSA_ResponseHDR),
+                    Coalesce(
+                        LookUp(lstSA_ResponseHDR, Batch_ID = batch_no), 
+                        Defaults(lstSA_ResponseHDR)
+                    )
+                    ,
                     {
                         //ClearCollect(colResponseHDR,{
                         Batch_ID: batch_no,

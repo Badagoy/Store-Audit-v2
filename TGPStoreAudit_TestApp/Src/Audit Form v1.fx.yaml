@@ -24,7 +24,9 @@
         HintText: ="Code"
         OnChange: |-
             =If (LookUp(lstSA_ResponseHDR,Branch_Code = BCode_txt.Text And User_Info = User().FullName,true),
-                Set(testvar,"True"),Set(testvar,"False")) 
+                Set(testvar,"True"),Set(testvar,"False")) ;
+            
+                Set(var1,BCode_txt.Text)
         Size: =21
         Width: =Parent.Width * .25
         X: =leftMargin
@@ -40,7 +42,7 @@
         ZIndex: =4
 
     BAdd_txt As text:
-        Default: =""
+        Default: =var1
         Height: =108
         HintText: ="Address"
         Mode: =TextMode.MultiLine
@@ -333,7 +335,8 @@
                         Branch_OIC: BInCharge_txt.Text,
                         Date_Visit: BDateVisit_dtp.SelectedDate,
                         Title: BTitle_txt.Text,
-                        Survey_Status: "New"
+                        Survey_Status: "New",
+                        User_Info:User().FullName
                     }
                 );
                 Notify(

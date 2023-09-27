@@ -58,7 +58,7 @@
             Height: =113
             Items: |-
                 =//colCashCtrl
-                Table(ParseJSON(Q1_txtName.Text))
+                Table(ParseJSON(Q1_txtName.Text)) 
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -548,7 +548,7 @@
         ZIndex: =8
 
     Q1_txtName As text:
-        Default: = First(colResponseDTL).'Response Desc'
+        Default: = First(colQ2).'Response Desc'
         Height: =44
         HintText: ="Name"
         Size: =fontSize
@@ -595,13 +595,13 @@
             LayoutMinHeight: =70
             LayoutMinWidth: =280
             OnSelect: |-
-                = ClearCollect(colx, Text(First(colResponseDTL).'Response Desc'));
-                 Text(ParseJSON(First(colResponseDTL).'Response Desc').Value.Name);
+                = ClearCollect(colx, Text(First(colQ2).'Response Desc'));
+                 Text(ParseJSON(First(colResponseDTL).'Response Desc').Value.Q2_txt1);
                 
                 
-                 ClearCollect(xx,Table(ParseJSON(First(colResponseDTL).'Response Desc')));
+                 ClearCollect(yy,Table(ParseJSON(First(colResponseDTL).'Response Desc')));
                  Table(ParseJSON(First(colResponseDTL).'Response Desc'));
-                 First(xx).Value ;
+                 
                 
                  ClearCollect(
                     collection,
@@ -666,10 +666,10 @@
                         Batch_No: batch_no,
                         'Question ID': 6,
                         'Response Desc': 
-                            "{""Q2_txt1"":" & If(IsBlank(Q2_txt1.Text),0,Q2_txt1.Text) & "," & 
+                            "[{""Q2_txt1"":" & If(IsBlank(Q2_txt1.Text),0,Q2_txt1.Text) & "," & 
                              """Q2_txt2"":" & If(IsBlank(Q2_txt2.Text),0,Q2_txt2.Text) & "," &
                              """Q2_txt3"":" & If(IsBlank(Q2_txt3.Text),0,Q2_txt3.Text) & "," &
-                             """Q2_txt4"":" & If(IsBlank(Q2_txt4.Text),0,Q2_txt4.Text) & "}" 
+                             """Q2_txt4"":" & If(IsBlank(Q2_txt4.Text),0,Q2_txt4.Text) & "}]" 
                       &""
                     }
                 );
@@ -685,10 +685,10 @@
                         Batch_No: batch_no,
                         'Question ID': 8,
                         'Response Desc': 
-                            "{""Q3_txt1"":" & Q3_txt1.Text & "," & 
+                            "[{""Q3_txt1"":" & Q3_txt1.Text & "," & 
                              """Q3_txt2"":" & Q3_txt2.Text & "," &
                              """Q3_txt3"":" & Q3_txt3.Text & "," &
-                             """Q3_txt4"":" & Q3_txt4.Text & "}" 
+                             """Q3_txt4"":" & Q3_txt4.Text & "}]" 
                       &""
                     }
                 );

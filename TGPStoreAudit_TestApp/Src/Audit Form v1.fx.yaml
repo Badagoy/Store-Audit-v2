@@ -401,10 +401,10 @@
             ClearCollect(
                 xx,
                 ForAll(
-                    Table(ParseJSON(First(colQ1).'Response Desc')),
+                    Table(ParseJSON(First(colQ2).'Response Desc')),
                     {
-                        Name: Text(Value.Name),
-                        Position: Text(Value.Position)
+                        Q2_txt1: Text(Value.Q2_txt1),
+                        Q2_txt2: Text(Value.Q2_txt2)
                     }
                 )
             )

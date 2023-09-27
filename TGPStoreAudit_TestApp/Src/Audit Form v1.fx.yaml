@@ -395,6 +395,18 @@
                         Position: Text(Value.Position)
                     }
                 )
+            );
+            //Q2
+            ClearCollect(colQ2,Filter(colResponseDTL, 'Question ID' = 6));
+            ClearCollect(
+                xx,
+                ForAll(
+                    Table(ParseJSON(First(colQ1).'Response Desc')),
+                    {
+                        Name: Text(Value.Name),
+                        Position: Text(Value.Position)
+                    }
+                )
             )
         Size: =24
         Text: |-

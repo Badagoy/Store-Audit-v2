@@ -602,7 +602,7 @@
                     Value(ParseJSON(x).Q2_txt1)
                 );
                 
-                Table(ParseJSON(First(colResponseDTL).'Response Desc'));
+                 
                 
                  ParseJSON(Q1_txtName.Text)
             RadiusBottomLeft: |

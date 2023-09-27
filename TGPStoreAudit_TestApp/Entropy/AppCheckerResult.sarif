@@ -2903,36 +2903,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.y",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "y",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.SHgallery"
                 }
               ],

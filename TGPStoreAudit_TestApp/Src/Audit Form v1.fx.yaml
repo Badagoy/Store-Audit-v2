@@ -399,12 +399,14 @@
             //Q2
             ClearCollect(colQ2,Filter(colResponseDTL, 'Question ID' = 6));
             ClearCollect(
-                xx,
+                colQ2A,
                 ForAll(
                     Table(ParseJSON(First(colQ2).'Response Desc')),
                     {
                         Q2_txt1: Text(Value.Q2_txt1),
-                        Q2_txt2: Text(Value.Q2_txt2)
+                        Q2_txt2: Text(Value.Q2_txt2),
+                        Q2_txt3: Text(Value.Q2_txt3),
+                        Q2_txt4: Text(Value.Q2_txt4)
                     }
                 )
             )

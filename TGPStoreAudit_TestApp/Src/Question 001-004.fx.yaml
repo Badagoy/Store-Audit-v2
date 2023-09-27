@@ -590,8 +590,7 @@
             LayoutMinWidth: =280
             OnSelect: |-
                 = 
-                
-                 //ParseJSON(Q1_txtName.Text)
+                 
             RadiusBottomLeft: |
                 =50
             RadiusTopLeft: |

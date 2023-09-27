@@ -454,7 +454,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(241, 244, 249, 1)
         Height: =113
-        Items: =Table(ParseJSON(First(colResponseDTL).'Response Desc'))
+        Items: =colNamePos
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -476,7 +476,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =fontSize
-            Text: =ThisItem.Value.Name
+            Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =Q1_txtName.Width
             X: =Q1_txtName.X
@@ -493,7 +493,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =fontSize
-            Text: =ThisItem.Value.Position
+            Text: =ThisItem.Position
             VerticalAlign: =VerticalAlign.Top
             Width: =Q1_txtPosition.Width
             X: =Q1_txtPosition.X
@@ -502,7 +502,7 @@
         icnGalDel As icon.Trash:
             Height: =28
             Icon: =Icon.Trash
-            OnSelect: =Remove([@ThisItem],ThisItem.Value)
+            OnSelect: =
             Visible: =If(CountRows(colNamePos)> 0 ,1,0)
             Width: =40
             X: =Q1_icnNameSave.X
@@ -600,8 +600,19 @@
                 
                 
                  ClearCollect(xx,Table(ParseJSON(First(colResponseDTL).'Response Desc')));
-                 
-                 First(xx).Value 
+                 Table(ParseJSON(First(colResponseDTL).'Response Desc'));
+                 First(xx).Value ;
+                
+                 ClearCollect(
+                    collection,
+                    ForAll(
+                        Table(ParseJSON(First(colResponseDTL).'Response Desc')),
+                        {
+                            Name: Text(Value.Name),
+                            Value: Text(Value.Position)
+                        }
+                    )
+                )
                 
                 
                   

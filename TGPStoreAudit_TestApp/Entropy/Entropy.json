@@ -245,7 +245,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/27/2023 05:42:12",
+  "HeaderLastSavedDateTimeUTC": "09/27/2023 09:00:34",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3fc8d54c-4037-40a2-aea1-752bc65dc2a5": "\"/providers/microsoft.powerapps/apis/shared_accuweatherip/connections/23b749611a2341d38dd29225f7cccd2b\"",
@@ -269,7 +269,9 @@
   "OrderComponentTemplate": {},
   "OrderDataSource": {
     "colCashCtrl": 11,
+    "collection": 21,
     "colNamePos": 12,
+    "colQ1": 23,
     "colQues1_10": 13,
     "colQuestion": 14,
     "colResponseDTL": 19,
@@ -289,7 +291,7 @@
     "saa.TGPCustomerMaster": 9,
     "SpatialServices": 2,
     "tgpsa.users": 10,
-    "xx": 21
+    "xx": 22
   },
   "OrderGroupControls": {
     "AddMediaWithImage1": {

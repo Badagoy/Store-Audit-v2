@@ -454,7 +454,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(241, 244, 249, 1)
         Height: =113
-        Items: =Table(ParseJSON(First(colResponseDTL).'Response Desc'))
+        Items: =Table(ParseJSON(First(colResponseDTL).'Response Desc'));
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -596,7 +596,12 @@
             LayoutMinWidth: =280
             OnSelect: |-
                 = ClearCollect(colx, Text(First(colResponseDTL).'Response Desc'));
-                 Table(ParseJSON(First(colResponseDTL).'Response Desc'))
+                 Text(ParseJSON(First(colResponseDTL).'Response Desc').Value.Name);
+                
+                
+                 ClearCollect(xx,Table(ParseJSON(First(colResponseDTL).'Response Desc')));
+                 
+                 First(xx).Value 
                 
                 
                   

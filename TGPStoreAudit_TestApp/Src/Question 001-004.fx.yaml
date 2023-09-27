@@ -542,7 +542,7 @@
         ZIndex: =8
 
     Q1_txtName As text:
-        Default: =""
+        Default: = First(colResponseDTL).'Response Desc'
         Height: =44
         HintText: ="Name"
         Size: =fontSize
@@ -600,7 +600,11 @@
                 Set(
                     y,
                     Value(ParseJSON(x).Q2_txt1)
-                )
+                );
+                
+                Table(ParseJSON(First(colResponseDTL).'Response Desc'));
+                
+                 ParseJSON(Q1_txtName.Text)
             RadiusBottomLeft: |
                 =50
             RadiusTopLeft: |
@@ -637,9 +641,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 1,
-                        'Response Desc': JSON(colNamePos)
-                        
-                        
+                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"")
                     }
                 );
                 //Q2 OR Question ID = 6

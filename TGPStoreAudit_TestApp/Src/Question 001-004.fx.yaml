@@ -590,7 +590,7 @@
             LayoutMinWidth: =280
             OnSelect: |-
                 = 
-                 
+                 Table(ParseJSON( First(colResponseDTL).'Response Desc'))
             RadiusBottomLeft: |
                 =50
             RadiusTopLeft: |

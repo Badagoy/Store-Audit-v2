@@ -360,7 +360,7 @@
                 Notify(
                     "Successfully Saved",
                     NotificationType.Success,
-                    2000
+                    1000
                 );
             
                 Navigate('Question 001-004');

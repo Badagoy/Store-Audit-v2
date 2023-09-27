@@ -1,7 +1,7 @@
 "'Audit Form v1' As screen":
 
     BName_txt As text:
-        Default: =testvar
+        Default: =First(colResponseHDR).Branch_Name
         Height: =52
         HintText: ="Branch Name"
         Size: =21
@@ -22,11 +22,28 @@
         Default: =""
         Height: =52
         HintText: ="Code"
-        OnChange: |-
-            =If (LookUp(lstSA_ResponseHDR,Branch_Code = BCode_txt.Text And User_Info = User().FullName,true),
-                Set(testvar,"True"),Set(testvar,"False")) ;
-            
-                Set(var1,BCode_txt.Text)
+        OnChange: |
+            =ClearCollect(
+                colResponseHDR,
+                First(Filter(
+                    lstSA_ResponseHDR,
+                    Branch_Code = BCode_txt.Text And User_Info = User().FullName
+                ))
+            );
+            If(CountRows(colResponseHDR)> 0 ,
+                Set(
+                    batch_no,
+                     First(colResponseHDR).Batch_ID
+                ),
+                Set(
+                    batch_no,
+                    Text(
+                        Now(),
+                        "[$-en-US]yymmddhhmmss"
+                    )
+                );
+                
+            );
         Size: =21
         Width: =Parent.Width * .25
         X: =leftMargin
@@ -42,7 +59,7 @@
         ZIndex: =4
 
     BAdd_txt As text:
-        Default: =var1
+        Default: =First(colResponseHDR).Branch_Address
         Height: =108
         HintText: ="Address"
         Mode: =TextMode.MultiLine
@@ -62,7 +79,11 @@
 
     BGeoLoc_txt As text:
         Default: |-
-            =Location.Longitude & " : "  & Location.Latitude
+            =If(
+                CountRows(colResponseHDR) > 0,
+                First(colResponseHDR).Branch_GeoLoc,
+                Location.Longitude & " : " & Location.Latitude
+            )
         Height: =52
         Size: =21
         Width: =Parent.Width * .65
@@ -231,7 +252,7 @@
                 ZIndex: =1
 
     BArea_txt As text:
-        Default: =""
+        Default: =First(colResponseHDR).Branch_AreaOP
         Height: =52
         HintText: ="Full Name"
         Size: =21
@@ -250,7 +271,7 @@
         ZIndex: =11
 
     BDistrict_txt As text:
-        Default: =""
+        Default: =First(colResponseHDR).Branch_DisSup
         Height: =52
         HintText: ="Full Name"
         Size: =21
@@ -269,7 +290,7 @@
         ZIndex: =13
 
     BInCharge_txt As text:
-        Default: =""
+        Default: =First(colResponseHDR).Branch_OIC
         Height: =52
         HintText: ="Full Name"
         Size: =21
@@ -373,7 +394,7 @@
         ZIndex: =19
 
     BTitle_txt As text:
-        Default: =""
+        Default: =First(colResponseHDR).Title
         Height: =52
         HintText: ="Short Description"
         Size: =21

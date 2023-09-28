@@ -16,8 +16,8 @@
             Icon: =Icon.Save
             OnSelect: |
                 =Patch(
-                    colQ4A,
-                    Defaults(colQ4A),
+                    colQ3_2A,
+                    Defaults(colQ3_2A),
                     {
                         CtrlNo: Q3_1_txtCtrlNo.Text,
                         Amount: Q3_1_txtAmount.Text

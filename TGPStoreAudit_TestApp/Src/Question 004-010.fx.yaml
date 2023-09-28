@@ -366,7 +366,7 @@
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
                 Height: =113
-                Items: =colCashCtrl
+                Items: =colQ4a
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =320
@@ -521,7 +521,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 15,
-                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),""),
+                        'Response Desc': If(CountRows(colQ4a)>0, JSON(colQ4a),""),
                         Res_Option: Q4_YesNo.Value
                     }
                 );

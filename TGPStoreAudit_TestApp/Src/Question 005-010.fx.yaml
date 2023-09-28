@@ -41,29 +41,44 @@
                 ZIndex: =5
 
                 Q7_chkYes As checkbox:
-                    Default: =Q7_varChk
+                    Default: =Q7_varChk1
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     OnCheck: =
+                    OnSelect: |-
+                        =Set(Q7_varChk1,!Q7_varChk1);
+                        Set(Q7_varChk2,If(Self.Value=true,false,false));
+                        Set(Q7_varChk3,If(Self.Value=true,false,false));
                     Size: =21
                     Text: ="Yes"
                     Width: =200
                     ZIndex: =2
 
                 Q7_chkNo As checkbox:
+                    Default: =Q7_varChk2
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
+                    OnSelect: |-
+                        =Set(Q7_varChk1,If(Self.Value=true,false,false));
+                        Set(Q7_varChk2,!Q7_varChk2);
+                        Set(Q7_varChk3,If(Self.Value=true,false,false));
                     Size: =21
                     Text: ="No"
                     Width: =200
                     ZIndex: =3
 
                 Q7_chkNA As checkbox:
+                    Default: =Q7_varChk3
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
+                    OnSelect: |-
+                        =Set(Q7_varChk1,If(Self.Value=true,false,false));
+                        Set(Q7_varChk2,If(Self.Value=true,false,false));
+                        Set(Q7_varChk3,!Q7_varChk3);
+                         
                     Size: =21
                     Text: ="NA"
                     Width: =200

@@ -437,7 +437,9 @@
                 )
             );
             //Q5
-            Set(Q7_varChk,false);
+            Set(Q7_varChk1,false);
+            Set(Q7_varChk2,false);
+            Set(Q7_varChk3,true);
         Size: =24
         Text: |-
             ="Start Survey

@@ -393,7 +393,7 @@
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
-                        HintText: ="Sales No"
+                        HintText: ="Date"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize

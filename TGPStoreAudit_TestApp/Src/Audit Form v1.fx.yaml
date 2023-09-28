@@ -443,8 +443,10 @@
                 ForAll(
                     Table(ParseJSON(First(colQ4).'Response Desc')),
                     {
-                        Name: Text(Value.Name),
-                        Position: Text(Value.Position)
+                        DateX: Text(Value.DateX),
+                        Sales_No: Text(Value.Sales_No),
+                        Amount: Text(Value.Amount),
+                        Cnt_Delayed: Text(Value.Cnt_Delayed)
                     }
                 )
             );

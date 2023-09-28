@@ -452,7 +452,7 @@
             );
             
             //Q5
-            ClearCollect(colQ5,Filter(colResponseDTL, 'Question ID' = 8));
+            ClearCollect(colQ5,Filter(colResponseDTL, 'Question ID' = 20));
             ClearCollect(
                 colQ5A,
                 ForAll(

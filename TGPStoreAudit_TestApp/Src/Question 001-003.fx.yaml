@@ -61,7 +61,7 @@
             Items: |-
                 =//colCashCtrl
                 //Table(ParseJSON(Q1_txtName.Text)) 
-                colQ4A
+                colQ3_2A
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0

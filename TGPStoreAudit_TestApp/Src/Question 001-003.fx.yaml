@@ -178,7 +178,7 @@
                 ZIndex: =1
 
             Q3_txt1 As text:
-                Default: =""
+                Default: =First(colQ3_1A).Q3_txt1
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =250
@@ -212,7 +212,7 @@
                 ZIndex: =1
 
             Q3_txt2 As text:
-                Default: =""
+                Default: =First(colQ3_1A).Q3_txt2
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =250
@@ -246,7 +246,7 @@
 
             Q3_txt3 As text:
                 Align: =Align.Justify
-                Default: =""
+                Default: =First(colQ3_1A).Q3_txt3
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =250
@@ -280,7 +280,7 @@
 
             Q3_txt4 As text:
                 Align: =Align.Justify
-                Default: =""
+                Default: =First(colQ3_1A).Q3_txt4
                 Height: =70
                 LayoutMinHeight: =70
                 LayoutMinWidth: =250

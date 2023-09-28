@@ -887,3 +887,13 @@
                 Y: =0.00
                 ZIndex: =1
 
+    Q1_lbl_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =25
+        Text: ="Accuracy and Proper Handling"
+        Width: =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =130
+        ZIndex: =14
+

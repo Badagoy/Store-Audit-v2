@@ -112,7 +112,7 @@
                     =0
                 ZIndex: =1
 
-            Q6_YesNo__1 As toggleSwitch:
+            Q5_YesNo__1 As toggleSwitch:
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -237,7 +237,7 @@
                         Width: =300
                         ZIndex: =2
 
-    Q5_Container As groupContainer.manualLayoutContainer:
+    Q4_Container As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -245,7 +245,7 @@
         Y: =140
         ZIndex: =3
 
-        Q5_SubCon As groupContainer.verticalAutoLayoutContainer:
+        Q4_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =324
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -253,7 +253,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q5_lbl As label:
+            Q4_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -265,7 +265,7 @@
                     =0
                 ZIndex: =1
 
-            Q5_YesNo As toggleSwitch:
+            Q4_YesNo As toggleSwitch:
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -277,7 +277,7 @@
                 Y: =100
                 ZIndex: =2
 
-            Q5_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+            Q4_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =60
@@ -290,7 +290,7 @@
                 Width: =Parent.Width
                 ZIndex: =3
 
-                Q5_dtSales As datepicker:
+                Q4_dtSales As datepicker:
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =575
@@ -298,7 +298,7 @@
                     Width: =220
                     ZIndex: =1
 
-                Q5_SalesNo As text:
+                Q4_SalesNo As text:
                     Default: =""
                     Height: =44
                     HintText: ="Sales No"
@@ -312,7 +312,7 @@
                     Y: =150
                     ZIndex: =2
 
-                Q5_Amount As text:
+                Q4_Amount As text:
                     Default: =""
                     Height: =44
                     HintText: ="Amount"
@@ -326,7 +326,7 @@
                     Y: =150
                     ZIndex: =3
 
-                Q5_DaysDelayed As text:
+                Q4_DaysDelayed As text:
                     Default: =""
                     Height: =44
                     HintText: |-
@@ -341,7 +341,7 @@
                     Y: =150
                     ZIndex: =5
 
-                Q5_icnSave As icon.Save:
+                Q4_icnSave As icon.Save:
                     Height: =34
                     Icon: =Icon.Save
                     OnSelect: |
@@ -360,7 +360,7 @@
                     Y: =150
                     ZIndex: =6
 
-            "Q5_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "Q4_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
@@ -377,7 +377,7 @@
                 Y: =218
                 ZIndex: =4
 
-                Q5_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
+                Q4_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =50
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
@@ -386,7 +386,7 @@
                     Width: =Parent.TemplateWidth
                     ZIndex: =6
 
-                    Q5_date_1 As text:
+                    Q4_date_1 As text:
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
@@ -400,7 +400,7 @@
                         Y: =150
                         ZIndex: =1
 
-                    Q5_SalesNo_1 As text:
+                    Q4_SalesNo_1 As text:
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
@@ -415,7 +415,7 @@
                         Y: =150
                         ZIndex: =2
 
-                    Q5_Amount_1 As text:
+                    Q4_Amount_1 As text:
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
@@ -430,7 +430,7 @@
                         Y: =150
                         ZIndex: =3
 
-                    Q5_DaysDelayed_1 As text:
+                    Q4_DaysDelayed_1 As text:
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
@@ -446,7 +446,7 @@
                         Y: =150
                         ZIndex: =4
 
-                    Q5_icnDel_1 As icon.Save:
+                    Q4_icnDel_1 As icon.Save:
                         Height: =34
                         Icon: =Icon.Trash
                         OnSelect: |
@@ -506,6 +506,25 @@
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
+            OnSelect: |-
+                =//Q4 
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=15), 
+                            Defaults(lstSA_ResponseDTL)
+                        )
+                    ,
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 15,
+                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),""),
+                        Res_Option: Q4_YesNo.Value
+                    }
+                );
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

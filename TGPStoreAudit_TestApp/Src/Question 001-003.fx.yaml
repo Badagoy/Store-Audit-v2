@@ -3,7 +3,7 @@
         =
         ClearCollect(colQues1_10,Filter(colQuestion,Question_ID >= 1 And Question_ID <= 10))
 
-    Q4_Container As groupContainer.manualLayoutContainer:
+    Q3_1_Container As groupContainer.manualLayoutContainer:
         Height: =343
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -11,7 +11,7 @@
         Y: =1090
         ZIndex: =1
 
-        Q4_icnNameSave As icon.Save:
+        Q3_1_icnNameSave As icon.Save:
             Height: =34
             Icon: =Icon.Save
             OnSelect: |
@@ -19,29 +19,29 @@
                     colQ4A,
                     Defaults(colQ4A),
                     {
-                        CtrlNo: Q4_txtCtrlNo.Text,
-                        Amount: Q4_txtAmount.Text
+                        CtrlNo: Q3_1_txtCtrlNo.Text,
+                        Amount: Q3_1_txtAmount.Text
                     }
                 );
-                Reset(Q4_txtCtrlNo);
-                Reset(Q4_txtAmount);
+                Reset(Q3_1_txtCtrlNo);
+                Reset(Q3_1_txtAmount);
             Width: =39
             X: =Parent.Width-Self.Width 
             Y: =150
             ZIndex: =1
 
-        Q4_txtAmount As text:
+        Q3_1_txtAmount As text:
             Default: =""
             Height: =44
             HintText: ="Amount"
             Size: =fontSize
-            Width: =(Parent.Width - Self.X - Q4_icnNameSave.Width)
+            Width: =(Parent.Width - Self.X - Q3_1_icnNameSave.Width)
             X: |
-                =Q4_txtCtrlNo.Width + leftMargin
+                =Q3_1_txtCtrlNo.Width + leftMargin
             Y: =150
             ZIndex: =2
 
-        Q4_txtCtrlNo As text:
+        Q3_1_txtCtrlNo As text:
             Default: =""
             Height: =44
             HintText: ="Control No"
@@ -52,7 +52,7 @@
             Y: =150
             ZIndex: =3
 
-        "Q4_galNamePos As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "Q3_1_galNamePos As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =2
             DelayItemLoading: =true
@@ -87,8 +87,8 @@
                     =//ThisItem.CtrlNo
                     ThisItem.CtrlNo
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Q4_txtCtrlNo.Width
-                X: =Q4_txtCtrlNo.X
+                Width: =Q3_1_txtCtrlNo.Width
+                X: =Q3_1_txtCtrlNo.X
                 Y: =3
                 ZIndex: =2
 
@@ -106,8 +106,8 @@
                     =//ThisItem.Amount
                     ThisItem.Amount
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Q4_txtAmount.Width
-                X: =Q4_txtAmount.X
+                Width: =Q3_1_txtAmount.Width
+                X: =Q3_1_txtAmount.X
                 ZIndex: =3
 
             icnGalDel_1 As icon.Trash:
@@ -116,7 +116,7 @@
                 OnSelect: =//Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = ThisItem.CtrlNo))
                 Visible: =If(CountRows(colNamePos)> 0 ,1,0)
                 Width: =40
-                X: =Q4_icnNameSave.X
+                X: =Q3_1_icnNameSave.X
                 Y: =7
                 ZIndex: =4
 
@@ -128,7 +128,7 @@
                 Y: =40
                 ZIndex: =5
 
-        Q4_YesNo As toggleSwitch:
+        Q3_1_YesNo As toggleSwitch:
             FalseText: ="No"
             Height: =44
             Size: =fontSize
@@ -138,7 +138,7 @@
             Y: =100
             ZIndex: =5
 
-        Q4_lbl As label:
+        Q3_1_lbl As label:
             Height: =114
             Size: =fontSize
             Text: ="3.2 " & LookUp(colQuestion,Question_ID = 10,Question_Desc)

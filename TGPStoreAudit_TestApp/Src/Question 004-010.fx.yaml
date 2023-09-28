@@ -387,7 +387,7 @@
                     ZIndex: =6
 
                     Q4_date_1 As text:
-                        Default: =""
+                        Default: =ThisItem.DateX
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
                         HintText: ="Date"
@@ -401,7 +401,7 @@
                         ZIndex: =1
 
                     Q4_SalesNo_1 As text:
-                        Default: =""
+                        Default: =ThisItem.Sales_No
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
                         HintText: ="Sales No"
@@ -416,7 +416,7 @@
                         ZIndex: =2
 
                     Q4_Amount_1 As text:
-                        Default: =""
+                        Default: =ThisItem.Amount
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
                         HintText: ="Amount"
@@ -431,7 +431,7 @@
                         ZIndex: =3
 
                     Q4_DaysDelayed_1 As text:
-                        Default: =""
+                        Default: =ThisItem.Cnt_Delayed
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         Height: =44
                         HintText: |-

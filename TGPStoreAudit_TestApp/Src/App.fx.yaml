@@ -27,6 +27,9 @@ App As appinfo:
             
             ClearCollect(colQ3_2A,{CtrlNo:"x",Amount:""});
             Clear(colQ3_2A);
+        
+            ClearCollect(colQ4a,{DateX:"01/01/2023",Sales_No:"0",Amount:"0",Cnt_Delayed:"0"});
+            Clear(colQ4a);
             //User
             Set(userInfo ,User().FullName);
         

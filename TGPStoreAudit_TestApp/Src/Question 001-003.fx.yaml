@@ -1,4 +1,4 @@
-"'Question 001-004' As screen":
+"'Question 001-003' As screen":
     OnVisible: |-
         =
         ClearCollect(colQues1_10,Filter(colQuestion,Question_ID >= 1 And Question_ID <= 10))
@@ -549,7 +549,7 @@
         ZIndex: =8
 
     Q1_txtName As text:
-        Default: = First(colQ2).'Response Desc'
+        Default: =
         Height: =44
         HintText: ="Name"
         Size: =fontSize
@@ -646,7 +646,11 @@
                 
                 Patch(
                     lstSA_ResponseDTL,
-                    Defaults(lstSA_ResponseDTL),
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=1), 
+                            Defaults(lstSA_ResponseDTL)
+                        )
+                    ,
                     {
                         Branch_Code: branch_code,
                         User_Info: userInfo,
@@ -659,7 +663,10 @@
                 //Q2 OR Question ID = 6
                 Patch(
                     lstSA_ResponseDTL,
-                    Defaults(lstSA_ResponseDTL),
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=6), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
                     {   
                         Branch_Code: branch_code,
                         User_Info: userInfo,
@@ -678,7 +685,10 @@
                 //Q3 OR Question ID = 8
                 Patch(
                     lstSA_ResponseDTL,
-                    Defaults(lstSA_ResponseDTL),
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=8), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
                     {   
                         Branch_Code: branch_code,
                         User_Info: userInfo,
@@ -697,7 +707,10 @@
                 //Q4 OR Question ID = 10
                 Patch(
                     lstSA_ResponseDTL,
-                    Defaults(lstSA_ResponseDTL),
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=10), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
                     {
                         Branch_Code: branch_code,
                         User_Info: userInfo,

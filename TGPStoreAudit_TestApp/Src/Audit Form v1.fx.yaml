@@ -363,7 +363,7 @@
                     1000
                 );
             
-                Navigate('Question 001-004');
+                Navigate('Question 001-003');
                 , // ELSE
                 ClearCollect(colResponseHDR,{
                         Batch_ID: batch_no,
@@ -410,7 +410,7 @@
                     }
                 )
             );
-            //Q3
+            //Q3.1
             ClearCollect(colQ3,Filter(colResponseDTL, 'Question ID' = 8));
             ClearCollect(
                 colQ23,
@@ -424,7 +424,7 @@
                     }
                 )
             );
-            //Q4
+            //Q3.2
             ClearCollect(colQ4,Filter(colResponseDTL, 'Question ID' = 10));
             ClearCollect(
                 colQ4A,

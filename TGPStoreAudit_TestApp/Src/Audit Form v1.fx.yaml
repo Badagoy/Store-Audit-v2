@@ -329,7 +329,7 @@
     Button17 As button:
         Fill: =App.Theme.Colors.Primary
         Height: =70
-        OnSelect: |
+        OnSelect: |-
             = 
             If(
                 Connection.Connected,
@@ -409,7 +409,21 @@
                         Q2_txt4: Text(Value.Q2_txt4)
                     }
                 )
-            )
+            );
+            //Q3
+            ClearCollect(colQ3,Filter(colResponseDTL, 'Question ID' = 8));
+            ClearCollect(
+                colQ23,
+                ForAll(
+                    Table(ParseJSON(First(colQ3).'Response Desc')),
+                    {
+                        Q3_txt1: Text(Value.Q3_txt1),
+                        Q3_txt2: Text(Value.Q3_txt2),
+                        Q3_txt3: Text(Value.Q3_txt3),
+                        Q3_txt4: Text(Value.Q3_txt4)
+                    }
+                )
+            );
         Size: =24
         Text: |-
             ="Start Survey

@@ -986,19 +986,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S.Q5_DSR_txt.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S.Q5_txt1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S.Q5_DSR_txt.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S.Q5_txt1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 004-010",
-                "type": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S.Q5_DSR_txt"
+                "type": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S.Q5_txt1"
               }
             }
           ],
@@ -1016,19 +1016,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S1.Q5_Actual_txt.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S1.Q5_txt2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S1.Q5_Actual_txt.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S1.Q5_txt2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 004-010",
-                "type": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S1.Q5_Actual_txt"
+                "type": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S1.Q5_txt2"
               }
             }
           ],
@@ -1046,19 +1046,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S2.Q5_Variance_txt.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S2.Q5_txt3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S2.Q5_Variance_txt.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S2.Q5_txt3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 004-010",
-                "type": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S2.Q5_Variance_txt"
+                "type": "'Question 004-010'.Q5_Container.Q5_SubCon.Q5_ConH01.cntQ5S2.Q5_txt3"
               }
             }
           ],

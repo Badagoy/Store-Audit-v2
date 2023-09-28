@@ -160,7 +160,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q5_DSR_txt As text:
+                    Q5_txt1 As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -194,7 +194,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q5_Actual_txt As text:
+                    Q5_txt2 As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -227,7 +227,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q5_Variance_txt As text:
+                    Q5_txt3 As text:
                         Align: =Align.Justify
                         Default: =""
                         Height: =70
@@ -519,7 +519,7 @@
                     }
                 );
                 
-                //Q5 OR Question ID = 6
+                //Q5 OR Question ID = 20
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
@@ -533,10 +533,9 @@
                         Batch_No: batch_no,
                         'Question ID': 20,
                         'Response Desc': 
-                            "[{""Q2_txt1"":" & If(IsBlank(Q2_txt1.Text),0,Q2_txt1.Text) & "," & 
-                             """Q2_txt2"":" & If(IsBlank(Q2_txt2.Text),0,Q2_txt2.Text) & "," &
-                             """Q2_txt3"":" & If(IsBlank(Q2_txt3.Text),0,Q2_txt3.Text) & "," &
-                             """Q2_txt4"":" & If(IsBlank(Q2_txt4.Text),0,Q2_txt4.Text) & "}]" 
+                            "[{""Q5_txt1"":" & If(IsBlank(Q5_txt1.Text),0,Q5_txt1.Text) & "," & 
+                             """Q5_txt2"":" & If(IsBlank(Q5_txt2.Text),0,Q5_txt2.Text) & "," &
+                             """Q5_txt3"":" & If(IsBlank(Q5_txt3.Text),0,Q5_txt3.Text) & "}]" 
                       &""
                     }
                 );

@@ -14,10 +14,15 @@ App As appinfo:
             Remove(colNamePos,LookUp(colNamePos, Name = "x")); //Empty  Collection
         
             ClearCollect(colCashCtrl,{CtrlNo:"x",Amount:""}) ;  //Create Collection 
-            Remove(colCashCtrl,LookUp(colCashCtrl, CtrlNo = "x")); //Empty  Collection
+            Clear(colCashCtrl);                                 //Empty  Collection
         
             ClearCollect(colQuestion,lstSA_Question);
         
+            
+            ClearCollect(colQ2A,{Q2_txt1:"0",Q2_txt2:"0",Q2_txt3:"0",Q2_txt4:"0"  });
+            Clear(colQ2A);
+            ClearCollect(colQ3_2A,{CtrlNo:"x",Amount:""});
+            Clear(colQ3_2A);
             //User
             Set(userInfo ,User().FullName);
         

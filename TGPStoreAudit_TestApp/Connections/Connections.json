@@ -72,6 +72,20 @@
     "dependents": [],
     "id": "8611ad49-0a86-4bc8-87a1-6ac32834f3da"
   },
+  "8791ad5a-0d77-4b3b-a651-e4dc0a603162": {
+    "connectionRef": {
+      "displayName": "Spatial Services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpatialServices"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "8791ad5a-0d77-4b3b-a651-e4dc0a603162"
+  },
   "ba2cf92e-31f7-4213-b71c-8194a08bc93e": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -140,7 +154,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-09-28 07:44:53",
+        "modifiedOn": "2023-09-28 08:22:15",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },
@@ -172,20 +186,6 @@
       "tgpserver-sql-dev.database.windows.net,tgpdb-sql-dev"
     ],
     "id": "e4ba1250-88c2-4ef7-89d1-7169284c1a27"
-  },
-  "f615f07a-8b50-49be-b19c-217fae395795": {
-    "connectionRef": {
-      "displayName": "Spatial Services",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "SpatialServices"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "f615f07a-8b50-49be-b19c-217fae395795"
   },
   "f9a02d70-fcc0-4944-9abf-1bc3d62efd85": {
     "connectionRef": {

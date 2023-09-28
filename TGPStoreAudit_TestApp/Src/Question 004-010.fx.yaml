@@ -346,11 +346,11 @@
                     Icon: =Icon.Save
                     OnSelect: |
                         =Patch(
-                            colCashCtrl,
-                            Defaults(colCashCtrl),
+                            colQ4a,
+                            Defaults(colQ4a),
                             {
-                                CtrlNo: "",
-                                Amount: ""
+                                Name: "" ,
+                                Position:""
                             }
                         );
                         //Reset(Q5_txtSDate);
@@ -482,6 +482,7 @@
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
+            OnSelect: =Back()
             RadiusBottomLeft: |
                 =50
             RadiusTopLeft: |
@@ -521,7 +522,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 15,
-                        'Response Desc': If(CountRows(colQ4a)>0, JSON(colQ4a),""),
+                        'Response Desc': If(CountRows(colQ4a)>0, JSON(colQ4a),"[]"),
                         Res_Option: Q4_YesNo.Value
                     }
                 );

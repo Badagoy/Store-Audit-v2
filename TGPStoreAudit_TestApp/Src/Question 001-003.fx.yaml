@@ -58,10 +58,7 @@
             DelayItemLoading: =true
             Fill: =RGBA(237, 237, 237, 1)
             Height: =113
-            Items: |-
-                =//colCashCtrl
-                //Table(ParseJSON(Q1_txtName.Text)) 
-                colQ3_2A
+            Items: =colQ3_2A
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -639,7 +636,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 1,
-                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),""),
+                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"[]"),
                         Res_Option: Q1_YesNo.Value
                     }
                 );
@@ -706,7 +703,7 @@
                     }
                 );
                 
-                //Navigate('Question 005-010')
+                Navigate('Question 004-010')
                 //ExportData.Run("",User().Email); Export and email
             RadiusBottomRight: |
                 =50

@@ -16,8 +16,8 @@
             Icon: =Icon.Save
             OnSelect: |
                 =Patch(
-                    colCashCtrl,
-                    Defaults(colCashCtrl),
+                    colQ4A,
+                    Defaults(colQ4A),
                     {
                         CtrlNo: Q4_txtCtrlNo.Text,
                         Amount: Q4_txtAmount.Text
@@ -33,7 +33,7 @@
         Q4_txtAmount As text:
             Default: =""
             Height: =44
-            HintText: ="Position"
+            HintText: ="Amount"
             Size: =fontSize
             Width: =(Parent.Width - Self.X - Q4_icnNameSave.Width)
             X: |
@@ -44,7 +44,7 @@
         Q4_txtCtrlNo As text:
             Default: =""
             Height: =44
-            HintText: ="Name"
+            HintText: ="Control No"
             Size: =fontSize
             Width: =(Parent.Width * .50)
             X: |
@@ -83,7 +83,7 @@
                 Size: =fontSize
                 Text: |-
                     =//ThisItem.CtrlNo
-                    ThisItem.Name
+                    ThisItem.CtrlNo
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Q4_txtCtrlNo.Width
                 X: =Q4_txtCtrlNo.X
@@ -102,7 +102,7 @@
                 Size: =fontSize
                 Text: |-
                     =//ThisItem.Amount
-                    ThisItem.Position
+                    ThisItem.Amount
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Q4_txtAmount.Width
                 X: =Q4_txtAmount.X
@@ -139,7 +139,7 @@
         Q4_lbl As label:
             Height: =114
             Size: =fontSize
-            Text: ="4. " & LookUp(colQuestion,Question_ID = 10,Question_Desc)
+            Text: ="3.2 " & LookUp(colQuestion,Question_ID = 10,Question_Desc)
             Width: =Parent.Width
             X: |
                 =0
@@ -292,7 +292,7 @@
     Q3_lbl As label:
         Height: =114
         Size: =fontSize
-        Text: ="3. " & LookUp(colQuestion,Question_ID = 8,Question_Desc)
+        Text: ="3.1 " & LookUp(colQuestion,Question_ID = 8,Question_Desc)
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =798
@@ -686,10 +686,10 @@
                         Batch_No: batch_no,
                         'Question ID': 8,
                         'Response Desc': 
-                            "[{""Q3_txt1"":" & Q3_txt1.Text & "," & 
-                             """Q3_txt2"":" & Q3_txt2.Text & "," &
-                             """Q3_txt3"":" & Q3_txt3.Text & "," &
-                             """Q3_txt4"":" & Q3_txt4.Text & "}]" 
+                            "[{""Q3_txt1"":" & If(IsBlank(Q3_txt1.Text),0,Q3_txt1.Text) & "," & 
+                             """Q3_txt2"":" & If(IsBlank(Q3_txt2.Text),0,Q3_txt2.Text) & "," &
+                             """Q3_txt3"":" & If(IsBlank(Q3_txt3.Text),0,Q3_txt3.Text) & "," &
+                             """Q3_txt4"":" & If(IsBlank(Q3_txt4.Text),0,Q3_txt4.Text) & "}]"
                       &""
                     }
                 );
@@ -704,7 +704,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 10,
-                        'Response Desc': JSON(colCashCtrl)
+                        'Response Desc': JSON(colQ4A)
                         
                         
                     }

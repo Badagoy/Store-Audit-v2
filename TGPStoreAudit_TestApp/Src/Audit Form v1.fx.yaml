@@ -431,11 +431,13 @@
                 ForAll(
                     Table(ParseJSON(First(colQ4).'Response Desc')),
                     {
-                        Name: Text(Value.Name),
-                        Position: Text(Value.Position)
+                        CtrlNo: Text(Value.CtrlNo),
+                        Amount: Text(Value.Amount)
                     }
                 )
             );
+            //Q5
+            Set(Q7_varChk,false);
         Size: =24
         Text: |-
             ="Start Survey

@@ -59,7 +59,7 @@
             Items: |-
                 =//colCashCtrl
                 //Table(ParseJSON(Q1_txtName.Text)) 
-                colQ2A
+                colQ4A
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -102,7 +102,7 @@
                 Size: =fontSize
                 Text: |-
                     =//ThisItem.Amount
-                    ThisItem.Value.Position
+                    ThisItem.Position
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Q4_txtAmount.Width
                 X: =Q4_txtAmount.X

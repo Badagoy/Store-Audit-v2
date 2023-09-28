@@ -424,6 +424,18 @@
                     }
                 )
             );
+            //Q4
+            ClearCollect(colQ4,Filter(colResponseDTL, 'Question ID' = 10));
+            ClearCollect(
+                colQ4A,
+                ForAll(
+                    Table(ParseJSON(First(colQ4).'Response Desc')),
+                    {
+                        Name: Text(Value.Name),
+                        Position: Text(Value.Position)
+                    }
+                )
+            );
         Size: =24
         Text: |-
             ="Start Survey

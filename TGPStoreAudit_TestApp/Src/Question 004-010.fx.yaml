@@ -105,7 +105,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="6. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
+                Text: ="5. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =Parent.Width
                 X: |
@@ -137,7 +137,6 @@
                 ZIndex: =5
 
                 cntQ6S_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -147,7 +146,7 @@
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =10
                     PaddingRight: =5
-                    Width: =300
+                    Width: =260
                     ZIndex: =1
 
                     Q6_TilFund_Lbl_6 As label:
@@ -165,13 +164,12 @@
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
-                        LayoutMinWidth: =288
+                        LayoutMinWidth: =250
                         Size: =21
                         Width: =300
                         ZIndex: =2
 
                 cntQ6S1_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -181,7 +179,7 @@
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =10
                     PaddingRight: =5
-                    Width: =300
+                    Width: =260
                     ZIndex: =2
 
                     Q6_TilFund_Lbl_9 As label:
@@ -202,7 +200,7 @@
                         LayoutMinHeight: =70
                         LayoutMinWidth: =288
                         Size: =21
-                        Width: =300
+                        Width: =Parent.Width
                         ZIndex: =2
 
                 cntQ5S3_1 As groupContainer.verticalAutoLayoutContainer:

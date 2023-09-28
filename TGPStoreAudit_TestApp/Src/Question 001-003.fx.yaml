@@ -164,7 +164,7 @@
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =10
             PaddingRight: =5
-            Width: =300
+            Width: =260
             ZIndex: =1
 
             Q3_TilFund_Lbl_4 As label:
@@ -182,7 +182,7 @@
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
-                LayoutMinWidth: =288
+                LayoutMinWidth: =250
                 Size: =21
                 Width: =300
                 ZIndex: =2
@@ -197,7 +197,7 @@
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =10
             PaddingRight: =5
-            Width: =300
+            Width: =260
             ZIndex: =2
 
             Q2_TilFund_Lbl_6 As label:
@@ -216,7 +216,7 @@
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
-                LayoutMinWidth: =288
+                LayoutMinWidth: =250
                 Size: =21
                 Width: =300
                 ZIndex: =2
@@ -230,7 +230,7 @@
             LayoutMinWidth: =300
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =10
-            Width: =300
+            Width: =260
             ZIndex: =3
 
             Q3_TilFund_Lbl_5 As label:
@@ -250,7 +250,7 @@
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
-                LayoutMinWidth: =288
+                LayoutMinWidth: =250
                 Size: =21
                 Width: =300
                 ZIndex: =2
@@ -264,7 +264,7 @@
             LayoutMinWidth: =300
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =10
-            Width: =300
+            Width: =260
             ZIndex: =4
 
             Q2_TilFund_Lbl_7 As label:
@@ -284,7 +284,7 @@
                 Default: =""
                 Height: =70
                 LayoutMinHeight: =70
-                LayoutMinWidth: =288
+                LayoutMinWidth: =250
                 Size: =21
                 Width: =300
                 ZIndex: =2
@@ -704,6 +704,7 @@
                 );
                 
                 //Navigate('Question 005-010')
+                //ExportData.Run("",User().Email); Export and email
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

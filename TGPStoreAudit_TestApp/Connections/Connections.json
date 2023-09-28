@@ -72,7 +72,7 @@
     "dependents": [],
     "id": "8611ad49-0a86-4bc8-87a1-6ac32834f3da"
   },
-  "d33c4350-a0f8-4e47-88da-ef8ce8044ba2": {
+  "ba2cf92e-31f7-4213-b71c-8194a08bc93e": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
@@ -111,7 +111,7 @@
       "shared_sharepointonline": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
     },
     "dependents": [],
-    "id": "d33c4350-a0f8-4e47-88da-ef8ce8044ba2"
+    "id": "ba2cf92e-31f7-4213-b71c-8194a08bc93e"
   },
   "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
     "connectionRef": {
@@ -127,7 +127,7 @@
     "dependencies": {},
     "dependents": [
       "8611ad49-0a86-4bc8-87a1-6ac32834f3da",
-      "d33c4350-a0f8-4e47-88da-ef8ce8044ba2"
+      "ba2cf92e-31f7-4213-b71c-8194a08bc93e"
     ],
     "id": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
   },
@@ -140,7 +140,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-09-28 06:34:44",
+        "modifiedOn": "2023-09-28 07:04:09",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },
@@ -215,7 +215,7 @@
     ],
     "dependencies": {},
     "dependents": [
-      "d33c4350-a0f8-4e47-88da-ef8ce8044ba2"
+      "ba2cf92e-31f7-4213-b71c-8194a08bc93e"
     ],
     "id": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
   }

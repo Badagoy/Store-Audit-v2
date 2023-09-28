@@ -656,36 +656,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 004-010'.Q4_Container.Q4_SubCon.Q4_ConH01.Q4_icnSave.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 004-010'.Q4_Container.Q4_SubCon.Q4_ConH01.Q4_icnSave.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Question 004-010",
-                "type": "'Question 004-010'.Q4_Container.Q4_SubCon.Q4_ConH01.Q4_icnSave"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Question 004-010'.Q4_Container.Q4_SubCon.Q4_ConH01.Q4_icnSave.AccessibleLabel"
                 }
               ],
@@ -710,6 +680,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 004-010'.Q4_Container.Q4_SubCon.Q4_ConH01.Q4_icnSave.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 004-010'.Q4_Container.Q4_SubCon.Q4_ConH01.Q4_icnSave.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Question 004-010",
+                "type": "'Question 004-010'.Q4_Container.Q4_SubCon.Q4_ConH01.Q4_icnSave"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [

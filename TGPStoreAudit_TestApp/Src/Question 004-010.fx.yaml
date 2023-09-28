@@ -349,8 +349,10 @@
                             colQ4a,
                             Defaults(colQ4a),
                             {
-                                Name: "" ,
-                                Position:""
+                                DateX: Q4_dtSales.SelectedDate ,
+                                Sales_No:Q4_SalesNo.Text,
+                                Amount:Q4_Amount.Text,
+                                Cnt_Delayed:Q4_DaysDelayed.Text
                             }
                         );
                         //Reset(Q5_txtSDate);
@@ -451,11 +453,11 @@
                         Icon: =Icon.Trash
                         OnSelect: |
                             =Patch(
-                                colCashCtrl,
-                                Defaults(colCashCtrl),
+                                colQ4a,
+                                Defaults(colQ4a),
                                 {
-                                    CtrlNo: "",
-                                    Amount: ""
+                                    DateX: "",
+                                    Sales_No: ""
                                 }
                             );
                             //Reset(Q5_txtSDate);

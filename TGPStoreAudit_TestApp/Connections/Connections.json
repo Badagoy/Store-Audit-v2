@@ -72,6 +72,47 @@
     "dependents": [],
     "id": "8611ad49-0a86-4bc8-87a1-6ac32834f3da"
   },
+  "d33c4350-a0f8-4e47-88da-ef8ce8044ba2": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
+          "value": "shared_office365"
+        },
+        "f9a02d70-fcc0-4944-9abf-1bc3d62efd85": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "16f90f31-bad5-4ec5-9934-d97b49f9f753"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
+        },
+        "shared_sharepointonline": {
+          "value": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "16f90f31-bad5-4ec5-9934-d97b49f9f753"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExportData"
+    ],
+    "dependencies": {
+      "shared_office365": "d747a957-6aad-4063-ad90-8d0f10c0bf9d",
+      "shared_sharepointonline": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
+    },
+    "dependents": [],
+    "id": "d33c4350-a0f8-4e47-88da-ef8ce8044ba2"
+  },
   "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -85,7 +126,8 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "8611ad49-0a86-4bc8-87a1-6ac32834f3da"
+      "8611ad49-0a86-4bc8-87a1-6ac32834f3da",
+      "d33c4350-a0f8-4e47-88da-ef8ce8044ba2"
     ],
     "id": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
   },
@@ -98,7 +140,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-09-28 03:29:36",
+        "modifiedOn": "2023-09-28 06:34:44",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },
@@ -172,7 +214,9 @@
       "lstSA_ResponseDTL"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "d33c4350-a0f8-4e47-88da-ef8ce8044ba2"
+    ],
     "id": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
   }
 }

@@ -636,7 +636,8 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 1,
-                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"")
+                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),""),
+                        Res_Option: Q1_YesNo.Value
                     }
                 );
                 //Q2 OR Question ID = 6
@@ -661,7 +662,7 @@
                     }
                 );
                 
-                //Q3 OR Question ID = 8
+                //Q3.1 OR Question ID = 8
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
@@ -683,7 +684,7 @@
                     }
                 );
                 
-                //Q4 OR Question ID = 10
+                //Q3.2 OR Question ID = 10
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
@@ -701,6 +702,7 @@
                         
                     }
                 );
+                
                 //Navigate('Question 005-010')
             RadiusBottomRight: |
                 =50

@@ -413,7 +413,7 @@
             //Q3.1
             ClearCollect(colQ3,Filter(colResponseDTL, 'Question ID' = 8));
             ClearCollect(
-                colQ23,
+                colQ3_1A,
                 ForAll(
                     Table(ParseJSON(First(colQ3).'Response Desc')),
                     {

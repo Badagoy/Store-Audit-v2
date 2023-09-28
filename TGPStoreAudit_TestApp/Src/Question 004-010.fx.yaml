@@ -198,13 +198,12 @@
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
-                        LayoutMinWidth: =288
+                        LayoutMinWidth: =250
                         Size: =21
                         Width: =Parent.Width
                         ZIndex: =2
 
                 cntQ5S3_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -213,7 +212,7 @@
                     LayoutMinWidth: =300
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =10
-                    Width: =300
+                    Width: =260
                     ZIndex: =4
 
                     Q2_TilFund_Lbl_12 As label:
@@ -233,7 +232,7 @@
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
-                        LayoutMinWidth: =288
+                        LayoutMinWidth: =250
                         Size: =21
                         Width: =300
                         ZIndex: =2

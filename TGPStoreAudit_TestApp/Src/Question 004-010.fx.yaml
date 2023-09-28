@@ -149,7 +149,7 @@
                     Width: =260
                     ZIndex: =1
 
-                    Q5_TilFund_lbl As label:
+                    Q5_DSR_lbl As label:
                         Height: =52
                         LayoutMinHeight: =70
                         LayoutMinWidth: =300
@@ -160,7 +160,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q5_TilFund_txt As text:
+                    Q5_DSR_txt As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -182,7 +182,7 @@
                     Width: =260
                     ZIndex: =2
 
-                    Q6_TilFund_Lbl_9 As label:
+                    Q5_Actual_lbl As label:
                         Align: =Align.Justify
                         Height: =52
                         LayoutMinHeight: =70
@@ -194,7 +194,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q6_TilFund_txt_9 As text:
+                    Q5_Actual_txt As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -215,7 +215,7 @@
                     Width: =260
                     ZIndex: =4
 
-                    Q2_TilFund_Lbl_12 As label:
+                    Q5_Variance_lbl As label:
                         Align: =Align.Justify
                         Height: =52
                         LayoutMinHeight: =70
@@ -227,7 +227,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q2_TilFund_txt_12 As text:
+                    Q5_Variance_txt As text:
                         Align: =Align.Justify
                         Default: =""
                         Height: =70

@@ -451,6 +451,20 @@
                 )
             );
             
+            //Q5
+            ClearCollect(colQ5,Filter(colResponseDTL, 'Question ID' = 8));
+            ClearCollect(
+                colQ5A,
+                ForAll(
+                    Table(ParseJSON(First(colQ5).'Response Desc')),
+                    {
+                        Q5_txt1: Text(Value.Q5_txt1),
+                        Q5_txt2: Text(Value.Q5_txt2),
+                        Q5_txt3: Text(Value.Q5_txt3) 
+                    }
+                )
+            );
+            
             Set(Q7_varChk1,false);
             Set(Q7_varChk2,false);
             Set(Q7_varChk3,true);

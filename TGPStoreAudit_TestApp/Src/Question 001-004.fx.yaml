@@ -58,7 +58,8 @@
             Height: =113
             Items: |-
                 =//colCashCtrl
-                Table(ParseJSON(Q1_txtName.Text)) 
+                //Table(ParseJSON(Q1_txtName.Text)) 
+                colQ2A
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -82,7 +83,7 @@
                 Size: =fontSize
                 Text: |-
                     =//ThisItem.CtrlNo
-                    ThisItem.Value.Name
+                    ThisItem.Name
                 VerticalAlign: =VerticalAlign.Top
                 Width: =Q4_txtCtrlNo.Width
                 X: =Q4_txtCtrlNo.X

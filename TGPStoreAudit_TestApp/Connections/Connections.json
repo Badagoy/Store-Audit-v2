@@ -16,20 +16,6 @@
     ],
     "id": "3fc8d54c-4037-40a2-aea1-752bc65dc2a5"
   },
-  "6755e4b1-5991-46e8-b127-5713d04bc904": {
-    "connectionRef": {
-      "displayName": "Spatial Services",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "SpatialServices"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "6755e4b1-5991-46e8-b127-5713d04bc904"
-  },
   "74b2f8d7-49b4-4e22-bb91-ae0abefaac81": {
     "connectionRef": {
       "displayName": "Office 365 Users",
@@ -86,6 +72,20 @@
     "dependents": [],
     "id": "8611ad49-0a86-4bc8-87a1-6ac32834f3da"
   },
+  "b6e3f61f-f240-4de8-a0fd-1e281bf391aa": {
+    "connectionRef": {
+      "displayName": "Spatial Services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpatialServices"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b6e3f61f-f240-4de8-a0fd-1e281bf391aa"
+  },
   "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -112,7 +112,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23092.13",
-        "modifiedOn": "2023-09-27 10:28:52",
+        "modifiedOn": "2023-09-28 01:19:09",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

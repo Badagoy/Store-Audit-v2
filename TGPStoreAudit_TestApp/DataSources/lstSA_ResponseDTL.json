@@ -35,6 +35,9 @@
       "Modified": "Modified",
       "OData__ColorTag": "Color Tag",
       "QuestionID": "Question ID",
+      "Res_Option": "Res_Option",
+      "Res_Rating": "Res_Rating",
+      "Res_Risk": "Res_Risk",
       "ResponseDesc": "Response Desc",
       "Title": "Title",
       "user": "User_Info"

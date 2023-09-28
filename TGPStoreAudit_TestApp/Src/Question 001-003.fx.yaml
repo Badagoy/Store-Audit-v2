@@ -503,7 +503,7 @@
         icnGalDel As icon.Trash:
             Height: =28
             Icon: =Icon.Trash
-            OnSelect: =
+            OnSelect: =Remove(colNamePos,LookUp(colNamePos, Name = ThisItem.Name))
             Visible: =If(CountRows(colNamePos)> 0 ,1,0)
             Width: =40
             X: =Q1_icnNameSave.X

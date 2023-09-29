@@ -481,7 +481,7 @@
                 //Reset(Q5_txtSNo);
             Width: =39
             X: =639
-            Y: =363
+            Y: =356
             ZIndex: =22
 
     Container3 As groupContainer.manualLayoutContainer:

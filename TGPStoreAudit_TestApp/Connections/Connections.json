@@ -1,4 +1,18 @@
 {
+  "1e9c65c1-394b-40cf-87ff-665ada114c3a": {
+    "connectionRef": {
+      "displayName": "Spatial Services",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpatialServices"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1e9c65c1-394b-40cf-87ff-665ada114c3a"
+  },
   "3fc8d54c-4037-40a2-aea1-752bc65dc2a5": {
     "connectionRef": {
       "apiTier": "Premium",
@@ -72,20 +86,6 @@
     "dependents": [],
     "id": "8611ad49-0a86-4bc8-87a1-6ac32834f3da"
   },
-  "8791ad5a-0d77-4b3b-a651-e4dc0a603162": {
-    "connectionRef": {
-      "displayName": "Spatial Services",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1613/1.0.1613.3125/microsoftspatialservices/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
-    },
-    "datasets": {},
-    "dataSources": [
-      "SpatialServices"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "8791ad5a-0d77-4b3b-a651-e4dc0a603162"
-  },
   "ba2cf92e-31f7-4213-b71c-8194a08bc93e": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -154,7 +154,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-09-28 10:11:07",
+        "modifiedOn": "2023-09-29 01:10:06",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

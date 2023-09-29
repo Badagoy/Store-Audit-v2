@@ -12622,7 +12622,8 @@
         "PaddingTop",
         "PaddingRight",
         "PaddingBottom",
-        "PaddingLeft"
+        "PaddingLeft",
+        "Default"
       ],
       "DynamicProperties": [
         {
@@ -12675,6 +12676,11 @@
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
         {
           "Category": "Data",
           "PropertyName": "Text",
@@ -12917,7 +12923,8 @@
         "PaddingTop",
         "PaddingRight",
         "PaddingBottom",
-        "PaddingLeft"
+        "PaddingLeft",
+        "Default"
       ],
       "DynamicProperties": [
         {
@@ -12970,6 +12977,11 @@
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
+        {
+          "Category": "Data",
+          "PropertyName": "Default",
+          "RuleProviderType": "Unknown"
+        },
         {
           "Category": "Data",
           "PropertyName": "Text",

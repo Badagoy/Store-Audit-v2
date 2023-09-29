@@ -137,7 +137,9 @@
         Label16 As label:
             Height: =99
             Size: =21
-            Text: ="2. Duplicate manual retail sales invoice charge sales invoice and collection recipt if any are readable"
+            Text: |-
+                ="2. " & LookUp(colQuestion,Question_ID = 174
+                ,Question_Desc)
             Width: =746
             ZIndex: =1
 
@@ -270,4 +272,13 @@
             X: =463
             Y: =468
             ZIndex: =16
+
+    Q2_lbl_2 As label:
+        Height: =145
+        Size: =fontSize
+        Text: ="2. " & LookUp(colQuestion,Question_ID = 168,Question_Desc)
+        Width: =Parent.Width - (leftMargin * 2)
+        X: =20
+        Y: =167
+        ZIndex: =21
 

@@ -79,7 +79,7 @@
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck3,!varCheck3)
+                    OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
                     Size: =24
                     Text: =If(varCheck3 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =200

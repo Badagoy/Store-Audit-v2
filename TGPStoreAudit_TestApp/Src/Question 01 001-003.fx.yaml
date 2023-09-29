@@ -496,7 +496,7 @@
             Text: =ThisItem.Position
             VerticalAlign: =VerticalAlign.Top
             Width: =Q1_txtPosition_1.Width
-            X: =Q1_txtPosition_1.X
+            X: =452
             ZIndex: =3
 
         icnGalDel_3 As icon.Trash:

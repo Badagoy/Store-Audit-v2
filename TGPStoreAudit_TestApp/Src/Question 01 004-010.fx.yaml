@@ -546,8 +546,8 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 25,
-                        'Response Desc': If(Q6_chkYes.Value=true,"Yes",If(Q6_chkNo.Value=true,"No",If(Q6_chkNA.Value=true,"NA",""))),
-                        Res_Option:If(Q6_chkYes.Value=true,"Yes",If(Q6_chkNo.Value=true,"No",If(Q6_chkNA.Value=true,"NA","")))       
+                        'Response Desc': If(varCheck1=true,"Yes",If(varCheck2=true,"No",If(varCheck3=true,"NA",""))),
+                        Res_Option:If(varCheck1=true,"Yes",If(varCheck2=true,"No",If(varCheck3=true,"NA","")))       
                         
                     }
                 );

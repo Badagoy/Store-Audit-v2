@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 272,
+    "BindingErrorCount": 330,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -151,6 +151,7 @@
     "crush - Question 001-003",
     "crushed - Question 05 001-004_1",
     "Screen1",
-    "Screen4"
+    "Screen4",
+    "Question 05 004-007"
   ]
 }

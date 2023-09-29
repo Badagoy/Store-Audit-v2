@@ -42,15 +42,24 @@
 
                 btn_Yes As button:
                     Align: =Align.Left
+                    AlignInContainer: =AlignInContainer.Stretch
                     BorderColor: =App.Theme.Colors.Primary
                     BorderThickness: =1
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
                     HoverFill: =App.Theme.Colors.Primary
-                    LayoutMinHeight: =70
+                    LayoutMinHeight: =60
                     LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
                     Size: =24
                     Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =200
@@ -69,6 +78,14 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
                     Size: =24
                     Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
                     Width: =200
@@ -86,6 +103,14 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
                     Size: =24
                     Text: =If(varCheck3 = true,"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200

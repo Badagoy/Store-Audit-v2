@@ -111,11 +111,11 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "f224cf9b-9f63-40e3-a827-236aa7e05588",
-    "Id": "12baced4-d447-49c3-9685-3943ae44d435",
+    "Id": "4cb29eda-b4a2-4dc8-8c64-ad060c307ce0",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "TGPStoreAudit_TestApp",
+    "Name": "TGPStoreAudit_TestApp.msapp",
     "OriginatingVersion": "1.332",
     "ParserErrorCount": 0,
     "ShowStatusBar": false

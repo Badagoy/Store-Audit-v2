@@ -61,7 +61,9 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Text: |-
+                        =If(First(colQ6).'Response Desc'="Yes",Set(varCheck1,true),Set(varCheck1,false));
+                        If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =1
 

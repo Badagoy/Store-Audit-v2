@@ -561,7 +561,7 @@
         Text: ="1. Manual retail sales invoice charge sales invoice and collection receipt if any are valid used by series no in sequence and show correct TIN and address per COR"
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =190
+        Y: =220
         ZIndex: =11
 
     Bottom_CNT_2 As groupContainer.horizontalAutoLayoutContainer:

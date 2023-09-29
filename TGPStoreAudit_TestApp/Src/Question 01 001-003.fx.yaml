@@ -878,6 +878,7 @@
         Height: =70
         Size: =25
         Text: ="Regulations and Requirements"
+        VerticalAlign: =VerticalAlign.Top
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =147

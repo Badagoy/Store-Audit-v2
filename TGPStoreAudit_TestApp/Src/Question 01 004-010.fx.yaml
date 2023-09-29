@@ -46,6 +46,7 @@
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     OnCheck: =
+                    OnSelect: =Set(Q7_varChk2,false);Set(Q7_varChk3,false)
                     Size: =21
                     Text: ="Yes"
                     Width: =200
@@ -56,7 +57,7 @@
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varChk1,false)
+                    OnSelect: =Set(Q7_varChk1,false);Set(Q7_varChk3,false)
                     Size: =21
                     Text: ="No"
                     Width: =200
@@ -67,6 +68,7 @@
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varChk1,false);Set(Q7_varChk2,false)
                     Size: =21
                     Text: ="NA"
                     Width: =200

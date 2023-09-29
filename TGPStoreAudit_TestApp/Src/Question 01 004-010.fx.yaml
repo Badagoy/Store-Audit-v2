@@ -394,7 +394,7 @@
                         ZIndex: =1
 
                     Q5_SalesNo_1 As text:
-                        Default: =""
+                        Default: =ThisItem.Sales_No
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
@@ -410,7 +410,7 @@
                         ZIndex: =2
 
                     Q5_Amount_1 As text:
-                        Default: =""
+                        Default: =ThisItem.Amount
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
@@ -426,7 +426,7 @@
                         ZIndex: =3
 
                     Q5_DaysDelayed_1 As text:
-                        Default: =""
+                        Default: =ThisItem.Cnt_Delayed
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44

@@ -451,14 +451,14 @@
         BorderThickness: =2
         DelayItemLoading: =true
         Fill: =RGBA(241, 244, 249, 1)
-        Height: =113
+        Height: =116
         Items: =colNamePos
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =42
         Width: =Parent.Width
-        Y: =410
+        Y: =430
         ZIndex: =6
 
         Name_1 As label:
@@ -518,12 +518,12 @@
 
     Q1_txtPosition_1 As text:
         Default: =""
-        Height: =44
+        Height: =50
         HintText: ="Position"
         Size: =fontSize
         Width: =(Parent.Width - Self.X - Q1_icnNameSave_1.Width -leftMargin)
         X: =472
-        Y: =360
+        Y: =370
         ZIndex: =7
 
     Q1_icnNameSave_1 As icon.Save:
@@ -547,12 +547,12 @@
 
     Q1_txtName_1 As text:
         Default: =
-        Height: =44
+        Height: =50
         HintText: ="Name"
         Size: =fontSize
         Width: =(Parent.Width * .55)
         X: =20
-        Y: =360
+        Y: =370
         ZIndex: =9
 
     Q1_lbl_2 As label:

@@ -132,18 +132,16 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1",
-    "Menu",
-    "Local Audits",
-    "Screen4",
-    "Audit Form",
-    "Picture Screen",
-    "Customer Master",
     "Audit Form v1",
+    "Audit Form",
+    "Customer Master",
+    "Local Audits",
+    "Menu",
+    "Picture Screen",
     "Question 001-003",
     "Question 004-010",
     "Question 05 001-004",
-    "Question 01 001-003",
-    "Question 01 004-010"
+    "Screen1",
+    "Screen4"
   ]
 }

@@ -41,7 +41,7 @@
                 ZIndex: =5
 
                 Q6_chkYes As checkbox:
-                    Default: =Q7_varChk1
+                    Default: =Q6_varChk1
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
@@ -53,7 +53,7 @@
                     ZIndex: =2
 
                 Q6_chkNo As checkbox:
-                    Default: =Q7_varChk2
+                    Default: =Q6_varChk2
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
@@ -64,7 +64,7 @@
                     ZIndex: =3
 
                 Q6_chkNA As checkbox:
-                    Default: =Q7_varChk3
+                    Default: =Q6_varChk3
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280

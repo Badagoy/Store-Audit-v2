@@ -353,6 +353,7 @@
 
             Checkbox1_24 As checkbox:
                 Height: =77
+                OnSelect: =Set(Checkbox1_24,!Checkbox1_24);Set(Checkbox1_25,false) 
                 Size: =21
                 Text: ="YES"
                 Width: =188
@@ -362,7 +363,7 @@
             Checkbox1_25 As checkbox:
                 Height: =77
                 Size: =21
-                Text: ="NO"
+                Text: =Set(Checkbox1_25,!Checkbox1_25);Set(Checkbox1_24,false) 
                 Width: =188
                 X: =228
                 ZIndex: =2

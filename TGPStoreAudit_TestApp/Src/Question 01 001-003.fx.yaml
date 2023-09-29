@@ -458,6 +458,7 @@
         TemplatePadding: =0
         TemplateSize: =42
         Width: =Parent.Width
+        X: =leftMargin
         Y: =430
         ZIndex: =6
 
@@ -477,7 +478,8 @@
             Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =Q1_txtName_1.Width
-            X: =Q1_txtName_1.X
+            X: |
+                =0
             Y: =3
             ZIndex: =2
 

@@ -69,7 +69,7 @@
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     OnCheck: =
-                    OnSelect: =Set(Q6_varChk1,true);Set(Q6_varChk2,true)
+                    OnSelect: =Set(Q6_varChk1,false);Set(Q6_varChk2,false)
                     Size: =21
                     Text: ="NA"
                     Width: =200

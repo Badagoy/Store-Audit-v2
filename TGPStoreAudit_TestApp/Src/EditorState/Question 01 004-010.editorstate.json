@@ -11741,7 +11741,8 @@
           "InvariantPropertyName": "OnSelect",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "OnCheck"
       ],
       "DynamicProperties": [
         {
@@ -11982,6 +11983,11 @@
         {
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnCheck",
           "RuleProviderType": "Unknown"
         },
         {

@@ -20,6 +20,7 @@
 
     BCode_txt As text:
         Default: =""
+        DisplayMode: =If(Len(BCode_txt.Text)>0, DisplayMode.Edit,DisplayMode.Disabled)
         Height: =52
         HintText: ="Code"
         OnChange: |
@@ -327,6 +328,7 @@
         ZIndex: =18
 
     Button17 As button:
+        DisplayMode: =If( DisplayMode.Edit
         Fill: =App.Theme.Colors.Primary
         Height: =70
         OnSelect: |-

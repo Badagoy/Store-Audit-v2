@@ -15,7 +15,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q7_lbl As label:
+            Q6_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -40,35 +40,35 @@
                 Y: =610
                 ZIndex: =5
 
-                Q7_chkYes As checkbox:
-                    Default: =Q7_varChk1
+                Q6_chkYes As checkbox:
+                    Default: =Q6_varChk1
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     OnCheck: =
-                    OnSelect: =Set(Q7_varChk2,false);Set(Q7_varChk3,false)
+                    OnSelect: =Set(Q6_varChk2,false);Set(Q6_varChk3,false)
                     Size: =21
                     Text: ="Yes"
                     Width: =200
                     ZIndex: =2
 
-                Q7_chkNo As checkbox:
-                    Default: =Q7_varChk2
+                Q6_chkNo As checkbox:
+                    Default: =Q6_varChk2
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varChk1,false);Set(Q7_varChk3,false)
+                    OnSelect: =Set(Q6_varChk1,false);Set(Q6_varChk3,false)
                     Size: =21
                     Text: ="No"
                     Width: =200
                     ZIndex: =3
 
-                Q7_chkNA As checkbox:
-                    Default: =Q7_varChk3
+                Q6_chkNA As checkbox:
+                    Default: =Q6_varChk3
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varChk1,false);Set(Q7_varChk2,false)
+                    OnSelect: =Set(Q6_varChk1,false);Set(Q6_varChk2,false)
                     Size: =21
                     Text: ="NA"
                     Width: =200
@@ -103,6 +103,7 @@
                 ZIndex: =1
 
             Q5_YesNo As toggleSwitch:
+                Default: =If(First(colQ5).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -221,6 +222,7 @@
                 ZIndex: =1
 
             Q4_YesNo As toggleSwitch:
+                Default: =If(First(colQ4).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -304,9 +306,9 @@
                             Defaults(colQ4a),
                             {
                                 DateX: Q4_dtSales.SelectedDate
-                                ,Sales_No:Q4_SalesNo
-                                ,Amount:Q4_Amount
-                                ,Cnt_Delayed:Q4_DaysDelayed
+                                ,Sales_No:Q4_SalesNo.Text
+                                ,Amount:Q4_Amount.Text
+                                ,Cnt_Delayed:Q4_DaysDelayed.Text
                                 
                             }
                         );
@@ -433,6 +435,7 @@
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
+            OnSelect: =Back()
             RadiusBottomLeft: |
                 =50
             RadiusTopLeft: |
@@ -496,6 +499,25 @@
                              """Actual_Amount"":" & If(IsBlank(Q5_txt2.Text),0,Q5_txt2.Text) & "}]" 
                       &""
                       ,Res_Option:Q5_YesNo.Value
+                    }
+                );
+                
+                //Q6 OR Question ID = 25
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=25  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 25,
+                        'Response Desc': If(Q6_chkYes.Value=true,"Yes",If(Q6_chkNo.Value=true,"No",If(Q6_chkNA.Value=true,"NA",""))),
+                        Res_Option:If(Q6_chkYes.Value=true,"Yes",If(Q6_chkNo.Value=true,"No",If(Q6_chkNA.Value=true,"NA","")))       
+                        
                     }
                 );
             RadiusBottomRight: |

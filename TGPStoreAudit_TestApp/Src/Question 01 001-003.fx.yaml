@@ -457,7 +457,7 @@
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =42
-        Width: =Parent.Width
+        Width: =Parent.Width - (leftMargin*2)
         X: =leftMargin
         Y: =430
         ZIndex: =6

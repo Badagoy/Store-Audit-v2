@@ -257,7 +257,7 @@
                     =0
                 ZIndex: =1
 
-            Q5_YesNo As toggleSwitch:
+            Q4_YesNo As toggleSwitch:
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -509,8 +509,8 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 15,
-                        'Response Desc': JSON(colQ4a)
-                        
+                        'Response Desc': JSON(colQ4a),
+                        Res_Option:Q4_YesNo.Value        
                         
                     }
                 );

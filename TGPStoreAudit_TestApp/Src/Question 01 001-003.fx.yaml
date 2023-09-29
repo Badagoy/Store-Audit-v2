@@ -892,6 +892,7 @@
         ZIndex: =14
 
     Q1_YesNo_1 As toggleSwitch:
+        Default: =First(colQ1).Res_Option
         FalseText: ="No"
         Height: =44
         Size: =fontSize

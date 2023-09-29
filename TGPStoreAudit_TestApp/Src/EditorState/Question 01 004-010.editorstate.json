@@ -272,7 +272,14 @@
         "Italic",
         "Underline",
         "Strikethrough",
-        "OnSelect"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "//Q4 OR Question ID = 15\nPatch(\n    lstSA_ResponseDTL,\n    Coalesce(\n            LookUp(lstSA_ResponseDTL,'Question ID'=15  And Batch_No = batch_no), \n            Defaults(lstSA_ResponseDTL)\n        ),\n    {\n        Branch_Code: branch_code,\n        User_Info: userInfo,\n        Title: \"\",\n        Batch_No: batch_no,\n        'Question ID': 15,\n        'Response Desc': JSON(colQ5A)\n        \n        \n    }\n);",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {

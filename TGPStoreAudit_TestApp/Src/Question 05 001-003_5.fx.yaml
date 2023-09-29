@@ -326,57 +326,6 @@
         Y: =188
         ZIndex: =20
 
-        Label5_53 As label:
-            Height: =110
-            Size: =21
-            Text: ="8. " & LookUp(colQuestion,Question_ID = 203,Question_Desc)
-            Width: =746
-            Y: =17
-            ZIndex: =6
-
-        Label5_54 As label:
-            Height: =76
-            Size: =21
-            Text: ="1. Available?"
-            Width: =710
-            X: =36
-            Y: =127
-            ZIndex: =7
-
-        Container2_8 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.None
-            Height: =77
-            Width: =602
-            X: =76
-            Y: =203
-            ZIndex: =17
-
-            Checkbox1_16 As checkbox:
-                Height: =77
-                Size: =21
-                Text: ="YES"
-                Width: =188
-                X: =40
-                ZIndex: =1
-
-            Checkbox1_17 As checkbox:
-                Height: =77
-                Size: =21
-                Text: ="NO"
-                Width: =188
-                X: =228
-                ZIndex: =2
-
-        Label5_55 As label:
-            Height: =122
-            Size: =21
-            Text: |-
-                ="9. " & LookUp(colQuestion,Question_ID = 204
-                ,Question_Desc)
-            Width: =746
-            Y: =280
-            ZIndex: =18
-
         Label5_62 As label:
             Height: =76
             Size: =21

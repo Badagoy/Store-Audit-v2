@@ -15,7 +15,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q7_lbl As label:
+            Q6_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560

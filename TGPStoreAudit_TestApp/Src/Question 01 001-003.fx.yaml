@@ -504,7 +504,7 @@
             OnSelect: =Remove(colNamePos,LookUp(colNamePos, Name = ThisItem.Name))
             Visible: =If(CountRows(colNamePos)> 0 ,1,0)
             Width: =40
-            X: =Q1_icnNameSave_1.X
+            X: =Parent.Width-Self.Width
             Y: =7
             ZIndex: =4
 

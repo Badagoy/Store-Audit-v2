@@ -151,7 +151,7 @@
                         ZIndex: =1
 
                     Q5_txt1 As text:
-                        Default: =""
+                        Default: =First(colQ5A).Deposit_Amount
                         Height: =70
                         LayoutMinHeight: =70
                         LayoutMinWidth: =288
@@ -185,7 +185,7 @@
                         ZIndex: =1
 
                     Q5_txt2 As text:
-                        Default: =""
+                        Default: =First(colQ5A).Actual_Amount
                         Height: =70
                         LayoutMinHeight: =70
                         LayoutMinWidth: =288

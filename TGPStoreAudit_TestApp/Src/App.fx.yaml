@@ -31,7 +31,7 @@ App As appinfo:
             ClearCollect(colQ4a,{DateX:"01/01/2023",Sales_No:"0",Amount:"0",Cnt_Delayed:"0"});
             Clear(colQ4a);
         
-            ClearCollect(colQ5A,{Q5_txt1:"0",Q5_txt2:"0",Q5_txt3:"0"});
+            ClearCollect(colQ5A,{Deposit_Amount:"0",Actual_Amount:"0"});
             Clear(colQ5A);
             //User
             Set(userInfo ,User().FullName);

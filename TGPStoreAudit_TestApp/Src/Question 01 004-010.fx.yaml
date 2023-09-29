@@ -220,7 +220,7 @@
         ZIndex: =3
 
         Q4_SubCon As groupContainer.verticalAutoLayoutContainer:
-            Height: =324
+            Height: =380
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
@@ -252,6 +252,7 @@
                 ZIndex: =2
 
             Q4_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
                 Height: =60
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutGap: =10
@@ -278,10 +279,8 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =560
                     Size: =fontSize
-                    Width: |
-                        =150
-                    X: |
-                        =0
+                    Width: =132
+                    X: =241
                     Y: =150
                     ZIndex: =2
 
@@ -292,10 +291,8 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =560
                     Size: =fontSize
-                    Width: |
-                        =150
-                    X: |
-                        =0
+                    Width: =132
+                    X: =398
                     Y: =150
                     ZIndex: =3
 
@@ -307,12 +304,10 @@
                     LayoutMinHeight: =70
                     LayoutMinWidth: =560
                     Size: =fontSize
-                    Width: |
-                        =150
-                    X: |
-                        =0
+                    Width: =132
+                    X: =554
                     Y: =150
-                    ZIndex: =5
+                    ZIndex: =4
 
                 Q4_icnSave As icon.Save:
                     Height: =34
@@ -334,27 +329,27 @@
                     Width: =39
                     X: =Parent.Width-Self.Width 
                     Y: =150
-                    ZIndex: =6
+                    ZIndex: =5
 
             "Q4_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
-                Height: =113
+                Height: =100
                 Items: =colQ4a
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =320
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
-                TemplateSize: =42
+                TemplateSize: =45
                 Width: =Parent.Width  
                 Y: =218
                 ZIndex: =4
 
                 Q4_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =42
+                    Height: =45
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -386,10 +381,8 @@
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
-                        Width: |
-                            =150
-                        X: |
-                            =0
+                        Width: =138
+                        X: =237
                         Y: =150
                         ZIndex: =2
 
@@ -402,10 +395,8 @@
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
-                        Width: |
-                            =150
-                        X: |
-                            =0
+                        Width: =138
+                        X: =395
                         Y: =150
                         ZIndex: =3
 
@@ -419,10 +410,8 @@
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
-                        Width: |
-                            =150
-                        X: |
-                            =0
+                        Width: =138
+                        X: =552
                         Y: =150
                         ZIndex: =4
 

@@ -300,7 +300,7 @@
         LayoutOverflowX: =LayoutOverflow.Scroll
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =650
+        Y: =670
         ZIndex: =4
 
         cntQ2S_4 As groupContainer.verticalAutoLayoutContainer:
@@ -444,7 +444,7 @@
         Text: ="2. " & LookUp(colQuestion,Question_ID = 6,Question_Desc)
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =540
+        Y: =570
         ZIndex: =5
 
     "Q1_galNamePos_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":

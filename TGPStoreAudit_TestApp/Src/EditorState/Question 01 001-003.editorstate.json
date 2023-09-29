@@ -13932,7 +13932,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q3_1_txtAmount_1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14229,7 +14229,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q3_1_txtCtrlNo_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

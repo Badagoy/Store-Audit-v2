@@ -20,7 +20,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="7. " & LookUp(colQuestion,Question_ID = 25,Question_Desc)
+                Text: ="6. " & LookUp(colQuestion,Question_ID = 25,Question_Desc)
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =Parent.Width
                 X: |
@@ -74,7 +74,7 @@
                     Width: =200
                     ZIndex: =4
 
-    Q6_Container As groupContainer.manualLayoutContainer:
+    Q5_Container As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -82,7 +82,7 @@
         Y: =480
         ZIndex: =2
 
-        Q6_SubCon__1 As groupContainer.verticalAutoLayoutContainer:
+        Q5_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =324
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -90,7 +90,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q6_lbl__1 As label:
+            Q5_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -102,7 +102,7 @@
                     =0
                 ZIndex: =1
 
-            Q6_YesNo__1 As toggleSwitch:
+            Q5_YesNo As toggleSwitch:
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -114,7 +114,7 @@
                 Y: =100
                 ZIndex: =2
 
-            Q6_ConH01__1 As groupContainer.horizontalAutoLayoutContainer:
+            Q5_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
                 LayoutMinHeight: =112
@@ -126,8 +126,7 @@
                 Y: =610
                 ZIndex: =5
 
-                cntQ6S_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
+                cntQ6S As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -140,7 +139,7 @@
                     Width: =300
                     ZIndex: =1
 
-                    Q6_TilFund_Lbl_6 As label:
+                    Q5_lbl1 As label:
                         Height: =52
                         LayoutMinHeight: =70
                         LayoutMinWidth: =300
@@ -151,7 +150,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q6_TilFund_txt_6 As text:
+                    Q5_txt1 As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -160,8 +159,7 @@
                         Width: =300
                         ZIndex: =2
 
-                cntQ6S1_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
+                cntQ5S2 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -174,7 +172,7 @@
                     Width: =300
                     ZIndex: =2
 
-                    Q6_TilFund_Lbl_9 As label:
+                    Q5_lbl2 As label:
                         Align: =Align.Justify
                         Height: =52
                         LayoutMinHeight: =70
@@ -186,7 +184,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q6_TilFund_txt_9 As text:
+                    Q5_txt2 As text:
                         Default: =""
                         Height: =70
                         LayoutMinHeight: =70
@@ -477,6 +475,27 @@
                         'Response Desc': JSON(colQ4a),
                         Res_Option:Q4_YesNo.Value        
                         
+                    }
+                );
+                
+                
+                //Q5 OR Question ID = 20
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=20  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {   
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 20,
+                        'Response Desc': 
+                            "[{""Deposit_Amount"":" & If(IsBlank(Q5_txt1.Text),0,Q5_txt1.Text) & "," & 
+                             """Actual_Amount"":" & If(IsBlank(Q5_txt2.Text),0,Q5_txt2.Text) & "}]" 
+                      &""
                     }
                 );
             RadiusBottomRight: |

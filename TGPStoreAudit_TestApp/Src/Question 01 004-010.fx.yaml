@@ -66,7 +66,7 @@
                     LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
                     Size: =24
-                    Text: =If(varCheck2 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =2
 
@@ -81,7 +81,7 @@
                     LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
                     Size: =24
-                    Text: =If(varCheck3 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Text: =If(varCheck3 = true,"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
 

@@ -5,7 +5,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =850
+        Y: =800
         ZIndex: =1
 
         Q7_SubCon As groupContainer.verticalAutoLayoutContainer:
@@ -74,7 +74,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =520
+        Y: =480
         ZIndex: =2
 
         Q6_SubCon__1 As groupContainer.verticalAutoLayoutContainer:
@@ -230,7 +230,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =180
+        Y: =130
         ZIndex: =3
 
         Q5_SubCon As groupContainer.verticalAutoLayoutContainer:
@@ -247,7 +247,6 @@
                 LayoutMinWidth: =560
                 Size: =fontSize
                 Text: ="5. " & LookUp(colQuestion,Question_ID = 15,Question_Desc)
-                VerticalAlign: =VerticalAlign.Bottom
                 Width: =Parent.Width
                 X: |
                     =0

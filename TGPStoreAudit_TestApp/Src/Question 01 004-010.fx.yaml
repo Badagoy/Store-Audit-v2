@@ -335,11 +335,14 @@
                     Icon: =Icon.Save
                     OnSelect: |
                         =Patch(
-                            colCashCtrl,
-                            Defaults(colCashCtrl),
+                            colQ4a,
+                            Defaults(colQ4a),
                             {
-                                CtrlNo: "",
-                                Amount: ""
+                                DateX: Q5_dtSales.SelectedDate,
+                                Sales_No: Q5_SalesNo,
+                                Amount:Q5_Amount,
+                                Cnt_Delayed:Q5_DaysDelayed
+                                
                             }
                         );
                         //Reset(Q5_txtSDate);
@@ -355,7 +358,7 @@
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
                 Height: =113
-                Items: =colCashCtrl
+                Items: =colQ4a
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =320

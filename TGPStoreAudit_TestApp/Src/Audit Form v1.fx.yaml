@@ -327,6 +327,7 @@
         ZIndex: =18
 
     Button17 As button:
+        DisplayMode: =If(Len(BCode_txt.Text)>0, DisplayMode.Edit,DisplayMode.Disabled)
         Fill: =App.Theme.Colors.Primary
         Height: =70
         OnSelect: |-

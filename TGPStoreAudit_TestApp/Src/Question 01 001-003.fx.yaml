@@ -441,7 +441,12 @@
     Q2_lbl_1 As label:
         Height: =102
         Size: =fontSize
-        Text: ="2. " & LookUp(colQuestion,Question_ID = 6,Question_Desc)
+        Text: |-
+            ="2. " & LookUp(
+                colQuestion,
+                Question_ID = 6,
+                Question_Desc
+            )
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =570

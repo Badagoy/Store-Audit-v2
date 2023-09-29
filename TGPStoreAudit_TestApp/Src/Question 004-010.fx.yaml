@@ -457,6 +457,20 @@
                         Y: =150
                         ZIndex: =5
 
+            Container1 As groupContainer.verticalAutoLayoutContainer:
+                Height: =225
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =112
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =5
+
+                Container2 As groupContainer.manualLayoutContainer:
+                    Height: =225
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =250
+                    ZIndex: =1
+
     Bottom_CNT_1 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center

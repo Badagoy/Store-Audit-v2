@@ -319,7 +319,7 @@
         ZIndex: =4
 
     Container1 As groupContainer.manualLayoutContainer:
-        Height: =500
+        Height: =453
         Width: =764
         X: =11
         Y: =200
@@ -331,7 +331,6 @@
             Text: ="4. Missing booklet"
             Width: =560
             X: =42
-            Y: =51
             ZIndex: =1
 
         TextInput4 As text:
@@ -340,7 +339,7 @@
             Size: =21
             Width: =560
             X: =110
-            Y: =121
+            Y: =70
             ZIndex: =2
 
         Label5_9 As label:
@@ -349,7 +348,7 @@
             Text: ="5. Remaining booklet of Collection or Cash Receipt"
             Width: =686
             X: =42
-            Y: =202
+            Y: =151
             ZIndex: =3
 
         TextInput4_1 As text:
@@ -358,7 +357,7 @@
             Size: =21
             Width: =560
             X: =110
-            Y: =272
+            Y: =221
             ZIndex: =4
 
         Label5_10 As label:
@@ -367,7 +366,7 @@
             Text: ="6. Missing Collection or Cash Receipt"
             Width: =686
             X: =47
-            Y: =356
+            Y: =305
             ZIndex: =5
 
         TextInput4_2 As text:
@@ -376,14 +375,15 @@
             Size: =21
             Width: =560
             X: =115
-            Y: =426
+            Y: =375
             ZIndex: =6
 
     Container2 As groupContainer.manualLayoutContainer:
-        Height: =394
-        Width: =764
-        X: =11
-        Y: =709
+        DropShadow: =DropShadow.None
+        Height: =496
+        Width: =753
+        X: =22
+        Y: =653
         ZIndex: =6
 
         Label11 As label:
@@ -428,4 +428,125 @@
             X: =484
             Y: =140
             ZIndex: =5
+
+        Label14 As label:
+            Height: =70
+            Size: =21
+            Text: ="2. Sales Invoice with Official receipt?"
+            Width: =560
+            X: =51
+            Y: =225
+            ZIndex: =6
+
+        "Q4_galSalesTable_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Fill: =RGBA(241, 244, 249, 1)
+            Height: =113
+            Items: =colQ4a
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =42
+            Width: =601
+            X: =66
+            Y: =383
+            ZIndex: =7
+
+            Q4_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
+                Height: =42
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =10
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.TemplateWidth
+                ZIndex: =6
+
+                Q4_date_2 As text:
+                    Default: =ThisItem.DateX
+                    DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                    DisplayMode: =DisplayMode.View
+                    Height: =44
+                    HintText: |-
+                        ="Series of Sales Invoice #"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: =340
+                    X: |
+                        =0
+                    Y: =150
+                    ZIndex: =1
+
+                Q4_SalesNo_2 As text:
+                    Default: =ThisItem.Sales_No
+                    DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                    DisplayMode: =DisplayMode.View
+                    Height: =44
+                    HintText: ="Remove"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: |
+                        =150
+                    X: |
+                        =0
+                    Y: =150
+                    ZIndex: =2
+
+                Q4_icnDel_2 As icon.Save:
+                    Color: =RGBA(50, 86, 160, 1)
+                    Height: =34
+                    Icon: =Icon.Trash
+                    OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
+                    Width: =39
+                    X: =Parent.Width-Self.Width 
+                    Y: =150
+                    ZIndex: =5
+
+        Q4_SalesNo_3 As text:
+            Color: =RGBA(237, 237, 237, 1)
+            Default: =""
+            Height: =44
+            HintText: |-
+                ="Series of Sales Invoice #"
+            Size: =fontSize
+            Width: =334
+            X: =66
+            Y: =317
+            ZIndex: =8
+
+        Q4_icnSave_1 As icon.Save:
+            Color: =RGBA(50, 86, 160, 1)
+            Height: =34
+            Icon: =Icon.Save
+            OnSelect: |
+                =Patch(
+                    colQ4a,
+                    Defaults(colQ4a),
+                    {
+                        DateX: Q4_dtSales.SelectedDate
+                        ,Sales_No:Q4_SalesNo_3.Text
+                        ,Amount:Q4_Amount_2.Text
+                        ,Cnt_Delayed:Q4_DaysDelayed_2.Text
+                        
+                    }
+                );
+                //Reset(Q5_txtSDate);
+                //Reset(Q5_txtSNo);
+            Width: =39
+            X: =628
+            Y: =317
+            ZIndex: =11
+
+        Q4_DaysDelayed_3 As text:
+            Color: =RGBA(237, 237, 237, 1)
+            Default: =""
+            Height: =44
+            HintText: ="Remove"
+            Size: =fontSize
+            Width: |
+                =150
+            X: =439
+            Y: =317
+            ZIndex: =12
 

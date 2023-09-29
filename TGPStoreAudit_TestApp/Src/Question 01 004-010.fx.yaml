@@ -40,6 +40,21 @@
                 Y: =610
                 ZIndex: =5
 
+                Button4 As button:
+                    BorderColor: =App.Theme.Colors.Primary
+                    Fill: =
+                    Height: =70
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    Size: =24
+                    Text: ="Button"
+                    Width: =280
+                    ZIndex: =1
+
+                Icon4 As icon.CancelBadge:
+                    Icon: =Icon.CancelBadge
+                    ZIndex: =2
+
                 Q6_chkYes As checkbox:
                     Default: =Q6_varChk1
                     Height: =85
@@ -50,18 +65,26 @@
                     Size: =21
                     Text: ="Yes"
                     Width: =200
-                    ZIndex: =2
+                    ZIndex: =3
 
                 Q6_chkNo As checkbox:
                     Default: =Q6_varChk2
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q6_varChk1,false);Set(Q6_varChk3,false)
+                    OnSelect: |-
+                        =Set(
+                            Q6_varChk1,
+                            false
+                        );
+                        Set(
+                            Q6_varChk3,
+                            false
+                        )
                     Size: =21
                     Text: ="No"
                     Width: =200
-                    ZIndex: =3
+                    ZIndex: =4
 
                 Q6_chkNA As checkbox:
                     Default: =Q6_varChk3
@@ -69,11 +92,13 @@
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
                     OnCheck: =
-                    OnSelect: =Set(Q6_varChk1,false);Set(Q6_varChk2,false)
+                    OnSelect: |-
+                        =Set(Q6_varChk1,false) 
+                         
                     Size: =21
                     Text: ="NA"
                     Width: =200
-                    ZIndex: =4
+                    ZIndex: =5
 
     Q5_Container As groupContainer.manualLayoutContainer:
         Height: =338

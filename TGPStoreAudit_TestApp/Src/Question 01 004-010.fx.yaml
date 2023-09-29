@@ -195,41 +195,6 @@
                         Width: =300
                         ZIndex: =2
 
-                cntQ5S3_1 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =225
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =112
-                    LayoutMinWidth: =300
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =10
-                    Width: =300
-                    ZIndex: =4
-
-                    Q2_TilFund_Lbl_12 As label:
-                        Align: =Align.Justify
-                        Height: =52
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =300
-                        Size: =21
-                        Text: ="Variance "
-                        VerticalAlign: =VerticalAlign.Bottom
-                        Width: =300
-                        Y: =9
-                        ZIndex: =1
-
-                    Q2_TilFund_txt_12 As text:
-                        Align: =Align.Justify
-                        Default: =""
-                        Height: =70
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =288
-                        Size: =21
-                        Width: =300
-                        ZIndex: =2
-
     Q5_Container As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |

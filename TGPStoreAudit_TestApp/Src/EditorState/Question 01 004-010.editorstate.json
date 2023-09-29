@@ -271,7 +271,8 @@
         "Size",
         "Italic",
         "Underline",
-        "Strikethrough"
+        "Strikethrough",
+        "OnSelect"
       ],
       "DynamicProperties": [
         {
@@ -497,6 +498,11 @@
         {
           "Category": "Design",
           "PropertyName": "Strikethrough",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -12623,7 +12629,8 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
-        "Default"
+        "Default",
+        "OnSelect"
       ],
       "DynamicProperties": [
         {
@@ -12865,6 +12872,11 @@
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultCheckboxStyle",
@@ -12924,7 +12936,8 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
-        "Default"
+        "Default",
+        "OnSelect"
       ],
       "DynamicProperties": [
         {
@@ -13166,6 +13179,11 @@
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultCheckboxStyle",
@@ -13240,7 +13258,8 @@
           "InvariantPropertyName": "OnCheck",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "OnSelect"
       ],
       "DynamicProperties": [
         {
@@ -13488,6 +13507,11 @@
         {
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         },
         {

@@ -137,47 +137,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 01 004-010'.Q4_Container.Q4_SubCon.Q4_YesNo.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Q4_Container.Q4_SubCon.Q4_YesNo.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 12,
-                  "snippet": {
-                    "text": ".Res_Option"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Q4_Container.Q4_SubCon.Q4_YesNo"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Boolean",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-WarnBooleanExpected",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Question 05 001-002.3'.Bottom_CNT_7.Button16_7.OnSelect"
                 }
               ],

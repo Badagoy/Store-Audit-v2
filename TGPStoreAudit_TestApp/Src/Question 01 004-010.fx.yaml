@@ -355,7 +355,7 @@
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
                 Height: =113
-                Items: =colCashCtrl
+                Items: =colQ4a
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =320

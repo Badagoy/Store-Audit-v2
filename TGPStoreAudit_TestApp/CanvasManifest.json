@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 156,
+    "BindingErrorCount": 104,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -141,9 +141,7 @@
     "Question 01 001-003",
     "Question 01 004-010",
     "Question 05 001-002.3",
-    "Question 05 002.4-003",
     "Question 05 001-003_4",
-    "Question 05 001-003_5",
     "Question 05 004-010",
     "crushed - Question 05 001-004",
     "crushed-Question 01 004-010",

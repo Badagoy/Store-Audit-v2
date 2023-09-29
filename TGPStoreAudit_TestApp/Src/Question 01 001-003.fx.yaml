@@ -542,7 +542,7 @@
             Reset(Q1_txtPosition_1);
         Width: =39
         X: =Parent.Width-Self.Width -leftMargin
-        Y: =360
+        Y: =370
         ZIndex: =8
 
     Q1_txtName_1 As text:

@@ -271,15 +271,7 @@
         "Size",
         "Italic",
         "Underline",
-        "Strikethrough",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "Strikethrough"
       ],
       "DynamicProperties": [
         {
@@ -505,11 +497,6 @@
         {
           "Category": "Design",
           "PropertyName": "Strikethrough",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -12636,8 +12623,7 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
-        "Default",
-        "OnSelect"
+        "Default"
       ],
       "DynamicProperties": [
         {
@@ -12879,11 +12865,6 @@
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
-          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultCheckboxStyle",
@@ -12943,8 +12924,7 @@
         "PaddingRight",
         "PaddingBottom",
         "PaddingLeft",
-        "Default",
-        "OnSelect"
+        "Default"
       ],
       "DynamicProperties": [
         {
@@ -13186,11 +13166,6 @@
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
-          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultCheckboxStyle",
@@ -13265,8 +13240,7 @@
           "InvariantPropertyName": "OnCheck",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        "OnSelect"
+        }
       ],
       "DynamicProperties": [
         {
@@ -13514,11 +13488,6 @@
         {
           "Category": "Design",
           "PropertyName": "FocusedBorderColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         },
         {

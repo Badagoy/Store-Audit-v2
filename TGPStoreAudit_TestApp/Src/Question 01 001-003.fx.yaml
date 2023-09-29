@@ -689,7 +689,7 @@
                     }
                 );
                 
-                Navigate('crushed-Question 01 004-010')
+                Navigate('Question 01 004-010')
                 //ExportData.Run("",User().Email); Export and email
             RadiusBottomRight: |
                 =50

@@ -339,9 +339,9 @@
                             Defaults(colQ4a),
                             {
                                 DateX: Q5_dtSales.SelectedDate,
-                                Sales_No: Q5_SalesNo,
-                                Amount:Q5_Amount,
-                                Cnt_Delayed:Q5_DaysDelayed
+                                Sales_No: Q5_SalesNo.Text,
+                                Amount:Q5_Amount.Text,
+                                Cnt_Delayed:Q5_DaysDelayed.Text
                                 
                             }
                         );

@@ -145,7 +145,7 @@
                         LayoutMinHeight: =70
                         LayoutMinWidth: =300
                         Size: =21
-                        Text: ="DSR Amount"
+                        Text: ="Deposit Slip Amount"
                         VerticalAlign: =VerticalAlign.Bottom
                         Width: =300
                         Y: =9

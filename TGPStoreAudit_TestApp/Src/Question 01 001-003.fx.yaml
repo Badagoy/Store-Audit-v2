@@ -689,7 +689,8 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 10,
-                        'Response Desc': JSON(colQ3_2A)
+                        'Response Desc': JSON(colQ3_2A),
+                        Res_Option:Q3_1_YesNo_1.Value
                         
                         
                     }

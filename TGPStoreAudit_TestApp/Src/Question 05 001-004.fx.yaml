@@ -689,7 +689,7 @@
                     }
                 );
                 
-                Navigate('Question 004-010')
+                Navigate('crushed-Question 01 004-010')
                 //ExportData.Run("",User().Email); Export and email
             RadiusBottomRight: |
                 =50
@@ -882,4 +882,15 @@
         X: =leftMargin
         Y: =130
         ZIndex: =14
+
+    Q1_YesNo_1 As toggleSwitch:
+        FalseText: ="No"
+        Height: =44
+        Size: =fontSize
+        TextPosition: =TextPosition.Left
+        TrueText: ="Yes"
+        Width: =160
+        X: =20
+        Y: =298
+        ZIndex: =15
 

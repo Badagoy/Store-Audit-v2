@@ -11727,7 +11727,14 @@
         "PaddingBottom",
         "PaddingLeft",
         "Default",
-        "OnSelect"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Set(Q7_varChk1,false);Set(Q7_varChk2,false)",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -12034,7 +12041,14 @@
         "PaddingBottom",
         "PaddingLeft",
         "Default",
-        "OnSelect"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Set(Q7_varChk1,false);Set(Q7_varChk3,false)",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {
@@ -12356,7 +12370,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "OnSelect"
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Set(Q7_varChk2,false);Set(Q7_varChk3,false)",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        }
       ],
       "DynamicProperties": [
         {

@@ -221,6 +221,7 @@
                 ZIndex: =1
 
             Q4_YesNo As toggleSwitch:
+                Default: =First(colQ5).Res_Option
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49

@@ -880,7 +880,7 @@
         Text: ="Regulations and Requirements"
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =130
+        Y: =147
         ZIndex: =14
 
     Q1_YesNo_1 As toggleSwitch:

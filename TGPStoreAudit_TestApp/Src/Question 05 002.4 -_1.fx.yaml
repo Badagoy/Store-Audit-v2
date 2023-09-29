@@ -1,6 +1,6 @@
-"'Question 05 002.4 -' As screen":
+"'Question 05 002.4 -_1' As screen":
 
-    Bottom_CNT_8 As groupContainer.horizontalAutoLayoutContainer:
+    Bottom_CNT_9 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -11,7 +11,7 @@
         Y: =1444
         ZIndex: =2
 
-        Button4_8 As button:
+        Button4_9 As button:
             Color: =Color.White
             Fill: =App.Theme.Colors.Primary
             Height: =70
@@ -27,7 +27,7 @@
             Width: =180
             ZIndex: =1
 
-        Label11_8 As label:
+        Label11_9 As label:
             Align: =Align.Center
             Height: =70
             LayoutMinHeight: =70
@@ -37,7 +37,7 @@
             Width: =100
             ZIndex: =2
 
-        Button16_8 As button:
+        Button16_9 As button:
             Fill: =App.Theme.Colors.Primary
             Height: =70
             LayoutMinHeight: =70
@@ -135,7 +135,7 @@
             Width: =180
             ZIndex: =3
 
-    HeaderContainer_9 As groupContainer.horizontalAutoLayoutContainer:
+    HeaderContainer_10 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =App.Theme.Colors.Primary
         Height: =130
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -147,7 +147,7 @@
         Width: =Parent.Width
         ZIndex: =3
 
-        Container5_9 As groupContainer.horizontalAutoLayoutContainer:
+        Container5_10 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =56.80
@@ -168,7 +168,7 @@
             Y: =0.00
             ZIndex: =1
 
-            img_Profile_9 As image:
+            img_Profile_10 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 134, 208, 1)
                 BorderStyle: =BorderStyle.None
@@ -199,7 +199,7 @@
                 Y: =18.93
                 ZIndex: =2
 
-        Container4_12 As groupContainer.verticalAutoLayoutContainer:
+        Container4_13 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =7
             Height: =56.80
@@ -217,7 +217,7 @@
             Y: =0.00
             ZIndex: =4
 
-            lbl_Hellow_9 As label:
+            lbl_Hellow_10 As label:
                 AlignInContainer: =AlignInContainer.Start
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -242,7 +242,7 @@
                 Y: =22.61
                 ZIndex: =1
 
-            lbl_Name_8 As label:
+            lbl_Name_9 As label:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -265,7 +265,7 @@
                 Y: =27.35
                 ZIndex: =2
 
-        Container7_9 As groupContainer.horizontalAutoLayoutContainer:
+        Container7_10 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =56.80
@@ -283,7 +283,7 @@
             Y: =0.00
             ZIndex: =6
 
-            icon_Notification_9 As icon.Bell:
+            icon_Notification_10 As icon.Bell:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(166, 166, 166, 1)
                 Color: =Color.AntiqueWhite
@@ -309,7 +309,7 @@
                 Y: =0.00
                 ZIndex: =1
 
-    Q1_lbl_12 As label:
+    Q1_lbl_15 As label:
         FontWeight: =FontWeight.Bold
         Height: =70
         Size: =25
@@ -318,7 +318,7 @@
         Y: =130
         ZIndex: =4
 
-    Container1 As groupContainer.manualLayoutContainer:
+    Container1_1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =453
         Width: =764
@@ -326,7 +326,7 @@
         Y: =200
         ZIndex: =5
 
-        Label5 As label:
+        Label5_11 As label:
             Height: =70
             Size: =21
             Text: ="4. Missing booklet"
@@ -334,7 +334,7 @@
             X: =42
             ZIndex: =1
 
-        TextInput4 As text:
+        TextInput4_3 As text:
             Default: =""
             Height: =70
             Size: =21
@@ -343,7 +343,7 @@
             Y: =70
             ZIndex: =2
 
-        Label5_9 As label:
+        Label5_12 As label:
             Height: =70
             Size: =21
             Text: ="5. Remaining booklet of Collection or Cash Receipt"
@@ -352,7 +352,7 @@
             Y: =151
             ZIndex: =3
 
-        TextInput4_1 As text:
+        TextInput4_4 As text:
             Default: =""
             Height: =70
             Size: =21
@@ -361,7 +361,7 @@
             Y: =221
             ZIndex: =4
 
-        Label5_10 As label:
+        Label5_13 As label:
             Height: =70
             Size: =21
             Text: ="6. Missing Collection or Cash Receipt"
@@ -370,7 +370,7 @@
             Y: =305
             ZIndex: =5
 
-        TextInput4_2 As text:
+        TextInput4_5 As text:
             Default: =""
             Height: =70
             Size: =21
@@ -379,7 +379,7 @@
             Y: =375
             ZIndex: =6
 
-    Container2 As groupContainer.manualLayoutContainer:
+    Container2_4 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =496
         Width: =753
@@ -387,14 +387,14 @@
         Y: =665
         ZIndex: =6
 
-        Label11 As label:
+        Label11_4 As label:
             Height: =70
             Size: =21
             Text: ="3. Wrong entry of Sales Invoice VS POS receipt"
-            Width: =764
+            Width: =753
             ZIndex: =1
 
-        Label13 As label:
+        Label13_1 As label:
             Height: =70
             Size: =21
             Text: ="1. Wrong entry?"
@@ -403,7 +403,7 @@
             Y: =70
             ZIndex: =2
 
-        Checkbox1 As checkbox:
+        Checkbox1_1 As checkbox:
             Height: =85
             Size: =21
             Text: ="YES"
@@ -412,7 +412,7 @@
             Y: =140
             ZIndex: =3
 
-        Checkbox2 As checkbox:
+        Checkbox2_1 As checkbox:
             Height: =85
             Size: =21
             Text: ="NO"
@@ -421,7 +421,7 @@
             Y: =140
             ZIndex: =4
 
-        Checkbox3 As checkbox:
+        Checkbox3_1 As checkbox:
             Height: =85
             Size: =21
             Text: ="N/A"
@@ -430,7 +430,7 @@
             Y: =140
             ZIndex: =5
 
-        Label14 As label:
+        Label14_1 As label:
             Height: =70
             Size: =21
             Text: ="2. Sales Invoice with Official receipt?"
@@ -439,7 +439,7 @@
             Y: =225
             ZIndex: =6
 
-        "Q4_galSalesTable_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "Q4_galSalesTable_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Fill: =RGBA(241, 244, 249, 1)
             Height: =113
@@ -453,7 +453,7 @@
             Y: =383
             ZIndex: =7
 
-            Q4_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
+            Q4_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
                 Height: =42
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutGap: =10
@@ -462,7 +462,7 @@
                 Width: =Parent.TemplateWidth
                 ZIndex: =6
 
-                Q4_date_2 As text:
+                Q4_date_3 As text:
                     Default: =ThisItem.DateX
                     DisabledBorderColor: =RGBA(0, 134, 208, 1)
                     DisplayMode: =DisplayMode.View
@@ -478,7 +478,7 @@
                     Y: =150
                     ZIndex: =1
 
-                Q4_SalesNo_2 As text:
+                Q4_SalesNo_5 As text:
                     Default: =ThisItem.Sales_No
                     DisabledBorderColor: =RGBA(0, 134, 208, 1)
                     DisplayMode: =DisplayMode.View
@@ -494,7 +494,7 @@
                     Y: =150
                     ZIndex: =2
 
-                Q4_icnDel_2 As icon.Save:
+                Q4_icnDel_3 As icon.Save:
                     Color: =RGBA(50, 86, 160, 1)
                     Height: =34
                     Icon: =Icon.Trash
@@ -504,7 +504,7 @@
                     Y: =150
                     ZIndex: =5
 
-        Q4_SalesNo_3 As text:
+        Q4_SalesNo_4 As text:
             Color: =RGBA(237, 237, 237, 1)
             Default: =""
             Height: =44
@@ -516,7 +516,7 @@
             Y: =317
             ZIndex: =8
 
-        Q4_icnSave_1 As icon.Save:
+        Q4_icnSave_2 As icon.Save:
             Color: =RGBA(50, 86, 160, 1)
             Height: =34
             Icon: =Icon.Save
@@ -526,7 +526,7 @@
                     Defaults(colQ4a),
                     {
                         DateX: Q4_dtSales.SelectedDate
-                        ,Sales_No:Q4_SalesNo_3.Text
+                        ,Sales_No:Q4_SalesNo_4.Text
                         ,Amount:Q4_Amount_2.Text
                         ,Cnt_Delayed:Q4_DaysDelayed_2.Text
                         
@@ -539,7 +539,7 @@
             Y: =317
             ZIndex: =11
 
-        Q4_DaysDelayed_3 As text:
+        Q4_DaysDelayed_4 As text:
             Color: =RGBA(237, 237, 237, 1)
             Default: =""
             Height: =44

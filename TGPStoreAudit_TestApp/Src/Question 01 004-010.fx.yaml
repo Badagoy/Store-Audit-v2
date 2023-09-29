@@ -40,7 +40,7 @@
                 Y: =610
                 ZIndex: =5
 
-                Q7_chkYes As checkbox:
+                Q6_chkYes As checkbox:
                     Default: =Q7_varChk1
                     Height: =85
                     LayoutMinHeight: =85
@@ -52,7 +52,7 @@
                     Width: =200
                     ZIndex: =2
 
-                Q7_chkNo As checkbox:
+                Q6_chkNo As checkbox:
                     Default: =Q7_varChk2
                     Height: =85
                     LayoutMinHeight: =85
@@ -63,7 +63,7 @@
                     Width: =200
                     ZIndex: =3
 
-                Q7_chkNA As checkbox:
+                Q6_chkNA As checkbox:
                     Default: =Q7_varChk3
                     Height: =85
                     LayoutMinHeight: =85
@@ -499,6 +499,25 @@
                              """Actual_Amount"":" & If(IsBlank(Q5_txt2.Text),0,Q5_txt2.Text) & "}]" 
                       &""
                       ,Res_Option:Q5_YesNo.Value
+                    }
+                );
+                
+                //Q6 OR Question ID = 25
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=25  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 25,
+                        'Response Desc': If(Q6_chkYes.Value=true,"Yes",If(Q6_chkNo.Value=true,"No",If(Q6_chkNA.Value=true,"NA",""))),
+                        Res_Option:Q4_YesNo.Value        
+                        
                     }
                 );
             RadiusBottomRight: |

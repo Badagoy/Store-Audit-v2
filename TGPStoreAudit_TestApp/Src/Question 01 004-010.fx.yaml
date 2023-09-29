@@ -357,7 +357,7 @@
                     ZIndex: =5
 
             "Q4_galSalesTable As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-                AlignInContainer: =AlignInContainer.SetByContainer
+                AlignInContainer: =AlignInContainer.Start
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
@@ -377,7 +377,6 @@
                     Height: =45
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
-                    LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.TemplateWidth
                     ZIndex: =6

@@ -379,8 +379,9 @@
                     ZIndex: =6
 
                     Q5_date_1 As text:
-                        Default: =""
+                        Default: =ThisItem.DateX
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
                         Height: =44
                         HintText: ="Sales No"
                         LayoutMinHeight: =70
@@ -395,6 +396,7 @@
                     Q5_SalesNo_1 As text:
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
                         Height: =44
                         HintText: ="Sales No"
                         LayoutMinHeight: =70
@@ -410,6 +412,7 @@
                     Q5_Amount_1 As text:
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
                         Height: =44
                         HintText: ="Amount"
                         LayoutMinHeight: =70
@@ -425,6 +428,7 @@
                     Q5_DaysDelayed_1 As text:
                         Default: =""
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
                         Height: =44
                         HintText: |-
                             ="# Delayed"

@@ -147,7 +147,7 @@
         LayoutOverflowX: =LayoutOverflow.Scroll
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =930
+        Y: =950
         ZIndex: =2
 
         cntQ3S_5 As groupContainer.verticalAutoLayoutContainer:

@@ -320,55 +320,28 @@
 
     Container4_9 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =734
+        Height: =606
         Width: =746
         X: =20
         Y: =188
         ZIndex: =20
 
-        Checkbox1_15 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="YES"
-            Width: =213
-            X: =73
-            Y: =169
-            ZIndex: =3
-
-        Checkbox1_16 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="NO"
-            Width: =213
-            X: =286
-            Y: =169
-            ZIndex: =4
-
-        Checkbox1_17 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="N/A"
-            Width: =213
-            X: =499
-            Y: =169
-            ZIndex: =5
-
         Label5_26 As label:
             Height: =70
             Size: =21
-            Text: ="1. Is it true?"
-            Width: =186
+            Text: ="4. Missing booklet"
+            Width: =427
             X: =36
-            Y: =99
+            Y: =17
             ZIndex: =6
 
         Label5_27 As label:
-            Height: =70
+            Height: =76
             Size: =21
-            Text: ="2. Remaining booklet of Sales Invoice"
-            Width: =649
+            Text: ="5. Remaining booklet of Collection or Cash Receipt"
+            Width: =710
             X: =36
-            Y: =232
+            Y: =157
             ZIndex: =7
 
         TextInput5_8 As text:
@@ -376,8 +349,8 @@
             Height: =70
             Size: =21
             Width: =223
-            X: =73
-            Y: =350
+            X: =90
+            Y: =303
             ZIndex: =8
 
         TextInput5_9 As text:
@@ -385,8 +358,8 @@
             Height: =70
             Size: =21
             Width: =223
-            X: =445
-            Y: =350
+            X: =462
+            Y: =303
             ZIndex: =9
 
         Label5_28 As label:
@@ -395,8 +368,8 @@
             Size: =21
             Text: ="From"
             Width: =186
-            X: =86
-            Y: =280
+            X: =103
+            Y: =233
             ZIndex: =10
 
         Label5_29 As label:
@@ -405,17 +378,17 @@
             Size: =21
             Text: ="To"
             Width: =186
-            X: =463
-            Y: =280
+            X: =492
+            Y: =236
             ZIndex: =11
 
         Label5_30 As label:
             Height: =70
             Size: =21
-            Text: ="3. Used booklet of Sales Invoice"
+            Text: ="6. Missing Collection or Cash Receipt"
             Width: =649
             X: =36
-            Y: =420
+            Y: =385
             ZIndex: =12
 
         TextInput5_10 As text:
@@ -423,8 +396,8 @@
             Height: =70
             Size: =21
             Width: =223
-            X: =73
-            Y: =538
+            X: =84
+            Y: =525
             ZIndex: =13
 
         TextInput5_11 As text:
@@ -432,8 +405,8 @@
             Height: =70
             Size: =21
             Width: =223
-            X: =445
-            Y: =538
+            X: =474
+            Y: =525
             ZIndex: =14
 
         Label5_31 As label:
@@ -442,8 +415,8 @@
             Size: =21
             Text: ="From"
             Width: =186
-            X: =86
-            Y: =468
+            X: =97
+            Y: =455
             ZIndex: =15
 
         Label5_32 As label:
@@ -452,7 +425,81 @@
             Size: =21
             Text: ="To"
             Width: =186
-            X: =463
-            Y: =468
+            X: =492
+            Y: =455
             ZIndex: =16
+
+        TextInput5_16 As text:
+            Default: =""
+            Height: =70
+            Size: =21
+            Width: =618
+            X: =67
+            Y: =87
+            ZIndex: =17
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =613
+        Width: =740
+        X: =26
+        Y: =818
+        ZIndex: =21
+
+        Label11 As label:
+            Height: =68
+            Size: =21
+            Text: ="3. Wrong entry of Sales Invoice VS POS receipt."
+            Width: =740
+            ZIndex: =1
+
+        Label14 As label:
+            Height: =70
+            Size: =21
+            Text: ="1. Wrong entry?"
+            Width: =560
+            X: =46
+            Y: =68
+            ZIndex: =2
+
+        Container2 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =77
+            Width: =602
+            X: =76
+            Y: =138
+            ZIndex: =3
+
+            Checkbox1 As checkbox:
+                Height: =77
+                Size: =21
+                Text: ="YES"
+                Width: =188
+                X: =40
+                ZIndex: =1
+
+            Checkbox1_1 As checkbox:
+                Height: =77
+                Size: =21
+                Text: ="NO"
+                Width: =188
+                X: =228
+                ZIndex: =2
+
+            Checkbox1_2 As checkbox:
+                Height: =77
+                Size: =21
+                Text: ="N/A"
+                Width: =188
+                X: =414
+                ZIndex: =3
+
+        Label16 As label:
+            Height: =70
+            Size: =21
+            Text: ="2. Discrepancy Table"
+            Width: =560
+            X: =46
+            Y: =215
+            ZIndex: =4
 

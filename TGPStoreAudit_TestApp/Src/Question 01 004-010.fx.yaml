@@ -77,6 +77,8 @@
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)

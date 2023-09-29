@@ -48,10 +48,10 @@
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varTest,"✅ Yes")
+                    OnSelect: =Set(varCheck1,!varCheck1)
                     Size: =24
-                    Text: ="⚪✅⭕✔ Yes"
-                    Width: =280
+                    Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
                     ZIndex: =1
 
                 Button4 As button:
@@ -62,9 +62,9 @@
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varTest,"⭕ No")//"⚪✅⭕✔ Yes"
+                    OnSelect: =Set(varCheck2,!varCheck2)
                     Size: =24
-                    Text: =varTest
+                    Text: =If(varCheck2 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =280
                     ZIndex: =2
 

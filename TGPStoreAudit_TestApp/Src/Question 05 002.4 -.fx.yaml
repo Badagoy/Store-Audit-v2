@@ -319,6 +319,7 @@
         ZIndex: =4
 
     Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
         Height: =453
         Width: =764
         X: =11
@@ -383,7 +384,7 @@
         Height: =496
         Width: =753
         X: =22
-        Y: =653
+        Y: =665
         ZIndex: =6
 
         Label11 As label:

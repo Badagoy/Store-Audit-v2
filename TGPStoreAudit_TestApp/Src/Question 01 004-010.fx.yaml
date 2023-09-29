@@ -304,7 +304,8 @@
                             Defaults(colQ4a),
                             {
                                 DateX: Q4_dtSales.SelectedDate
-                                Amount: ""
+                                ,Sales_No:Q4_SalesNo
+                                
                             }
                         );
                         //Reset(Q5_txtSDate);

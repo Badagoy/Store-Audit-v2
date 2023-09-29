@@ -595,8 +595,7 @@
         "Size",
         "Italic",
         "Underline",
-        "Strikethrough",
-        "OnSelect"
+        "Strikethrough"
       ],
       "DynamicProperties": [
         {
@@ -822,11 +821,6 @@
         {
           "Category": "Design",
           "PropertyName": "Strikethrough",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -5018,7 +5012,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q4_ConH01",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7026,7 +7020,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q4_galSalesTable",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

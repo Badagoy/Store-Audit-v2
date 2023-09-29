@@ -41,7 +41,7 @@
                 ZIndex: =5
 
                 Q7_chkYes As checkbox:
-                    Default: =If(Q7_chkNo.Value = true Or Q7_chkNA.Value = true,0,1)
+                    Default: =Q7_varChk1
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
@@ -52,6 +52,7 @@
                     ZIndex: =2
 
                 Q7_chkNo As checkbox:
+                    Default: =Q7_varChk2
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280
@@ -61,6 +62,7 @@
                     ZIndex: =3
 
                 Q7_chkNA As checkbox:
+                    Default: =Q7_varChk3
                     Height: =85
                     LayoutMinHeight: =85
                     LayoutMinWidth: =280

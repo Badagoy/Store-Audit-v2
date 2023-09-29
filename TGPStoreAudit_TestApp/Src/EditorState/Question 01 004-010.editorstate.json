@@ -519,14 +519,7 @@
     "Button4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Button\"",
-          "InvariantPropertyName": "Text",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Text",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -540,14 +533,7 @@
         "HoverBorderColor",
         "BorderStyle",
         "FocusedBorderColor",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Color",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Color",
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -565,14 +551,7 @@
         "HoverFill",
         "Font",
         "FontWeight",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Align",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Align",
         "VerticalAlign",
         "X",
         "Y",
@@ -588,15 +567,7 @@
         "Size",
         "Italic",
         "Underline",
-        "Strikethrough",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "Strikethrough"
       ],
       "DynamicProperties": [
         {
@@ -822,11 +793,6 @@
         {
           "Category": "Design",
           "PropertyName": "Strikethrough",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -3479,7 +3445,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon4",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12623,7 +12589,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q6_chkNA",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12949,7 +12915,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q6_chkNo",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13285,7 +13251,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q6_chkYes",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

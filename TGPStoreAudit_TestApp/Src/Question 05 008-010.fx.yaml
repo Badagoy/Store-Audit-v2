@@ -353,6 +353,9 @@
 
             Checkbox1_24 As checkbox:
                 Height: =77
+                OnCheck: =
+                OnSelect: =IF(Checkbox1_25,false,true)
+                OnUncheck: =
                 Size: =21
                 Text: ="YES"
                 Width: =188
@@ -361,6 +364,9 @@
 
             Checkbox1_25 As checkbox:
                 Height: =77
+                OnCheck: =
+                OnSelect: =If(Checkbox1_24,false,true)
+                OnUncheck: =
                 Size: =21
                 Text: ="NO"
                 Width: =188

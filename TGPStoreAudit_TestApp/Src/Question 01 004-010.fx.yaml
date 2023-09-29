@@ -244,7 +244,7 @@
                 Y: =40
                 ZIndex: =3
 
-                Q5_dtSales_2 As datepicker:
+                Q4_dtSales As datepicker:
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =575
@@ -252,7 +252,7 @@
                     Width: =220
                     ZIndex: =1
 
-                Q5_SalesNo_4 As text:
+                Q4_SalesNo As text:
                     Default: =""
                     Height: =44
                     HintText: ="Sales No"
@@ -266,7 +266,7 @@
                     Y: =150
                     ZIndex: =2
 
-                Q5_Amount_4 As text:
+                Q4_Amount As text:
                     Default: =""
                     Height: =44
                     HintText: ="Amount"
@@ -280,7 +280,7 @@
                     Y: =150
                     ZIndex: =3
 
-                Q5_DaysDelayed_4 As text:
+                Q4_DaysDelayed As text:
                     Default: =""
                     Height: =44
                     HintText: |-
@@ -295,15 +295,15 @@
                     Y: =150
                     ZIndex: =5
 
-                Q5_icnSave_2 As icon.Save:
+                Q4_icnSave As icon.Save:
                     Height: =34
                     Icon: =Icon.Save
                     OnSelect: |
                         =Patch(
-                            colCashCtrl,
-                            Defaults(colCashCtrl),
+                            colQ4a,
+                            Defaults(colQ4a),
                             {
-                                CtrlNo: "",
+                                DateX: Q4_dtSales.SelectedDate
                                 Amount: ""
                             }
                         );

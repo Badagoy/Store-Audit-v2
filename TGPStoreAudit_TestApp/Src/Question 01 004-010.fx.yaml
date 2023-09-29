@@ -95,7 +95,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="6. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
+                Text: ="5. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =Parent.Width
                 X: |

@@ -495,6 +495,25 @@
             Height: =70
             LayoutMinHeight: =70
             LayoutMinWidth: =280
+            OnSelect: |-
+                =//Q4 OR Question ID = 15
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=15  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 15,
+                        'Response Desc': JSON(colQ5A)
+                        
+                        
+                    }
+                );
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

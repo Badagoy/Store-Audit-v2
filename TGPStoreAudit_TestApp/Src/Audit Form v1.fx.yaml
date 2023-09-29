@@ -468,8 +468,9 @@
             
             //Q6
             ClearCollect(colQ6,Filter(colResponseDTL, 'Question ID' = 25));
+            If(First(colQ6).'Response Desc'="Yes",Set(Q6_varCheck1,true),Set(Q6_varCheck1,false));
+            If(First(colQ6).'Response Desc'="No", Set(Q6_varCheck2,true),Set(Q6_varCheck2,false));
              
-            
             Set(Q7_varChk1,false);
             Set(Q7_varChk2,false);
             Set(Q7_varChk3,true);

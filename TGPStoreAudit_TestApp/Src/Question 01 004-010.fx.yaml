@@ -305,6 +305,8 @@
                             {
                                 DateX: Q4_dtSales.SelectedDate
                                 ,Sales_No:Q4_SalesNo
+                                ,Amount:Q4_Amount
+                                ,Cnt_Delayed:Q4_DaysDelayed
                                 
                             }
                         );

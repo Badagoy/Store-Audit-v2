@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 330,
+    "BindingErrorCount": 348,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -111,7 +111,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "f224cf9b-9f63-40e3-a827-236aa7e05588",
-    "Id": "43fda97e-e8e9-4e66-b041-9499987c3f90",
+    "Id": "eba00cdd-a23d-4a7f-943a-4c7c26d31507",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",

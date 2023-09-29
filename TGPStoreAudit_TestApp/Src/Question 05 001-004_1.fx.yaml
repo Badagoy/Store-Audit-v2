@@ -883,14 +883,3 @@
         Y: =130
         ZIndex: =14
 
-    Q1_YesNo_2 As toggleSwitch:
-        FalseText: ="No"
-        Height: =44
-        Size: =fontSize
-        TextPosition: =TextPosition.Left
-        TrueText: ="Yes"
-        Width: =160
-        X: =20
-        Y: =298
-        ZIndex: =15
-

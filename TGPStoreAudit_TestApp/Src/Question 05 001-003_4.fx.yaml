@@ -438,13 +438,6 @@
             Y: =713
             ZIndex: =23
 
-            Label5_53 As label:
-                Height: =122
-                Size: =21
-                Text: ="10. Mayors Permit/Business Permit"
-                Width: =746
-                ZIndex: =1
-
             Container2_12 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 Height: =77

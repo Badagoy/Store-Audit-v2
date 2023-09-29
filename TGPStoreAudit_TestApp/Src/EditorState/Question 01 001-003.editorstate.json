@@ -7690,7 +7690,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q1_icnNameSave_1",
-      "ParentIndex": 4,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8499,7 +8499,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q1_txtName_1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8803,7 +8803,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q1_txtPosition_1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14016,7 +14016,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q3_1_txtAmount_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14313,7 +14313,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Q3_1_txtCtrlNo_1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

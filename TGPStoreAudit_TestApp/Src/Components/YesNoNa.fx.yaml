@@ -1,6 +1,7 @@
 YesNoNa As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =
+    Height: |
+        =100
     SelectedValue: ="Text"
     Width: =App.Width
     X: =0
@@ -10,15 +11,20 @@ YesNoNa As CanvasComponent:
     ZIndex: =1
 
     Q6_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
-        Height: =70
+        Height: =100
         LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutJustifyContent: =LayoutJustifyContent.Center
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowX: =LayoutOverflow.Scroll
         Width: =App.Width
         X: |
             =0
         ZIndex: =1
+
+        Rectangle3 As rectangle:
+            BorderColor: =
+            Fill: =RGBA(0,0,0,0)
+            Width: =10
+            ZIndex: =1
 
         btn_Yes_2 As button:
             Align: =Align.Left
@@ -44,7 +50,7 @@ YesNoNa As CanvasComponent:
                 =
                 If(Q6_varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
             Width: =200
-            ZIndex: =1
+            ZIndex: =2
 
         btn_No_2 As button:
             Align: =Align.Left
@@ -70,5 +76,5 @@ YesNoNa As CanvasComponent:
             Size: =24
             Text: =If(Q6_varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
             Width: =200
-            ZIndex: =2
+            ZIndex: =3
 

@@ -70,6 +70,7 @@ YesNoNa As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            PressedColor: =App.Theme.Colors.Primary
             PressedFill: =RGBA(0,0,0,0)
             RadiusBottomLeft: =1
             RadiusBottomRight: =1
@@ -97,7 +98,7 @@ YesNoNa As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedFill: =RGBA(0,0,0,0)
+            PressedFill: =RGBA(0, 0, 0,0)
             RadiusBottomLeft: =1
             RadiusBottomRight: =1
             RadiusTopLeft: =1

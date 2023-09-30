@@ -10,7 +10,7 @@ YesNoNa As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    Q6_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
+    Com_H01 As groupContainer.horizontalAutoLayoutContainer:
         Height: =100
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutMode: =LayoutMode.Auto
@@ -26,7 +26,7 @@ YesNoNa As CanvasComponent:
             Width: =10
             ZIndex: =1
 
-        btn_Yes_2 As button:
+        btn_ComYes As button:
             Align: =Align.Left
             BorderColor: =App.Theme.Colors.Primary
             BorderThickness: =0
@@ -37,7 +37,7 @@ YesNoNa As CanvasComponent:
             HoverFill: =RGBA(0,0,0,0)
             LayoutMinHeight: =60
             LayoutMinWidth: =280
-            OnSelect: =Set(Q6_varCheck1,true);Set(Q6_varCheck2,false) ; Set(xSelected,"Yes")
+            OnSelect: =Set(Com_varCheck1,true);Set(Com_varCheck2,false) ; Set(Com_varCheck3,false) ;Set(xSelected,"Yes")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -49,13 +49,11 @@ YesNoNa As CanvasComponent:
             RadiusTopLeft: =1
             RadiusTopRight: =1
             Size: =24
-            Text: |-
-                =
-                If(Q6_varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-            Width: =200
+            Text: =If(Com_varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+            Width: =150
             ZIndex: =2
 
-        btn_No_2 As button:
+        btn_ComNo As button:
             Align: =Align.Left
             BorderColor: =App.Theme.Colors.Primary
             BorderThickness: =0
@@ -67,7 +65,7 @@ YesNoNa As CanvasComponent:
             HoverFill: =
             LayoutMinHeight: =70
             LayoutMinWidth: =280
-            OnSelect: =Set(Q6_varCheck1,false);Set(Q6_varCheck2,true); Set(xSelected,"No")
+            OnSelect: =Set(Com_varCheck1,false);Set(Com_varCheck2,true); Set(Com_varCheck3,false) ;Set(xSelected,"No")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -78,7 +76,34 @@ YesNoNa As CanvasComponent:
             RadiusTopLeft: =1
             RadiusTopRight: =1
             Size: =24
-            Text: =If(Q6_varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-            Width: =200
+            Text: =If(Com_varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+            Width: =150
             ZIndex: =3
+
+        btn_ComNA As button:
+            Align: =Align.Left
+            BorderColor: =App.Theme.Colors.Primary
+            BorderThickness: =0
+            Color: =App.Theme.Colors.Primary
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =70
+            HoverBorderColor: =
+            HoverColor: =App.Theme.Colors.Primary
+            HoverFill: =
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: =Set(Com_varCheck1,false);Set(Com_varCheck2,false);Set(Com_varCheck3,true) ; Set(xSelected,"No")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedFill: =RGBA(0,0,0,0)
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Size: =24
+            Text: =If(Com_varCheck3 = true,"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+            Width: =150
+            ZIndex: =4
 

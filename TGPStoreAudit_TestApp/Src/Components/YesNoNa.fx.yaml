@@ -23,7 +23,7 @@ YesNoNa As CanvasComponent:
         Rectangle3 As rectangle:
             BorderColor: =
             Fill: =RGBA(0,0,0,0)
-            Width: =10
+            Width: =20
             ZIndex: =1
 
         btn_Yes_2 As button:

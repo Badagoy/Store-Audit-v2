@@ -484,7 +484,7 @@
             "Rules": [
               {
                 "Category": "Data",
-                "InvariantScript": "If(Com_varCheck1 = true Or  YesNoNa.dataValue =\"Yes\",\"✅ Yes\",\"⭕ Yes\") // \"⚪✅⭕✔ Yes\"",
+                "InvariantScript": "If(YesNoNa.dataValue =\"Yes\",\"✅ Yes\",\"⭕ Yes\") // \"⚪✅⭕✔ Yes\"",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -718,7 +718,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Set(Com_varCheck1,true);Set(Com_varCheck2,false) ; Set(Com_varCheck3,false) ;Set(xSelected,\"Yes\")",
+                "InvariantScript": "Set(xSelected,\"Yes\");Set(strClick,\"Yes\")",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -990,7 +990,7 @@
             "Rules": [
               {
                 "Category": "Data",
-                "InvariantScript": "If(Com_varCheck2 = true Or  YesNoNa.dataValue =\"No\",\"✅ No\",\"⭕ No\") // \"⚪✅⭕✔ Yes\"",
+                "InvariantScript": "If(YesNoNa.dataValue =\"No\",\"✅ No\",\"⭕ No\") // \"⚪✅⭕✔ Yes\"",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1224,7 +1224,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Set(Com_varCheck1,false);Set(Com_varCheck2,true); Set(Com_varCheck3,false) ;Set(xSelected,\"No\")",
+                "InvariantScript": "Set(strClick,\"No\") ;Set(xSelected,\"No\")",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -1503,7 +1503,7 @@
             "Rules": [
               {
                 "Category": "Data",
-                "InvariantScript": "If(Com_varCheck3 = true Or YesNoNa.dataValue =\"NA\",\"✅ NA\",\"⭕ NA\") // \"⚪✅⭕✔ Yes\"",
+                "InvariantScript": "If(YesNoNa.dataValue =\"NA\",\"✅ NA\",\"⭕ NA\") // \"⚪✅⭕✔ Yes\"",
                 "Property": "Text",
                 "RuleProviderType": "Unknown"
               },
@@ -1737,7 +1737,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Set(Com_varCheck1,false);Set(Com_varCheck2,false);Set(Com_varCheck3,true) ; Set(xSelected,\"NA\")",
+                "InvariantScript": "Set(xSelected,\"NA\");Set(strClick,\"NA\")",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -2115,13 +2115,13 @@
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "\"Text\"",
+        "AutoRuleBindingString": "\"NA\"",
         "InvariantPropertyName": "dataValue",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638316661188322392",
+    "LastModifiedTimestamp": "638316673145605101",
     "Name": "YesNoNa",
     "Rules": [
       {
@@ -2144,7 +2144,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "\"NA\"",
+        "InvariantScript": "strClick",
         "Property": "dataValue",
         "RuleProviderType": "System"
       },
@@ -2227,6 +2227,7 @@
       "Category": 0,
       "DisplayName": "dataValue",
       "Hidden": false,
+      "IsResettable": true,
       "Name": "dataValue",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
@@ -2241,7 +2242,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638316661188322392",
+  "LastModifiedTimestamp": "638316673145605101",
   "Name": "738914c8c5914cd5b28e2e41296f7a55",
   "OverridableProperties": {},
   "Version": "638316617318968027"

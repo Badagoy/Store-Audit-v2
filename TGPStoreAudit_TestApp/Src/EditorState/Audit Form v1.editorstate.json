@@ -7770,14 +7770,7 @@
           "NameMapSourceSchema": "?"
         },
         "X",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Y",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Y",
         "ZIndex",
         {
           "AFDDataSourceName": "",
@@ -7806,7 +7799,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Text\"",
+          "AutoRuleBindingString": "\"NA\"",
           "InvariantPropertyName": "dataValue",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -7848,7 +7841,7 @@
         {
           "Category": "Data",
           "PropertyName": "dataValue",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

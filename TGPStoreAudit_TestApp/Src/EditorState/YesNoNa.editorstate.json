@@ -1853,7 +1853,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Text\"",
+          "AutoRuleBindingString": "\"NA\"",
           "InvariantPropertyName": "dataValue",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

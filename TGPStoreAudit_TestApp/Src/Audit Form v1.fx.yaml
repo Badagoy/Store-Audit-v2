@@ -502,17 +502,18 @@
         Y: =1013
         ZIndex: =21
 
-    YesNoNa_1 As YesNoNa:
-        Y: =1200
-        ZIndex: =22
-
     Button4 As button:
         Height: =70
-        OnSelect: =YesNoNa_1.dataValue ="Yes"
+        OnSelect: =Set(varDataSource,"No")
         Size: =24
         Text: ="Button"
         Width: =280
         X: =60
         Y: =1360
         ZIndex: =23
+
+    YesNoNa_1 As YesNoNa:
+        dataValue: =varDataSource
+        Y: =1152
+        ZIndex: =24
 

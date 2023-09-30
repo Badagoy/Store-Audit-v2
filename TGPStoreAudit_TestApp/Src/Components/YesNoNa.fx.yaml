@@ -2,7 +2,7 @@ YesNoNa As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: |
         =100
-    SelectedValue: ="Text"
+    SelectedValue: =xSelected
     Width: =App.Width
     X: =0
     xHeight: =70
@@ -37,7 +37,7 @@ YesNoNa As CanvasComponent:
             HoverFill: =RGBA(0,0,0,0)
             LayoutMinHeight: =60
             LayoutMinWidth: =280
-            OnSelect: =Set(Q6_varCheck1,true);Set(Q6_varCheck2,false) 
+            OnSelect: =Set(Q6_varCheck1,true);Set(Q6_varCheck2,false) ; Set(xSelected,"Yes")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -67,7 +67,7 @@ YesNoNa As CanvasComponent:
             HoverFill: =
             LayoutMinHeight: =70
             LayoutMinWidth: =280
-            OnSelect: =Set(Q6_varCheck1,false);Set(Q6_varCheck2,true)
+            OnSelect: =Set(Q6_varCheck1,false);Set(Q6_varCheck2,true); Set(xSelected,"No")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0

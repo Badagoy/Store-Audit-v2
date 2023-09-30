@@ -39,7 +39,7 @@ YesNoNa As CanvasComponent:
             HoverFill: =RGBA(0,0,0,0)
             LayoutMinHeight: =60
             LayoutMinWidth: =280
-            OnSelect: =Set(Com_varCheck1,true);Set(Com_varCheck2,false) ; Set(Com_varCheck3,false) ;Set(xSelected,"Yes");Set(dataValue,"No")
+            OnSelect: =Set(Com_varCheck1,true);Set(Com_varCheck2,false) ; Set(Com_varCheck3,false) ;Set(xSelected,"Yes");Set(dataValue,"Yes")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -52,7 +52,7 @@ YesNoNa As CanvasComponent:
             RadiusTopLeft: =1
             RadiusTopRight: =1
             Size: =24
-            Text: =If(Com_varCheck1 = true Or YesNoNa.dataValue ="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+            Text: =If(Com_varCheck1 = true Or dataValue ="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
             Width: =150
             ZIndex: =2
 
@@ -80,7 +80,7 @@ YesNoNa As CanvasComponent:
             RadiusTopLeft: =1
             RadiusTopRight: =1
             Size: =24
-            Text: =If(Com_varCheck2 = true Or YesNoNa.dataValue ="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+            Text: =If(Com_varCheck2 = true Or  dataValue ="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
             Width: =150
             ZIndex: =3
 
@@ -96,7 +96,7 @@ YesNoNa As CanvasComponent:
             HoverFill: =
             LayoutMinHeight: =70
             LayoutMinWidth: =280
-            OnSelect: =Set(Com_varCheck1,false);Set(Com_varCheck2,false);Set(Com_varCheck3,true) ; Set(xSelected,"No");Set(dataValue,"Yes")
+            OnSelect: =Set(Com_varCheck1,false);Set(Com_varCheck2,false);Set(Com_varCheck3,true) ; Set(xSelected,"NA");Set(dataValue,"NA")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0

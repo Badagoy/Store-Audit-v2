@@ -23,17 +23,18 @@ YesNoNa As CanvasComponent:
         Rectangle3 As rectangle:
             BorderColor: =
             Fill: =RGBA(0,0,0,0)
-            Width: =20
+            Width: =10
             ZIndex: =1
 
         btn_Yes_2 As button:
             Align: =Align.Left
             BorderColor: =App.Theme.Colors.Primary
-            BorderThickness: =1
-            Color: =RGBA(246, 88, 16, 1)
+            BorderThickness: =0
+            Color: =App.Theme.Colors.Primary
             Fill: =RGBA(255, 255, 255, 1)
             Height: =70
-            HoverFill: =App.Theme.Colors.Primary
+            HoverBorderColor: =RGBA(0,0,0,0)
+            HoverFill: =RGBA(0,0,0,0)
             LayoutMinHeight: =60
             LayoutMinWidth: =280
             OnSelect: =Set(Q6_varCheck1,true);Set(Q6_varCheck2,false) 
@@ -41,6 +42,8 @@ YesNoNa As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            PressedBorderColor: =RGBA(0,0,0,0)
+            PressedFill: =RGBA(0,0,0,0)
             RadiusBottomLeft: =1
             RadiusBottomRight: =1
             RadiusTopLeft: =1
@@ -55,8 +58,8 @@ YesNoNa As CanvasComponent:
         btn_No_2 As button:
             Align: =Align.Left
             BorderColor: =App.Theme.Colors.Primary
-            BorderThickness: =1
-            Color: =RGBA(246, 88, 16, 1)
+            BorderThickness: =0
+            Color: =App.Theme.Colors.Primary
             Fill: =RGBA(255, 255, 255, 1)
             Height: =70
             HoverBorderColor: =
@@ -69,6 +72,7 @@ YesNoNa As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            PressedFill: =RGBA(0,0,0,0)
             RadiusBottomLeft: =1
             RadiusBottomRight: =1
             RadiusTopLeft: =1

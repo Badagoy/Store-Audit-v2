@@ -619,7 +619,7 @@
                     Y: =40
                     ZIndex: =1
 
-                    Q4_SalesNo_8 As text:
+                    Q1_2_Seriesno_05 As text:
                         Default: =""
                         Height: =44
                         HintText: ="Series No."
@@ -631,7 +631,7 @@
                         Y: =150
                         ZIndex: =2
 
-                    Q4_Amount_4 As text:
+                    Q1_2_Date_05 As text:
                         Default: =""
                         Height: =44
                         HintText: ="Date"
@@ -643,7 +643,7 @@
                         Y: =150
                         ZIndex: =3
 
-                    Q4_DaysDelayed_4 As text:
+                    Q1_2_Remove_05 As text:
                         Default: =""
                         Height: =44
                         HintText: ="Remove"
@@ -655,19 +655,17 @@
                         Y: =150
                         ZIndex: =4
 
-                    Q4_icnSave_5 As icon.Save:
+                    Q1_2_Save_05 As icon.Save:
                         Height: =34
                         Icon: =Icon.Save
                         OnSelect: |
                             =Patch(
-                                colQ4a,
-                                Defaults(colQ4a),
+                                col05_1_2Qa
+                                Defaultscol05_1_2Qa
                                 {
-                                    DateX: Q4_dtSales_2.SelectedDate
-                                    ,Sales_No:Q4_SalesNo_8.Text
-                                    ,Amount:Q4_Amount_4.Text
-                                    ,Cnt_Delayed:Q4_DaysDelayed_4.Text
-                                    
+                                    Series_no: Q1_2_Seriesno_05.Text
+                                    ,Sales_No:Q1_2_Date_05.SelectedDate
+                            	,Remove:Q1_2_Remove_05.Text 
                                 }
                             );
                             //Reset(Q5_txtSDate);

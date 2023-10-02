@@ -4,6 +4,8 @@ YesNoNa As CanvasComponent:
     Height: |
         =100
     SelectedValue: =xSelected
+    tblDspValue: |-
+        =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
     Width: =App.Width
     X: =0
     xHeight: =70
@@ -96,7 +98,9 @@ YesNoNa As CanvasComponent:
             HoverFill: =
             LayoutMinHeight: =70
             LayoutMinWidth: =280
-            OnSelect: =Set(xSelected,"NA");Set(strClick,"NA")
+            OnSelect: |-
+                =Set(xSelected,"NA");Set(strClick,"NA") ;
+                YesNoNa.dataValue = "No"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0

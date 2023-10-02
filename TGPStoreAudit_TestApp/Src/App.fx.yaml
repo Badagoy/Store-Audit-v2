@@ -16,7 +16,7 @@ App As appinfo:
             ClearCollect(colCashCtrl,{CtrlNo:"x",Amount:""}) ;  //Create Collection 
             Clear(colCashCtrl);                                 //Empty  Collection
         
-            ClearCollect(colQuestion,lstSA_Question);
+            ClearCollect(colQuestion,lstSA_Question_1);
         
             
             ClearCollect(colQ2A,{Q2_txt1:"0",Q2_txt2:"0",Q2_txt3:"0",Q2_txt4:"0"  });

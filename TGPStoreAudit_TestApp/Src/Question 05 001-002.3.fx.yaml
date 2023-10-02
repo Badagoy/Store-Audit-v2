@@ -658,14 +658,14 @@
                     Q1_2_Save_05 As icon.Save:
                         Height: =34
                         Icon: =Icon.Save
-                        OnSelect: |
+                        OnSelect: |-
                             =Patch(
-                                col05_1_2Qa
-                                Defaults(col05_1_2Qa)
+                                col05_1_2Qa,
+                                Defaults(col05_1_2Qa),
                                 {
                                     Series_no: Q1_2_Seriesno_05.Text
                                     ,Date:Q1_2_Date_05.SelectedDate
-                            	    ,Remove:Q1_2_Remove_05.Text 
+                            	,Remove:Q1_2_Remove_05.Text 
                                 }
                             );
                             //Reset(Q5_txtSDate);

@@ -661,7 +661,7 @@
                         OnSelect: |
                             =Patch(
                                 col05_1_2Qa
-                                Defaultscol05_1_2Qa
+                                Defaults(col05_1_2Qa)
                                 {
                                     Series_no: Q1_2_Seriesno_05.Text
                                     ,Date:Q1_2_Date_05.SelectedDate

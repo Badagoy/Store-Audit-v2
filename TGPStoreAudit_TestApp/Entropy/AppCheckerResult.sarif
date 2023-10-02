@@ -6911,128 +6911,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 124,
-                  "snippet": {
-                    "text": ".SelectedDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "SelectedDate"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 175,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Patch(\n    col05_1_2Qa,\n    Defaults(col05_1_2Qa),\n    {\n        Series_no: Q1_2_Seriesno_05.Text\n        ,Date:Q1_2_Date_05.SelectedDate\n\t,Remove:Q1_2_Remove_05.Text \n    }\n)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Patch"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 118,
-                  "charOffset": 55,
-                  "snippet": {
-                    "text": "{\n        Series_no: Q1_2_Seriesno_05.Text\n        ,Date:Q1_2_Date_05.SelectedDate\n\t,Remove:Q1_2_Remove_05.Text \n    }"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Save_05"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Date",
-              "Text",
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Question 05 001-002.3'.Bottom_CNT_7.Button16_7.OnSelect"
                 }
               ],
@@ -18364,19 +18242,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Seriesno_05.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_date_1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Seriesno_05.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_date_1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Seriesno_05"
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_date_1_2"
               }
             }
           ],
@@ -18394,19 +18272,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Date_05.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_remove_1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Date_05.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_remove_1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Date_05"
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_remove_1_2"
               }
             }
           ],
@@ -18424,19 +18302,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Remove_05.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_series_no_1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Remove_05.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_series_no_1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_ConH01_7.Q1_2_Remove_05"
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Q05_series_no_1_2"
               }
             }
           ],
@@ -18587,6 +18465,66 @@
                 "member": "AccessibleLabel",
                 "module": "Question 05 001-002.3",
                 "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_Amount_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Icon1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Icon1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Question 05 001-002.3",
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Icon1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Icon1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Icon1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 05 001-002.3",
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q05_ConH01_2.Icon1"
               }
             }
           ],

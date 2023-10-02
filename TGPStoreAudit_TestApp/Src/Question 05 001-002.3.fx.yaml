@@ -609,7 +609,7 @@
                 Y: =73
                 ZIndex: =2
 
-                Q4_ConH01_7 As groupContainer.horizontalAutoLayoutContainer:
+                Q05_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =60
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
@@ -619,61 +619,53 @@
                     Y: =40
                     ZIndex: =1
 
-                    Q1_2_Seriesno_05 As text:
+                    Q05_series_no_1_2 As text:
+                        Align: =Align.Center
+                        BorderThickness: =0
                         Default: =""
-                        Height: =44
+                        Height: =70
                         HintText: ="Series No."
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
-                        Size: =fontSize
-                        Width: =132
-                        X: =241
-                        Y: =150
+                        Size: =21
+                        Width: =160
+                        ZIndex: =1
+
+                    Q05_date_1_2 As datepicker:
+                        BorderThickness: =0
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =575
+                        Size: =24
+                        Width: =230
                         ZIndex: =2
 
-                    Q1_2_Date_05 As text:
+                    Q05_remove_1_2 As text:
+                        BorderThickness: =0
                         Default: =""
-                        Height: =44
-                        HintText: ="Date"
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =fontSize
-                        Width: =132
-                        X: =398
-                        Y: =150
-                        ZIndex: =3
-
-                    Q1_2_Remove_05 As text:
-                        Default: =""
-                        Height: =44
+                        Height: =70
                         HintText: ="Remove"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
-                        Size: =fontSize
-                        Width: =132
-                        X: =554
-                        Y: =150
-                        ZIndex: =4
+                        Size: =21
+                        Width: =160
+                        ZIndex: =3
 
-                    Q1_2_Save_05 As icon.Save:
-                        Height: =34
+                    Icon1 As icon.Save:
                         Icon: =Icon.Save
                         OnSelect: |-
                             =Patch(
                                 col05_1_2Qa,
                                 Defaults(col05_1_2Qa),
                                 {
-                                    Series_no: Q1_2_Seriesno_05.Text
-                                    ,Date:Q1_2_Date_05.SelectedDate
-                            	,Remove:Q1_2_Remove_05.Text 
+                                     Series_no: Q05_series_no_1_2.Text
+                                    ,Date:Q05_date_1_2.SelectedDate
+                            	    ,Remove: Q05_remove_1_2.Text 
                                 }
                             );
                             //Reset(Q5_txtSDate);
                             //Reset(Q5_txtSNo);
-                        Width: =39
-                        X: =Parent.Width-Self.Width 
-                        Y: =150
-                        ZIndex: =5
+                        ZIndex: =4
 
                 "Q4_galSalesTable_5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                     DelayItemLoading: =true
@@ -701,7 +693,7 @@
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =44
-                            HintText: ="Sales No"
+                            HintText: ="Series No"
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             Size: =fontSize
@@ -716,7 +708,7 @@
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =44
-                            HintText: ="Sales No"
+                            HintText: ="Date"
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             Size: =fontSize
@@ -730,7 +722,7 @@
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =44
-                            HintText: ="Amount"
+                            HintText: ="Remove"
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             Size: =fontSize

@@ -14,714 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 1419,
-                  "snippet": {
-                    "text": "Q6_chkYes"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Q6_chkYes"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 1428,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1434,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Boolean"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 1449,
-                  "snippet": {
-                    "text": "Q6_chkNo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Q6_chkNo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 1457,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1463,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Boolean"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 1477,
-                  "snippet": {
-                    "text": "Q6_chkNA"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Q6_chkNA"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 1485,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1491,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Boolean"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 1531,
-                  "snippet": {
-                    "text": "Q6_chkYes"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Q6_chkYes"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 1540,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1546,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Boolean"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 1561,
-                  "snippet": {
-                    "text": "Q6_chkNo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Q6_chkNo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 1569,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1575,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Boolean"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 1589,
-                  "snippet": {
-                    "text": "Q6_chkNA"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Q6_chkNA"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 1597,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Bottom_CNT_1.Button16_1.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 1603,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Bottom_CNT_1.Button16_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Boolean"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Question 01 004-010_1'.Bottom_CNT_4.Button16_4.OnSelect"
                 }
               ],
@@ -13525,19 +12817,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S_2.Q5_txt1_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S_2.Q6_txt1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S_2.Q5_txt1_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S_2.Q6_txt1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S_2.Q5_txt1_3"
+                "type": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S_2.Q6_txt1"
               }
             }
           ],
@@ -13555,19 +12847,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ5S2_3.Q5_txt2_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S2.Q6_txt2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ5S2_3.Q5_txt2_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S2.Q6_txt2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 01 004-010",
-                "type": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ5S2_3.Q5_txt2_3"
+                "type": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_ConH01.cntQ6S2.Q6_txt2"
               }
             }
           ],
@@ -18046,6 +17338,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_YesNo.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_YesNo.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 01 004-010",
+                "type": "'Question 01 004-010'.Q6_Container.Q6_SubCon.Q6_YesNo"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
         },
         {
           "locations": [

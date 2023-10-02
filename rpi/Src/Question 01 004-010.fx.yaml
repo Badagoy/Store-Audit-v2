@@ -1,7 +1,7 @@
 "'Question 01 004-010' As screen":
 
     Q6_Container As groupContainer.manualLayoutContainer:
-        Height: =248
+        Height: =300
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
@@ -9,7 +9,7 @@
         ZIndex: =1
 
         Q6_SubCon As groupContainer.verticalAutoLayoutContainer:
-            Height: =250
+            Height: =300
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
@@ -28,6 +28,19 @@
                     =0
                 ZIndex: =1
 
+            Q6_YesNo As toggleSwitch:
+                Default: =If(First(colQ5).Res_Option ="true",true,false)
+                FalseText: ="No"
+                Height: =44
+                LayoutMinHeight: =49
+                LayoutMinWidth: =154
+                Size: =fontSize
+                TextPosition: =TextPosition.Left
+                TrueText: ="Yes"
+                Width: =160
+                Y: =100
+                ZIndex: =2
+
             Q6_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
@@ -38,7 +51,7 @@
                 Width: =Parent.Width - (leftMargin * 2)
                 X: =leftMargin
                 Y: =610
-                ZIndex: =2
+                ZIndex: =3
 
                 cntQ6S_2 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
@@ -53,18 +66,18 @@
                     Width: =300
                     ZIndex: =1
 
-                    Q5_lbl1_3 As label:
+                    Q6_lbl1 As label:
                         Height: =52
                         LayoutMinHeight: =70
                         LayoutMinWidth: =300
                         Size: =21
-                        Text: ="Deposit Slip Amount"
+                        Text: ="DSR Amount"
                         VerticalAlign: =VerticalAlign.Bottom
                         Width: =300
                         Y: =9
                         ZIndex: =1
 
-                    Q5_txt1_3 As text:
+                    Q6_txt1 As text:
                         Default: =First(colQ5A).Deposit_Amount
                         Height: =70
                         LayoutMinHeight: =70
@@ -73,7 +86,7 @@
                         Width: =300
                         ZIndex: =2
 
-                cntQ5S2_3 As groupContainer.verticalAutoLayoutContainer:
+                cntQ6S2 As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -86,7 +99,7 @@
                     Width: =300
                     ZIndex: =2
 
-                    Q5_lbl2_3 As label:
+                    Q6_lbl2 As label:
                         Align: =Align.Justify
                         Height: =52
                         LayoutMinHeight: =70
@@ -98,7 +111,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q5_txt2_3 As text:
+                    Q6_txt2 As text:
                         Default: =First(colQ5A).Actual_Amount
                         Height: =70
                         LayoutMinHeight: =70
@@ -537,9 +550,11 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 25,
-                        'Response Desc': If(Q6_chkYes.Value=true,"Yes",If(Q6_chkNo.Value=true,"No",If(Q6_chkNA.Value=true,"NA",""))),
-                        Res_Option:If(Q6_chkYes.Value=true,"Yes",If(Q6_chkNo.Value=true,"No",If(Q6_chkNA.Value=true,"NA","")))       
-                        
+                        'Response Desc': 
+                            "[{""Deposit_Amount"":" & If(IsBlank(Q5_txt1.Text),0,Q5_txt1.Text) & "," & 
+                             """Actual_Amount"":" & If(IsBlank(Q5_txt2.Text),0,Q5_txt2.Text) & "}]" 
+                      &""  
+                        ,Res_Option:Q5_YesNo.Value
                     }
                 );
             RadiusBottomRight: |

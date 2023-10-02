@@ -31,22 +31,17 @@ App As appinfo:
             ClearCollect(colQ4a,{DateX:"01/01/2023",Sales_No:"0",Amount:"0",Cnt_Delayed:"0"});
             Clear(colQ4a);
         
+            ClearCollect(col05_1_2Qa,{Series_no:"0",Date:"01/01/2023",Remove:""});
+            Clear(col05_1_2Qa);
+        
+            ClearCollect(col05_3_2Qa,{Sales_no:"0",Amount:"0",Transaction_no:"0",Transaction_amt:"0"});
+            Clear(col05_3_2Qa);
+        
             ClearCollect(colQ5A,{Deposit_Amount:"0",Actual_Amount:"0"});
             Clear(colQ5A);
             //User
             Set(userInfo ,User().FullName);
             
-            Patch(
-            col05_1_2Qa,
-            Defaults(col05_1_2Qa),
-            {
-                Series_no: Q1_2_Seriesno_05.Text
-                ,Date:Q1_2_Date_05.SelectedDate
-        	,Remove:Q1_2_Remove_05.Text 
-            }
-        );
-        //Reset(Q5_txtSDate);
-        //Reset(Q5_txtSNo);
         
         
             //Screens

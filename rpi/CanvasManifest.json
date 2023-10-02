@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 477,
+    "BindingErrorCount": 538,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -143,19 +143,15 @@
     "Question 01 004-010_1",
     "Question 01 004-010_2",
     "Question 05 001-002.3",
-    "Question 05 002.3 -",
+    "Question 05 002.3 - 003",
+    "Question 05 004 -",
+    "Question 05 002.3 -_1",
     "Question 05 001-002.3_1",
     "Question 05 002.4 - 003",
     "Question 05 002.4 - 003_1",
     "Question 05 008-010",
     "Question 05 001-003_5",
-    "Question 05 004-010",
-    "crushed - Question 05 001-004",
-    "crushed-Question 01 004-010",
-    "crush - Question 001-003",
-    "crushed - Question 05 001-004_1",
     "Screen1",
-    "Screen4",
-    "Question 05 004-007"
+    "Screen4"
   ]
 }

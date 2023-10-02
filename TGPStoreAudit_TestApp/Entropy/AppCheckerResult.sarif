@@ -7034,10 +7034,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 175,
+                  "charLength": 179,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch(\n    col05_1_2Qa\n    Defaultscol05_1_2Qa\n    {\n        Series_no: Q1_2_Seriesno_05.Text\n        ,Sales_No:Q1_2_Date_05.SelectedDate\n\t,Remove:Q1_2_Remove_05.Text \n    }\n)"
+                    "text": "Patch(\n    col05_1_2Qa\n    Defaultscol05_1_2Qa\n    {\n        Series_no: Q1_2_Seriesno_05.Text\n        ,Sales_No:Q1_2_Date_05.SelectedDate\n\t    ,Remove:Q1_2_Remove_05.Text \n    }\n)"
                   }
                 }
               },
@@ -13159,6 +13159,87 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 10,
+                  "charOffset": 59,
+                  "snippet": {
+                    "text": ".Series_no"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Question 05 001-002.3",
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Series_no"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 49,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Question 05 001-002.3",
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Question 05 002.4 - 003'.Container1_2.TextInput4_6.AccessibleLabel"
                 }
               ],
@@ -18430,66 +18511,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Question 05 001-002.3",
-                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
         },
         {
           "locations": [

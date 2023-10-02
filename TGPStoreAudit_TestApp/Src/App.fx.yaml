@@ -36,7 +36,7 @@ App As appinfo:
             //User
             Set(userInfo ,User().FullName);
         
-            ClearCollect(col05_1_2Qa,{Series_no:"0",Date:"01/01/2023",Remove:"No"});
+            ClearCollect(col05_1_2Qa,{Series_no:"0",Date:"01/01/2023",Remove:""});
             Clear(col05_1_2Qa);
         
             //Screens

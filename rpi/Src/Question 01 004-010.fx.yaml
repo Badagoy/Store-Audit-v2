@@ -551,10 +551,10 @@
                         Batch_No: batch_no,
                         'Question ID': 25,
                         'Response Desc': 
-                            "[{""DSR_Amount"":" & If(IsBlank(Q5_txt1.Text),0,Q5_txt1.Text) & "," & 
-                             """Actual_Amount"":" & If(IsBlank(Q5_txt2.Text),0,Q5_txt2.Text) & "}]" 
+                            "[{""DSR_Amount"":" & If(IsBlank(Q6_txt1.Text),0,Q6_txt1.Text) & "," & 
+                             """Actual_Amount"":" & If(IsBlank(Q6_txt2.Text),0,Q6_txt2.Text) & "}]" 
                       &""  
-                        ,Res_Option:Q5_YesNo.Value
+                        ,Res_Option:Q6_YesNo.Value
                     }
                 );
             RadiusBottomRight: |

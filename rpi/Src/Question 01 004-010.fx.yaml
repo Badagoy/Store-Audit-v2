@@ -551,7 +551,7 @@
                         Batch_No: batch_no,
                         'Question ID': 25,
                         'Response Desc': 
-                            "[{""Deposit_Amount"":" & If(IsBlank(Q5_txt1.Text),0,Q5_txt1.Text) & "," & 
+                            "[{""DSR_Amount"":" & If(IsBlank(Q5_txt1.Text),0,Q5_txt1.Text) & "," & 
                              """Actual_Amount"":" & If(IsBlank(Q5_txt2.Text),0,Q5_txt2.Text) & "}]" 
                       &""  
                         ,Res_Option:Q5_YesNo.Value

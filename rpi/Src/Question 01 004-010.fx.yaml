@@ -9,6 +9,7 @@
         ZIndex: =1
 
         Q6_SubCon As groupContainer.verticalAutoLayoutContainer:
+            Height: =250
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
@@ -27,94 +28,84 @@
                     =0
                 ZIndex: =1
 
-            Q6_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+            Q5_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
-                LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutMinHeight: =70
+                LayoutMinHeight: =200
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
-                Width: =Parent.Width
+                Width: =Parent.Width - (leftMargin * 2)
                 X: =leftMargin
                 Y: =610
-                ZIndex: =5
+                ZIndex: =2
 
-                btn_Yes As button:
-                    Align: =Align.Left
-                    AlignInContainer: =AlignInContainer.Stretch
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverFill: =App.Theme.Colors.Primary
-                    LayoutMinHeight: =60
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                    Width: =200
+                cntQ6S_2 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =225
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =300
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =5
+                    Width: =300
                     ZIndex: =1
 
-                btn_No As button:
-                    Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverBorderColor: =
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                    Width: =200
+                    Q5_lbl1_3 As label:
+                        Height: =52
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =300
+                        Size: =21
+                        Text: ="Deposit Slip Amount"
+                        VerticalAlign: =VerticalAlign.Bottom
+                        Width: =300
+                        Y: =9
+                        ZIndex: =1
+
+                    Q5_txt1_3 As text:
+                        Default: =First(colQ5A).Deposit_Amount
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =288
+                        Size: =21
+                        Width: =300
+                        ZIndex: =2
+
+                cntQ5S2_3 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =225
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =300
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =5
+                    Width: =300
                     ZIndex: =2
 
-                btn_NA As button:
-                    Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                    Width: =200
-                    ZIndex: =3
+                    Q5_lbl2_3 As label:
+                        Align: =Align.Justify
+                        Height: =52
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =300
+                        Size: =21
+                        Text: ="Actual Amount"
+                        VerticalAlign: =VerticalAlign.Bottom
+                        Width: =300
+                        Y: =9
+                        ZIndex: =1
+
+                    Q5_txt2_3 As text:
+                        Default: =First(colQ5A).Actual_Amount
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =288
+                        Size: =21
+                        Width: =300
+                        ZIndex: =2
 
     Q5_Container As groupContainer.manualLayoutContainer:
         Height: =338

@@ -1,0 +1,54 @@
+App As appinfo:
+    BackEnabled: =false
+    MinScreenHeight: =1586
+    MinScreenWidth: =786
+    OnStart: |-
+        =LoadData(OfflineAudit, "OfflineAudit", true);
+        
+        
+        
+        // Global Variables
+        //=================//
+            //Collections
+            ClearCollect(colNamePos,{Name:"x",Position:""}) ;  //Create Collection 
+            Remove(colNamePos,LookUp(colNamePos, Name = "x")); //Empty  Collection
+        
+            ClearCollect(colCashCtrl,{CtrlNo:"x",Amount:""}) ;  //Create Collection 
+            Clear(colCashCtrl);                                 //Empty  Collection
+        
+            ClearCollect(colQuestion,lstSA_Question);
+        
+            
+            ClearCollect(colQ2A,{Q2_txt1:"0",Q2_txt2:"0",Q2_txt3:"0",Q2_txt4:"0"  });
+            Clear(colQ2A);
+            
+            ClearCollect(colQ3_1A,{Q3_txt1:"0",Q3_txt2:"0",Q3_txt3:"0",Q3_txt4:"0"  });
+            Clear(colQ3_1A);
+            
+            ClearCollect(colQ3_2A,{CtrlNo:"x",Amount:""});
+            Clear(colQ3_2A);
+        
+            ClearCollect(colQ4a,{DateX:"01/01/2023",Sales_No:"0",Amount:"0",Cnt_Delayed:"0"});
+            Clear(colQ4a);
+        
+            ClearCollect(colQ5A,{Deposit_Amount:"0",Actual_Amount:"0"});
+            Clear(colQ5A);
+            //User
+            Set(userInfo ,User().FullName);
+        
+            //Screens
+            Set(leftMargin ,20);
+        
+            //Fonts
+            Set(fontSize,21)
+        //=================//
+    StartScreen: =
+    Theme: =RedTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

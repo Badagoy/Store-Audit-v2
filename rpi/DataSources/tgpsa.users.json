@@ -1,0 +1,29 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sql",
+    "CdpRevision": {
+      "BaseUrl": "/v2",
+      "LastChangedTimeString": "2023-08-07T21:29:32.2990000Z",
+      "RevisionNumber": 2
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "AADObjectID": "AADObjectID",
+      "CreatedBY": "CreatedBY",
+      "CreatedOn": "CreatedOn",
+      "FirstName": "FirstName",
+      "LastModified": "LastModified",
+      "LastName": "LastName",
+      "M365Email": "M365Email",
+      "MobileNumber": "MobileNumber",
+      "UserID": "UserID",
+      "UserName": "UserName",
+      "UserRole": "UserRole"
+    },
+    "DatasetName": "tgpserver-sql-dev.database.windows.net,tgpdb-sql-dev",
+    "EncodeDataset": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "tgpsa.users",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]

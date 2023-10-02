@@ -1,0 +1,503 @@
+"'Question 05 008-010' As screen":
+
+    Bottom_CNT_11 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =141
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =20
+        PaddingRight: =20
+        Width: =786
+        Y: =1444
+        ZIndex: =1
+
+        Button4_11 As button:
+            Color: =Color.White
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: =Back();
+            RadiusBottomLeft: |
+                =50
+            RadiusTopLeft: |
+                =50
+            Size: =24
+            Text: ="Previous"
+            Width: =180
+            ZIndex: =1
+
+        Label11_11 As label:
+            Align: =Align.Center
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =21
+            Text: ="1/100"
+            Width: =100
+            ZIndex: =2
+
+        Button16_11 As button:
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: |-
+                =//Q1 OR Question ID = 1 
+                
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=1 And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        )
+                    ,
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 1,
+                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"[]"),
+                        Res_Option: Q1_YesNo_2.Value
+                    }
+                );
+                //Q2 OR Question ID = 6
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=6  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {   
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 6,
+                        'Response Desc': 
+                            "[{""Q2_txt1"":" & If(IsBlank(Q2_txt1_2.Text),0,Q2_txt1_2.Text) & "," & 
+                             """Q2_txt2"":" & If(IsBlank(Q2_txt2_2.Text),0,Q2_txt2_2.Text) & "," &
+                             """Q2_txt3"":" & If(IsBlank(Q2_txt3_2.Text),0,Q2_txt3_2.Text) & "," &
+                             """Q2_txt4"":" & If(IsBlank(Q2_txt4_2.Text),0,Q2_txt4_2.Text) & "}]" 
+                      &""
+                    }
+                );
+                
+                //Q3.1 OR Question ID = 8
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=8  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {   
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 8,
+                        'Response Desc': 
+                            "[{""Q3_txt1"":" & If(IsBlank(Q3_txt1_2.Text),0,Q3_txt1_2.Text) & "," & 
+                             """Q3_txt2"":" & If(IsBlank(Q3_txt2_2.Text),0,Q3_txt2_2.Text) & "," &
+                             """Q3_txt3"":" & If(IsBlank(Q3_txt3_2.Text),0,Q3_txt3_2.Text) & "," &
+                             """Q3_txt4"":" & If(IsBlank(Q3_txt4_2.Text),0,Q3_txt4_2.Text) & "}]"
+                      &""
+                    }
+                );
+                
+                //Q3.2 OR Question ID = 10
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=10  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 10,
+                        'Response Desc': JSON(colQ3_2A)
+                        
+                        
+                    }
+                );
+                
+                Navigate('crushed-Question 01 004-010')
+                //ExportData.Run("",User().Email); Export and email
+            RadiusBottomRight: |
+                =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: ="Next"
+            Width: =180
+            ZIndex: =3
+
+    HeaderContainer_12 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =App.Theme.Colors.Primary
+        Height: =130
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Container5_12 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =2.77
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =100
+            X: =0.00
+            Y: =0.00
+            ZIndex: =1
+
+            img_Profile_12 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(0, 134, 208, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Height: =90
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+                ImagePosition: =ImagePosition.Stretch
+                LayoutMinHeight: = Parent.Height - 10
+                LayoutMinWidth: =Parent.Height - 10
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =200
+                RadiusBottomRight: =200
+                RadiusTopLeft: =200
+                RadiusTopRight: =200
+                Width: =90
+                X: =3.00
+                Y: =18.93
+                ZIndex: =2
+
+        Container4_18 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =7
+            Height: =56.80
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =100
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =507.00
+            X: =51.00
+            Y: =0.00
+            ZIndex: =4
+
+            lbl_Hellow_12 As label:
+                AlignInContainer: =AlignInContainer.Start
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Font: =Font.'Patrick Hand'
+                Height: =50
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =20
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =24
+                Text: =User().FullName
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =300
+                X: =0.00
+                Y: =22.61
+                ZIndex: =1
+
+            lbl_Name_11 As label:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =0.85
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =16
+                Text: =User().Email
+                VerticalAlign: =VerticalAlign.Top
+                Width: =569.17
+                X: =0.00
+                Y: =27.35
+                ZIndex: =2
+
+        Container7_12 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =23.37
+            PaddingTop: =0.00
+            Width: =81.81
+            X: =558.00
+            Y: =0.00
+            ZIndex: =6
+
+            icon_Notification_12 As icon.Bell:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =Color.AntiqueWhite
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =5
+                Height: =56.80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Bell
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58.44
+                X: =0.00
+                Y: =0.00
+                ZIndex: =1
+
+    Q1_lbl_14 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =25
+        Text: ="Regulations and Requirements"
+        Width: =552
+        Y: =130
+        ZIndex: =3
+
+    Container4_19 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =1240
+        Width: =746
+        X: =20
+        Y: =188
+        ZIndex: =4
+
+        Label5_56 As label:
+            Height: =110
+            Size: =21
+            Text: ="8. " & LookUp(colQuestion,Question_ID = 203,Question_Desc)
+            Width: =746
+            Y: =17
+            ZIndex: =6
+
+        Label5_57 As label:
+            Height: =76
+            Size: =21
+            Text: ="1. Available?"
+            Width: =710
+            X: =36
+            Y: =127
+            ZIndex: =7
+
+        Container2_9 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =77
+            Width: =602
+            X: =76
+            Y: =203
+            ZIndex: =17
+
+            Checkbox1_24 As checkbox:
+                Height: =77
+                OnSelect: =Set(Checkbox1_24,!Checkbox1_24);Set(Checkbox1_25,false) 
+                Size: =21
+                Text: ="YES"
+                Width: =188
+                X: =40
+                ZIndex: =1
+
+            Checkbox1_25 As checkbox:
+                Height: =77
+                Size: =21
+                Text: =Set(Checkbox1_25,!Checkbox1_25);Set(Checkbox1_24,false) 
+                Width: =188
+                X: =228
+                ZIndex: =2
+
+        Label5_58 As label:
+            Height: =122
+            Size: =21
+            Text: |-
+                ="9. " & LookUp(colQuestion,Question_ID = 204
+                ,Question_Desc)
+            Width: =746
+            Y: =280
+            ZIndex: =18
+
+        Label5_66 As label:
+            Height: =76
+            Size: =21
+            Text: ="1. Available?"
+            Width: =710
+            X: =36
+            Y: =402
+            ZIndex: =19
+
+        Container2_15 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =77
+            Width: =602
+            X: =76
+            Y: =478
+            ZIndex: =20
+
+            Checkbox1_36 As checkbox:
+                Height: =77
+                Size: =21
+                Text: ="YES"
+                Width: =188
+                X: =40
+                ZIndex: =1
+
+            Checkbox1_37 As checkbox:
+                Height: =77
+                Size: =21
+                Text: ="NO"
+                Width: =188
+                X: =228
+                ZIndex: =2
+
+        Label5_67 As label:
+            Color: =RGBA(237, 237, 237, 1)
+            Height: =76
+            Size: =21
+            Text: |-
+                ="2. Expiration Date:"
+            Width: =710
+            X: =36
+            Y: =555
+            ZIndex: =21
+
+        DatePicker2_4 As datepicker:
+            BorderColor: =RGBA(237, 237, 237, 1)
+            Color: =RGBA(237, 237, 237, 1)
+            Height: =70
+            Size: =24
+            Width: =575
+            X: =89
+            Y: =631
+            ZIndex: =22
+
+        Container2_2 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =445
+            Width: =746
+            Y: =713
+            ZIndex: =23
+
+            Container2_16 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =77
+                Width: =602
+                X: =72
+                Y: =167
+                ZIndex: =2
+
+                Checkbox1_38 As checkbox:
+                    Height: =77
+                    Size: =21
+                    Text: ="YES"
+                    Width: =188
+                    X: =40
+                    ZIndex: =1
+
+                Checkbox1_39 As checkbox:
+                    Height: =77
+                    Size: =21
+                    Text: ="NO"
+                    Width: =188
+                    X: =228
+                    ZIndex: =2
+
+            Label5_69 As label:
+                Color: =RGBA(237, 237, 237, 1)
+                Height: =76
+                Size: =21
+                Text: |-
+                    ="2. Expiration Date:"
+                Width: =710
+                X: =36
+                Y: =253
+                ZIndex: =3
+
+            DatePicker2_5 As datepicker:
+                BorderColor: =RGBA(237, 237, 237, 1)
+                Color: =RGBA(237, 237, 237, 1)
+                Height: =70
+                Size: =24
+                Width: =575
+                X: =85
+                Y: =354
+                ZIndex: =4
+
+            Label5_68 As label:
+                Height: =61
+                Size: =21
+                Text: ="1. Available?"
+                Width: =710
+                X: =36
+                Y: =106
+                ZIndex: =5
+
+            Label5_8 As label:
+                Height: =70
+                Size: =21
+                Text: ="10. Mayors Permit/ Business Permit"
+                Width: =560
+                Y: =24
+                ZIndex: =6
+

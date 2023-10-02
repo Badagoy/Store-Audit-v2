@@ -1,0 +1,60 @@
+Screen4 As screen:
+
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        UploadedImage1 As image:
+            Height: =342
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =575
+            X: =33
+            Y: =634
+            ZIndex: =2
+
+        AddMediaButton1 As addMedia:
+            Height: =55
+            Size: =25
+            UseMobileCamera: =true
+            Width: =575
+            X: =26
+            Y: =989
+            ZIndex: =3
+
+    Camera1 As camera:
+        Camera: =0
+        Height: =424
+        StreamRate: =100
+        Width: =473
+        X: =96
+        Y: =24
+        ZIndex: =4
+
+    Icon7 As icon.CameraApertureFocus:
+        Icon: =Icon.CameraAperture
+        OnSelect: =Set(TakePic, Camera1.Stream)
+        X: =296
+        Y: =448
+        ZIndex: =8
+
+    Image8 As image:
+        Height: =349
+        Image: =TakePic
+        Width: =473
+        X: =96
+        Y: =63
+        ZIndex: =9
+
+    Label6 As label:
+        Height: =70
+        Size: =21
+        Text: =AddMediaButton1.FileName
+        Width: =560
+        X: =48
+        Y: =1066
+        ZIndex: =10
+

@@ -1,0 +1,499 @@
+"'Audit Form v1' As screen":
+
+    BName_txt As text:
+        Default: =First(colResponseHDR).Branch_Name
+        Height: =52
+        HintText: ="Branch Name"
+        Size: =21
+        Width: =Parent.Width * .65
+        X: =237
+        Y: =231
+        ZIndex: =1
+
+    BName_lbl As label:
+        Size: =21
+        Text: ="Name"
+        Width: =BName_txt.Width
+        X: =BName_txt.X
+        Y: =195
+        ZIndex: =2
+
+    BCode_txt As text:
+        Default: =""
+        Height: =52
+        HintText: ="Code"
+        OnChange: |
+            =ClearCollect(
+                colResponseHDR,
+                First(Filter(
+                    lstSA_ResponseHDR,
+                    Branch_Code = BCode_txt.Text And User_Info = User().FullName
+                ))
+            );
+            If(CountRows(colResponseHDR)> 0 ,
+                Set(
+                    batch_no,
+                     First(colResponseHDR).Batch_ID
+                ),
+                Set(
+                    batch_no,
+                    Text(
+                        Now(),
+                        "[$-en-US]yymmddhhmmss"
+                    )
+                );
+                
+            );
+        Size: =21
+        Width: =Parent.Width * .25
+        X: =leftMargin
+        Y: =231
+        ZIndex: =3
+
+    BCode_lbl As label:
+        Size: =21
+        Text: ="Branch Code"
+        Width: =Parent.Width * .25
+        X: =leftMargin
+        Y: =195
+        ZIndex: =4
+
+    BAdd_txt As text:
+        Default: =First(colResponseHDR).Branch_Address
+        Height: =108
+        HintText: ="Address"
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =Parent.Width - (leftMargin * 2)
+        X: =20
+        Y: =338
+        ZIndex: =5
+
+    BAdd_lbl As label:
+        Size: =21
+        Text: ="Address"
+        Width: =Parent.Width * .25
+        X: =leftMargin
+        Y: =299
+        ZIndex: =6
+
+    BGeoLoc_txt As text:
+        Default: |-
+            =If(
+                CountRows(colResponseHDR) > 0,
+                First(colResponseHDR).Branch_GeoLoc,
+                Location.Longitude & " : " & Location.Latitude
+            )
+        Height: =52
+        Size: =21
+        Width: =Parent.Width * .65
+        X: =20
+        Y: =500
+        ZIndex: =7
+
+    BGeoLoc_lbl As label:
+        Size: =21
+        Text: |-
+            ="Geo Location (Longtitude:Latitude)"
+        Width: =BGeoLoc_txt.Width
+        X: =20
+        Y: =464
+        ZIndex: =8
+
+    HeaderContainer_2 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =App.Theme.Colors.Primary
+        Height: =130
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =Parent.Width
+        ZIndex: =9
+
+        Container5_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =2.77
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =100
+            X: =0.00
+            Y: =0.00
+            ZIndex: =1
+
+            img_Profile_2 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(0, 134, 208, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Height: =90
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+                ImagePosition: =ImagePosition.Stretch
+                LayoutMinHeight: = Parent.Height - 10
+                LayoutMinWidth: =Parent.Height - 10
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =200
+                RadiusBottomRight: =200
+                RadiusTopLeft: =200
+                RadiusTopRight: =200
+                Width: =90
+                X: =3.00
+                Y: =18.93
+                ZIndex: =2
+
+        Container4_2 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =7
+            Height: =56.80
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =100
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =507.00
+            X: =51.00
+            Y: =0.00
+            ZIndex: =4
+
+            lbl_Hellow_2 As label:
+                AlignInContainer: =AlignInContainer.Start
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Font: =Font.Georgia
+                Height: =50
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =20
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =24
+                Text: ="Audit Branch "
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =300
+                X: =0.00
+                Y: =22.61
+                ZIndex: =1
+
+        Container7_2 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =23.37
+            PaddingTop: =0.00
+            Width: =81.81
+            X: =558.00
+            Y: =0.00
+            ZIndex: =6
+
+            icon_Notification_2 As icon.Bell:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =Color.AntiqueWhite
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =5
+                Height: =56.80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Bell
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58.44
+                X: =0.00
+                Y: =0.00
+                ZIndex: =1
+
+    BArea_txt As text:
+        Default: =First(colResponseHDR).Branch_AreaOP
+        Height: =52
+        HintText: ="Full Name"
+        Size: =21
+        Width: =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =611
+        ZIndex: =10
+
+    BArea_lbl As label:
+        Size: =21
+        Text: ="Area Operations Supervisor/Officer/Manager"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =575
+        ZIndex: =11
+
+    BDistrict_txt As text:
+        Default: =First(colResponseHDR).Branch_DisSup
+        Height: =52
+        HintText: ="Full Name"
+        Size: =21
+        Width: =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =715
+        ZIndex: =12
+
+    BDistrict_lbl As label:
+        Size: =21
+        Text: ="District Supervisor"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =679
+        ZIndex: =13
+
+    BInCharge_txt As text:
+        Default: =First(colResponseHDR).Branch_OIC
+        Height: =52
+        HintText: ="Full Name"
+        Size: =21
+        Width: =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =819
+        ZIndex: =14
+
+    BInCharge_lbl As label:
+        Size: =21
+        Text: ="Store InCharge"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =783
+        ZIndex: =15
+
+    BDateVisit_lbl As label:
+        Size: =21
+        Text: ="Date Visit"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =887
+        ZIndex: =16
+
+    BDateVisit_dtp As datepicker:
+        Format: =DateTimeFormat.LongDateTime
+        Height: =62
+        Size: =24
+        Width: =704
+        X: =leftMargin
+        Y: =929
+        ZIndex: =18
+
+    Button17 As button:
+        DisplayMode: =If(Len(BCode_txt.Text)>0, DisplayMode.Edit,DisplayMode.Disabled)
+        Fill: =App.Theme.Colors.Primary
+        Height: =70
+        OnSelect: |-
+            = 
+            If(
+                Connection.Connected,
+                Set(branch_code, BCode_txt.Text);
+                Patch(
+                    lstSA_ResponseHDR,
+                    Coalesce(
+                        LookUp(lstSA_ResponseHDR, Batch_ID = batch_no), 
+                        Defaults(lstSA_ResponseHDR)
+                    )
+                    ,
+                    {
+                        //ClearCollect(colResponseHDR,{
+                        Batch_ID: batch_no,
+                        Branch_Code: branch_code,
+                        Branch_Name: BName_txt.Text,
+                        Branch_Address: BAdd_txt.Text,
+                        Branch_GeoLoc: BGeoLoc_txt.Text,
+                        Branch_AreaOP: BArea_txt.Text,
+                        Branch_DisSup: BDistrict_txt.Text,
+                        Branch_OIC: BInCharge_txt.Text,
+                        Date_Visit: BDateVisit_dtp.SelectedDate,
+                        Title: BTitle_txt.Text,
+                        Survey_Status: "New",
+                        User_Info:User().FullName
+                    }
+                );
+                Notify(
+                    "Successfully Saved",
+                    NotificationType.Success,
+                    1000
+                );
+            
+                Navigate('Question 01 001-003');
+                , // ELSE
+                ClearCollect(colResponseHDR,{
+                        Batch_ID: batch_no,
+                        Branch_Code: BCode_txt.Text,
+                        Branch_Name: BName_txt.Text,
+                        Branch_Address: BAdd_txt.Text,
+                        Branch_GeoLoc: BGeoLoc_txt.Text,
+                        Branch_AreaOP: BArea_txt.Text,
+                        Branch_DisSup: BDistrict_txt.Text,
+                        Branch_OIC: BInCharge_txt.Text,
+                        Date_Visit: BDateVisit_dtp.SelectedDate,
+                        Title: BTitle_txt.Text,
+                        Survey_Status: "New"
+                    }
+                );
+                SaveData(colResponseHDR,"localResponseHDR")
+            );
+            
+            ClearCollect(colResponseDTL,Filter(lstSA_ResponseDTL,Batch_No=batch_no)); // And 'Question ID' = 1));
+            
+            //Q1
+            ClearCollect(colQ1,Filter(colResponseDTL, 'Question ID' = 1));
+            ClearCollect(
+                colNamePos,
+                ForAll(
+                    Table(ParseJSON(First(colQ1).'Response Desc')),
+                    {
+                        Name: Text(Value.Name),
+                        Position: Text(Value.Position)
+                    }
+                )
+            );
+            //Q2
+            ClearCollect(colQ2,Filter(colResponseDTL, 'Question ID' = 6));
+            ClearCollect(
+                colQ2A,
+                ForAll(
+                    Table(ParseJSON(First(colQ2).'Response Desc')),
+                    {
+                        Q2_txt1: Text(Value.Q2_txt1),
+                        Q2_txt2: Text(Value.Q2_txt2),
+                        Q2_txt3: Text(Value.Q2_txt3),
+                        Q2_txt4: Text(Value.Q2_txt4)
+                    }
+                )
+            );
+            //Q3.1
+            ClearCollect(colQ3,Filter(colResponseDTL, 'Question ID' = 8));
+            ClearCollect(
+                colQ3_1A,
+                ForAll(
+                    Table(ParseJSON(First(colQ3).'Response Desc')),
+                    {
+                        Q3_txt1: Text(Value.Q3_txt1),
+                        Q3_txt2: Text(Value.Q3_txt2),
+                        Q3_txt3: Text(Value.Q3_txt3),
+                        Q3_txt4: Text(Value.Q3_txt4)
+                    }
+                )
+            );
+            //Q3.2
+            ClearCollect(colQ3_2,Filter(colResponseDTL, 'Question ID' = 10));
+            ClearCollect(
+                colQ3_2A,
+                ForAll(
+                    Table(ParseJSON(First(colQ3_2).'Response Desc')),
+                    {
+                        CtrlNo: Text(Value.CtrlNo),
+                        Amount: Text(Value.Amount)
+                    }
+                )
+            );
+            //Q4
+            ClearCollect(colQ4,Filter(colResponseDTL, 'Question ID' = 15));
+            ClearCollect(
+                colQ4a,
+                ForAll(
+                    Table(ParseJSON(First(colQ4).'Response Desc')),
+                    {
+                        DateX: Text(Value.DateX),
+                        Sales_No: Text(Value.Sales_No),
+                        Amount: Text(Value.Amount),
+                        Cnt_Delayed: Text(Value.Cnt_Delayed)
+                    }
+                )
+            );
+            
+            //Q5
+            ClearCollect(colQ5,Filter(colResponseDTL, 'Question ID' = 20));
+            ClearCollect(
+                colQ5A,
+                ForAll(
+                    Table(ParseJSON(First(colQ5).'Response Desc')),
+                    {
+                        Q5_txt1: Text(Value.Q5_txt1),
+                        Q5_txt2: Text(Value.Q5_txt2),
+                        Q5_txt3: Text(Value.Q5_txt3) 
+                    }
+                )
+            );
+            
+            Set(Q7_varChk1,false);
+            Set(Q7_varChk2,false);
+            Set(Q7_varChk3,true);
+        Size: =24
+        Text: |-
+            ="Start Survey
+            "
+        Width: =280
+        X: =486
+        Y: =1252
+        ZIndex: =19
+
+    BTitle_txt As text:
+        Default: =First(colResponseHDR).Title
+        Height: =52
+        HintText: ="Short Description"
+        Size: =21
+        Width: =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =1049
+        ZIndex: =20
+
+    BInCharge_lbl_1 As label:
+        Size: =21
+        Text: ="Survey Title"
+        Width: |
+            =Parent.Width -(leftMargin * 2)
+        X: =leftMargin
+        Y: =1013
+        ZIndex: =21
+

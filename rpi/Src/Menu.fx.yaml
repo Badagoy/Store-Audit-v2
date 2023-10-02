@@ -1,0 +1,158 @@
+Menu As screen:
+
+    Button3 As button:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =200
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate('Audit Form')
+        PressedFill: =RGBA(255, 0, 0, 1)
+        Size: =24
+        Text: ="Audit Store"
+        Width: =248
+        X: =40
+        Y: =204
+        ZIndex: =1
+
+    Icon2 As icon.Hamburger:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =45
+        Icon: =Icon.Hamburger
+        Width: =45
+        X: =40
+        Y: =33
+        ZIndex: =3
+
+    Button3_1 As button:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =200
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: =Navigate('Local Audits')
+        PressedFill: =RGBA(255, 0, 0, 1)
+        Size: =24
+        Text: ="Audit History"
+        Width: =248
+        X: =343
+        Y: =204
+        ZIndex: =4
+
+    Label2 As label:
+        BorderThickness: =1
+        Height: =113
+        Size: =21
+        Text: =Map1.GeoJSON
+        Width: =605
+        X: =17
+        Y: =976
+        ZIndex: =6
+
+    "Map1 As 'Map (preview)'.pcfdataset":
+        BorderColor: =RGBA(0, 18, 107, 1)
+        BorderRadius: =1
+        BorderThickness: =0
+        CurrentLocation: =false
+        DisplayMode: =DisplayMode.Edit
+        Height: =400
+        MapStyle: ='Map.MapStyle'.Road
+        PinColor: =RGBA(29, 114, 169, 1)
+        RouteMaintainOrder: =false
+        RouteOptimization: ='Map.RouteOptimization'.None
+        ShapeDrawing: =true
+        ShapeEditingDeleting: =true
+        ShapeGeoJSONObjects: |
+            =""
+        ShowRoutePins: =true
+        ShowShapeLabels: =true
+        ShowShapes: =true
+        UseRouting: =false
+        Width: =574
+        X: =60
+        Y: =1032
+        ZIndex: =8
+
+    Button3_2 As button:
+        BorderColor: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(241, 244, 249, 1)
+        Height: =200
+        HoverFill: =RGBA(184, 0, 0, 1)
+        OnSelect: |-
+            =Navigate('Customer Master'
+            )
+        PressedFill: =RGBA(255, 0, 0, 1)
+        Size: =24
+        Text: ="Customer Master"
+        Width: =248
+        X: =40
+        Y: =439
+        ZIndex: =9
+
+    Label4 As label:
+        Height: =59
+        Size: =21
+        Text: ="Test text"
+        Width: =248
+        X: =40
+        Y: =145
+        ZIndex: =10
+
+    AS_Container As groupContainer.manualLayoutContainer:
+        Width: =248
+        X: =40
+        Y: =664
+        ZIndex: =13
+
+        AS_btnAuditStore As button:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            BorderThickness: =10
+            Color: =AS_btnAuditStore.BorderColor
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(238, 204, 204, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            Height: =Parent.Height
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+            OnSelect: =Navigate('Audit Form v1')
+            PaddingBottom: =30
+            PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            RadiusBottomLeft: =35
+            RadiusBottomRight: =35
+            RadiusTopLeft: =35
+            RadiusTopRight: =35
+            Size: =22
+            Text: ="Audit Store"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =Parent.Width
+            Y: |
+                =0
+            ZIndex: =1
+
+        AS_icn As icon.DocumentwithContent:
+            BorderColor: =AS_btnAuditStore.BorderColor
+            Color: =AS_btnAuditStore.BorderColor
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =115
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Person
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width
+            ZIndex: =2
+

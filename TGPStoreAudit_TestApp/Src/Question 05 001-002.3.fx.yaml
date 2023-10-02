@@ -333,98 +333,6 @@
             Width: =746
             ZIndex: =1
 
-        Checkbox1_21 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="YES"
-            Width: =213
-            X: =73
-            Y: =169
-            ZIndex: =3
-
-        Checkbox1_22 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="NO"
-            Width: =213
-            X: =286
-            Y: =169
-            ZIndex: =4
-
-        Checkbox1_23 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="N/A"
-            Width: =213
-            X: =499
-            Y: =169
-            ZIndex: =5
-
-        Label5_35 As label:
-            Height: =70
-            Size: =21
-            Text: ="1. Is it true?"
-            Width: =186
-            X: =36
-            Y: =99
-            ZIndex: =6
-
-        Label5_36 As label:
-            Height: =70
-            Size: =21
-            Text: ="2. Remaining booklet of Sales Invoice"
-            Width: =649
-            X: =36
-            Y: =232
-            ZIndex: =7
-
-        TextInput5_12 As text:
-            Default: =""
-            Height: =70
-            Size: =21
-            Width: =223
-            X: =73
-            Y: =350
-            ZIndex: =8
-
-        TextInput5_13 As text:
-            Default: =""
-            Height: =70
-            Size: =21
-            Width: =223
-            X: =445
-            Y: =350
-            ZIndex: =9
-
-        Label5_37 As label:
-            Align: =Align.Center
-            Height: =70
-            Size: =21
-            Text: ="From"
-            Width: =186
-            X: =86
-            Y: =280
-            ZIndex: =10
-
-        Label5_38 As label:
-            Align: =Align.Center
-            Height: =70
-            Size: =21
-            Text: ="To"
-            Width: =186
-            X: =463
-            Y: =280
-            ZIndex: =11
-
-        Label5_39 As label:
-            Height: =70
-            Size: =21
-            Text: ="3. Used booklet of Sales Invoice"
-            Width: =649
-            X: =36
-            Y: =420
-            ZIndex: =12
-
         TextInput5_14 As text:
             Default: =""
             Height: =70
@@ -443,25 +351,100 @@
             Y: =538
             ZIndex: =14
 
-        Label5_40 As label:
-            Align: =Align.Center
-            Height: =70
-            Size: =21
-            Text: ="From"
-            Width: =186
-            X: =86
-            Y: =468
+        Container9 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =413
+            Width: =715
+            X: =16
+            Y: =99
             ZIndex: =15
 
-        Label5_41 As label:
-            Align: =Align.Center
-            Height: =70
-            Size: =21
-            Text: ="To"
-            Width: =186
-            X: =463
-            Y: =468
-            ZIndex: =16
+            Container10 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =163
+                Width: =683
+                X: =15
+                Y: =9
+                ZIndex: =1
+
+                Label18 As label:
+                    Height: =70
+                    Size: =21
+                    Text: ="1. Is it true?"
+                    Width: =560
+                    X: =15
+                    Y: =12
+                    ZIndex: =1
+
+                Container11 As groupContainer.manualLayoutContainer:
+                    Height: =76
+                    Width: =403
+                    X: =40
+                    Y: =82
+                    ZIndex: =2
+
+                    Q6_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
+                        DropShadow: =DropShadow.None
+                        Height: =76
+                        LayoutAlignItems: =LayoutAlignItems.Stretch
+                        LayoutMode: =LayoutMode.Auto
+                        LayoutOverflowX: =LayoutOverflow.Scroll
+                        Width: =403
+                        X: =leftMargin
+                        ZIndex: =1
+
+                        btn_Yes_3 As button:
+                            Align: =Align.Left
+                            AlignInContainer: =AlignInContainer.Stretch
+                            BorderColor: =App.Theme.Colors.Primary
+                            BorderThickness: =1
+                            Color: =RGBA(246, 88, 16, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =70
+                            HoverFill: =App.Theme.Colors.Primary
+                            LayoutMinHeight: =60
+                            LayoutMinWidth: =280
+                            OnSelect: =Set(Q6_varCheck1,true);Set(Q6_varCheck2,false) 
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            RadiusBottomLeft: =1
+                            RadiusBottomRight: =1
+                            RadiusTopLeft: =1
+                            RadiusTopRight: =1
+                            Size: =24
+                            Text: |-
+                                =
+                                If(Q6_varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                            Width: =200
+                            ZIndex: =1
+
+                        btn_No_3 As button:
+                            Align: =Align.Left
+                            BorderColor: =App.Theme.Colors.Primary
+                            BorderThickness: =1
+                            Color: =RGBA(246, 88, 16, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =70
+                            HoverBorderColor: =
+                            HoverColor: =App.Theme.Colors.Primary
+                            HoverFill: =
+                            LayoutMinHeight: =70
+                            LayoutMinWidth: =280
+                            OnSelect: =Set(Q6_varCheck1,false);Set(Q6_varCheck2,true)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            RadiusBottomLeft: =1
+                            RadiusBottomRight: =1
+                            RadiusTopLeft: =1
+                            RadiusTopRight: =1
+                            Size: =24
+                            Text: =If(Q6_varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                            Width: =200
+                            ZIndex: =2
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
@@ -587,7 +570,8 @@
                     ZIndex: =3
 
         Container7 As groupContainer.manualLayoutContainer:
-            Height: =391
+            DropShadow: =DropShadow.None
+            Height: =372
             Width: =716
             X: =20
             Y: =320
@@ -603,6 +587,7 @@
                 ZIndex: =1
 
             Container8 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
                 Height: =278
                 Width: =688
                 X: =12
@@ -652,7 +637,9 @@
                         ZIndex: =3
 
                     Icon1 As icon.Save:
+                        FillPortions: =1
                         Icon: =Icon.Save
+                        LayoutMinWidth: =0
                         OnSelect: |-
                             =Patch(
                                 col05_1_2Qa,
@@ -707,7 +694,7 @@
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             Size: =21
-                            Width: =160
+                            Width: =230
                             ZIndex: =2
 
                         TextInput11 As text:
@@ -722,7 +709,10 @@
                             ZIndex: =3
 
                         Icon5 As icon.Trash:
+                            AlignInContainer: =AlignInContainer.Center
+                            FillPortions: =1
                             Icon: =Icon.Trash
                             OnSelect: =Remove(col05_1_2Qa,LookUp(col05_1_2Qa, Series_no = ThisItem.Series_no))
+                            PaddingLeft: =5
                             ZIndex: =4
 

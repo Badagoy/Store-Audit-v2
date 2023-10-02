@@ -39,6 +39,12 @@ App As appinfo:
         
             ClearCollect(colQ5A,{Deposit_Amount:"0",Actual_Amount:"0"});
             Clear(colQ5A);
+        
+            ClearCollect(colQ6A,{DSR_Amount:"0",Actual_Amount:"0"});
+            Clear(colQ6A);
+            //User
+            Set(userInfo ,User().FullName);
+        
             //User
             Set(userInfo ,User().FullName);
             

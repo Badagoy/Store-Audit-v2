@@ -6958,7 +6958,7 @@
                 },
                 "region": {
                   "charLength": 13,
-                  "charOffset": 124,
+                  "charOffset": 120,
                   "snippet": {
                     "text": ".SelectedDate"
                   }
@@ -7034,10 +7034,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 179,
+                  "charLength": 175,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Patch(\n    col05_1_2Qa\n    Defaultscol05_1_2Qa\n    {\n        Series_no: Q1_2_Seriesno_05.Text\n        ,Sales_No:Q1_2_Date_05.SelectedDate\n\t    ,Remove:Q1_2_Remove_05.Text \n    }\n)"
+                    "text": "Patch(\n    col05_1_2Qa\n    Defaultscol05_1_2Qa\n    {\n        Series_no: Q1_2_Seriesno_05.Text\n        ,Date:Q1_2_Date_05.SelectedDate\n\t    ,Remove:Q1_2_Remove_05.Text \n    }\n)"
                   }
                 }
               },

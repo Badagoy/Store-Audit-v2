@@ -689,7 +689,7 @@
                         ZIndex: =6
 
                         Q4_date_7 As text:
-                            Default: =ThisItem.Q1_2_Seriesno_05
+                            Default: =ThisItem.Q05_series_no_1_2
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =44
@@ -704,7 +704,7 @@
                             ZIndex: =1
 
                         Q4_SalesNo_9 As text:
-                            Default: =ThisItem.Q1_2_Date_05
+                            Default: =ThisItem.Q05_date_1_2
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =44
@@ -718,7 +718,7 @@
                             ZIndex: =2
 
                         Q4_Amount_5 As text:
-                            Default: =ThisItem.Q1_2_Remove_05
+                            Default: =ThisItem.Q05_remove_1_2
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
                             Height: =44

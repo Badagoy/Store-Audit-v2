@@ -446,6 +446,38 @@
                             Width: =200
                             ZIndex: =2
 
+            Container12 As groupContainer.manualLayoutContainer:
+                Height: =168
+                Width: =680
+                X: =33
+                Y: =172
+                ZIndex: =2
+
+                Label19 As label:
+                    Height: =70
+                    Size: =21
+                    Text: ="2. Remaining booklet of Sales Invoice"
+                    Width: =500
+                    ZIndex: =1
+
+                Label20 As label:
+                    Height: =70
+                    Size: =21
+                    Text: ="From"
+                    Width: =178
+                    X: =120
+                    Y: =45
+                    ZIndex: =2
+
+                Label20_1 As label:
+                    Height: =70
+                    Size: =21
+                    Text: ="Text"
+                    Width: =178
+                    X: =356
+                    Y: =45
+                    ZIndex: =3
+
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =720

@@ -103,7 +103,7 @@
             "Name": "Rectangle3",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 562,
+            "PublishOrderIndex": 566,
             "Rules": [
               {
                 "Category": "Design",
@@ -480,7 +480,7 @@
             "Name": "btn_ComYes",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 563,
+            "PublishOrderIndex": 567,
             "Rules": [
               {
                 "Category": "Data",
@@ -986,7 +986,7 @@
             "Name": "btn_ComNo",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 564,
+            "PublishOrderIndex": 568,
             "Rules": [
               {
                 "Category": "Data",
@@ -1499,7 +1499,7 @@
             "Name": "btn_ComNA",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 565,
+            "PublishOrderIndex": 569,
             "Rules": [
               {
                 "Category": "Data",
@@ -1885,7 +1885,7 @@
         "Name": "Com_H01",
         "Parent": "YesNoNa",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 561,
+        "PublishOrderIndex": 565,
         "Rules": [
           {
             "Category": "Design",

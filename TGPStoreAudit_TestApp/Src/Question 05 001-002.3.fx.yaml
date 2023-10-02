@@ -1,14 +1,5 @@
 "'Question 05 001-002.3' As screen":
 
-    Q1_lbl_10 As label:
-        Height: =99
-        Size: =fontSize
-        Text: ="1. Manual retail sales invoice charge sales invoice and collection receipt if any are valid used by series no in sequence and show correct TIN and address per COR"
-        Width: =Parent.Width - (leftMargin * 2)
-        X: =20
-        Y: =214
-        ZIndex: =1
-
     Bottom_CNT_7 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
@@ -327,132 +318,6 @@
         Y: =130
         ZIndex: =4
 
-    Label5_33 As label:
-        Height: =70
-        Size: =21
-        Text: ="1. Is it tally?"
-        Width: =560
-        X: =46
-        Y: =313
-        ZIndex: =5
-
-    Container1_3 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.None
-        Height: =63
-        Width: =720
-        X: =46
-        Y: =383
-        ZIndex: =6
-
-        Checkbox1_18 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="YES"
-            Width: =213
-            X: =40
-            ZIndex: =1
-
-        Checkbox1_19 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="NO"
-            Width: =213
-            X: =253
-            ZIndex: =2
-
-        Checkbox1_20 As checkbox:
-            Height: =63
-            Size: =21
-            Text: ="N/A"
-            Width: =213
-            X: =466
-            ZIndex: =3
-
-    Label5_34 As label:
-        Color: =RGBA(237, 237, 237, 1)
-        Height: =70
-        Size: =21
-        Text: ="2. Sales Invoice and Cash Receipt"
-        Width: =560
-        X: =46
-        Y: =446
-        ZIndex: =7
-
-    Container2_3 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.None
-        Height: =71
-        Width: =714
-        X: =52
-        Y: =516
-        ZIndex: =8
-
-        Label13_9 As label:
-            Color: =RGBA(237, 237, 237, 1)
-            Height: =70
-            Size: =21
-            Text: ="Series no."
-            Width: =148
-            X: =39
-            ZIndex: =1
-
-        Label13_10 As label:
-            Color: =RGBA(237, 237, 237, 1)
-            Height: =70
-            Size: =21
-            Text: ="Date"
-            Width: =148
-            X: =231
-            ZIndex: =2
-
-        Label13_11 As label:
-            Color: =RGBA(237, 237, 237, 1)
-            Height: =70
-            Size: =21
-            Text: ="Remove"
-            Width: =148
-            X: =401
-            ZIndex: =3
-
-    Container3_3 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.None
-        Height: =111
-        Width: =714
-        X: =52
-        Y: =587
-        ZIndex: =9
-
-        Icon4_3 As icon.Add:
-            Color: =RGBA(0, 134, 208, 1)
-            Icon: =Icon.Add
-            X: =40
-            Y: =40
-            ZIndex: =1
-
-        Label14_6 As label:
-            Height: =70
-            Size: =21
-            Text: ="ADD"
-            Width: =86
-            X: =132
-            Y: =37
-            ZIndex: =2
-
-        Icon5_3 As icon.Cancel:
-            Color: =RGBA(56, 96, 178, 1)
-            Icon: =Icon.Cancel
-            X: =405
-            Y: =46
-            ZIndex: =3
-
-        Label14_7 As label:
-            Height: =70
-            Size: =21
-            Text: ="CLEAR ALL"
-            Width: =167
-            X: =486
-            Y: =41
-            ZIndex: =4
-
     Container4_11 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =734
@@ -597,4 +462,44 @@
             X: =463
             Y: =468
             ZIndex: =16
+
+    Container1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =445
+        Width: =746
+        X: =20
+        Y: =205
+        ZIndex: =11
+
+        Label5 As label:
+            Height: =125
+            Size: =21
+            Text: ="1. Manual retail sales invoice charge invoice and collection receipt if any are valid used by series no in sequence and show correct TIN and address per COR"
+            Width: =728
+            X: =8
+            Y: =12
+            ZIndex: =1
+
+        Container2 As groupContainer.manualLayoutContainer:
+            Height: =183
+            Width: =716
+            X: =20
+            Y: =137
+            ZIndex: =2
+
+            Label11 As label:
+                Height: =70
+                Size: =21
+                Text: ="1. Is it tally?"
+                Width: =560
+                X: =12
+                Y: =12
+                ZIndex: =1
+
+            Container4 As groupContainer.manualLayoutContainer:
+                Height: =83
+                Width: =638
+                X: =40
+                Y: =82
+                ZIndex: =2
 

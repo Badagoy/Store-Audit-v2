@@ -28,10 +28,10 @@
                     =0
                 ZIndex: =1
 
-            Q5_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
+            Q6_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
-                LayoutMinHeight: =200
+                LayoutMinHeight: =150
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll

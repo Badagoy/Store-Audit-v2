@@ -565,7 +565,12 @@
     Q1_lbl_2 As label:
         Height: =99
         Size: =fontSize
-        Text: ="1. Manual retail sales invoice charge sales invoice and collection receipt if any are valid used by series no in sequence and show correct TIN and address per COR"
+        Text: |-
+            ="1. " & LookUp(
+                colQuestion,
+                Question_ID = 1,
+                Question_Desc
+            )
         Width: =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =210

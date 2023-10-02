@@ -103,7 +103,7 @@
             "Name": "Rectangle3",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 566,
+            "PublishOrderIndex": 562,
             "Rules": [
               {
                 "Category": "Design",
@@ -480,7 +480,7 @@
             "Name": "btn_ComYes",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 567,
+            "PublishOrderIndex": 563,
             "Rules": [
               {
                 "Category": "Data",
@@ -986,7 +986,7 @@
             "Name": "btn_ComNo",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 568,
+            "PublishOrderIndex": 564,
             "Rules": [
               {
                 "Category": "Data",
@@ -1499,7 +1499,7 @@
             "Name": "btn_ComNA",
             "Parent": "Com_H01",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 569,
+            "PublishOrderIndex": 565,
             "Rules": [
               {
                 "Category": "Data",
@@ -1885,7 +1885,7 @@
         "Name": "Com_H01",
         "Parent": "YesNoNa",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 565,
+        "PublishOrderIndex": 561,
         "Rules": [
           {
             "Category": "Design",
@@ -2232,6 +2232,15 @@
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "tblDspValue",
+      "Hidden": false,
+      "Name": "tblDspValue",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"SampleBooleanField\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleNumberField\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleStringField\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
     }
   ],
   "FirstParty": true,

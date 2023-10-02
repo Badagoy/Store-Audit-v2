@@ -320,10 +320,10 @@
 
     Container4_11 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =734
+        Height: =534
         Width: =746
         X: =20
-        Y: =725
+        Y: =925
         ZIndex: =10
 
         Label16_3 As label:
@@ -465,7 +465,7 @@
 
     Container1 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =445
+        Height: =720
         Width: =746
         X: =20
         Y: =205
@@ -481,6 +481,7 @@
             ZIndex: =1
 
         Container2 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
             Height: =183
             Width: =716
             X: =20
@@ -584,4 +585,27 @@
                     Text: =If(Q6_varCheck3 = true,"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
+
+        Container7 As groupContainer.manualLayoutContainer:
+            Height: =391
+            Width: =716
+            X: =20
+            Y: =320
+            ZIndex: =3
+
+            Label11_8 As label:
+                Height: =70
+                Size: =21
+                Text: ="2. Sales Invoice and Cash Receipt"
+                Width: =560
+                X: =12
+                Y: =3
+                ZIndex: =1
+
+            Container8 As groupContainer.manualLayoutContainer:
+                Height: =278
+                Width: =688
+                X: =12
+                Y: =73
+                ZIndex: =2
 

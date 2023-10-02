@@ -13159,6 +13159,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_date_7.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_date_7.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Q1_2_Seriesno_05"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Question 05 001-002.3",
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_date_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Q1_2_Seriesno_05"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_SalesNo_9.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_SalesNo_9.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 13,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Q1_2_Date_05"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Question 05 001-002.3",
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_SalesNo_9"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Q1_2_Date_05"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_Amount_5.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_Amount_5.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Q1_2_Remove_05"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Question 05 001-002.3",
+                "type": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_Amount_5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Q1_2_Remove_05"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Question 05 001-002.3'.Container1.Container7.Container8.Q4_galSalesTable_5.Q4_ConH01_8.Q4_icnDel_3.OnSelect"
                 }
               ],

@@ -165,7 +165,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-10-02 06:28:26",
+        "modifiedOn": "2023-10-02 02:03:06",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },
@@ -210,9 +210,6 @@
           "lstSA_Question": {
             "tableName": "f6b67d52-fdf9-468c-b1bd-24b249151d7f"
           },
-          "lstSA_Question_1": {
-            "tableName": "3380410c-70ad-41f8-9eb1-2dc10d91c9ef"
-          },
           "lstSA_ResponseDTL": {
             "tableName": "58437235-916b-42be-96c3-522393def4d7"
           },
@@ -225,8 +222,7 @@
     "dataSources": [
       "lstSA_Question",
       "lstSA_ResponseHDR",
-      "lstSA_ResponseDTL",
-      "lstSA_Question_1"
+      "lstSA_ResponseDTL"
     ],
     "dependencies": {},
     "dependents": [

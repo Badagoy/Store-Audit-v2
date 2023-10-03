@@ -1,6 +1,6 @@
 "'Question 01 004-010' As screen":
 
-    Q6_Container_1 As groupContainer.manualLayoutContainer:
+    Q7_Container As groupContainer.manualLayoutContainer:
         Height: =300
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -8,7 +8,7 @@
         Y: =1100
         ZIndex: =1
 
-        Q6_SubCon_3 As groupContainer.verticalAutoLayoutContainer:
+        Q7_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =300
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -16,7 +16,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            Q6_lbl_3 As label:
+            Q7_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -28,7 +28,7 @@
                     =0
                 ZIndex: =1
 
-            Q6_YesNo_1 As toggleSwitch:
+            Q7_YesNo As toggleSwitch:
                 Default: =If(First(colQ5).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
@@ -41,7 +41,7 @@
                 Y: =100
                 ZIndex: =2
 
-            Q6_ConH01_5 As groupContainer.horizontalAutoLayoutContainer:
+            Q7_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
                 LayoutMinHeight: =150
@@ -53,7 +53,8 @@
                 Y: =610
                 ZIndex: =3
 
-                cntQ6S_4 As groupContainer.verticalAutoLayoutContainer:
+                cntQ7S As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -66,7 +67,7 @@
                     Width: =300
                     ZIndex: =1
 
-                    Q6_lbl1_1 As label:
+                    Q7_lbl1 As label:
                         Height: =52
                         LayoutMinHeight: =70
                         LayoutMinWidth: =300
@@ -77,7 +78,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q6_txt1_1 As text:
+                    Q7_txt1 As text:
                         Default: =First(colQ6A).DSR_Amount
                         Height: =70
                         LayoutMinHeight: =70
@@ -86,7 +87,8 @@
                         Width: =300
                         ZIndex: =2
 
-                cntQ6S2_1 As groupContainer.verticalAutoLayoutContainer:
+                cntQ7S2 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -99,7 +101,7 @@
                     Width: =300
                     ZIndex: =2
 
-                    Q6_lbl2_1 As label:
+                    Q7_lbl2 As label:
                         Align: =Align.Justify
                         Height: =52
                         LayoutMinHeight: =70
@@ -111,7 +113,7 @@
                         Y: =9
                         ZIndex: =1
 
-                    Q6_txt2_1 As text:
+                    Q7_txt2 As text:
                         Default: =First(colQ6A).Actual_Amount
                         Height: =70
                         LayoutMinHeight: =70

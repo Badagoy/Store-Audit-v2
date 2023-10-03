@@ -9,7 +9,11 @@ App As appinfo:
         
         // Global Variables
         //=================//
-            //Collections
+            //Collections 
+            //====================================================================
+            //  FORMATION shouldbe VARTYPE CATEGORYID QUESTIONID _SUBQID PREFIX
+            //  colC01Q25_1A
+            //====================================================================
             ClearCollect(colNamePos,{Name:"x",Position:""}) ;  //Create Collection 
             Remove(colNamePos,LookUp(colNamePos, Name = "x")); //Empty  Collection
         

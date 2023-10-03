@@ -385,7 +385,7 @@
             
             ClearCollect(colResponseDTL,Filter(lstSA_ResponseDTL,Batch_No=batch_no)); // And 'Question ID' = 1));
             
-            //Q1
+            //C01Q1
             ClearCollect(colQ1,Filter(colResponseDTL, 'Question ID' = 1));
             ClearCollect(
                 colNamePos,
@@ -397,7 +397,7 @@
                     }
                 )
             );
-            //Q2
+            //C01Q2
             ClearCollect(colQ2,Filter(colResponseDTL, 'Question ID' = 6));
             ClearCollect(
                 colQ2A,
@@ -411,7 +411,7 @@
                     }
                 )
             );
-            //Q3.1
+            //C01Q3.1
             ClearCollect(colQ3,Filter(colResponseDTL, 'Question ID' = 8));
             ClearCollect(
                 colQ3_1A,
@@ -425,7 +425,7 @@
                     }
                 )
             );
-            //Q3.2
+            //C01Q3.2
             ClearCollect(colQ3_2,Filter(colResponseDTL, 'Question ID' = 10));
             ClearCollect(
                 colQ3_2A,
@@ -437,7 +437,7 @@
                     }
                 )
             );
-            //Q4
+            //C01Q4
             ClearCollect(colQ4,Filter(colResponseDTL, 'Question ID' = 15));
             ClearCollect(
                 colQ4a,
@@ -452,7 +452,7 @@
                 )
             );
             
-            //Q5
+            //C01Q5
             ClearCollect(colQ5,Filter(colResponseDTL, 'Question ID' = 20));
             ClearCollect(
                 colQ5A,
@@ -465,6 +465,20 @@
                     }
                 )
             );
+            
+            //C01Q6
+            ClearCollect(colQ6,Filter(colResponseDTL, 'Question ID' = 25));
+            ClearCollect(
+                colQ6A,
+                ForAll(
+                    Table(ParseJSON(First(colQ6).'Response Desc')),
+                    {
+                        DSR_Amount: Text(Value.DSR_Amount),
+                        Actual_Amount: Text(Value.Actual_Amount) 
+                    }
+                )
+            );
+            
             
             Set(Q7_varChk1,false);
             Set(Q7_varChk2,false);

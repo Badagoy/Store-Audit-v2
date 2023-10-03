@@ -362,7 +362,7 @@
             Label17_118 As label:
                 Height: =70
                 Size: =21
-                Text: ="47. Fire Extinguisher 3"
+                Text: ="53. Spotlight or Floodlight"
                 Width: =560
                 X: =62
                 Y: =79
@@ -495,9 +495,8 @@
             Label17_120 As label:
                 Height: =70
                 Size: =21
-                Text: ="48. Fire Extinguisher 4"
+                Text: ="2. Well lighted Selling Area"
                 Width: =560
-                X: =73
                 ZIndex: =1
 
             Label17_121 As label:
@@ -505,7 +504,7 @@
                 Size: =21
                 Text: ="1. Is it good condition?"
                 Width: =560
-                X: =126
+                X: =52
                 Y: =70
                 ZIndex: =2
 

@@ -353,20 +353,11 @@
             Label16_34 As label:
                 Height: =67
                 Size: =21
-                Text: ="1. All store trade fixtures is functioning or in good condition"
+                Text: ="3. ACU/CHILLER free from blockage?"
                 Width: =726
                 X: =10
                 Y: =12
                 ZIndex: =1
-
-            Label17_122 As label:
-                Height: =70
-                Size: =21
-                Text: ="47. Fire Extinguisher 3"
-                Width: =560
-                X: =62
-                Y: =79
-                ZIndex: =2
 
             Label17_123 As label:
                 Height: =70
@@ -374,7 +365,7 @@
                 Text: ="1. Is it good condition?"
                 Width: =560
                 X: =98
-                Y: =149
+                Y: =96
                 ZIndex: =3
 
             Q6_ConH01_143 As groupContainer.horizontalAutoLayoutContainer:
@@ -495,9 +486,9 @@
             Label17_124 As label:
                 Height: =70
                 Size: =21
-                Text: ="48. Fire Extinguisher 4"
-                Width: =560
-                X: =73
+                Text: ="4. Fire Extinguisher/s placed of designated area."
+                Width: =740
+                X: =16
                 ZIndex: =1
 
             Label17_125 As label:

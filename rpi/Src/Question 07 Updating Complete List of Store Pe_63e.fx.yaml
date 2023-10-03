@@ -428,7 +428,7 @@
                 Label17_10 As label:
                     Height: =70
                     Size: =21
-                    Text: ="4. In complete uniform?"
+                    Text: ="4. Position Status"
                     Width: =560
                     X: =50
                     Y: =664
@@ -466,7 +466,7 @@
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                        Text: =If(varCheck1 = true,"✅ Same","⭕ Same") // "⚪✅⭕✔ Same"
                         Width: =150
                         ZIndex: =1
 
@@ -492,7 +492,7 @@
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                        Text: =If(varCheck2 = true,"✅ New","⭕ New") // "⚪✅⭕✔ Same"
                         Width: =150
                         ZIndex: =2
 
@@ -517,7 +517,7 @@
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                        Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Same"
                         Width: =150
                         ZIndex: =3
 

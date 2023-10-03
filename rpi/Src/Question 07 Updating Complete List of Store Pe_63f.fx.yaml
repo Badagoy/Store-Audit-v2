@@ -352,7 +352,7 @@
 
             Container7_19 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
-                Height: =848
+                Height: =1033
                 Width: =655
                 X: =12
                 Y: =20
@@ -428,10 +428,10 @@
                 Label17_60 As label:
                     Height: =70
                     Size: =21
-                    Text: ="4. In complete uniform?"
+                    Text: ="4. Position Status"
                     Width: =560
                     X: =50
-                    Y: =664
+                    Y: =670
                     ZIndex: =8
 
                 Q6_ConH01_20 As groupContainer.horizontalAutoLayoutContainer:
@@ -441,8 +441,8 @@
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowX: =LayoutOverflow.Scroll
                     Width: =550
-                    X: =95
-                    Y: =734
+                    X: =85
+                    Y: =729
                     ZIndex: =9
 
                     btn_Yes_20 As button:
@@ -466,8 +466,8 @@
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                        Width: =150
+                        Text: =If(varCheck1 = true,"✅ Same","⭕ Same") // "⚪✅⭕✔ Same"
+                        Width: =170
                         ZIndex: =1
 
                     btn_No_20 As button:
@@ -492,8 +492,8 @@
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                        Width: =150
+                        Text: =If(varCheck2 = true,"✅ New","⭕ New") // "⚪✅⭕✔ Same"
+                        Width: =170
                         ZIndex: =2
 
                     btn_NA_19 As button:
@@ -518,6 +518,27 @@
                         RadiusTopRight: =1
                         Size: =24
                         Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                        Width: =150
+                        Width: =170
                         ZIndex: =3
+
+                Label20_1 As label:
+                    Height: =70
+                    Size: =21
+                    Text: ="5. New Position"
+                    Visible: =If(varCheck2 = true, true, false)
+                    Width: =560
+                    X: =50
+                    Y: =842
+                    ZIndex: =10
+
+                TextInput4_61 As text:
+                    Default: =""
+                    Height: =70
+                    HintText: =""
+                    Size: =21
+                    Visible: =If(varCheck2 = true, true, false)
+                    Width: =560
+                    X: =85
+                    Y: =912
+                    ZIndex: =11
 

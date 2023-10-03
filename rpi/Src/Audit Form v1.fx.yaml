@@ -478,6 +478,19 @@
                 )
             );
             
+            //C01Q7   ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
+            ClearCollect(colC01Q7,Filter(colResponseDTL, 'Question ID' = 29));
+            ClearCollect(
+                colC01Q7A,
+                ForAll(
+                    Table(ParseJSON(First(colC01Q7).'Response Desc')),
+                    {
+                        Utility_Fund:    Text(Value.Utility_Fund),
+                        Cash_OnHand: Text(Value.Cash_OnHand) ,
+                        Total_Account: Text(Value.Total_Account)
+                    }
+                )
+            );
             
             Set(Q7_varChk1,false);
             Set(Q7_varChk2,false);

@@ -526,7 +526,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/03/2023 00:52:29",
+  "HeaderLastSavedDateTimeUTC": "10/03/2023 01:03:45",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3fc8d54c-4037-40a2-aea1-752bc65dc2a5": "\"/providers/microsoft.powerapps/apis/shared_accuweatherip/connections/23b749611a2341d38dd29225f7cccd2b\"",
@@ -552,6 +552,8 @@
   "OrderDataSource": {
     "col05_1_2Qa": 47,
     "col05_3_2Qa": 46,
+    "colC01Q7": 68,
+    "colC01Q7A": 69,
     "colCashCtrl": 66,
     "colNamePos": 48,
     "colQ1": 49,
@@ -2280,8 +2282,8 @@
     "Q3_1_galNamePos_1": 155,
     "Q3_1_icnNameSave_1": 154,
     "Q3_1_lbl_1": 150,
-    "Q3_1_txtAmount_1": 153,
-    "Q3_1_txtCtrlNo_1": 152,
+    "Q3_1_txtAmount_1": 152,
+    "Q3_1_txtCtrlNo_1": 153,
     "Q3_1_YesNo_1": 151,
     "Q3_Container_1": 136,
     "Q3_lbl_1": 135,

@@ -16,6 +16,94 @@
             Width: =Parent.Width
             ZIndex: =7
 
+            Q7_ConH01_5 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Height: =185
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMinHeight: =70
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =Parent.Width
+                X: =leftMargin
+                Y: =610
+                ZIndex: =1
+
+                Q7_btn_Yes_5 As button:
+                    Align: =Align.Left
+                    BorderColor: =App.Theme.Colors.Primary
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverFill: =App.Theme.Colors.Primary
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_5 As button:
+                    Align: =Align.Left
+                    BorderColor: =App.Theme.Colors.Primary
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_5 As button:
+                    Align: =Align.Left
+                    BorderColor: =App.Theme.Colors.Primary
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
             Q7_lbl As label:
                 Height: =114
                 LayoutMinHeight: =70
@@ -26,7 +114,7 @@
                 Width: =Parent.Width
                 X: |
                     =0
-                ZIndex: =1
+                ZIndex: =2
 
             Q7_YesNo As toggleSwitch:
                 Default: =If(First(colQ5).Res_Option ="true",true,false)
@@ -39,7 +127,7 @@
                 TrueText: ="Yes"
                 Width: =160
                 Y: =100
-                ZIndex: =2
+                ZIndex: =3
 
             Q7_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -51,10 +139,9 @@
                 Width: =Parent.Width - (leftMargin * 2)
                 X: =leftMargin
                 Y: =610
-                ZIndex: =3
+                ZIndex: =4
 
                 cntQ7S As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -64,31 +151,30 @@
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =10
                     PaddingRight: =5
-                    Width: =300
+                    Width: =220
                     ZIndex: =1
 
                     Q7_lbl1 As label:
                         Height: =52
                         LayoutMinHeight: =70
-                        LayoutMinWidth: =300
+                        LayoutMinWidth: =200
                         Size: =21
-                        Text: ="DSR Amount"
+                        Text: ="Utility Fund"
                         VerticalAlign: =VerticalAlign.Bottom
                         Width: =300
                         Y: =9
                         ZIndex: =1
 
                     Q7_txt1 As text:
-                        Default: =First(colQ7A).DSR_Amount
+                        Default: =First(colC01Q7A).Utility_Fund
                         Height: =70
                         LayoutMinHeight: =70
-                        LayoutMinWidth: =288
+                        LayoutMinWidth: =200
                         Size: =21
                         Width: =300
                         ZIndex: =2
 
                 cntQ7S2 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     Height: =225
                     LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -98,26 +184,60 @@
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =10
                     PaddingRight: =5
-                    Width: =300
+                    Width: =220
                     ZIndex: =2
 
                     Q7_lbl2 As label:
                         Align: =Align.Justify
                         Height: =52
                         LayoutMinHeight: =70
-                        LayoutMinWidth: =300
+                        LayoutMinWidth: =200
                         Size: =21
-                        Text: ="Actual Amount"
+                        Text: ="Cash OnHand"
                         VerticalAlign: =VerticalAlign.Bottom
                         Width: =300
                         Y: =9
                         ZIndex: =1
 
                     Q7_txt2 As text:
-                        Default: =First(colQ7A).Actual_Amount
+                        Default: =First(colC01Q7A).Cash_OnHand
                         Height: =70
                         LayoutMinHeight: =70
-                        LayoutMinWidth: =288
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Width: =300
+                        ZIndex: =2
+
+                cntQ7S3 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =225
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =300
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =5
+                    Width: =220
+                    ZIndex: =3
+
+                    Q7_lbl3 As label:
+                        Align: =Align.Justify
+                        Height: =52
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Text: ="Cash OnHand"
+                        VerticalAlign: =VerticalAlign.Bottom
+                        Width: =300
+                        Y: =9
+                        ZIndex: =1
+
+                    Q7_txt3 As text:
+                        Default: =First(colC01Q7A).Cash_OnHand
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
                         Size: =21
                         Width: =300
                         ZIndex: =2

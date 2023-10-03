@@ -78,7 +78,7 @@
                         ZIndex: =1
 
                     Q6_txt1 As text:
-                        Default: =First(colQ5A).Deposit_Amount
+                        Default: =First(colQ6A).DSR_Amount
                         Height: =70
                         LayoutMinHeight: =70
                         LayoutMinWidth: =288
@@ -112,7 +112,7 @@
                         ZIndex: =1
 
                     Q6_txt2 As text:
-                        Default: =First(colQ5A).Actual_Amount
+                        Default: =First(colQ6A).Actual_Amount
                         Height: =70
                         LayoutMinHeight: =70
                         LayoutMinWidth: =288

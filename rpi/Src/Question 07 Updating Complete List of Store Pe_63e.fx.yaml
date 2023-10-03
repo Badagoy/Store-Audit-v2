@@ -412,7 +412,7 @@
                     Text: ="3. Position"
                     Width: =560
                     X: =50
-                    Y: =478
+                    Y: =501
                     ZIndex: =6
 
                 TextInput4_5 As text:
@@ -422,7 +422,7 @@
                     Size: =21
                     Width: =560
                     X: =85
-                    Y: =548
+                    Y: =571
                     ZIndex: =7
 
                 Label17_10 As label:
@@ -434,13 +434,101 @@
                     Y: =664
                     ZIndex: =8
 
-                Label17_101 As label:
+                Q6_ConH01_9 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =76
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowX: =LayoutOverflow.Scroll
+                    Width: =550
+                    X: =85
+                    Y: =723
+                    ZIndex: =9
+
+                    btn_Yes_9 As button:
+                        Align: =Align.Left
+                        AlignInContainer: =AlignInContainer.Stretch
+                        BorderColor: =App.Theme.Colors.Primary
+                        BorderThickness: =1
+                        Color: =RGBA(246, 88, 16, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverFill: =App.Theme.Colors.Primary
+                        LayoutMinHeight: =60
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(varCheck1 = true,"✅ Same","⭕ Same") // "⚪✅⭕✔ Same"
+                        Width: =170
+                        ZIndex: =1
+
+                    btn_No_9 As button:
+                        Align: =Align.Left
+                        BorderColor: =App.Theme.Colors.Primary
+                        BorderThickness: =1
+                        Color: =RGBA(246, 88, 16, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverBorderColor: =
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(varCheck2 = true,"✅ New","⭕ New") // "⚪✅⭕✔ Same"
+                        Width: =170
+                        ZIndex: =2
+
+                    btn_NA_9 As button:
+                        Align: =Align.Left
+                        BorderColor: =App.Theme.Colors.Primary
+                        BorderThickness: =1
+                        Color: =RGBA(246, 88, 16, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                        Width: =170
+                        ZIndex: =3
+
+                Label20 As label:
                     Height: =70
                     Size: =21
                     Text: ="5. New Position"
+                    Visible: =If(varCheck2 = true, true, false)
                     Width: =560
                     X: =50
-                    Y: =861
+                    Y: =836
                     ZIndex: =10
 
                 TextInput4_60 As text:
@@ -448,32 +536,9 @@
                     Height: =70
                     HintText: =""
                     Size: =21
-                    Visible: =If(varCheck = true, false, true)
+                    Visible: =If(varCheck2 = true, true, false)
                     Width: =560
                     X: =85
-                    Y: =931
+                    Y: =906
                     ZIndex: =11
-
-                varCheck As checkbox:
-                    Height: =85
-                    OnSelect: |-
-                        =UpdateContext({varCheck: true})
-                    OnUncheck: |-
-                        =UpdateContext({varCheck: false})
-                    Size: =21
-                    Text: ="Show"
-                    Width: =280
-                    X: =85
-                    Y: =734
-                    ZIndex: =12
-
-                TextInput4_61 As text:
-                    Default: =""
-                    Height: =70
-                    HintText: ="STOCK ANALUST-TR"
-                    Size: =21
-                    Width: =560
-                    X: =40
-                    Y: =40
-                    ZIndex: =13
 

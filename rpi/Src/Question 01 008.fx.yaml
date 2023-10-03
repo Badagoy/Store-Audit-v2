@@ -63,7 +63,7 @@
                     LayoutMode: =LayoutMode.Auto
                     PaddingLeft: =10
                     PaddingRight: =5
-                    Width: =300
+                    Width: =Parent.Width
                     ZIndex: =1
 
                     C2Q1_lbl1 As label:

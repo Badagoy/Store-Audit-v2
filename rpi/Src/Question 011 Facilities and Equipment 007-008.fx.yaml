@@ -362,7 +362,7 @@
             Label17_21 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="7. ACU 4"
                 Width: =560
                 X: =62
                 Y: =79
@@ -495,7 +495,7 @@
             Label17_23 As label:
                 Height: =70
                 Size: =21
-                Text: ="2. SIgnage-Vertical"
+                Text: ="8. GenSet"
                 Width: =560
                 X: =73
                 ZIndex: =1

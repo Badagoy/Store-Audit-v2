@@ -362,7 +362,7 @@
             Label17_25 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="9. Main Door"
                 Width: =560
                 X: =62
                 Y: =79
@@ -371,7 +371,7 @@
             Label17_26 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. Is it good condition?"
+                Text: ="9. Main Door"
                 Width: =560
                 X: =98
                 Y: =149
@@ -495,7 +495,7 @@
             Label17_27 As label:
                 Height: =70
                 Size: =21
-                Text: ="2. SIgnage-Vertical"
+                Text: ="10. Emergency Light 1"
                 Width: =560
                 X: =73
                 ZIndex: =1

@@ -362,7 +362,7 @@
             Label17_45 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="19. Emergency Light 10"
                 Width: =560
                 X: =62
                 Y: =79
@@ -495,7 +495,7 @@
             Label17_47 As label:
                 Height: =70
                 Size: =21
-                Text: ="2. SIgnage-Vertical"
+                Text: ="20. Chiller"
                 Width: =560
                 X: =73
                 ZIndex: =1
@@ -516,8 +516,8 @@
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
                 Width: =550
-                X: =161
-                Y: =140
+                X: =189
+                Y: =150
                 ZIndex: =3
 
                 btn_Yes_107 As button:

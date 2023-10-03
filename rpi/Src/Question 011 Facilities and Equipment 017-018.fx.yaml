@@ -362,7 +362,7 @@
             Label17_41 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="17. Emergency Light 8"
                 Width: =560
                 X: =62
                 Y: =79
@@ -495,7 +495,7 @@
             Label17_43 As label:
                 Height: =70
                 Size: =21
-                Text: ="2. SIgnage-Vertical"
+                Text: ="18. Emergency Light 9"
                 Width: =560
                 X: =73
                 ZIndex: =1

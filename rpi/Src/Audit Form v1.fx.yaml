@@ -459,9 +459,8 @@
                 ForAll(
                     Table(ParseJSON(First(colQ5).'Response Desc')),
                     {
-                        Q5_txt1: Text(Value.Q5_txt1),
-                        Q5_txt2: Text(Value.Q5_txt2),
-                        Q5_txt3: Text(Value.Q5_txt3) 
+                        Deposit_Amount: Text(Value.Deposit_Amount),
+                        Actual_Amount:  Text(Value.Actual_Amount) 
                     }
                 )
             );

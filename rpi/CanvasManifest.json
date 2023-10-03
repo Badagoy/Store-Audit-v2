@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 254,
+    "BindingErrorCount": 301,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -144,7 +144,8 @@
     "Question 01 004-010_2",
     "Question 05 001-002.3",
     "Question 05 002.3 - 003",
-    "Question 05 004 -",
+    "Question 05 004-007",
+    "Question 05 004 -_1",
     "Question 05 002.3 -_1",
     "Screen1",
     "Screen4"

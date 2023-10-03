@@ -378,7 +378,7 @@
 
     Camera2 As camera:
         Camera: =0
-        StreamRate: =100
+        StreamRate: =500
         X: =49
         Y: =637
         ZIndex: =7

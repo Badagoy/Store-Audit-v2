@@ -606,6 +606,7 @@
                         ,Res_Option:Q9_varYNA
                     }
                 );
+                Navigate('Question 02 003');
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

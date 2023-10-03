@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 1420,
+    "BindingErrorCount": 1503,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -171,7 +171,8 @@
     "Question 09 Updating Complete List of Store Personnel 010",
     "Question 010 Security Guard/SIC Compliance",
     "Question 02 003",
-    "Question 011 Facilities and Equipment 001-",
+    "Question 011 Facilities and Equipment 001-002",
+    "Question 011 Facilities and Equipment 001-_1",
     "Question 02 007",
     "Question 02 007_1"
   ]

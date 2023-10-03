@@ -1,173 +1,5 @@
 "'Question 02 007_1' As screen":
 
-    C2Q10_Container_1 As groupContainer.manualLayoutContainer:
-        Height: =338
-        Width: |
-            =Parent.Width - (leftMargin * 2)
-        X: =leftMargin
-        Y: =160
-        ZIndex: =1
-
-        C2Q9_SubCon_3 As groupContainer.verticalAutoLayoutContainer:
-            Height: =338
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMode: =LayoutMode.Auto
-            LayoutOverflowX: =LayoutOverflow.Scroll
-            Width: =Parent.Width
-            ZIndex: =1
-
-            C2Q9_lbl_3 As label:
-                Height: =114
-                LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =fontSize
-                Text: ="10. " & LookUp(colQuestion,Question_ID = 66,Question_Desc)
-                Width: =Parent.Width
-                X: |
-                    =0
-                ZIndex: =1
-
-            C2Q9_YesNo_3 As toggleSwitch:
-                Default: =If(First(colQ4).Res_Option ="true",true,false)
-                FalseText: ="No"
-                Height: =44
-                LayoutMinHeight: =49
-                LayoutMinWidth: =154
-                Size: =fontSize
-                TextPosition: =TextPosition.Left
-                TrueText: ="Yes"
-                Width: =160
-                Y: =100
-                ZIndex: =2
-
-            C2Q9_ConH01_6 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                FillPortions: =0
-                Height: =160
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutGap: =10
-                LayoutMinHeight: =112
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                Width: =Parent.Width
-                Y: =40
-                ZIndex: =3
-
-                Button4 As button:
-                    Height: =70
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: |-
-                        =Select(Camera1);
-                        Collect(
-                            CapturedImages,
-                            {
-                                Snap: Camera1.Photo,
-                                Date: Now()
-                            }
-                        );
-                    Size: =24
-                    Text: ="Button"
-                    Width: =280
-                    ZIndex: =1
-
-                C2Q9_Amount_3 As text:
-                    Default: =""
-                    Height: =44
-                    HintText: ="Remarks"
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =560
-                    Size: =fontSize
-                    Width: =220
-                    X: =554
-                    Y: =150
-                    ZIndex: =2
-
-                C2Q9_icnSave_3 As icon.Save:
-                    Height: =34
-                    Icon: =Icon.Save
-                    OnSelect: |
-                        =Patch(
-                            colQ4a,
-                            Defaults(colQ4a),
-                            {
-                                DateX: C2Q8_dtFRS_2.SelectedDate
-                                ,Sales_No:Q4_SalesNo_6.Text
-                                ,Amount:Q4_Amount_4.Text
-                                ,Cnt_Delayed:C2Q9_Amount_3.Text
-                                
-                            }
-                        );
-                        //Reset(Q5_txtSDate);
-                        //Reset(Q5_txtSNo);
-                    Width: =39
-                    X: =Parent.Width-Self.Width 
-                    Y: =150
-                    ZIndex: =3
-
-            "C2Q9_gal_4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-                AlignInContainer: =AlignInContainer.SetByContainer
-                DelayItemLoading: =true
-                Fill: =RGBA(241, 244, 249, 1)
-                FillPortions: =0
-                Height: =100
-                Items: =colQ4a
-                Layout: =Layout.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =320
-                LoadingSpinner: =LoadingSpinner.Data
-                TemplatePadding: =0
-                TemplateSize: =45
-                Width: =Parent.Width  
-                Y: =218
-                ZIndex: =4
-
-                C2Q9_ConH01_7 As groupContainer.horizontalAutoLayoutContainer:
-                    Height: =45
-                    LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutGap: =10
-                    LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.TemplateWidth
-                    ZIndex: =6
-
-                    C2Q9_txtFRS_3 As text:
-                        Default: =ThisItem.DateX
-                        DisabledBorderColor: =RGBA(0, 134, 208, 1)
-                        DisplayMode: =DisplayMode.View
-                        Height: =44
-                        HintText: ="Photos"
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =fontSize
-                        Width: =220
-                        X: |
-                            =0
-                        Y: =150
-                        ZIndex: =1
-
-                    C2Q9_txtAmount_3 As text:
-                        Default: =ThisItem.Sales_No
-                        DisabledBorderColor: =RGBA(0, 134, 208, 1)
-                        DisplayMode: =DisplayMode.View
-                        Height: =44
-                        HintText: ="Remarks"
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =560
-                        Size: =fontSize
-                        Width: =220
-                        X: =237
-                        Y: =150
-                        ZIndex: =2
-
-                    C2Q9_icnDel_5 As icon.Save:
-                        Height: =34
-                        Icon: =Icon.Trash
-                        OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
-                        Width: =39
-                        X: =Parent.Width-Self.Width 
-                        Y: =150
-                        ZIndex: =5
-
     Bottom_CNT_9 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
@@ -211,29 +43,11 @@
             LayoutMinHeight: =70
             LayoutMinWidth: =280
             OnSelect: |-
-                =//C01Q8 OR Question ID = 31   
+                =//C01Q9 OR Question ID = 32   
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=31  And Batch_No = batch_no), 
-                            Defaults(lstSA_ResponseDTL)
-                        ),
-                    {
-                        Branch_Code: branch_code,
-                        User_Info: userInfo,
-                        Title: "",
-                        Batch_No: batch_no,
-                        'Question ID': 31,
-                        'Response Desc':  Q8_varYNA
-                        ,Res_Option:Q8_varYNA
-                    }
-                );
-                
-                //C01Q9 OR Question ID = 32   
-                Patch(
-                    lstSA_ResponseDTL,
-                    Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=66  And Batch_No = batch_no), 
+                            LookUp(lstSA_ResponseDTL,'Question ID'= 66  And Batch_No = batch_no), 
                             Defaults(lstSA_ResponseDTL)
                         ),
                     {
@@ -242,8 +56,8 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 66,
-                        'Response Desc':  JSON(CapturedImages,JSONFormat.IncludeBinaryData)
-                        ,Res_Option:Q9_varYNA
+                        'Response Desc':  JSON(colImageCap,JSONFormat.IncludeBinaryData)
+                        ,Res_Option:"2"
                     }
                 );
             RadiusBottomRight: |
@@ -386,7 +200,7 @@
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =358
-        Items: =CapturedImages
+        Items: =colImageCap
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -398,7 +212,7 @@
 
         Image2 As image:
             Height: =280
-            Image: =ThisItem.Snap
+            Image: =ThisItem.C02Q10_Image
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
@@ -419,9 +233,9 @@
         Height: =70
         OnSelect: |-
             =ClearCollect(
-                CapturedImages,
+                colImageCap,
                 {
-                    Snap: Camera2.Stream
+                    C02Q10_Image: Camera2.Stream
                 }
             );
         Size: =30
@@ -434,7 +248,7 @@
     "Gallery2_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =358
-        Items: =CapturedImages
+        Items: =colC02Q10A
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -446,7 +260,7 @@
 
         Image2_1 As image:
             Height: =280
-            Image: =ThisItem.Snap
+            Image: =ThisItem.C02Q10_Image
             OnSelect: =Select(Parent)
             RadiusBottomLeft: =8
             RadiusBottomRight: =8

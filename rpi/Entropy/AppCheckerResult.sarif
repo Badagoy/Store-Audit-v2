@@ -38894,6 +38894,366 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container11.TextInput10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_icnDel_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_icnDel_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_icnDel_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_icnDel_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_icnDel_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_icnDel_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_DaysDelayed_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_DaysDelayed_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_DaysDelayed_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_Amount_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_Amount_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_Amount_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_SalesNo_10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_SalesNo_10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_SalesNo_10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_date_8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_date_8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 07 Personnel Complete Uniform 010",
+                "type": "'Question 07 Personnel Complete Uniform 010'.Container1_22.Container5.Container14.Q4_galSalesTable_7.Q4_ConH01_10.Q4_date_8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Q7_varChk1"
                 }
               ],

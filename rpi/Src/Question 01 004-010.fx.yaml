@@ -816,6 +816,8 @@
                         ,Res_Option:Q7_varYNA
                     }
                 );
+                
+                Navigate('Question 01 008');
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

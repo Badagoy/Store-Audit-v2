@@ -13052,36 +13052,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Q7_varCheck3"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Q7_varCheck3",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Q7_varCheck3",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Q7_varChk1"
                 }
               ],

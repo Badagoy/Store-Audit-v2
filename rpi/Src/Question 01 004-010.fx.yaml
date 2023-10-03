@@ -48,10 +48,11 @@
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
                     HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =60
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varCheck1,!Q7_varCheck1);Set(Q7_varCheck2,false);Set(Q7_varCheck3,false)
+                    OnSelect: =Set(Q7_varYNA,"Yes")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -79,11 +80,12 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varCheck1,false);Set(Q7_varCheck2,!Q7_varCheck2);Set(Q7_varCheck3,false)
+                    OnSelect: =Set(Q7_varYNA,"No")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
                     PressedFill: =RGBA(0,0,0,0)
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
@@ -111,6 +113,7 @@
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
                     PressedFill: =
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1

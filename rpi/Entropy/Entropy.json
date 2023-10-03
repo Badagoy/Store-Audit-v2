@@ -894,7 +894,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/03/2023 02:24:08",
+  "HeaderLastSavedDateTimeUTC": "10/03/2023 02:28:15",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "3fc8d54c-4037-40a2-aea1-752bc65dc2a5": "\"/providers/microsoft.powerapps/apis/shared_accuweatherip/connections/58ac6765205a443bae3f3504e52b7275\"",
@@ -921,6 +921,7 @@
     "col05_1_2Qa": 51,
     "col05_3_2Qa": 52,
     "col05_4_2Qa": 53,
+    "col07_2_11Qa": 77,
     "colC01Q7": 54,
     "colC01Q7A": 55,
     "colCashCtrl": 56,

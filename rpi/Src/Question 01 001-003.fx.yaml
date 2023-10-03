@@ -635,7 +635,8 @@
                         Batch_No: batch_no,
                         'Question ID': 1,
                         'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"[]"),
-                        Res_Option: Q1_YesNo_1.Value
+                        Res_Option: Q1_YesNo_1.Value,
+                        Res_Rating:  If(Q1_YesNo_1.Value=true,1,0)
                     }
                 );
                 //Q2 OR Question ID = 6

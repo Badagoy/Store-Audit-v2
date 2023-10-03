@@ -472,7 +472,7 @@
                 ForAll(
                     Table(ParseJSON(First(colQ6).'Response Desc')),
                     {
-                        DSR_Amount: Text(Value.DSR_Amount),
+                        DSR_Amount:    Text(Value.DSR_Amount),
                         Actual_Amount: Text(Value.Actual_Amount) 
                     }
                 )

@@ -63599,19 +63599,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_icnDel_2.TabIndex"
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_icnDel_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_icnDel_2.TabIndex",
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_icnDel_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Question 02 007",
-                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_icnDel_2"
+                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_icnDel_2"
               }
             }
           ],
@@ -63629,19 +63629,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_icnDel_2.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_icnDel_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_icnDel_2.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_icnDel_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 02 007",
-                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_icnDel_2"
+                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_icnDel_2"
               }
             }
           ],
@@ -63659,49 +63659,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_DaysDelayed_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_txtAmount.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_DaysDelayed_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_txtAmount.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 02 007",
-                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_DaysDelayed_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_dtSubmit_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_dtSubmit_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Question 02 007",
-                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_dtSubmit_3"
+                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_txtAmount"
               }
             }
           ],
@@ -63779,19 +63749,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_dtFRS_3.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_txtFRS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_dtFRS_3.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_txtFRS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 02 007",
-                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.C2Q8_ConH01_3.C2Q8_dtFRS_3"
+                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.C2Q9_ConH01_3.C2Q9_txtFRS"
               }
             }
           ],
@@ -63809,19 +63779,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.TabIndex"
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.TabIndex",
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Question 02 007",
-                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1"
+                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1"
               }
             }
           ],
@@ -63839,19 +63809,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Question 02 007",
-                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q8_gal_1"
+                "type": "'Question 02 007'.C2Q9_Container.C2Q9_SubCon.C2Q9_gal_1"
               }
             }
           ],

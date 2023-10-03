@@ -1,0 +1,683 @@
+"'Question 02 007' As screen":
+
+    C2Q9_Container As groupContainer.manualLayoutContainer:
+        Height: =500
+        Width: |
+            =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =900
+        ZIndex: =2
+
+        C2Q9_SubCon As groupContainer.verticalAutoLayoutContainer:
+            Height: =500
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            Width: =Parent.Width
+            ZIndex: =1
+
+            C2Q9_lbl As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="9. " & LookUp(colQuestion,Question_ID = 61,Question_Desc)
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
+
+            C2Q9_YesNo As toggleSwitch:
+                Default: =If(First(colQ4).Res_Option ="true",true,false)
+                FalseText: ="No"
+                Height: =44
+                LayoutMinHeight: =49
+                LayoutMinWidth: =154
+                Size: =fontSize
+                TextPosition: =TextPosition.Left
+                TrueText: ="Yes"
+                Width: =160
+                Y: =100
+                ZIndex: =2
+
+            C2Q9_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =60
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =10
+                LayoutMinHeight: =112
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                Y: =40
+                ZIndex: =3
+
+                C2Q9_FRS As text:
+                    Default: =""
+                    Height: =44
+                    HintText: ="FRS"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: =220
+                    X: =554
+                    Y: =150
+                    ZIndex: =1
+
+                C2Q9_Amount As text:
+                    Default: =""
+                    Height: =44
+                    HintText: ="Amount"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: =220
+                    X: =554
+                    Y: =150
+                    ZIndex: =2
+
+                C2Q9_icnSave As icon.Save:
+                    Height: =34
+                    Icon: =Icon.Save
+                    OnSelect: |
+                        =Patch(
+                            colQ4a,
+                            Defaults(colQ4a),
+                            {
+                                DateX: C2Q8_dtFRS_2.SelectedDate
+                                ,Sales_No:Q4_SalesNo_6.Text
+                                ,Amount:Q4_Amount_4.Text
+                                ,Cnt_Delayed:C2Q9_Amount.Text
+                                
+                            }
+                        );
+                        //Reset(Q5_txtSDate);
+                        //Reset(Q5_txtSNo);
+                    Width: =39
+                    X: =Parent.Width-Self.Width 
+                    Y: =150
+                    ZIndex: =3
+
+            "C2Q9_gal_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DelayItemLoading: =true
+                Fill: =RGBA(241, 244, 249, 1)
+                FillPortions: =0
+                Height: =300
+                Items: =colQ4a
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =45
+                Width: =Parent.Width  
+                Y: =218
+                ZIndex: =4
+
+                C2Q9_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =45
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =6
+
+                    C2Q9_txtFRS As text:
+                        Default: =ThisItem.DateX
+                        DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =44
+                        HintText: ="FRS Date"
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =fontSize
+                        Width: =220
+                        X: |
+                            =0
+                        Y: =150
+                        ZIndex: =1
+
+                    C2Q9_txtAmount As text:
+                        Default: =ThisItem.Sales_No
+                        DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =44
+                        HintText: ="Amount"
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =fontSize
+                        Width: =220
+                        X: =237
+                        Y: =150
+                        ZIndex: =2
+
+                    C2Q9_icnDel_2 As icon.Save:
+                        Height: =34
+                        Icon: =Icon.Trash
+                        OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
+                        Width: =39
+                        X: =Parent.Width-Self.Width 
+                        Y: =150
+                        ZIndex: =5
+
+    C2Q8_Container As groupContainer.manualLayoutContainer:
+        Height: =500
+        Width: |
+            =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =360
+        ZIndex: =3
+
+        C2Q8_SubCon As groupContainer.verticalAutoLayoutContainer:
+            Height: =500
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            Width: =Parent.Width
+            ZIndex: =1
+
+            C2Q8_lbl As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="8. " & LookUp(colQuestion,Question_ID = 56,Question_Desc)
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
+
+            C2Q8_YesNo As toggleSwitch:
+                Default: =If(First(colQ4).Res_Option ="true",true,false)
+                FalseText: ="No"
+                Height: =44
+                LayoutMinHeight: =49
+                LayoutMinWidth: =154
+                Size: =fontSize
+                TextPosition: =TextPosition.Left
+                TrueText: ="Yes"
+                Width: =160
+                Y: =100
+                ZIndex: =2
+
+            C2Q8_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =60
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =10
+                LayoutMinHeight: =112
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                Y: =40
+                ZIndex: =3
+
+                C2Q8_dtFRS As datepicker:
+                    Height: =70
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =575
+                    Size: =22
+                    Width: =220
+                    ZIndex: =1
+
+                C2Q8_dtSubmit As datepicker:
+                    Height: =70
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =575
+                    Size: =22
+                    Width: =220
+                    ZIndex: =2
+
+                C2Q8_DaysDelayed As text:
+                    Default: =""
+                    Height: =44
+                    HintText: |-
+                        ="# Delayed"
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =560
+                    Size: =fontSize
+                    Width: =160
+                    X: =554
+                    Y: =150
+                    ZIndex: =3
+
+                C2Q8_icnSave As icon.Save:
+                    Height: =34
+                    Icon: =Icon.Save
+                    OnSelect: |
+                        =Patch(
+                            colQ4a,
+                            Defaults(colQ4a),
+                            {
+                                DateX: C2Q8_dtFRS.SelectedDate
+                                ,Sales_No:Q4_SalesNo_6.Text
+                                ,Amount:Q4_Amount_4.Text
+                                ,Cnt_Delayed:C2Q8_DaysDelayed.Text
+                                
+                            }
+                        );
+                        //Reset(Q5_txtSDate);
+                        //Reset(Q5_txtSNo);
+                    Width: =39
+                    X: =Parent.Width-Self.Width 
+                    Y: =150
+                    ZIndex: =4
+
+            "C2Q8_gal As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                AlignInContainer: =AlignInContainer.SetByContainer
+                DelayItemLoading: =true
+                Fill: =RGBA(241, 244, 249, 1)
+                FillPortions: =0
+                Height: =300
+                Items: =colQ4a
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =45
+                Width: =Parent.Width  
+                Y: =218
+                ZIndex: =4
+
+                C2Q8_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =45
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutGap: =10
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.TemplateWidth
+                    ZIndex: =6
+
+                    C2Q8_dtFRS_1 As text:
+                        Default: =ThisItem.DateX
+                        DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =44
+                        HintText: ="FRS Date"
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =fontSize
+                        Width: =220
+                        X: |
+                            =0
+                        Y: =150
+                        ZIndex: =1
+
+                    C2Q8_dtSubmit_1 As text:
+                        Default: =ThisItem.Sales_No
+                        DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =44
+                        HintText: ="Sate Submit"
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =fontSize
+                        Width: =220
+                        X: =237
+                        Y: =150
+                        ZIndex: =2
+
+                    C2Q8_DaysDelayed_1 As text:
+                        Default: =ThisItem.Cnt_Delayed
+                        DisabledBorderColor: =RGBA(0, 134, 208, 1)
+                        DisplayMode: =DisplayMode.View
+                        Height: =44
+                        HintText: |-
+                            ="# Delayed"
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =560
+                        Size: =fontSize
+                        Width: =160
+                        X: =552
+                        Y: =150
+                        ZIndex: =4
+
+                    C2Q8_icnDel_1 As icon.Save:
+                        Height: =34
+                        Icon: =Icon.Trash
+                        OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
+                        Width: =39
+                        X: =Parent.Width-Self.Width 
+                        Y: =150
+                        ZIndex: =5
+
+    C2Q7_Container As groupContainer.manualLayoutContainer:
+        Height: =220
+        Width: |
+            =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =140
+        ZIndex: =4
+
+        C2Q5_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
+            Height: =Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            Width: =Parent.Width
+            ZIndex: =7
+
+            C2Q5_lbl_1 As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="7. " & LookUp(colQuestion,Question_ID = 55,Question_Desc)
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
+
+            C2Q5_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                FillPortions: =0
+                Height: =100
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMinHeight: =60
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =Parent.Width
+                X: =leftMargin
+                Y: =610
+                ZIndex: =2
+
+                C2Q5_btn_Yes_1 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C2Q5_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C2Q5_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                C2Q5_btn_No_1 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C2Q5_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C2Q5_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                C2Q5_btn_NA_1 As button:
+                    Align: =Align.Left
+                    BorderColor: |
+                        =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    DisabledColor: =RGBA(0, 0, 0, 0)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C2Q5_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C2Q5_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
+    Bottom_CNT_8 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =141
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =20
+        PaddingRight: =20
+        Width: =786
+        Y: =1445
+        ZIndex: =5
+
+        Button4_8 As button:
+            Color: =Color.White
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: =Back()
+            RadiusBottomLeft: |
+                =50
+            RadiusTopLeft: |
+                =50
+            Size: =24
+            Text: ="Previous"
+            Width: =180
+            ZIndex: =1
+
+        Label11_10 As label:
+            Align: =Align.Center
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =21
+            Text: ="1/100"
+            Width: =100
+            ZIndex: =2
+
+        Button16_8 As button:
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: |-
+                =//C01Q8 OR Question ID = 31   
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=31  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 31,
+                        'Response Desc':  Q8_varYNA
+                        ,Res_Option:Q8_varYNA
+                    }
+                );
+                
+                //C01Q9 OR Question ID = 32   
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=32  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 32,
+                        'Response Desc':  Q9_varYNA
+                        ,Res_Option:Q9_varYNA
+                    }
+                );
+            RadiusBottomRight: |
+                =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: ="Next"
+            Width: =180
+            ZIndex: =3
+
+    HeaderContainer_9 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =App.Theme.Colors.Primary
+        Height: =130
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =Parent.Width
+        ZIndex: =6
+
+        Container4_8 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =7
+            Height: =56.80
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =100
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =507.00
+            X: =51.00
+            Y: =0.00
+            ZIndex: =4
+
+            lbl_Hellow_9 As label:
+                AlignInContainer: =AlignInContainer.Start
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Font: =Font.'Patrick Hand'
+                Height: =50
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =20
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =24
+                Text: =User().FullName
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =300
+                X: =0.00
+                Y: =22.61
+                ZIndex: =1
+
+            lbl_Name_8 As label:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =0.85
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =16
+                Text: =User().Email
+                VerticalAlign: =VerticalAlign.Top
+                Width: =569.17
+                X: =0.00
+                Y: =27.35
+                ZIndex: =2
+
+        Container7_51 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =23.37
+            PaddingTop: =0.00
+            Width: =81.81
+            X: =558.00
+            Y: =0.00
+            ZIndex: =6
+
+            icon_Notification_9 As icon.Bell:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =Color.AntiqueWhite
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =5
+                Height: =56.80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Bell
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58.44
+                X: =0.00
+                Y: =0.00
+                ZIndex: =1
+

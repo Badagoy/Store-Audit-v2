@@ -5,7 +5,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =950
+        Y: =140
         ZIndex: =1
 
         C2Q2_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
@@ -21,7 +21,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="2. " & LookUp(colQuestion,Question_ID = 38,Question_Desc)
+                Text: ="3. " & LookUp(colQuestion,Question_ID = 38,Question_Desc)
                 Width: =Parent.Width
                 X: |
                     =0
@@ -56,7 +56,7 @@
                 C2Q2_ExpenseType_1 As text:
                     Default: =""
                     Height: =44
-                    HintText: ="Expense Type"
+                    HintText: ="PVC/ER No"
                     LayoutMinHeight: =70
                     LayoutMinWidth: =560
                     Size: =fontSize
@@ -68,7 +68,7 @@
                 C2Q2_Amount_1 As text:
                     Default: =""
                     Height: =44
-                    HintText: ="Amount"
+                    HintText: ="Expense Type"
                     LayoutMinHeight: =70
                     LayoutMinWidth: =560
                     Size: =fontSize
@@ -80,7 +80,7 @@
                 C2Q2_LackDOc_1 As text:
                     Default: =""
                     Height: =44
-                    HintText: ="Lacking Doc"
+                    HintText: ="Amount"
                     LayoutMinHeight: =70
                     LayoutMinWidth: =560
                     Size: =fontSize
@@ -141,7 +141,7 @@
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
-                        HintText: ="ExpenseType"
+                        HintText: ="PVC/ER No"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
@@ -156,7 +156,7 @@
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
-                        HintText: ="Amount"
+                        HintText: ="ExpenseType"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
@@ -170,7 +170,7 @@
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
-                        HintText: ="Lacking Doc"
+                        HintText: ="Amount"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
@@ -187,346 +187,6 @@
                         X: =Parent.Width-Self.Width 
                         Y: =150
                         ZIndex: =5
-
-    C2Q1_Container_1 As groupContainer.manualLayoutContainer:
-        Height: =338
-        Width: |
-            =Parent.Width - (leftMargin * 2)
-        X: =leftMargin
-        Y: =660
-        ZIndex: =2
-
-        C2Q1_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
-            Height: =300
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMode: =LayoutMode.Auto
-            LayoutOverflowX: =LayoutOverflow.Scroll
-            Width: =Parent.Width
-            ZIndex: =7
-
-            C2Q1_lbl_1 As label:
-                Height: =114
-                LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =fontSize
-                Text: ="1. " & LookUp(colQuestion,Question_ID = 34,Question_Desc)
-                Width: =Parent.Width
-                X: |
-                    =0
-                ZIndex: =1
-
-            C2Q1_YesNo_1 As toggleSwitch:
-                Default: =If(First(colQ5).Res_Option ="true",true,false)
-                FalseText: ="No"
-                Height: =44
-                LayoutMinHeight: =49
-                LayoutMinWidth: =154
-                Size: =fontSize
-                TextPosition: =TextPosition.Left
-                TrueText: ="Yes"
-                Width: =160
-                Y: =100
-                ZIndex: =2
-
-            C2Q1_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                Height: =185
-                LayoutMinHeight: =10
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                LayoutOverflowX: =LayoutOverflow.Scroll
-                Width: =Parent.Width - (leftMargin * 2)
-                X: =leftMargin
-                Y: =610
-                ZIndex: =5
-
-                cntC2Q1S_1 As groupContainer.verticalAutoLayoutContainer:
-                    FillPortions: =0
-                    Height: =225
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =112
-                    LayoutMinWidth: =300
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =10
-                    PaddingRight: =5
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                    C2Q1_lbl1_1 As label:
-                        Height: =52
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =300
-                        Size: =21
-                        Text: ="Remarks"
-                        VerticalAlign: =VerticalAlign.Bottom
-                        Width: =300
-                        Y: =9
-                        ZIndex: =1
-
-                    C2Q1_txt1_1 As text:
-                        Default: =First(colQ5A).Deposit_Amount
-                        Height: =70
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =288
-                        Size: =21
-                        Width: =Parent.Width
-                        ZIndex: =2
-
-    Q9_Container_1 As groupContainer.manualLayoutContainer:
-        Height: =220
-        Width: |
-            =Parent.Width - (leftMargin * 2)
-        X: =leftMargin
-        Y: =350
-        ZIndex: =3
-
-        Q9_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
-            Height: =Parent.Height
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMode: =LayoutMode.Auto
-            LayoutOverflowX: =LayoutOverflow.Scroll
-            Width: =Parent.Width
-            ZIndex: =7
-
-            Q9_lbl_1 As label:
-                Height: =114
-                LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =fontSize
-                Text: ="9. " & LookUp(colQuestion,Question_ID = 32,Question_Desc)
-                VerticalAlign: =VerticalAlign.Bottom
-                Width: =Parent.Width
-                X: |
-                    =0
-                ZIndex: =1
-
-            Q9_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                BorderColor: =RGBA(0, 0, 0, 0)
-                FillPortions: =0
-                Height: =100
-                LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutMinHeight: =60
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                LayoutOverflowX: =LayoutOverflow.Scroll
-                Width: =Parent.Width
-                X: =leftMargin
-                Y: =610
-                ZIndex: =2
-
-                Q9_btn_Yes_1 As button:
-                    Align: =Align.Left
-                    BorderColor: =RGBA(0,0,0,0)
-                    BorderThickness: =0
-                    Color: =RGBA(246, 88, 16, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =RGBA(0,0,0,0)
-                    LayoutMinHeight: =60
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(Q9_varYNA,"Yes")
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    PressedColor: =App.Theme.Colors.Primary
-                    PressedFill: =RGBA(0,0,0,0)
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(Q9_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                    Width: =200
-                    ZIndex: =1
-
-                Q9_btn_No_1 As button:
-                    Align: =Align.Left
-                    BorderColor: =RGBA(0,0,0,0)
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverBorderColor: =
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(Q9_varYNA,"No")
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    PressedColor: =App.Theme.Colors.Primary
-                    PressedFill: =RGBA(0,0,0,0)
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(Q9_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                    Width: =200
-                    ZIndex: =2
-
-                Q9_btn_NA_1 As button:
-                    Align: =Align.Left
-                    BorderColor: =RGBA(0,0,0,0)
-                    BorderThickness: =0
-                    Color: =App.Theme.Colors.Primary
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverBorderColor: =RGBA(0,0,0,0)
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =RGBA(0,0,0,0)
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(Q9_varYNA,"NA")
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    PressedColor: =App.Theme.Colors.Primary
-                    PressedFill: =
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(Q9_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                    Width: =200
-                    ZIndex: =3
-
-    Q8_Container_1 As groupContainer.manualLayoutContainer:
-        Height: =220
-        Width: |
-            =Parent.Width - (leftMargin * 2)
-        X: =leftMargin
-        Y: =140
-        ZIndex: =4
-
-        Q8_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
-            Height: =Parent.Height
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutMode: =LayoutMode.Auto
-            LayoutOverflowX: =LayoutOverflow.Scroll
-            Width: =Parent.Width
-            ZIndex: =7
-
-            Q8_lbl_1 As label:
-                Height: =114
-                LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =fontSize
-                Text: ="8. " & LookUp(colQuestion,Question_ID = 31,Question_Desc)
-                VerticalAlign: =VerticalAlign.Bottom
-                Width: =Parent.Width
-                X: |
-                    =0
-                ZIndex: =1
-
-            Q8_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                FillPortions: =0
-                Height: =100
-                LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutMinHeight: =60
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                LayoutOverflowX: =LayoutOverflow.Scroll
-                Width: =Parent.Width
-                X: =leftMargin
-                Y: =610
-                ZIndex: =2
-
-                Q8_btn_Yes_1 As button:
-                    Align: =Align.Left
-                    BorderColor: =RGBA(0,0,0,0)
-                    BorderThickness: =0
-                    Color: =RGBA(246, 88, 16, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =RGBA(0,0,0,0)
-                    LayoutMinHeight: =60
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"Yes")
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    PressedColor: =App.Theme.Colors.Primary
-                    PressedFill: =RGBA(0,0,0,0)
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(Q8_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                    Width: =200
-                    ZIndex: =1
-
-                Q8_btn_No_1 As button:
-                    Align: =Align.Left
-                    BorderColor: =RGBA(0,0,0,0)
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverBorderColor: =
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"No")
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    PressedColor: =App.Theme.Colors.Primary
-                    PressedFill: =RGBA(0,0,0,0)
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(Q8_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                    Width: =200
-                    ZIndex: =2
-
-                Q8_btn_NA_1 As button:
-                    Align: =Align.Left
-                    BorderColor: |
-                        =RGBA(0,0,0,0)
-                    BorderThickness: =0
-                    Color: =App.Theme.Colors.Primary
-                    DisabledColor: =RGBA(0, 0, 0, 0)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =70
-                    HoverBorderColor: =RGBA(0,0,0,0)
-                    HoverColor: =App.Theme.Colors.Primary
-                    HoverFill: =RGBA(0,0,0,0)
-                    LayoutMinHeight: =70
-                    LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"NA")
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    PressedColor: =App.Theme.Colors.Primary
-                    PressedFill: =
-                    RadiusBottomLeft: =1
-                    RadiusBottomRight: =1
-                    RadiusTopLeft: =1
-                    RadiusTopRight: =1
-                    Size: =24
-                    Text: =If(Q8_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                    Width: =200
-                    ZIndex: =3
 
     Bottom_CNT_6 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
@@ -735,14 +395,4 @@
                 X: =0.00
                 Y: =0.00
                 ZIndex: =1
-
-    C2Q1_HEADER_1 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =70
-        Size: =28
-        Text: ="Cash Count Compliance"
-        Width: =Parent.Width - (leftMargin * 2)
-        X: =leftMargin
-        Y: =590
-        ZIndex: =7
 

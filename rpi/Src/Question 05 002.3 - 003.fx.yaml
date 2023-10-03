@@ -548,7 +548,7 @@
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =45
-                Width: =Parent.Width  
+                Width: =747
                 Y: =416
                 ZIndex: =8
 
@@ -558,7 +558,8 @@
                     LayoutGap: =10
                     LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                     LayoutMode: =LayoutMode.Auto
-                    Width: =Parent.TemplateWidth
+                    LayoutOverflowX: =LayoutOverflow.Scroll
+                    Width: =747
                     ZIndex: =6
 
                     TextInput13_2 As text:

@@ -52,6 +52,9 @@ App As appinfo:
         
             ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
             Clear(colC01Q7A);
+        
+            ClearCollect(col07_2_11Qa,{Emp_name:"0",ce:"0",position:"",branch:""});
+            Clear(col07_2_11Qa);
             
             //=========================  END    ===============================
         

@@ -5,7 +5,7 @@
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =560
+        Y: =660
         ZIndex: =1
 
         C2Q1_SubCon As groupContainer.verticalAutoLayoutContainer:
@@ -71,7 +71,7 @@
                         LayoutMinHeight: =70
                         LayoutMinWidth: =300
                         Size: =21
-                        Text: ="Deposit Slip Amount"
+                        Text: ="Remarks"
                         VerticalAlign: =VerticalAlign.Bottom
                         Width: =300
                         Y: =9
@@ -567,4 +567,14 @@
                 X: =0.00
                 Y: =0.00
                 ZIndex: =1
+
+    Q1_lbl_4 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =28
+        Text: ="Cash Count Compliance"
+        Width: =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =590
+        ZIndex: =6
 

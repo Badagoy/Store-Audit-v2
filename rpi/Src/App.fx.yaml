@@ -56,6 +56,9 @@ App As appinfo:
             ClearCollect(col07_2_11Qa,{Emp_name:"0",ce:"0",position:"",branch:""});
             Clear(col07_2_11Qa);
             
+            // testing to save image
+            ClearCollect(colC02Q10A,{C02Q10_Image:""});  
+            Clear(colC02Q10A);
             //=========================  END    ===============================
         
             //User

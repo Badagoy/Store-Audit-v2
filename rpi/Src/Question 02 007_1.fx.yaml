@@ -378,6 +378,7 @@
 
     Camera2 As camera:
         Camera: =0
+        StreamRate: =100
         X: =49
         Y: =637
         ZIndex: =7
@@ -403,7 +404,7 @@
             RadiusTopLeft: =8
             RadiusTopRight: =8
             Width: =621
-            X: =16
+            X: =19
             ZIndex: =1
 
     Image3 As image:
@@ -416,15 +417,15 @@
     Button4_10 As button:
         Height: =70
         OnSelect: |-
-            =Collect(
+            =ClearCollect(
                 CapturedImages,
                 {
-                    Snap: Camera1.Photo,
+                    Snap: Camera2.Stream,
                     Date: Now()
                 }
             );
-        Size: =24
-        Text: ="Button"
+        Size: =30
+        Text: ="📸  Capture"
         Width: =280
         X: =396
         Y: =956

@@ -1,7 +1,7 @@
 "'Question 01 008' As screen":
 
     C2Q2_Container As groupContainer.manualLayoutContainer:
-        Height: =338
+        Height: =400
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
@@ -9,7 +9,7 @@
         ZIndex: =1
 
         C2Q2_SubCon As groupContainer.verticalAutoLayoutContainer:
-            Height: =338
+            Height: =400
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
@@ -21,7 +21,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="4. " & LookUp(colQuestion,Question_ID = 15,Question_Desc)
+                Text: ="2. " & LookUp(colQuestion,Question_ID = 38,Question_Desc)
                 Width: =Parent.Width
                 X: |
                     =0
@@ -116,7 +116,7 @@
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
-                Height: =100
+                Height: =200
                 Items: =colQ4a
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =100
@@ -141,7 +141,7 @@
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
-                        HintText: ="Sales No"
+                        HintText: ="ExpenseType"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
@@ -156,7 +156,7 @@
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
-                        HintText: ="Sales No"
+                        HintText: ="Amount"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
@@ -170,7 +170,7 @@
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44
-                        HintText: ="Amount"
+                        HintText: ="Lacking Doc"
                         LayoutMinHeight: =70
                         LayoutMinWidth: =560
                         Size: =fontSize
@@ -209,8 +209,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="1. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
-                VerticalAlign: =VerticalAlign.Bottom
+                Text: ="1. " & LookUp(colQuestion,Question_ID = 34,Question_Desc)
                 Width: =Parent.Width
                 X: |
                     =0

@@ -362,7 +362,7 @@
             Label17_127 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. Is it good condition?"
+                Text: ="1. Is in good condition?"
                 Width: =560
                 X: =63
                 Y: =79
@@ -494,7 +494,7 @@
             Label17_129 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. Is it good condition?"
+                Text: ="1. Is in good condition?"
                 Width: =560
                 X: =83
                 Y: =70

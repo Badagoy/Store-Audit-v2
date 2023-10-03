@@ -1,12 +1,98 @@
 "'Question 01 008' As screen":
 
+    C2Q1_Container As groupContainer.manualLayoutContainer:
+        Height: =338
+        Width: |
+            =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =560
+        ZIndex: =1
+
+        C2Q1_SubCon As groupContainer.verticalAutoLayoutContainer:
+            Height: =300
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            Width: =Parent.Width
+            ZIndex: =7
+
+            C2Q1_lbl As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="5. " & LookUp(colQuestion,Question_ID = 20,Question_Desc)
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
+
+            C2Q1_YesNo As toggleSwitch:
+                Default: =If(First(colQ5).Res_Option ="true",true,false)
+                FalseText: ="No"
+                Height: =44
+                LayoutMinHeight: =49
+                LayoutMinWidth: =154
+                Size: =fontSize
+                TextPosition: =TextPosition.Left
+                TrueText: ="Yes"
+                Width: =160
+                Y: =100
+                ZIndex: =2
+
+            C2Q1_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Height: =185
+                LayoutMinHeight: =10
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =Parent.Width - (leftMargin * 2)
+                X: =leftMargin
+                Y: =610
+                ZIndex: =5
+
+                cntC2Q1S As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =225
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =300
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =5
+                    Width: =300
+                    ZIndex: =1
+
+                    C2Q1_lbl1 As label:
+                        Height: =52
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =300
+                        Size: =21
+                        Text: ="Deposit Slip Amount"
+                        VerticalAlign: =VerticalAlign.Bottom
+                        Width: =300
+                        Y: =9
+                        ZIndex: =1
+
+                    C2Q1_txt1 As text:
+                        Default: =First(colQ5A).Deposit_Amount
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =288
+                        Size: =21
+                        Width: =Parent.Width
+                        ZIndex: =2
+
     Q9_Container As groupContainer.manualLayoutContainer:
         Height: =220
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =350
-        ZIndex: =1
+        ZIndex: =2
 
         Q9_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =Parent.Height
@@ -131,7 +217,7 @@
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =140
-        ZIndex: =2
+        ZIndex: =3
 
         Q8_SubCon As groupContainer.verticalAutoLayoutContainer:
             Height: =Parent.Height
@@ -259,7 +345,7 @@
         PaddingRight: =20
         Width: =786
         Y: =1445
-        ZIndex: =3
+        ZIndex: =4
 
         Button4_5 As button:
             Color: =Color.White
@@ -370,7 +456,7 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =Parent.Width
-        ZIndex: =4
+        ZIndex: =5
 
         Container4_6 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer

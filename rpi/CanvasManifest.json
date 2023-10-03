@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 1296,
+    "BindingErrorCount": 1402,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -149,7 +149,8 @@
     "Screen1",
     "Screen4",
     "Question 07 001-005",
-    "Question 07 Personnel Complete Uniform 001",
+    "Question 08 Personnel Complete Uniform 001",
+    "Question 07 Personnel Complete Uniform 001_1",
     "Question 07 Personnel Complete Uniform 002",
     "Question 07 Personnel Complete Uniform 003",
     "Question 07 Personnel Complete Uniform 004",
@@ -168,6 +169,7 @@
     "Question 07 Updating Complete List of Store Personnel 007",
     "Question 07 Updating Complete List of Store Personnel 008",
     "Question 07 Updating Complete List of Store Personnel 009",
-    "Question 07 Updating Complete List of Store Personnel 010"
+    "Question 07 Updating Complete List of Store Personnel 010",
+    "Question 0 Security Guard/SIC Compliance 001-"
   ]
 }

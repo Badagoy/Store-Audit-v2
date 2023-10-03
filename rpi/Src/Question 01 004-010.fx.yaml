@@ -32,7 +32,7 @@
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Height: =185
                 LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutMinHeight: =70
+                LayoutMinHeight: =60
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
@@ -43,31 +43,33 @@
 
                 Q7_btn_Yes_5 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
-                    HoverFill: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =60
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
+                    OnSelect: =Set(Q7_varCheck1,!Q7_varCheck1);Set(Q7_varCheck2,false);Set(Q7_varCheck3,false)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =1
 
                 Q7_btn_No_5 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
+                    BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =1
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -77,42 +79,45 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
+                    OnSelect: =Set(Q7_varCheck1,false);Set(Q7_varCheck2,!Q7_varCheck2);Set(Q7_varCheck3,false)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedFill: =RGBA(0,0,0,0)
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =2
 
                 Q7_btn_NA_5 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
                     HoverColor: =App.Theme.Colors.Primary
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
+                    OnSelect: =Set(Q7_varYNA,"NA")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedFill: =
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
 

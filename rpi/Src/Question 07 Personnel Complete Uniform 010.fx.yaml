@@ -546,7 +546,7 @@
                 Y: =79
                 ZIndex: =2
 
-                TextInput6 As text:
+                Q07_emp_name As text:
                     Default: =""
                     Height: =70
                     HintText: ="Employee Name"
@@ -556,7 +556,7 @@
                     Width: =300
                     ZIndex: =1
 
-                TextInput8 As text:
+                Q07_ce As text:
                     Default: =""
                     Height: =70
                     HintText: |-
@@ -567,7 +567,7 @@
                     Width: =100
                     ZIndex: =2
 
-                TextInput9 As text:
+                Q07_pos As text:
                     Default: =""
                     Height: =70
                     HintText: ="Position/Title"
@@ -577,7 +577,7 @@
                     Width: =200
                     ZIndex: =3
 
-                TextInput10 As text:
+                Q07_branch As text:
                     Default: =""
                     Height: =70
                     HintText: ="Branch"
@@ -589,6 +589,20 @@
 
                 Icon1 As icon.Save:
                     Icon: =Icon.Save
+                    OnSelect: |
+                        =Patch(
+                            col07_2_11Qa,
+                            Defaults(col07_2_11Qa),
+                            {
+                                 Emp_name: Q07_emp_name.Text
+                                ,ce:Q07_ce.Text
+                                ,position:Q07_pos.Text
+                                ,branch:Q07_branch.Text
+                                
+                            }
+                        );
+                        //Reset(Q5_txtSDate);
+                        //Reset(Q5_txtSNo);
                     ZIndex: =5
 
             Container14 As groupContainer.horizontalAutoLayoutContainer:

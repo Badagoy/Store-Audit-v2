@@ -448,7 +448,7 @@
                     Height: =70
                     HintText: =""
                     Size: =21
-                    Visible: =if(varCheck = true, true, false);
+                    Visible: =If(varCheck = true, true, false)
                     Width: =560
                     X: =85
                     Y: =931
@@ -466,4 +466,14 @@
                     X: =85
                     Y: =734
                     ZIndex: =12
+
+                TextInput4_61 As text:
+                    Default: =""
+                    Height: =70
+                    HintText: ="STOCK ANALUST-TR"
+                    Size: =21
+                    Width: =560
+                    X: =40
+                    Y: =40
+                    ZIndex: =13
 

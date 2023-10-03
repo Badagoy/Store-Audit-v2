@@ -362,7 +362,7 @@
             Label17_81 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="37. Exhaust Fan 2"
                 Width: =560
                 X: =62
                 Y: =79
@@ -495,7 +495,7 @@
             Label17_83 As label:
                 Height: =70
                 Size: =21
-                Text: ="2. SIgnage-Vertical"
+                Text: ="38. Ceiling"
                 Width: =560
                 X: =73
                 ZIndex: =1

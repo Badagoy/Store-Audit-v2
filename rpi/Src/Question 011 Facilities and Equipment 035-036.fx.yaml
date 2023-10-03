@@ -362,7 +362,7 @@
             Label17_77 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="35. Water Closet"
                 Width: =560
                 X: =62
                 Y: =79
@@ -495,7 +495,7 @@
             Label17_79 As label:
                 Height: =70
                 Size: =21
-                Text: ="2. SIgnage-Vertical"
+                Text: ="36. Exhaust Fan 1"
                 Width: =560
                 X: =73
                 ZIndex: =1

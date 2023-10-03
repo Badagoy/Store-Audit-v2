@@ -1,6 +1,6 @@
-"'Question 011 Facilities and Equipment 039-040' As screen":
+"'Question 011 Facilities and Equipment 049-050' As screen":
 
-    Bottom_CNT_106 As groupContainer.horizontalAutoLayoutContainer:
+    Bottom_CNT_111 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -11,7 +11,7 @@
         Y: =1444
         ZIndex: =1
 
-        Button4_106 As button:
+        Button4_111 As button:
             Color: =Color.White
             Fill: =App.Theme.Colors.Primary
             Height: =70
@@ -27,7 +27,7 @@
             Width: =180
             ZIndex: =1
 
-        Label11_107 As label:
+        Label11_112 As label:
             Align: =Align.Center
             Height: =70
             LayoutMinHeight: =70
@@ -37,7 +37,7 @@
             Width: =100
             ZIndex: =2
 
-        Button16_106 As button:
+        Button16_111 As button:
             Fill: =App.Theme.Colors.Primary
             Height: =70
             LayoutMinHeight: =70
@@ -135,7 +135,7 @@
             Width: =180
             ZIndex: =3
 
-    HeaderContainer_107 As groupContainer.horizontalAutoLayoutContainer:
+    HeaderContainer_112 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =App.Theme.Colors.Primary
         Height: =130
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -147,7 +147,7 @@
         Width: =Parent.Width
         ZIndex: =2
 
-        Container5_187 As groupContainer.horizontalAutoLayoutContainer:
+        Container5_197 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =56.80
@@ -168,7 +168,7 @@
             Y: =0.00
             ZIndex: =1
 
-            img_Profile_107 As image:
+            img_Profile_112 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 134, 208, 1)
                 BorderStyle: =BorderStyle.None
@@ -199,7 +199,7 @@
                 Y: =18.93
                 ZIndex: =2
 
-        Container4_112 As groupContainer.verticalAutoLayoutContainer:
+        Container4_117 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =7
             Height: =56.80
@@ -217,7 +217,7 @@
             Y: =0.00
             ZIndex: =4
 
-            lbl_Hellow_107 As label:
+            lbl_Hellow_112 As label:
                 AlignInContainer: =AlignInContainer.Start
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -242,7 +242,7 @@
                 Y: =22.61
                 ZIndex: =1
 
-            lbl_Name_106 As label:
+            lbl_Name_111 As label:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -265,7 +265,7 @@
                 Y: =27.35
                 ZIndex: =2
 
-        Container7_153 As groupContainer.horizontalAutoLayoutContainer:
+        Container7_158 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =56.80
@@ -283,7 +283,7 @@
             Y: =0.00
             ZIndex: =6
 
-            icon_Notification_107 As icon.Bell:
+            icon_Notification_112 As icon.Bell:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(166, 166, 166, 1)
                 Color: =Color.AntiqueWhite
@@ -309,7 +309,7 @@
                 Y: =0.00
                 ZIndex: =1
 
-    Q1_lbl_111 As label:
+    Q1_lbl_116 As label:
         FontWeight: =FontWeight.Bold
         Height: =70
         Size: =25
@@ -318,7 +318,7 @@
         Y: =130
         ZIndex: =3
 
-    Container1_96 As groupContainer.manualLayoutContainer:
+    Container1_101 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =1262
         Width: =756
@@ -326,7 +326,7 @@
         Y: =200
         ZIndex: =4
 
-        Container5_188 As groupContainer.manualLayoutContainer:
+        Container5_198 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =97
             Width: =736
@@ -334,7 +334,7 @@
             Y: =12
             ZIndex: =1
 
-            Label13_85 As label:
+            Label13_90 As label:
                 FontWeight: =FontWeight.Bold
                 Height: =87
                 Size: =21
@@ -342,7 +342,7 @@
                 Width: =736
                 ZIndex: =1
 
-        Container3_86 As groupContainer.manualLayoutContainer:
+        Container3_91 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =498
             Width: =736
@@ -350,7 +350,7 @@
             Y: =94
             ZIndex: =2
 
-            Label16_26 As label:
+            Label16_31 As label:
                 Height: =67
                 Size: =21
                 Text: ="1. All store trade fixtures is functioning or in good condition"
@@ -359,16 +359,16 @@
                 Y: =12
                 ZIndex: =1
 
-            Label17_85 As label:
+            Label17_105 As label:
                 Height: =70
                 Size: =21
-                Text: ="39. Roofing"
+                Text: ="47. Fire Extinguisher 3"
                 Width: =560
                 X: =62
                 Y: =79
                 ZIndex: =2
 
-            Label17_86 As label:
+            Label17_106 As label:
                 Height: =70
                 Size: =21
                 Text: ="1. Is it good condition?"
@@ -377,7 +377,7 @@
                 Y: =149
                 ZIndex: =3
 
-            Q6_ConH01_127 As groupContainer.horizontalAutoLayoutContainer:
+            Q6_ConH01_137 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 Height: =76
                 LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -388,7 +388,7 @@
                 Y: =219
                 ZIndex: =5
 
-                btn_Yes_126 As button:
+                btn_Yes_136 As button:
                     Align: =Align.Left
                     AlignInContainer: =AlignInContainer.Stretch
                     BorderColor: =App.Theme.Colors.Primary
@@ -413,7 +413,7 @@
                     Width: =170
                     ZIndex: =1
 
-                btn_No_126 As button:
+                btn_No_136 As button:
                     Align: =Align.Left
                     BorderColor: =App.Theme.Colors.Primary
                     BorderThickness: =1
@@ -439,7 +439,7 @@
                     Width: =170
                     ZIndex: =2
 
-                btn_NA_113 As button:
+                btn_NA_123 As button:
                     Align: =Align.Left
                     BorderColor: =App.Theme.Colors.Primary
                     BorderThickness: =1
@@ -464,7 +464,7 @@
                     Width: =170
                     ZIndex: =3
 
-            Label20_74 As label:
+            Label20_84 As label:
                 Height: =70
                 Size: =21
                 Text: |-
@@ -475,7 +475,7 @@
                 Y: =309
                 ZIndex: =6
 
-            TextInput4_254 As text:
+            TextInput4_264 As text:
                 Default: =""
                 Height: =90
                 HintText: =""
@@ -486,21 +486,21 @@
                 Y: =379
                 ZIndex: =7
 
-        Container5_32 As groupContainer.manualLayoutContainer:
+        Container5_37 As groupContainer.manualLayoutContainer:
             Height: =584
             Width: =756
             Y: =636
             ZIndex: =3
 
-            Label17_87 As label:
+            Label17_107 As label:
                 Height: =70
                 Size: =21
-                Text: ="40. Telephone"
+                Text: ="48. Fire Extinguisher 4"
                 Width: =560
                 X: =73
                 ZIndex: =1
 
-            Label17_88 As label:
+            Label17_108 As label:
                 Height: =70
                 Size: =21
                 Text: ="1. Is it good condition?"
@@ -509,7 +509,7 @@
                 Y: =70
                 ZIndex: =2
 
-            Q6_ConH01_128 As groupContainer.horizontalAutoLayoutContainer:
+            Q6_ConH01_138 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 Height: =76
                 LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -520,7 +520,7 @@
                 Y: =140
                 ZIndex: =3
 
-                btn_Yes_127 As button:
+                btn_Yes_137 As button:
                     Align: =Align.Left
                     BorderColor: =App.Theme.Colors.Primary
                     BorderThickness: =1
@@ -544,7 +544,7 @@
                     Width: =170
                     ZIndex: =1
 
-                btn_No_127 As button:
+                btn_No_137 As button:
                     Align: =Align.Left
                     BorderColor: =App.Theme.Colors.Primary
                     BorderThickness: =1
@@ -570,7 +570,7 @@
                     Width: =170
                     ZIndex: =2
 
-                btn_NA_114 As button:
+                btn_NA_124 As button:
                     Align: =Align.Left
                     BorderColor: =App.Theme.Colors.Primary
                     BorderThickness: =1
@@ -595,7 +595,7 @@
                     Width: =170
                     ZIndex: =3
 
-            Label20_75 As label:
+            Label20_85 As label:
                 Height: =70
                 Size: =21
                 Text: |-
@@ -606,7 +606,7 @@
                 Y: =237
                 ZIndex: =4
 
-            TextInput4_255 As text:
+            TextInput4_265 As text:
                 Default: =""
                 Height: =90
                 HintText: =""

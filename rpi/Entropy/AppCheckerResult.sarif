@@ -106694,6 +106694,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Question 09 Updating Complete List of Store Personnel 007'.Container1_70.Container3_60.Container7_123.TextInput4_211.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 09 Updating Complete List of Store Personnel 007'.Container1_70.Container3_60.Container7_123.TextInput4_211.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 09 Updating Complete List of Store Personnel 007",
+                "type": "'Question 09 Updating Complete List of Store Personnel 007'.Container1_70.Container3_60.Container7_123.TextInput4_211"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Q7_varChk1"
                 }
               ],

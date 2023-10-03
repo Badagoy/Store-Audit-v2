@@ -1,6 +1,6 @@
-"'Question 02 007' As screen":
+"'Question 02 007_1' As screen":
 
-    C2Q10_Container As groupContainer.manualLayoutContainer:
+    C2Q10_Container_1 As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -8,7 +8,7 @@
         Y: =1060
         ZIndex: =1
 
-        C2Q9_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
+        C2Q9_SubCon_3 As groupContainer.verticalAutoLayoutContainer:
             Height: =338
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -16,7 +16,7 @@
             Width: =Parent.Width
             ZIndex: =1
 
-            C2Q9_lbl_1 As label:
+            C2Q9_lbl_3 As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -27,7 +27,7 @@
                     =0
                 ZIndex: =1
 
-            C2Q9_YesNo_1 As toggleSwitch:
+            C2Q9_YesNo_3 As toggleSwitch:
                 Default: =If(First(colQ4).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
@@ -40,7 +40,7 @@
                 Y: =100
                 ZIndex: =2
 
-            C2Q9_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
+            C2Q9_ConH01_6 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =60
@@ -53,7 +53,7 @@
                 Y: =40
                 ZIndex: =3
 
-                C2Q9_FRS_1 As text:
+                C2Q9_FRS_3 As text:
                     Default: =""
                     Height: =44
                     HintText: ="Photos"
@@ -65,7 +65,7 @@
                     Y: =150
                     ZIndex: =1
 
-                C2Q9_Amount_1 As text:
+                C2Q9_Amount_3 As text:
                     Default: =""
                     Height: =44
                     HintText: ="Remarks"
@@ -77,7 +77,7 @@
                     Y: =150
                     ZIndex: =2
 
-                C2Q9_icnSave_1 As icon.Save:
+                C2Q9_icnSave_3 As icon.Save:
                     Height: =34
                     Icon: =Icon.Save
                     OnSelect: |
@@ -88,7 +88,7 @@
                                 DateX: C2Q8_dtFRS_2.SelectedDate
                                 ,Sales_No:Q4_SalesNo_6.Text
                                 ,Amount:Q4_Amount_4.Text
-                                ,Cnt_Delayed:C2Q9_Amount_1.Text
+                                ,Cnt_Delayed:C2Q9_Amount_3.Text
                                 
                             }
                         );
@@ -99,7 +99,7 @@
                     Y: =150
                     ZIndex: =3
 
-            "C2Q9_gal_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "C2Q9_gal_4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
@@ -116,7 +116,7 @@
                 Y: =218
                 ZIndex: =4
 
-                C2Q9_ConH01_4 As groupContainer.horizontalAutoLayoutContainer:
+                C2Q9_ConH01_7 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =45
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
@@ -124,7 +124,7 @@
                     Width: =Parent.TemplateWidth
                     ZIndex: =6
 
-                    C2Q9_txtFRS_1 As text:
+                    C2Q9_txtFRS_3 As text:
                         Default: =ThisItem.DateX
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
@@ -139,7 +139,7 @@
                         Y: =150
                         ZIndex: =1
 
-                    C2Q9_txtAmount_1 As text:
+                    C2Q9_txtAmount_3 As text:
                         Default: =ThisItem.Sales_No
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
@@ -153,7 +153,7 @@
                         Y: =150
                         ZIndex: =2
 
-                    C2Q9_icnDel_3 As icon.Save:
+                    C2Q9_icnDel_5 As icon.Save:
                         Height: =34
                         Icon: =Icon.Trash
                         OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
@@ -162,7 +162,7 @@
                         Y: =150
                         ZIndex: =5
 
-    C2Q9_Container As groupContainer.manualLayoutContainer:
+    C2Q9_Container_1 As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -170,7 +170,7 @@
         Y: =700
         ZIndex: =2
 
-        C2Q9_SubCon As groupContainer.verticalAutoLayoutContainer:
+        C2Q9_SubCon_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =338
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -178,7 +178,7 @@
             Width: =Parent.Width
             ZIndex: =1
 
-            C2Q9_lbl As label:
+            C2Q9_lbl_2 As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -189,7 +189,7 @@
                     =0
                 ZIndex: =1
 
-            C2Q9_YesNo As toggleSwitch:
+            C2Q9_YesNo_2 As toggleSwitch:
                 Default: =If(First(colQ4).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
@@ -202,7 +202,7 @@
                 Y: =100
                 ZIndex: =2
 
-            C2Q9_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+            C2Q9_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =60
@@ -215,7 +215,7 @@
                 Y: =40
                 ZIndex: =3
 
-                C2Q9_FRS As text:
+                C2Q9_FRS_2 As text:
                     Default: =""
                     Height: =44
                     HintText: ="FRS"
@@ -227,7 +227,7 @@
                     Y: =150
                     ZIndex: =1
 
-                C2Q9_Amount As text:
+                C2Q9_Amount_2 As text:
                     Default: =""
                     Height: =44
                     HintText: ="Amount"
@@ -239,7 +239,7 @@
                     Y: =150
                     ZIndex: =2
 
-                C2Q9_icnSave As icon.Save:
+                C2Q9_icnSave_2 As icon.Save:
                     Height: =34
                     Icon: =Icon.Save
                     OnSelect: |
@@ -250,7 +250,7 @@
                                 DateX: C2Q8_dtFRS_2.SelectedDate
                                 ,Sales_No:Q4_SalesNo_6.Text
                                 ,Amount:Q4_Amount_4.Text
-                                ,Cnt_Delayed:C2Q9_Amount.Text
+                                ,Cnt_Delayed:C2Q9_Amount_2.Text
                                 
                             }
                         );
@@ -261,7 +261,7 @@
                     Y: =150
                     ZIndex: =3
 
-            "C2Q9_gal_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "C2Q9_gal_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
@@ -278,7 +278,7 @@
                 Y: =218
                 ZIndex: =4
 
-                C2Q9_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
+                C2Q9_ConH01_5 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =45
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
@@ -286,7 +286,7 @@
                     Width: =Parent.TemplateWidth
                     ZIndex: =6
 
-                    C2Q9_txtFRS As text:
+                    C2Q9_txtFRS_2 As text:
                         Default: =ThisItem.DateX
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
@@ -301,7 +301,7 @@
                         Y: =150
                         ZIndex: =1
 
-                    C2Q9_txtAmount As text:
+                    C2Q9_txtAmount_2 As text:
                         Default: =ThisItem.Sales_No
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
@@ -315,7 +315,7 @@
                         Y: =150
                         ZIndex: =2
 
-                    C2Q9_icnDel_2 As icon.Save:
+                    C2Q9_icnDel_4 As icon.Save:
                         Height: =34
                         Icon: =Icon.Trash
                         OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
@@ -324,7 +324,7 @@
                         Y: =150
                         ZIndex: =5
 
-    C2Q8_Container As groupContainer.manualLayoutContainer:
+    C2Q8_Container_1 As groupContainer.manualLayoutContainer:
         Height: =338
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -332,7 +332,7 @@
         Y: =360
         ZIndex: =3
 
-        C2Q8_SubCon As groupContainer.verticalAutoLayoutContainer:
+        C2Q8_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
             Height: =338
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -340,7 +340,7 @@
             Width: =Parent.Width
             ZIndex: =1
 
-            C2Q8_lbl As label:
+            C2Q8_lbl_1 As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -351,7 +351,7 @@
                     =0
                 ZIndex: =1
 
-            C2Q8_YesNo As toggleSwitch:
+            C2Q8_YesNo_1 As toggleSwitch:
                 Default: =If(First(colQ4).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
@@ -364,7 +364,7 @@
                 Y: =100
                 ZIndex: =2
 
-            C2Q8_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+            C2Q8_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =60
@@ -377,7 +377,7 @@
                 Y: =40
                 ZIndex: =3
 
-                C2Q8_dtFRS As datepicker:
+                C2Q8_dtFRS_2 As datepicker:
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =575
@@ -385,7 +385,7 @@
                     Width: =220
                     ZIndex: =1
 
-                C2Q8_dtSubmit As datepicker:
+                C2Q8_dtSubmit_2 As datepicker:
                     Height: =70
                     LayoutMinHeight: =70
                     LayoutMinWidth: =575
@@ -393,7 +393,7 @@
                     Width: =220
                     ZIndex: =2
 
-                C2Q8_DaysDelayed As text:
+                C2Q8_DaysDelayed_2 As text:
                     Default: =""
                     Height: =44
                     HintText: |-
@@ -406,7 +406,7 @@
                     Y: =150
                     ZIndex: =3
 
-                C2Q8_icnSave As icon.Save:
+                C2Q8_icnSave_1 As icon.Save:
                     Height: =34
                     Icon: =Icon.Save
                     OnSelect: |
@@ -414,10 +414,10 @@
                             colQ4a,
                             Defaults(colQ4a),
                             {
-                                DateX: C2Q8_dtFRS.SelectedDate
+                                DateX: C2Q8_dtFRS_2.SelectedDate
                                 ,Sales_No:Q4_SalesNo_6.Text
                                 ,Amount:Q4_Amount_4.Text
-                                ,Cnt_Delayed:C2Q8_DaysDelayed.Text
+                                ,Cnt_Delayed:C2Q8_DaysDelayed_2.Text
                                 
                             }
                         );
@@ -428,7 +428,7 @@
                     Y: =150
                     ZIndex: =4
 
-            "C2Q8_gal As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "C2Q8_gal_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 DelayItemLoading: =true
                 Fill: =RGBA(241, 244, 249, 1)
@@ -445,7 +445,7 @@
                 Y: =218
                 ZIndex: =4
 
-                C2Q8_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
+                C2Q8_ConH01_3 As groupContainer.horizontalAutoLayoutContainer:
                     Height: =45
                     LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutGap: =10
@@ -453,7 +453,7 @@
                     Width: =Parent.TemplateWidth
                     ZIndex: =6
 
-                    C2Q8_dtFRS_1 As text:
+                    C2Q8_dtFRS_3 As text:
                         Default: =ThisItem.DateX
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
@@ -468,7 +468,7 @@
                         Y: =150
                         ZIndex: =1
 
-                    C2Q8_dtSubmit_1 As text:
+                    C2Q8_dtSubmit_3 As text:
                         Default: =ThisItem.Sales_No
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
@@ -482,7 +482,7 @@
                         Y: =150
                         ZIndex: =2
 
-                    C2Q8_DaysDelayed_1 As text:
+                    C2Q8_DaysDelayed_3 As text:
                         Default: =ThisItem.Cnt_Delayed
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
@@ -497,7 +497,7 @@
                         Y: =150
                         ZIndex: =4
 
-                    C2Q8_icnDel_1 As icon.Save:
+                    C2Q8_icnDel_2 As icon.Save:
                         Height: =34
                         Icon: =Icon.Trash
                         OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
@@ -506,7 +506,7 @@
                         Y: =150
                         ZIndex: =5
 
-    C2Q7_Container As groupContainer.manualLayoutContainer:
+    C2Q7_Container_1 As groupContainer.manualLayoutContainer:
         Height: =220
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -514,7 +514,7 @@
         Y: =140
         ZIndex: =4
 
-        C2Q5_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
+        C2Q5_SubCon_2 As groupContainer.verticalAutoLayoutContainer:
             Height: =Parent.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -522,7 +522,7 @@
             Width: =Parent.Width
             ZIndex: =7
 
-            C2Q5_lbl_1 As label:
+            C2Q5_lbl_2 As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -534,7 +534,7 @@
                     =0
                 ZIndex: =1
 
-            C2Q5_ConH01_1 As groupContainer.horizontalAutoLayoutContainer:
+            C2Q5_ConH01_2 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -550,7 +550,7 @@
                 Y: =610
                 ZIndex: =2
 
-                C2Q5_btn_Yes_1 As button:
+                C2Q5_btn_Yes_2 As button:
                     Align: =Align.Left
                     BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =0
@@ -577,7 +577,7 @@
                     Width: =200
                     ZIndex: =1
 
-                C2Q5_btn_No_1 As button:
+                C2Q5_btn_No_2 As button:
                     Align: =Align.Left
                     BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =1
@@ -605,7 +605,7 @@
                     Width: =200
                     ZIndex: =2
 
-                C2Q5_btn_NA_1 As button:
+                C2Q5_btn_NA_2 As button:
                     Align: =Align.Left
                     BorderColor: |
                         =RGBA(0,0,0,0)
@@ -635,7 +635,7 @@
                     Width: =200
                     ZIndex: =3
 
-    Bottom_CNT_8 As groupContainer.horizontalAutoLayoutContainer:
+    Bottom_CNT_9 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -646,7 +646,7 @@
         Y: =1445
         ZIndex: =5
 
-        Button4_8 As button:
+        Button4_9 As button:
             Color: =Color.White
             Fill: =App.Theme.Colors.Primary
             Height: =70
@@ -662,7 +662,7 @@
             Width: =180
             ZIndex: =1
 
-        Label11_10 As label:
+        Label11_11 As label:
             Align: =Align.Center
             Height: =70
             LayoutMinHeight: =70
@@ -672,7 +672,7 @@
             Width: =100
             ZIndex: =2
 
-        Button16_8 As button:
+        Button16_9 As button:
             Fill: =App.Theme.Colors.Primary
             Height: =70
             LayoutMinHeight: =70
@@ -721,7 +721,7 @@
             Width: =180
             ZIndex: =3
 
-    HeaderContainer_9 As groupContainer.horizontalAutoLayoutContainer:
+    HeaderContainer_10 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =App.Theme.Colors.Primary
         Height: =130
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -733,7 +733,7 @@
         Width: =Parent.Width
         ZIndex: =6
 
-        Container4_8 As groupContainer.verticalAutoLayoutContainer:
+        Container4_9 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =7
             Height: =56.80
@@ -751,7 +751,7 @@
             Y: =0.00
             ZIndex: =4
 
-            lbl_Hellow_9 As label:
+            lbl_Hellow_10 As label:
                 AlignInContainer: =AlignInContainer.Start
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -776,7 +776,7 @@
                 Y: =22.61
                 ZIndex: =1
 
-            lbl_Name_8 As label:
+            lbl_Name_9 As label:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -799,7 +799,7 @@
                 Y: =27.35
                 ZIndex: =2
 
-        Container7_51 As groupContainer.horizontalAutoLayoutContainer:
+        Container7_52 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =56.80
@@ -817,7 +817,7 @@
             Y: =0.00
             ZIndex: =6
 
-            icon_Notification_9 As icon.Bell:
+            icon_Notification_10 As icon.Bell:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(166, 166, 166, 1)
                 Color: =Color.AntiqueWhite

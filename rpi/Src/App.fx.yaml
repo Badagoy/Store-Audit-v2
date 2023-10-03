@@ -41,6 +41,9 @@ App As appinfo:
             ClearCollect(col05_3_2Qa,{Sales_no:"0",Amount:"0",Transaction_no:"0",Transaction_amt:"0"});
             Clear(col05_3_2Qa);
         
+            ClearCollect(col05_4_2Qa,{Series_sales_inv:"0",Remove:""});
+            Clear(col05_4_2Qa);
+        
             ClearCollect(colQ5A,{Deposit_Amount:"0",Actual_Amount:"0"});
             Clear(colQ5A);
         

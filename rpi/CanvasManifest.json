@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 407,
+    "BindingErrorCount": 460,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -150,6 +150,8 @@
     "Question 07 001-005",
     "Question 07 001-_1",
     "Question 07 Personnel Complete Uniform 001",
+    "Question 07 Personnel Complete Uniform 002",
+    "Question 07 Personnel Complete Uniform 003",
     "Question 07 Personnel Complete Uniform_1"
   ]
 }

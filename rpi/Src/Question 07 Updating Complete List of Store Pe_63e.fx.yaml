@@ -448,7 +448,7 @@
                     Height: =70
                     HintText: =""
                     Size: =21
-                    Visible: =If(varCheck = true, true, false)
+                    Visible: =If(varCheck = true, false, true)
                     Width: =560
                     X: =85
                     Y: =931

@@ -1,7 +1,7 @@
 "'Question 01 004-010' As screen":
 
     Q7_Container As groupContainer.manualLayoutContainer:
-        Height: =300
+        Height: =340
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
@@ -9,12 +9,24 @@
         ZIndex: =1
 
         Q7_SubCon As groupContainer.verticalAutoLayoutContainer:
-            Height: =300
+            Height: =340
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
             Width: =Parent.Width
             ZIndex: =7
+
+            Q7_lbl As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="7. " & LookUp(colQuestion,Question_ID = 29,Question_Desc)
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
 
             Q7_ConH01_5 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -27,7 +39,7 @@
                 Width: =Parent.Width
                 X: =leftMargin
                 Y: =610
-                ZIndex: =1
+                ZIndex: =2
 
                 Q7_btn_Yes_5 As button:
                     Align: =Align.Left
@@ -103,31 +115,6 @@
                     Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
-
-            Q7_lbl As label:
-                Height: =114
-                LayoutMinHeight: =70
-                LayoutMinWidth: =560
-                Size: =fontSize
-                Text: ="7. " & LookUp(colQuestion,Question_ID = 29,Question_Desc)
-                VerticalAlign: =VerticalAlign.Bottom
-                Width: =Parent.Width
-                X: |
-                    =0
-                ZIndex: =2
-
-            Q7_YesNo As toggleSwitch:
-                Default: =If(First(colQ5).Res_Option ="true",true,false)
-                FalseText: ="No"
-                Height: =44
-                LayoutMinHeight: =49
-                LayoutMinWidth: =154
-                Size: =fontSize
-                TextPosition: =TextPosition.Left
-                TrueText: ="Yes"
-                Width: =160
-                Y: =100
-                ZIndex: =3
 
             Q7_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer

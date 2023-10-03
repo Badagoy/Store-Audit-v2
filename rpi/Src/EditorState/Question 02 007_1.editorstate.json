@@ -67,7 +67,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Bottom_CNT_9",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -855,7 +855,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4_10",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1423,7 +1423,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "C2Q10_Container_1",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4598,7 +4598,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Camera2",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5259,7 +5259,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery2",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6207,7 +6207,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image3",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

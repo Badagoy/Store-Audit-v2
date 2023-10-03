@@ -362,7 +362,7 @@
             Label17_53 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="23. Chiller 3"
                 Width: =560
                 X: =62
                 Y: =79
@@ -495,7 +495,7 @@
             Label17_55 As label:
                 Height: =70
                 Size: =21
-                Text: ="2. SIgnage-Vertical"
+                Text: ="24. Chiller 4"
                 Width: =560
                 X: =73
                 ZIndex: =1

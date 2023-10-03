@@ -55,7 +55,7 @@
                     HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =60
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"Yes")
+                    OnSelect: =Set(C2Q6_varYNA,"Yes")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -67,7 +67,7 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q8_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Text: =If(C2Q6_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =1
 
@@ -83,7 +83,7 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"No")
+                    OnSelect: =Set(C2Q6_varYNA,"No")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -95,7 +95,7 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q8_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Text: =If(C2Q6_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =2
 
@@ -113,7 +113,7 @@
                     HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"NA")
+                    OnSelect: =Set(C2Q6_varYNA,"NA")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -125,7 +125,7 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q8_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Text: =If(C2Q6_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
 
@@ -184,7 +184,7 @@
                     HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =60
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"Yes")
+                    OnSelect: =Set(C2Q5_varYNA,"Yes")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -196,7 +196,7 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q8_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Text: =If(C2Q5_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =1
 
@@ -212,7 +212,7 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"No")
+                    OnSelect: =Set(C2Q5_varYNA,"No")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -224,7 +224,7 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q8_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Text: =If(C2Q5_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =2
 
@@ -242,7 +242,7 @@
                     HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q8_varYNA,"NA")
+                    OnSelect: =Set(C2Q5_varYNA,"NA")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -254,7 +254,7 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q8_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Text: =If(C2Q5_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
 

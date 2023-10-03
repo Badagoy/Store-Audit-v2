@@ -1,0 +1,506 @@
+"'Question 01 008' As screen":
+
+    Q8_Container As groupContainer.manualLayoutContainer:
+        Height: =340
+        Width: |
+            =Parent.Width - (leftMargin * 2)
+        X: =leftMargin
+        Y: =1100
+        ZIndex: =1
+
+        Q8_SubCon As groupContainer.verticalAutoLayoutContainer:
+            Height: =340
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowX: =LayoutOverflow.Scroll
+            Width: =Parent.Width
+            ZIndex: =7
+
+            Q8_lbl As label:
+                Height: =114
+                LayoutMinHeight: =70
+                LayoutMinWidth: =560
+                Size: =fontSize
+                Text: ="7. " & LookUp(colQuestion,Question_ID = 29,Question_Desc)
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =Parent.Width
+                X: |
+                    =0
+                ZIndex: =1
+
+            Q8_ConH01 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Height: =185
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMinHeight: =60
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =Parent.Width
+                X: =leftMargin
+                Y: =610
+                ZIndex: =2
+
+                Q7_btn_Yes_7 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_7 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_7 As button:
+                    Align: =Align.Left
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
+            Q8_ConH02 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                Height: =185
+                LayoutMinHeight: =150
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =Parent.Width - (leftMargin * 2)
+                X: =leftMargin
+                Y: =610
+                ZIndex: =4
+
+                cntQ8S1 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =225
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =300
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =5
+                    Width: =220
+                    ZIndex: =1
+
+                    Q7_lbl1_2 As label:
+                        Height: =52
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Text: ="Utility Fund"
+                        VerticalAlign: =VerticalAlign.Bottom
+                        Width: =300
+                        Y: =9
+                        ZIndex: =1
+
+                    Q7_txt1_2 As text:
+                        Default: =First(colC01Q7A).Utility_Fund
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Width: =300
+                        ZIndex: =2
+
+                cntQ8S2 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =225
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =300
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =5
+                    Width: =220
+                    ZIndex: =2
+
+                    Q7_lbl2_2 As label:
+                        Align: =Align.Justify
+                        Height: =52
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Text: ="Cash OnHand"
+                        VerticalAlign: =VerticalAlign.Bottom
+                        Width: =300
+                        Y: =9
+                        ZIndex: =1
+
+                    Q7_txt2_2 As text:
+                        Default: =First(colC01Q7A).Cash_OnHand
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Width: =300
+                        ZIndex: =2
+
+                cntQ8S3 As groupContainer.verticalAutoLayoutContainer:
+                    FillPortions: =0
+                    Height: =225
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =112
+                    LayoutMinWidth: =300
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =10
+                    PaddingRight: =5
+                    Width: =220
+                    ZIndex: =3
+
+                    Q7_lbl3_2 As label:
+                        Align: =Align.Justify
+                        Height: =52
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Text: ="Cash OnHand"
+                        VerticalAlign: =VerticalAlign.Bottom
+                        Width: =300
+                        Y: =9
+                        ZIndex: =1
+
+                    Q7_txt3_2 As text:
+                        Default: =First(colC01Q7A).Cash_OnHand
+                        Height: =70
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =200
+                        Size: =21
+                        Width: =300
+                        ZIndex: =2
+
+    Bottom_CNT_5 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =141
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =20
+        PaddingRight: =20
+        Width: =786
+        Y: =1445
+        ZIndex: =2
+
+        Button4_5 As button:
+            Color: =Color.White
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: =Back()
+            RadiusBottomLeft: |
+                =50
+            RadiusTopLeft: |
+                =50
+            Size: =24
+            Text: ="Previous"
+            Width: =180
+            ZIndex: =1
+
+        Label11_4 As label:
+            Align: =Align.Center
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =21
+            Text: ="1/100"
+            Width: =100
+            ZIndex: =2
+
+        Button16_5 As button:
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: |+
+                =//Q4 OR Question ID = 15
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=15  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 15,
+                        'Response Desc': JSON(colQ4a),
+                        Res_Option:Q4_YesNo.Value        
+                        
+                    }
+                );
+                
+                //C01Q7 OR Question ID = 29 //C01Q7   ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=29  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 29,
+                        'Response Desc': 
+                            "[{""Utility_Fund"":" & If(IsBlank(Q7_txt1.Text),0,Q7_txt1.Text) & "," & 
+                               """Cash_OnHand"":" & If(IsBlank(Q7_txt2.Text),0,Q7_txt2.Text) & "," & 
+                             """Total_Account"":" & If(IsBlank(Q7_txt3.Text),0,Q7_txt3.Text) & "}]" 
+                      &""  
+                        ,Res_Option:Q7_varYNA
+                    }
+                );
+                
+                
+            RadiusBottomRight: |
+                =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: ="Next"
+            Width: =180
+            ZIndex: =3
+
+    HeaderContainer_6 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =App.Theme.Colors.Primary
+        Height: =130
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =Parent.Width
+        ZIndex: =3
+
+        Container5_5 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =2.77
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =100
+            X: =0.00
+            Y: =0.00
+            ZIndex: =1
+
+            img_Profile_6 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(0, 134, 208, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Height: =90
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+                ImagePosition: =ImagePosition.Stretch
+                LayoutMinHeight: = Parent.Height - 10
+                LayoutMinWidth: =Parent.Height - 10
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =200
+                RadiusBottomRight: =200
+                RadiusTopLeft: =200
+                RadiusTopRight: =200
+                Width: =90
+                X: =3.00
+                Y: =18.93
+                ZIndex: =2
+
+        Container4_6 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =7
+            Height: =56.80
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =100
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =507.00
+            X: =51.00
+            Y: =0.00
+            ZIndex: =4
+
+            lbl_Hellow_6 As label:
+                AlignInContainer: =AlignInContainer.Start
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Font: =Font.'Patrick Hand'
+                Height: =50
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =20
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =24
+                Text: =User().FullName
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =300
+                X: =0.00
+                Y: =22.61
+                ZIndex: =1
+
+            lbl_Name_5 As label:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =0.85
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =16
+                Text: =User().Email
+                VerticalAlign: =VerticalAlign.Top
+                Width: =569.17
+                X: =0.00
+                Y: =27.35
+                ZIndex: =2
+
+        Container7_6 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =23.37
+            PaddingTop: =0.00
+            Width: =81.81
+            X: =558.00
+            Y: =0.00
+            ZIndex: =6
+
+            icon_Notification_6 As icon.Bell:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =Color.AntiqueWhite
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =5
+                Height: =56.80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Bell
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58.44
+                X: =0.00
+                Y: =0.00
+                ZIndex: =1
+

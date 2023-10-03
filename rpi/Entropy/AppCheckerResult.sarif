@@ -38366,6 +38366,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S1.Q7_txt1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S1.Q7_txt1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 01 008",
+                "type": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S1.Q7_txt1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S2.Q7_txt2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S2.Q7_txt2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 01 008",
+                "type": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S2.Q7_txt2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S3.Q7_txt3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S3.Q7_txt3_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Question 01 008",
+                "type": "'Question 01 008'.Q8_Container.Q8_SubCon.Q8_ConH02.cntQ8S3.Q7_txt3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Q7_varChk1"
                 }
               ],

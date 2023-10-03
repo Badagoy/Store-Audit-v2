@@ -107,7 +107,8 @@
       "SpatialServices_52",
       "SpatialServices_55",
       "SpatialServices_58",
-      "SpatialServices_59"
+      "SpatialServices_59",
+      "SpatialServices_60"
     ],
     "dependencies": {},
     "dependents": [],
@@ -181,7 +182,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-10-03 10:25:20",
+        "modifiedOn": "2023-10-03 10:57:09",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

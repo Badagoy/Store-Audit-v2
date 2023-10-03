@@ -496,7 +496,7 @@
             
             
             // colC02Q10
-            ClearCollect(colC02Q10,Filter(colResponseDTL, 'Question ID' = 25));
+            ClearCollect(colC02Q10,Filter(colResponseDTL, 'Question ID' = 66));
             ClearCollect(
                 colC02Q10A,
                 ForAll(

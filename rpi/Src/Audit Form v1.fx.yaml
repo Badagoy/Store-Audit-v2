@@ -491,7 +491,8 @@
                     }
                 )
             );
-            
+            Set(Q7_varYNA,First(colC01Q7).Res_Option); 
+            If(IsBlank(Q7_varYNA),"NA",Q7_varYNA);
             Set(Q7_varChk1,false);
             Set(Q7_varChk2,false);
             Set(Q7_varChk3,true);

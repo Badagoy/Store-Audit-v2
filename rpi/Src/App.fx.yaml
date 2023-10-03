@@ -49,8 +49,11 @@ App As appinfo:
         
             ClearCollect(colQ6A,{DSR_Amount:"0",Actual_Amount:"0"});
             Clear(colQ6A);
-            //User
-            Set(userInfo ,User().FullName);
+        
+            ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
+            Clear(colC01Q7A);
+            
+            //=========================  END    ===============================
         
             //User
             Set(userInfo ,User().FullName);

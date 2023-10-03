@@ -528,6 +528,8 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
                     HoverFill: =App.Theme.Colors.Primary
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1_2,!varCheck1_2);Set(varCheck2_2,false);Set(varCheck3_2,false)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -552,6 +554,8 @@
                     HoverBorderColor: =
                     HoverColor: =App.Theme.Colors.Primary
                     HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1_2,false);Set(varCheck2_2,!varCheck2_2);Set(varCheck3_2,false)
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -575,6 +579,8 @@
                     Height: =70
                     HoverColor: =App.Theme.Colors.Primary
                     HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
                     OnSelect: =Set(varCheck1_2,false);Set(varCheck2_2,false);Set(varCheck3_2,!varCheck3)
                     PaddingBottom: =0
                     PaddingLeft: =0

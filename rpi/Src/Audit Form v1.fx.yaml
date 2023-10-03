@@ -493,6 +493,22 @@
             );
             Set(Q7_varYNA,First(colC01Q7).Res_Option); 
             If(IsBlank(Q7_varYNA),"NA",Q7_varYNA);
+            
+            
+            // colC02Q10
+            ClearCollect(colC02Q10,Filter(colResponseDTL, 'Question ID' = 25));
+            ClearCollect(
+                colC02Q10A,
+                ForAll(
+                    Table(ParseJSON(First(colC02Q10).'Response Desc')),
+                    {
+                        C02Q10_Image:    Text(Value.C02Q10_Image) 
+                    }
+                )
+            );
+            
+            
+            
             Set(Q7_varChk1,false);
             Set(Q7_varChk2,false);
             Set(Q7_varChk3,true);

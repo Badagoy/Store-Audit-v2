@@ -41,7 +41,7 @@
                 Y: =610
                 ZIndex: =2
 
-                Q7_btn_Yes_7 As button:
+                Q8_btn_Yes As button:
                     Align: =Align.Left
                     BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =0
@@ -52,7 +52,7 @@
                     HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =60
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    OnSelect: =Set(Q8_varYNA,"Yes")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -64,11 +64,11 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Text: =If(Q8_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =1
 
-                Q7_btn_No_7 As button:
+                Q8_btn_No As button:
                     Align: =Align.Left
                     BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =1
@@ -80,7 +80,7 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varYNA,"No")
+                    OnSelect: =Set(Q8_varYNA,"No")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -92,11 +92,11 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Text: =If(Q8_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =2
 
-                Q7_btn_NA_7 As button:
+                Q8_btn_NA As button:
                     Align: =Align.Left
                     BorderColor: =
                     BorderThickness: =0
@@ -108,7 +108,7 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(Q7_varYNA,"NA")
+                    OnSelect: =Set(Q8_varYNA,"NA")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -120,7 +120,7 @@
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Text: =If(Q8_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
 

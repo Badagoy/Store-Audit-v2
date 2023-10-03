@@ -649,7 +649,7 @@
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             Size: =fontSize
-                            Width: =220
+                            Width: =180
                             X: |
                                 =0
                             Y: =150
@@ -665,7 +665,7 @@
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             Size: =fontSize
-                            Width: =138
+                            Width: =110
                             X: =237
                             Y: =150
                             ZIndex: =2

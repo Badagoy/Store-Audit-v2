@@ -372,58 +372,6 @@
         Width: =Parent.Width
         ZIndex: =4
 
-        Container5_9 As groupContainer.horizontalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
-            FillPortions: =0
-            Height: =56.80
-            LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutMinHeight: =100
-            LayoutMinWidth: =10
-            LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =0.00
-            PaddingLeft: =2.77
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Width: =100
-            X: =0.00
-            Y: =0.00
-            ZIndex: =1
-
-            img_Profile_6 As image:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(0, 134, 208, 1)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =1
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                Fill: =App.Theme.Colors.Primary
-                FocusedBorderThickness: =4
-                Height: =90
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
-                ImagePosition: =ImagePosition.Stretch
-                LayoutMinHeight: = Parent.Height - 10
-                LayoutMinWidth: =Parent.Height - 10
-                PaddingBottom: =0.00
-                PaddingLeft: =0.00
-                PaddingRight: =0.00
-                PaddingTop: =0.00
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                RadiusBottomLeft: =200
-                RadiusBottomRight: =200
-                RadiusTopLeft: =200
-                RadiusTopRight: =200
-                Width: =90
-                X: =3.00
-                Y: =18.93
-                ZIndex: =2
-
         Container4_6 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =7

@@ -1,15 +1,15 @@
 "'Question 01 008' As screen":
 
     Q8_Container As groupContainer.manualLayoutContainer:
-        Height: =340
+        Height: =260
         Width: |
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
-        Y: =1100
+        Y: =140
         ZIndex: =1
 
         Q8_SubCon As groupContainer.verticalAutoLayoutContainer:
-            Height: =340
+            Height: =Parent.Height
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowX: =LayoutOverflow.Scroll
@@ -21,7 +21,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="7. " & LookUp(colQuestion,Question_ID = 29,Question_Desc)
+                Text: ="7. " & LookUp(colQuestion,Question_ID = 31,Question_Desc)
                 VerticalAlign: =VerticalAlign.Bottom
                 Width: =Parent.Width
                 X: |
@@ -30,7 +30,8 @@
 
             Q8_ConH01 As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
-                Height: =185
+                FillPortions: =0
+                Height: =100
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutMinHeight: =60
                 LayoutMinWidth: =250
@@ -123,117 +124,4 @@
                     Text: =If(Q8_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
-
-            Q8_ConH02 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                Height: =185
-                LayoutMinHeight: =150
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                LayoutOverflowX: =LayoutOverflow.Scroll
-                Width: =Parent.Width - (leftMargin * 2)
-                X: =leftMargin
-                Y: =610
-                ZIndex: =4
-
-                cntQ8S1 As groupContainer.verticalAutoLayoutContainer:
-                    FillPortions: =0
-                    Height: =225
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =112
-                    LayoutMinWidth: =300
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =10
-                    PaddingRight: =5
-                    Width: =220
-                    ZIndex: =1
-
-                    Q7_lbl1_2 As label:
-                        Height: =52
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =200
-                        Size: =21
-                        Text: ="Utility Fund"
-                        VerticalAlign: =VerticalAlign.Bottom
-                        Width: =300
-                        Y: =9
-                        ZIndex: =1
-
-                    Q7_txt1_2 As text:
-                        Default: =First(colC01Q7A).Utility_Fund
-                        Height: =70
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =200
-                        Size: =21
-                        Width: =300
-                        ZIndex: =2
-
-                cntQ8S2 As groupContainer.verticalAutoLayoutContainer:
-                    FillPortions: =0
-                    Height: =225
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =112
-                    LayoutMinWidth: =300
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =10
-                    PaddingRight: =5
-                    Width: =220
-                    ZIndex: =2
-
-                    Q7_lbl2_2 As label:
-                        Align: =Align.Justify
-                        Height: =52
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =200
-                        Size: =21
-                        Text: ="Cash OnHand"
-                        VerticalAlign: =VerticalAlign.Bottom
-                        Width: =300
-                        Y: =9
-                        ZIndex: =1
-
-                    Q7_txt2_2 As text:
-                        Default: =First(colC01Q7A).Cash_OnHand
-                        Height: =70
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =200
-                        Size: =21
-                        Width: =300
-                        ZIndex: =2
-
-                cntQ8S3 As groupContainer.verticalAutoLayoutContainer:
-                    FillPortions: =0
-                    Height: =225
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =112
-                    LayoutMinWidth: =300
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingLeft: =10
-                    PaddingRight: =5
-                    Width: =220
-                    ZIndex: =3
-
-                    Q7_lbl3_2 As label:
-                        Align: =Align.Justify
-                        Height: =52
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =200
-                        Size: =21
-                        Text: ="Cash OnHand"
-                        VerticalAlign: =VerticalAlign.Bottom
-                        Width: =300
-                        Y: =9
-                        ZIndex: =1
-
-                    Q7_txt3_2 As text:
-                        Default: =First(colC01Q7A).Cash_OnHand
-                        Height: =70
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =200
-                        Size: =21
-                        Width: =300
-                        ZIndex: =2
 

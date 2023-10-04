@@ -67,7 +67,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Bottom_CNT_9",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4768,14 +4768,6 @@
           "InvariantPropertyName": "Camera",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "0",
-          "InvariantPropertyName": "StreamRate",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -4839,11 +4831,6 @@
         {
           "Category": "Design",
           "PropertyName": "Camera",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "StreamRate",
           "RuleProviderType": "Unknown"
         }
       ],

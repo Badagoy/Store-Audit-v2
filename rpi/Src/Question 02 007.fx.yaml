@@ -552,7 +552,7 @@
                     }
                 );
                 
-                Navigate('Question 02 010x');
+                Navigate('Question 02 007_1');
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

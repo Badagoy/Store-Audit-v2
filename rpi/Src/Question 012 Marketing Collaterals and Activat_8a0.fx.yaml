@@ -758,7 +758,7 @@
                 Size: =21
                 Text: ="4. Fire Extinguisher"
                 Width: =560
-                X: =41
+                X: =57
                 Y: =582
                 ZIndex: =8
 
@@ -769,7 +769,7 @@
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
                 Width: =600
-                X: =105
+                X: =120
                 Y: =652
                 ZIndex: =9
 
@@ -863,7 +863,7 @@
                     ="5. Please Use Other Door (Direction To Right & Left)
                     "
                 Width: =679
-                X: =41
+                X: =57
                 Y: =745
                 ZIndex: =10
 
@@ -874,7 +874,7 @@
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
                 Width: =600
-                X: =105
+                X: =120
                 Y: =815
                 ZIndex: =11
 

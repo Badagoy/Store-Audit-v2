@@ -55,6 +55,12 @@ App As appinfo:
         
             ClearCollect(col07_2_11Qa,{Emp_name:"0",ce:"0",position:"",branch:""});
             Clear(col07_2_11Qa);
+        
+            ClearCollect(col013_2_2Qa,{Date:"01/01/2023",withdrawal_docu:""});
+            Clear(col013_2_2Qa);
+        
+            ClearCollect(col013_3_2Qa,{Date:"01/01/2023",inv_no:"0",vendor:""});
+            Clear(col013_3_2Qa);
             
             // testing to save image
             ClearCollect(colC02Q10A,{C02Q10_Image:"",Remarks:"",ID:0});  

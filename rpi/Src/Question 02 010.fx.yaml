@@ -103,7 +103,7 @@
 
                         C2Q9_txtid As text:
                             Color: =RGBA(255, 255, 255, 1)
-                            Default: =ThisItem.ID
+                            Default: =ThisItem.Id
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
                             Fill: =App.Theme.Colors.Primary
@@ -138,8 +138,8 @@
         Height: =80
         OnSelect: |-
             =
-            Set(varMax,Max(colC02Q10A,ID+1));
-            Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera.Stream,Remarks:C2Q10_txtRemarks.Text,ID:varMax});
+            Set(varMax,Max(colC02Q10A,Id)+1);
+            Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera.Stream,Remarks:C2Q10_txtRemarks.Text,Id:If(varMax=Blank(),1,varMax)});
         Size: =24
         Text: ="📸  Capture"
         Width: =746
@@ -225,6 +225,25 @@
                         ,Res_Option:Q9_varYNA
                     }
                 );
+                
+                //C02Q10 OR Question ID = 66   
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=66  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 66,
+                        'Response Desc':  JSON(colC02Q10A,JSONFormat.IncludeBinaryData)
+                        ,Res_Option:Q9_varYNA
+                    }
+                );
+                 
                 
                 Navigate('Question 02 010');
             RadiusBottomRight: |

@@ -507,6 +507,15 @@
                 )
             );
             
+            //C01Q7   ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
+            ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));
+            ClearCollect(
+                colC11Q338A,
+                 First(colC11Q338).'Response Desc');
+            
+            Set(C11Q338_varYNA,First(colC11Q338A).Resp_Desc); 
+            If(IsBlank(C11Q338_varYNA),"NA",C11Q338_varYNA);
+            
             
             
             Set(Q7_varChk1,false);

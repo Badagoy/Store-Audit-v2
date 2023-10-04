@@ -144,7 +144,7 @@
                             Fill: =App.Theme.Colors.Primary
                             Height: =42
                             Size: =18
-                            Text: ="Text"
+                            Text: =ThisItem.Remarks
                             Width: =200
                             Y: =157
                             ZIndex: =2
@@ -160,11 +160,11 @@
                             ZIndex: =3
 
                         C2Q9_txtid As text:
-                            Color: =RGBA(0, 0, 0, 0)
+                            Color: =RGBA(255, 255, 255, 1)
                             Default: =ThisItem.ID
                             DisabledBorderColor: =RGBA(0, 134, 208, 1)
                             DisplayMode: =DisplayMode.View
-                            Fill: =RGBA(0, 0, 0, 0)
+                            Fill: =App.Theme.Colors.Primary
                             Height: =47
                             HintText: ="ID"
                             Size: =fontSize
@@ -195,7 +195,9 @@
         Fill: =App.Theme.Colors.Primary
         Height: =80
         OnSelect: |-
-            =Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera.Stream,Remarks:C2Q10_txtRemarks.Text,ID:2});  
+            =
+            Set(varMax,Max(colC02Q10A,ID+1));
+            Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera.Stream,Remarks:C2Q10_txtRemarks.Text,ID:varMax});
         Size: =24
         Text: ="📸  Capture"
         Width: =746

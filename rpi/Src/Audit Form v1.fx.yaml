@@ -508,26 +508,39 @@
             );
             
             //C01Q7   ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
+            //ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));
+            //ClearCollect(
+               //colC11Q338A,
+                 //First(colC11Q338).'Response Desc');
+            
+            //Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
+            
+            //colC11Q338
             ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));
             ClearCollect(
                 colC11Q338A,
-                 First(colC11Q338).'Response Desc');
-            
-            Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
-             
-            //C02Q10 
-            ClearCollect(colC02Q10,Filter(colResponseDTL, 'Question ID' = 66));
-            ClearCollect(
-                colC02Q10A,
                 ForAll(
-                    Table(ParseJSON(First(colC02Q10).'Response Desc')),
+                    Table(ParseJSON(First(colC11Q338).'Response Desc')),
                     {
-                        C02Q10_Image:    Text(Value.C02Q10_Image),
-                        Remarks: Text(Value.Remarks) ,
-                        Id: Value(Value.Id)
+                        Resp_Desc:    Text(Value.Resp_Desc) 
                     }
                 )
             );
+            Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
+            
+            //colC11Q339
+            ClearCollect(colC11Q339,Filter(colResponseDTL, 'Question ID' = 338));
+            ClearCollect(
+                colC11Q339A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q339).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q338_varYNA,If(IsBlank(First(colC11Q339A).Resp_Desc),"NA",C11Q339_varYNA) ); 
+            
             
             
             Set(Q7_varChk1,false);

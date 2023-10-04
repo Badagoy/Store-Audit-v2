@@ -1,0 +1,1013 @@
+"'Question 012 Marketing Collaterals and Activation 007.13 - 011' As screen":
+
+    Bottom_CNT_133 As groupContainer.horizontalAutoLayoutContainer:
+        Height: =141
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
+        LayoutMode: =LayoutMode.Auto
+        PaddingLeft: =20
+        PaddingRight: =20
+        Width: =786
+        Y: =1444
+        ZIndex: =1
+
+        Button4_133 As button:
+            Color: =Color.White
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: =Back();
+            RadiusBottomLeft: |
+                =50
+            RadiusTopLeft: |
+                =50
+            Size: =24
+            Text: ="Previous"
+            Width: =180
+            ZIndex: =1
+
+        Label11_134 As label:
+            Align: =Align.Center
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =560
+            Size: =21
+            Text: ="1/100"
+            Width: =100
+            ZIndex: =2
+
+        Button16_133 As button:
+            Fill: =App.Theme.Colors.Primary
+            Height: =70
+            LayoutMinHeight: =70
+            LayoutMinWidth: =280
+            OnSelect: |-
+                =//Q1 OR Question ID = 1 
+                
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=1 And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        )
+                    ,
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 1,
+                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"[]"),
+                        Res_Option: Q1_YesNo_2.Value
+                    }
+                );
+                //Q2 OR Question ID = 6
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=6  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {   
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 6,
+                        'Response Desc': 
+                            "[{""Q2_txt1"":" & If(IsBlank(Q2_txt1_2.Text),0,Q2_txt1_2.Text) & "," & 
+                             """Q2_txt2"":" & If(IsBlank(Q2_txt2_2.Text),0,Q2_txt2_2.Text) & "," &
+                             """Q2_txt3"":" & If(IsBlank(Q2_txt3_2.Text),0,Q2_txt3_2.Text) & "," &
+                             """Q2_txt4"":" & If(IsBlank(Q2_txt4_2.Text),0,Q2_txt4_2.Text) & "}]" 
+                      &""
+                    }
+                );
+                
+                //Q3.1 OR Question ID = 8
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=8  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {   
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 8,
+                        'Response Desc': 
+                            "[{""Q3_txt1"":" & If(IsBlank(Q3_txt1_2.Text),0,Q3_txt1_2.Text) & "," & 
+                             """Q3_txt2"":" & If(IsBlank(Q3_txt2_2.Text),0,Q3_txt2_2.Text) & "," &
+                             """Q3_txt3"":" & If(IsBlank(Q3_txt3_2.Text),0,Q3_txt3_2.Text) & "," &
+                             """Q3_txt4"":" & If(IsBlank(Q3_txt4_2.Text),0,Q3_txt4_2.Text) & "}]"
+                      &""
+                    }
+                );
+                
+                //Q3.2 OR Question ID = 10
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=10  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 10,
+                        'Response Desc': JSON(colQ3_2A)
+                        
+                        
+                    }
+                );
+                
+                Navigate('crushed-Question 01 004-010')
+                //ExportData.Run("",User().Email); Export and email
+            RadiusBottomRight: |
+                =50
+            RadiusTopRight: =50
+            Size: =24
+            Text: ="Next"
+            Width: =180
+            ZIndex: =3
+
+    HeaderContainer_134 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =App.Theme.Colors.Primary
+        Height: =130
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =0.00
+        PaddingLeft: =0.00
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =Parent.Width
+        ZIndex: =2
+
+        Container5_241 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =2.77
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =100
+            X: =0.00
+            Y: =0.00
+            ZIndex: =1
+
+            img_Profile_134 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(0, 134, 208, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Height: =90
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+                ImagePosition: =ImagePosition.Stretch
+                LayoutMinHeight: = Parent.Height - 10
+                LayoutMinWidth: =Parent.Height - 10
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =200
+                RadiusBottomRight: =200
+                RadiusTopLeft: =200
+                RadiusTopRight: =200
+                Width: =90
+                X: =3.00
+                Y: =18.93
+                ZIndex: =2
+
+        Container4_139 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =7
+            Height: =56.80
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =100
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =507.00
+            X: =51.00
+            Y: =0.00
+            ZIndex: =4
+
+            lbl_Hellow_134 As label:
+                AlignInContainer: =AlignInContainer.Start
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                Font: =Font.'Patrick Hand'
+                Height: =50
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =20
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =24
+                Text: =User().FullName
+                VerticalAlign: =VerticalAlign.Bottom
+                Width: =300
+                X: =0.00
+                Y: =22.61
+                ZIndex: =1
+
+            lbl_Name_133 As label:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =Color.White
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =4
+                LayoutMinHeight: =70
+                LayoutMinWidth: =100
+                PaddingBottom: =0.85
+                PaddingLeft: =0.85
+                PaddingRight: =5.84
+                PaddingTop: =5.84
+                Size: =16
+                Text: =User().Email
+                VerticalAlign: =VerticalAlign.Top
+                Width: =569.17
+                X: =0.00
+                Y: =27.35
+                ZIndex: =2
+
+        Container7_180 As groupContainer.horizontalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            FillPortions: =0
+            Height: =56.80
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =80
+            LayoutMinWidth: =10
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =0.00
+            PaddingLeft: =0.00
+            PaddingRight: =23.37
+            PaddingTop: =0.00
+            Width: =81.81
+            X: =558.00
+            Y: =0.00
+            ZIndex: =6
+
+            icon_Notification_134 As icon.Bell:
+                AlignInContainer: =AlignInContainer.Stretch
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =Color.AntiqueWhite
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                Fill: =App.Theme.Colors.Primary
+                FocusedBorderThickness: =5
+                Height: =56.80
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Bell
+                PaddingBottom: =0.00
+                PaddingLeft: =0.00
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58.44
+                X: =0.00
+                Y: =0.00
+                ZIndex: =1
+
+    Q1_lbl_138 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =25
+        Text: ="Customer Service"
+        Width: =552
+        Y: =130
+        ZIndex: =3
+
+    Container1_123 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Height: =1262
+        Width: =756
+        X: =15
+        Y: =200
+        ZIndex: =4
+
+        Container5_242 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =73
+            Width: =736
+            X: =12
+            Y: =12
+            ZIndex: =1
+
+            Label13_112 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =73
+                Size: =21
+                Text: ="Marketing Collaterals and Activation"
+                Width: =736
+                ZIndex: =1
+
+        Container3_115 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =413
+            Width: =736
+            X: =12
+            Y: =85
+            ZIndex: =3
+
+            Label16_146 As label:
+                Height: =81
+                Size: =21
+                Text: ="7. All supplier collaterals with stickers from marketing department"
+                Width: =726
+                X: =10
+                Y: =12
+                ZIndex: =1
+
+            Label16_147 As label:
+                Height: =70
+                Size: =21
+                Text: |-
+                    ="13. Priority no. cards
+                    "
+                Width: =613
+                X: =56
+                Y: =93
+                ZIndex: =2
+
+            Q7_ConH01_103 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =93
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =600
+                X: =120
+                Y: =163
+                ZIndex: =3
+
+                Q7_btn_Yes_103 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_103 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_101 As button:
+                    Align: =Align.Left
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
+            Label16_148 As label:
+                Height: =70
+                Size: =21
+                Text: ="14. RosePharmacy Pen Holder"
+                Width: =560
+                X: =56
+                Y: =256
+                ZIndex: =4
+
+            Q7_ConH01_104 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =93
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =600
+                X: =120
+                Y: =326
+                ZIndex: =5
+
+                Q7_btn_Yes_104 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_104 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_102 As button:
+                    Align: =Align.Left
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
+        Container3_118 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =176
+            Width: =736
+            X: =20
+            Y: =498
+            ZIndex: =4
+
+            Label16_149 As label:
+                Height: =81
+                Size: =21
+                Text: ="8. Personnel ask or offer Robinsons reward Card (RRC) in every transaction."
+                Width: =726
+                X: =10
+                Y: =12
+                ZIndex: =1
+
+            Q7_ConH01_106 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =93
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =600
+                X: =113
+                Y: =93
+                ZIndex: =5
+
+                Q7_btn_Yes_106 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_106 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_104 As button:
+                    Align: =Align.Left
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
+        Container3_119 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =176
+            Width: =736
+            X: =20
+            Y: =674
+            ZIndex: =5
+
+            Label16_150 As label:
+                Height: =81
+                Size: =21
+                Text: ="9. Personnel have knowledge on RRC earnings and redemptuon points mechanics."
+                Width: =726
+                X: =10
+                Y: =12
+                ZIndex: =1
+
+            Q7_ConH01_107 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =93
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =600
+                X: =113
+                Y: =83
+                ZIndex: =5
+
+                Q7_btn_Yes_107 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_107 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_105 As button:
+                    Align: =Align.Left
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
+        Container3_120 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =176
+            Width: =736
+            X: =20
+            Y: =850
+            ZIndex: =6
+
+            Label16_151 As label:
+                Height: =81
+                Size: =21
+                Text: ="10. Personnel offer thematic promo in every transaction"
+                Width: =726
+                X: =10
+                Y: =12
+                ZIndex: =1
+
+            Q7_ConH01_108 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =93
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =600
+                X: =113
+                Y: =83
+                ZIndex: =5
+
+                Q7_btn_Yes_108 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_108 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_106 As button:
+                    Align: =Align.Left
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+
+        Container3_121 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =176
+            Width: =736
+            X: =20
+            Y: =1026
+            ZIndex: =7
+
+            Label16_152 As label:
+                Height: =81
+                Size: =21
+                Text: ="11. POS balance of Robinsons Reward Card tally with SOH"
+                Width: =726
+                X: =10
+                Y: =12
+                ZIndex: =1
+
+            Q7_ConH01_121 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =93
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =600
+                X: =113
+                Y: =83
+                ZIndex: =5
+
+                Q7_btn_Yes_121 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"Yes")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_121 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+                Q7_btn_NA_119 As button:
+                    Align: =Align.Left
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(Q7_varYNA,"NA")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(Q7_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =3
+

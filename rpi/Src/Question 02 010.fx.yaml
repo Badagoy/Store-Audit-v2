@@ -105,7 +105,7 @@
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
                 Height: =300
-                Items: =colImageCap
+                Items: =colC02Q10A
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =320
@@ -171,7 +171,7 @@
                             Width: =93
                             ZIndex: =4
 
-    Camera2 As camera:
+    C2Q10_Camera As camera:
         Camera: =0
         Height: =572
         StreamRate: =200
@@ -183,6 +183,8 @@
     Button4 As button:
         Fill: =App.Theme.Colors.Primary
         Height: =79
+        OnSelect: |-
+            =Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera.Stream,Remarks:"XX",ID:2});  
         Size: =24
         Text: ="📸  Capture"
         Width: =746

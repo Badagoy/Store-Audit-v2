@@ -372,7 +372,7 @@
                 Size: =21
                 Visible: =If(C11Q338_varYNA = "No", true, false)
                 Width: =500
-                X: =128
+                X: =121
                 Y: =379
                 ZIndex: =7
 

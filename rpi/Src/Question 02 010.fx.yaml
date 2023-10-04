@@ -193,14 +193,14 @@
 
     C2Q10_btnCapture As button:
         Fill: =App.Theme.Colors.Primary
-        Height: =79
+        Height: =80
         OnSelect: |-
-            =Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera.Stream,Remarks:"XX",ID:2});  
+            =Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera.Stream,Remarks:C2Q10_txtRemarks.Text,ID:2});  
         Size: =24
         Text: ="📸  Capture"
         Width: =746
         X: =20
-        Y: =1277
+        Y: =1300
         ZIndex: =4
 
     Bottom_CNT_9 As groupContainer.horizontalAutoLayoutContainer:

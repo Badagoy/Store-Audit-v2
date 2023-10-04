@@ -317,7 +317,7 @@
             Label17_9 As label:
                 Height: =70
                 Size: =21
-                Text: ="1. SIgnage-Horizontal"
+                Text: ="1. Signage-Horizontal"
                 Width: =560
                 X: =62
                 Y: =79
@@ -424,18 +424,18 @@
                 Size: =21
                 Text: |-
                     ="2. E-Ticket #"
-                Visible: =If(varCheck2_1 = true, true, false)
+                Visible: =If(C11Q338_varYNA = "No", true, false)
                 Width: =560
                 X: =98
                 Y: =309
                 ZIndex: =6
 
             TextInput4_216 As text:
-                Default: =""
+                Default: =
                 Height: =90
                 HintText: =""
                 Size: =21
-                Visible: =If(varCheck2_1 = true, true, false)
+                Visible: =If(C11Q338_varYNA = "No", true, false)
                 Width: =500
                 X: =158
                 Y: =379

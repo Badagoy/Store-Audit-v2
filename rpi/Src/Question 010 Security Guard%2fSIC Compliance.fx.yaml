@@ -309,21 +309,12 @@
                 Y: =0.00
                 ZIndex: =1
 
-    Q1_lbl_89 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =70
-        Size: =25
-        Text: ="Customer Service"
-        Width: =552
-        Y: =130
-        ZIndex: =3
-
     Container1_74 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Height: =1267
         Width: =756
         X: =15
-        Y: =200
+        Y: =153
         ZIndex: =4
 
         Container5_144 As groupContainer.manualLayoutContainer:
@@ -382,86 +373,6 @@
                     Y: =97
                     ZIndex: =6
 
-                Q6_ConH01_79 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    Height: =86
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutMode: =LayoutMode.Auto
-                    LayoutOverflowX: =LayoutOverflow.Scroll
-                    Width: =550
-                    X: =85
-                    Y: =167
-                    ZIndex: =12
-
-                    btn_Yes_78 As button:
-                        Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
-                        Color: =RGBA(246, 88, 16, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =70
-                        HoverFill: =App.Theme.Colors.Primary
-                        OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        RadiusBottomLeft: =1
-                        RadiusBottomRight: =1
-                        RadiusTopLeft: =1
-                        RadiusTopRight: =1
-                        Size: =24
-                        Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                        Width: =170
-                        ZIndex: =1
-
-                    btn_No_78 As button:
-                        Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
-                        Color: =RGBA(246, 88, 16, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =70
-                        HoverBorderColor: =
-                        HoverColor: =App.Theme.Colors.Primary
-                        HoverFill: =
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        RadiusBottomLeft: =1
-                        RadiusBottomRight: =1
-                        RadiusTopLeft: =1
-                        RadiusTopRight: =1
-                        Size: =24
-                        Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                        Width: =170
-                        ZIndex: =2
-
-                    btn_NA_69 As button:
-                        Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
-                        Color: =RGBA(246, 88, 16, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =70
-                        HoverColor: =App.Theme.Colors.Primary
-                        HoverFill: =
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        RadiusBottomLeft: =1
-                        RadiusBottomRight: =1
-                        RadiusTopLeft: =1
-                        RadiusTopRight: =1
-                        Size: =24
-                        Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                        Width: =170
-                        ZIndex: =3
-
                 Label17_310 As label:
                     Height: =47
                     Size: =21
@@ -471,92 +382,6 @@
                     X: =51
                     Y: =253
                     ZIndex: =13
-
-                Q6_ConH01_80 As groupContainer.horizontalAutoLayoutContainer:
-                    DropShadow: =DropShadow.None
-                    Height: =76
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutMode: =LayoutMode.Auto
-                    LayoutOverflowX: =LayoutOverflow.Scroll
-                    Width: =550
-                    X: =85
-                    Y: =300
-                    ZIndex: =14
-
-                    btn_Yes_79 As button:
-                        Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
-                        Color: =RGBA(246, 88, 16, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =70
-                        HoverFill: =App.Theme.Colors.Primary
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        RadiusBottomLeft: =1
-                        RadiusBottomRight: =1
-                        RadiusTopLeft: =1
-                        RadiusTopRight: =1
-                        Size: =24
-                        Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                        Width: =170
-                        ZIndex: =1
-
-                    btn_No_79 As button:
-                        Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
-                        Color: =RGBA(246, 88, 16, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =70
-                        HoverBorderColor: =
-                        HoverColor: =App.Theme.Colors.Primary
-                        HoverFill: =
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        RadiusBottomLeft: =1
-                        RadiusBottomRight: =1
-                        RadiusTopLeft: =1
-                        RadiusTopRight: =1
-                        Size: =24
-                        Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                        Width: =170
-                        ZIndex: =2
-
-                    btn_NA_70 As button:
-                        Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
-                        Color: =RGBA(246, 88, 16, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =70
-                        HoverColor: =App.Theme.Colors.Primary
-                        HoverFill: =
-                        LayoutMinHeight: =70
-                        LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        RadiusBottomLeft: =1
-                        RadiusBottomRight: =1
-                        RadiusTopLeft: =1
-                        RadiusTopRight: =1
-                        Size: =24
-                        Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                        Width: =170
-                        ZIndex: =3
 
                 Label17_311 As label:
                     Height: =50
@@ -568,44 +393,47 @@
                     Y: =378
                     ZIndex: =15
 
-                Q6_ConH01_81 As groupContainer.horizontalAutoLayoutContainer:
+                Q7_ConH01_13 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
-                    Height: =76
+                    Height: =73
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowX: =LayoutOverflow.Scroll
-                    Width: =550
-                    X: =85
-                    Y: =428
-                    ZIndex: =16
+                    Width: =611
+                    X: =44
+                    Y: =152
+                    ZIndex: =17
 
-                    btn_Yes_80 As button:
+                    Q7_btn_Yes_13 As button:
                         Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
+                        BorderColor: =RGBA(0,0,0,0)
+                        BorderThickness: =0
                         Color: =RGBA(246, 88, 16, 1)
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =70
-                        HoverFill: =App.Theme.Colors.Primary
-                        LayoutMinHeight: =70
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =RGBA(0,0,0,0)
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
+                        OnSelect: =Set(Q10_1_1_varYNA,"Yes")
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
                         RadiusBottomLeft: =1
                         RadiusBottomRight: =1
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                        Width: =170
+                        Text: =If(Q10_1_1_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                        Width: =200
                         ZIndex: =1
 
-                    btn_No_80 As button:
+                    Q7_btn_No_13 As button:
                         Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
+                        BorderColor: =RGBA(0,0,0,0)
                         BorderThickness: =1
                         Color: =RGBA(246, 88, 16, 1)
                         Fill: =RGBA(255, 255, 255, 1)
@@ -615,46 +443,240 @@
                         HoverFill: =
                         LayoutMinHeight: =70
                         LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
+                        OnSelect: =Set(Q10_1_1_varYNA,"No")
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
                         RadiusBottomLeft: =1
                         RadiusBottomRight: =1
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                        Width: =170
+                        Text: =If(Q10_1_1_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                        Width: =200
                         ZIndex: =2
 
-                    btn_NA_71 As button:
+                    Q7_btn_NA_60 As button:
                         Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
-                        Color: =RGBA(246, 88, 16, 1)
+                        BorderColor: =
+                        BorderThickness: =0
+                        Color: =App.Theme.Colors.Primary
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =70
+                        HoverBorderColor: =RGBA(0,0,0,0)
                         HoverColor: =App.Theme.Colors.Primary
                         HoverFill: =
                         LayoutMinHeight: =70
                         LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,false);Set(varCheck3,!varCheck3)
+                        OnSelect: =Set(Q10_1_1_varYNA,"NA")
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =
                         RadiusBottomLeft: =1
                         RadiusBottomRight: =1
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck3 = true Or (varCheck1=false And varCheck2=false And varCheck3=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                        Width: =170
+                        Text: =If(Q10_1_1_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                        Width: =200
+                        ZIndex: =3
+
+                Q7_ConH01_62 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =73
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowX: =LayoutOverflow.Scroll
+                    Width: =611
+                    X: =44
+                    Y: =305
+                    ZIndex: =18
+
+                    Q7_btn_Yes_62 As button:
+                        Align: =Align.Left
+                        BorderColor: =RGBA(0,0,0,0)
+                        BorderThickness: =0
+                        Color: =RGBA(246, 88, 16, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =RGBA(0,0,0,0)
+                        LayoutMinHeight: =60
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(Q10_1_2_varYNA,"Yes")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(Q10_1_2_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                        Width: =200
+                        ZIndex: =1
+
+                    Q7_btn_No_62 As button:
+                        Align: =Align.Left
+                        BorderColor: =RGBA(0,0,0,0)
+                        BorderThickness: =1
+                        Color: =RGBA(246, 88, 16, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverBorderColor: =
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(Q10_1_2_varYNA,"No")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(Q10_1_2_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                        Width: =200
+                        ZIndex: =2
+
+                    Q7_btn_NA_61 As button:
+                        Align: =Align.Left
+                        BorderColor: =
+                        BorderThickness: =0
+                        Color: =App.Theme.Colors.Primary
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverBorderColor: =RGBA(0,0,0,0)
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(Q10_1_2_varYNA,"NA")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(Q10_1_2_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                        Width: =200
+                        ZIndex: =3
+
+                Q7_ConH01_63 As groupContainer.horizontalAutoLayoutContainer:
+                    DropShadow: =DropShadow.None
+                    Height: =73
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowX: =LayoutOverflow.Scroll
+                    Width: =611
+                    X: =44
+                    Y: =438
+                    ZIndex: =19
+
+                    Q7_btn_Yes_63 As button:
+                        Align: =Align.Left
+                        BorderColor: =RGBA(0,0,0,0)
+                        BorderThickness: =0
+                        Color: =RGBA(246, 88, 16, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =RGBA(0,0,0,0)
+                        LayoutMinHeight: =60
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(Q10_1_3_varYNA,"Yes")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(Q10_1_3_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                        Width: =200
+                        ZIndex: =1
+
+                    Q7_btn_No_63 As button:
+                        Align: =Align.Left
+                        BorderColor: =RGBA(0,0,0,0)
+                        BorderThickness: =1
+                        Color: =RGBA(246, 88, 16, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverBorderColor: =
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(Q10_1_3_varYNA,"No")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(Q10_1_3_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                        Width: =200
+                        ZIndex: =2
+
+                    Q7_btn_NA_62 As button:
+                        Align: =Align.Left
+                        BorderColor: =
+                        BorderThickness: =0
+                        Color: =App.Theme.Colors.Primary
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =70
+                        HoverBorderColor: =RGBA(0,0,0,0)
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =
+                        LayoutMinHeight: =70
+                        LayoutMinWidth: =280
+                        OnSelect: =Set(Q10_1_3_varYNA,"NA")
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =24
+                        Text: =If(Q10_1_3_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                        Width: =200
                         ZIndex: =3
 
             Container3 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
                 Height: =166
                 Width: =655
                 X: =12
@@ -670,44 +692,47 @@
                     Y: =6
                     ZIndex: =1
 
-                Q6_ConH01_82 As groupContainer.horizontalAutoLayoutContainer:
+                Q7_ConH01_64 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
-                    Height: =76
+                    Height: =73
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowX: =LayoutOverflow.Scroll
-                    Width: =461
-                    X: =85
-                    Y: =86
+                    Width: =611
+                    X: =44
+                    Y: =76
                     ZIndex: =2
 
-                    btn_Yes_81 As button:
+                    Q7_btn_Yes_64 As button:
                         Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
+                        BorderColor: =RGBA(0,0,0,0)
+                        BorderThickness: =0
                         Color: =RGBA(246, 88, 16, 1)
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =70
-                        HoverFill: =App.Theme.Colors.Primary
-                        LayoutMinHeight: =70
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =RGBA(0,0,0,0)
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
+                        OnSelect: =Set(Q10_2_varYNA,"Yes")
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
                         RadiusBottomLeft: =1
                         RadiusBottomRight: =1
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                        Width: =170
+                        Text: =If(Q10_2_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                        Width: =200
                         ZIndex: =1
 
-                    btn_No_81 As button:
+                    Q7_btn_No_64 As button:
                         Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
+                        BorderColor: =RGBA(0,0,0,0)
                         BorderThickness: =1
                         Color: =RGBA(246, 88, 16, 1)
                         Fill: =RGBA(255, 255, 255, 1)
@@ -717,18 +742,20 @@
                         HoverFill: =
                         LayoutMinHeight: =70
                         LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
+                        OnSelect: =Set(Q10_2_varYNA,"No")
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
                         RadiusBottomLeft: =1
                         RadiusBottomRight: =1
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                        Width: =170
+                        Text: =If(Q10_2_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                        Width: =200
                         ZIndex: =2
 
             Container3_1 As groupContainer.manualLayoutContainer:
@@ -747,44 +774,47 @@
                     Y: =6
                     ZIndex: =1
 
-                Q6_ConH01_83 As groupContainer.horizontalAutoLayoutContainer:
+                Q7_ConH01_65 As groupContainer.horizontalAutoLayoutContainer:
                     DropShadow: =DropShadow.None
-                    Height: =76
+                    Height: =73
                     LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowX: =LayoutOverflow.Scroll
-                    Width: =461
-                    X: =85
-                    Y: =86
+                    Width: =611
+                    X: =44
+                    Y: =76
                     ZIndex: =2
 
-                    btn_Yes_82 As button:
+                    Q7_btn_Yes_65 As button:
                         Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
-                        BorderThickness: =1
+                        BorderColor: =RGBA(0,0,0,0)
+                        BorderThickness: =0
                         Color: =RGBA(246, 88, 16, 1)
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =70
-                        HoverFill: =App.Theme.Colors.Primary
-                        LayoutMinHeight: =70
+                        HoverColor: =App.Theme.Colors.Primary
+                        HoverFill: =RGBA(0,0,0,0)
+                        LayoutMinHeight: =60
                         LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,!varCheck1);Set(varCheck2,false);Set(varCheck3,false)
+                        OnSelect: =Set(Q10_3_varYNA,"Yes")
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
                         RadiusBottomLeft: =1
                         RadiusBottomRight: =1
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                        Width: =170
+                        Text: =If(Q10_2_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                        Width: =200
                         ZIndex: =1
 
-                    btn_No_82 As button:
+                    Q7_btn_No_65 As button:
                         Align: =Align.Left
-                        BorderColor: =App.Theme.Colors.Primary
+                        BorderColor: =RGBA(0,0,0,0)
                         BorderThickness: =1
                         Color: =RGBA(246, 88, 16, 1)
                         Fill: =RGBA(255, 255, 255, 1)
@@ -794,18 +824,20 @@
                         HoverFill: =
                         LayoutMinHeight: =70
                         LayoutMinWidth: =280
-                        OnSelect: =Set(varCheck1,false);Set(varCheck2,!varCheck2);Set(varCheck3,false)
+                        OnSelect: =Set(Q10_3_varYNA,"No")
                         PaddingBottom: =0
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        PressedColor: =App.Theme.Colors.Primary
+                        PressedFill: =RGBA(0,0,0,0)
                         RadiusBottomLeft: =1
                         RadiusBottomRight: =1
                         RadiusTopLeft: =1
                         RadiusTopRight: =1
                         Size: =24
-                        Text: =If(varCheck2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                        Width: =170
+                        Text: =If(Q10_2_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                        Width: =200
                         ZIndex: =2
 
             Container3_2 As groupContainer.manualLayoutContainer:

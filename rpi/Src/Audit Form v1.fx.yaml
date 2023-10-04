@@ -508,12 +508,23 @@
             );
             
             //C01Q7   ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
+            //ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));
+            //ClearCollect(
+               //colC11Q338A,
+                 //First(colC11Q338).'Response Desc');
+            
+            //Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
+            
             ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));
             ClearCollect(
                 colC11Q338A,
-                 First(colC11Q338).'Response Desc');
-            
-            Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
+                ForAll(
+                    Table(ParseJSON(First(colC11Q338).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
              
             
             

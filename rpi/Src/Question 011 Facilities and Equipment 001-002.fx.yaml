@@ -57,7 +57,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 338,
-                        'Response Desc': ""
+                        'Response Desc':  If(IsBlank(Q11_1_2.Text),"",Q11_1_2.Text) 
                         ,Res_Option: Switch(C11Q338_varYNA,"Yes","true","No","false","NA","")
                          
                     }
@@ -77,7 +77,7 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 338,
-                        'Response Desc': ""
+                        'Response Desc':  If(IsBlank(Q11_1_2.Text),"",Q11_1_2.Text)  
                         ,Res_Option: Switch(C11Q338_varYNA,"Yes","true","No","false","NA","")
                          
                     }
@@ -329,7 +329,7 @@
                 Text: ="1. Is in good condition?"
                 Width: =560
                 X: =98
-                Y: =149
+                Y: =159
                 ZIndex: =3
 
             Q6_ConH01_89 As groupContainer.horizontalAutoLayoutContainer:
@@ -430,10 +430,11 @@
                 Y: =309
                 ZIndex: =6
 
-            TextInput4_216 As text:
-                Default: =
+            Q11_1_2 As text:
+                Default: =First(colC11Q338A).Resp_Desc
                 Height: =90
                 HintText: =""
+                Reset: =true
                 Size: =21
                 Visible: =If(C11Q338_varYNA = "No", true, false)
                 Width: =500

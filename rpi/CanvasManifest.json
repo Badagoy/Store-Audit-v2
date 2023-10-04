@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 3448,
+    "BindingErrorCount": 3554,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -211,6 +211,8 @@
     "Question 012 Marketing Collaterals and Activation 003.25-003.30",
     "Question 012 Marketing Collaterals and Activation 003.31-003.36",
     "Question 012 Marketing Collaterals and Activation 003.37-003.42",
-    "Question 012 Marketing Collaterals and Activation 003.37-003.42_1"
+    "Question 012 Marketing Collaterals and Activation 003.43-003.48",
+    "Question 012 Marketing Collaterals and Activation 003.49-003.53",
+    "Question 012 Marketing Collaterals and Activation 003.43-003.48_1"
   ]
 }

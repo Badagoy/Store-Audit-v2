@@ -528,15 +528,6 @@
                 Y: =72
                 ZIndex: =6
 
-            Label16_170 As label:
-                Height: =97
-                Size: =21
-                Text: ="2. Withdrawal Table"
-                Width: =663
-                X: =73
-                Y: =207
-                ZIndex: =7
-
             Q11_docu_2 As text:
                 Default: =""
                 Height: =70
@@ -620,14 +611,6 @@
             Y: =633
             ZIndex: =9
 
-            Label16_171 As label:
-                Height: =97
-                Size: =21
-                Text: ="3. No untransmitted suppliers DSD Sales Invoice"
-                Width: =726
-                X: =10
-                ZIndex: =1
-
             Q7_ConH01_134 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 Height: =93
@@ -693,24 +676,6 @@
                     Text: =If(Q7_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =2
-
-            Label16_172 As label:
-                Height: =97
-                Size: =21
-                Text: ="1. Is it true?"
-                Width: =663
-                X: =73
-                Y: =72
-                ZIndex: =6
-
-            Label16_173 As label:
-                Height: =97
-                Size: =21
-                Text: ="2. Withdrawal Table"
-                Width: =663
-                X: =73
-                Y: =207
-                ZIndex: =7
 
             Q11_inv_3 As text:
                 Default: =""

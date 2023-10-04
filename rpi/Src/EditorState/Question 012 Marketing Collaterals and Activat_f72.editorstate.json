@@ -15479,7 +15479,7 @@
       "StyleName": "defaultGroupContainerStyle",
       "Type": "ControlInfo"
     },
-    "Question 012 Marketing Collaterals and Activation 001-002.5_1": {
+    "Question 012 Marketing Collaterals and Activation 002.5_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -15499,7 +15499,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Question 012 Marketing Collaterals and Activation 001-002.5_1",
+      "Name": "Question 012 Marketing Collaterals and Activation 002.5_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -15548,5 +15548,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Question 012 Marketing Collaterals and Activation 001-002.5_1"
+  "TopParentName": "Question 012 Marketing Collaterals and Activation 002.5_1"
 }

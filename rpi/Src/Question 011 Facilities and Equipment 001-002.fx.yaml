@@ -505,7 +505,7 @@
                 ZIndex: =4
 
             Q11_2_2 As text:
-                Default: =""
+                Default: =First(colC11Q339A).Resp_Desc
                 Height: =90
                 HintText: =""
                 Size: =21

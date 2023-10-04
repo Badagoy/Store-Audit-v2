@@ -142,14 +142,15 @@
                         C2Q10_lblRemars As label:
                             Color: =RGBA(255, 255, 255, 1)
                             Fill: =App.Theme.Colors.Primary
-                            Height: =70
-                            Size: =21
+                            Height: =42
+                            Size: =18
                             Text: ="Text"
                             Width: =200
-                            Y: =130
+                            Y: =157
                             ZIndex: =2
 
                         C2Q10_icnDel_3 As icon.Save:
+                            Color: =App.Theme.Colors.Primary
                             Height: =34
                             Icon: =Icon.Trash
                             OnSelect: =Remove(colQ4a,LookUp(colQ4a, Sales_No = ThisItem.Sales_No))
@@ -379,4 +380,12 @@
                 X: =0.00
                 Y: =0.00
                 ZIndex: =1
+
+    Camera2 As camera:
+        Camera: =0
+        Height: =572
+        Width: =746
+        X: =20
+        Y: =630
+        ZIndex: =15
 

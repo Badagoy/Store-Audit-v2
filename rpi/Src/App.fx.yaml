@@ -57,7 +57,7 @@ App As appinfo:
             Clear(col07_2_11Qa);
             
             // testing to save image
-            ClearCollect(colC02Q10A,{C02Q10_Image:""});  
+            ClearCollect(colC02Q10A,{C02Q10_Image:"",Remarks:"",ID:0});  
             Clear(colC02Q10A);
             //=========================  END    ===============================
         

@@ -513,8 +513,8 @@
                 colC11Q338A,
                  First(colC11Q338).'Response Desc');
             
-            Set(C11Q338_varYNA,First(colC11Q338A).Resp_Desc); 
-            If(IsBlank(C11Q338_varYNA),"NA",C11Q338_varYNA);
+            Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
+             
             
             
             

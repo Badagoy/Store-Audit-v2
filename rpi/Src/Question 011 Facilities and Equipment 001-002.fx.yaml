@@ -62,7 +62,26 @@
                          
                     }
                 );
-                //Switch(C11Q338_varYNA,"Yes",true,"No",false,"NA","1")
+                
+                //C11Q338 OR Question ID = 338  
+                
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=338  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 338,
+                        'Response Desc': ""
+                        ,Res_Option: Switch(C11Q338_varYNA,"Yes","true","No","false","NA","")
+                         
+                    }
+                );
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

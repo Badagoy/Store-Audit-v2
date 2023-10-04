@@ -6,7 +6,7 @@
             =Parent.Width - (leftMargin * 2)
         X: =leftMargin
         Y: =130
-        ZIndex: =12
+        ZIndex: =1
 
         C2Q9_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
             Height: =500
@@ -171,6 +171,25 @@
                             Width: =93
                             ZIndex: =4
 
+    Camera2 As camera:
+        Camera: =0
+        Height: =572
+        StreamRate: =200
+        Width: =746
+        X: =20
+        Y: =630
+        ZIndex: =2
+
+    Button4 As button:
+        Fill: =App.Theme.Colors.Primary
+        Height: =79
+        Size: =24
+        Text: ="📸  Capture"
+        Width: =746
+        X: =20
+        Y: =1202
+        ZIndex: =3
+
     Bottom_CNT_9 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
@@ -180,7 +199,7 @@
         PaddingRight: =20
         Width: =786
         Y: =1445
-        ZIndex: =13
+        ZIndex: =4
 
         Button4_9 As button:
             Color: =Color.White
@@ -269,7 +288,7 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =Parent.Width
-        ZIndex: =14
+        ZIndex: =5
 
         Container4_9 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -380,12 +399,4 @@
                 X: =0.00
                 Y: =0.00
                 ZIndex: =1
-
-    Camera2 As camera:
-        Camera: =0
-        Height: =572
-        Width: =746
-        X: =20
-        Y: =630
-        ZIndex: =15
 

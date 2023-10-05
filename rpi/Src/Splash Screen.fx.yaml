@@ -68,6 +68,7 @@
 
     Container7 As groupContainer.manualLayoutContainer:
         Height: =1360
+        Visible: =false
         Width: =745
         X: =20
         Y: =150

@@ -163,6 +163,8 @@ Menu As screen:
             =Set(var2,"test_btn");
             
             Set(var2,"philip");
+            
+            Set(var2,"1");
         Text: ="TEST BTN"
         Width: =272
         X: =394

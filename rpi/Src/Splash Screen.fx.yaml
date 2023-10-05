@@ -177,7 +177,7 @@
         Color: =Color.Blue
         Fill: |
             =RGBA(0,0,0,0)
-        Height: =160
+        Height: =80
         OnSelect: |+
             =Set(
                 otp,
@@ -196,6 +196,6 @@
         Underline: =true
         Width: =615
         X: =91
-        Y: =1135
+        Y: =1165
         ZIndex: =7
 

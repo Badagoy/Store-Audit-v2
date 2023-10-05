@@ -136,7 +136,7 @@
             Align: =Align.Center
             Default: =""
             Height: =170
-            HintText: ="2FA Code"
+            HintText: =""
             Size: =50
             Width: =325
             X: =212
@@ -171,4 +171,31 @@
             X: =227
             Y: =895
             ZIndex: =6
+
+    Label24_1 As label:
+        Align: =Align.Center
+        Color: =Color.Blue
+        Fill: |
+            =RGBA(0,0,0,0)
+        Height: =160
+        OnSelect: |+
+            =Set(
+                otp,
+                100000 + RoundDown(
+                    999999 * Rand(),
+                    0
+                )
+            );
+            
+            Office365Outlook.SendEmail(User().Email,"OTP Verifation-Store Audit","Your OTP is " & otp);
+            Set(bolShow2FA,true);
+            //SendEmailOTP.Run(Text(User().Email),otp);
+            
+        Size: =30
+        Text: ="Resend OTP Code"
+        Underline: =true
+        Width: =615
+        X: =91
+        Y: =1135
+        ZIndex: =7
 

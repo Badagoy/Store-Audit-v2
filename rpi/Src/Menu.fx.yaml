@@ -159,7 +159,10 @@ Menu As screen:
     ButtonCanvas1 As Button:
         DisplayMode: =DisplayMode.Edit
         Height: =225
-        OnSelect: =Set(var2,"john")
+        OnSelect: |-
+            =Set(var2,"test_btn");
+            
+            Set(var2,"philip");
         Text: ="TEST BTN"
         Width: =272
         X: =394

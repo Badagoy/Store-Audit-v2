@@ -10,6 +10,7 @@
     Image1_1 As image:
         Height: =269
         Image: ='TGPLogoviber_image_2022-08-19_15-00-31-553'
+        Transparency: =1-(Timer1.Value / Timer1.Duration)
         Width: =481
         X: =155
         Y: =986
@@ -25,6 +26,7 @@
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
+        Transparency: =1-(Timer1.Value / Timer1.Duration)
         Width: =591
         X: =115
         Y: =697
@@ -44,8 +46,23 @@
         Height: =194
         Image: =ssd
         ImagePosition: =ImagePosition.Stretch
+        Transparency: =1-(Timer1.Value / Timer1.Duration)
         Width: =651
         X: =85
         Y: =371
         ZIndex: =4
+
+    Timer1 As timer:
+        AutoStart: =true
+        Duration: =2000
+        Height: =70
+        OnTimerEnd: =Navigate('Audit Form v1',ScreenTransition.Fade)
+        Size: =30
+        Text: |-
+            =Text(Time(0, 0, Timer1.Value/1000), "hh:mm:ss")
+        Visible: =false
+        Width: =280
+        X: =126
+        Y: =1498
+        ZIndex: =5
 

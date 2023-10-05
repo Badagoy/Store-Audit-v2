@@ -115,7 +115,8 @@
       "SpatialServices_71",
       "SpatialServices_73",
       "SpatialServices_74",
-      "SpatialServices_78"
+      "SpatialServices_78",
+      "SpatialServices_79"
     ],
     "dependencies": {},
     "dependents": [],
@@ -172,7 +173,9 @@
       "parameterHintsV2": {}
     },
     "datasets": {},
-    "dataSources": [],
+    "dataSources": [
+      "Office365Outlook"
+    ],
     "dependencies": {},
     "dependents": [
       "8611ad49-0a86-4bc8-87a1-6ac32834f3da",
@@ -189,7 +192,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-10-05 06:14:31",
+        "modifiedOn": "2023-10-05 06:34:35",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

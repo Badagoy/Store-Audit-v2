@@ -70,8 +70,8 @@ Menu As screen:
         ShowShapes: =true
         UseRouting: =false
         Width: =574
-        X: =60
-        Y: =1032
+        X: =85
+        Y: =1005
         ZIndex: =8
 
     Button3_2 As button:

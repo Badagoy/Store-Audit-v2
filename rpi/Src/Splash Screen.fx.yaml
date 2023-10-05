@@ -56,7 +56,20 @@
         AutoStart: =true
         Duration: =4000
         Height: =70
-        OnTimerEnd: =Navigate('Audit Form v1',ScreenTransition.Fade)
+        OnTimerEnd: |-
+            =
+            Set(
+                otp,
+                100000 + RoundDown(
+                    999999 * Rand(),
+                    0
+                )
+            );
+            
+            Office365Outlook.SendEmail(User().Email,"OTP Verifation-Store Audit","Your OTP is" & otp);
+            
+            Set(bolShow2FA,true);
+        OnTimerStart: =Set(bolShow2FA,false)
         Size: =30
         Text: |-
             =Text(Time(0, 0, Timer1.Value/1000), "hh:mm:ss")
@@ -117,4 +130,43 @@
             X: =195
             Y: =60
             ZIndex: =3
+
+        TextInput4 As text:
+            Default: =""
+            Height: =170
+            HintText: ="2FA Code"
+            Size: =50
+            Width: =325
+            X: =212
+            Y: =675
+            ZIndex: =4
+
+        Label24 As label:
+            Align: =Align.Center
+            Color: =App.Theme.Colors.Primary
+            Height: =160
+            Size: =50
+            Text: ="2FA Code"
+            Width: =615
+            X: =60
+            Y: =515
+            ZIndex: =5
+
+        Button16 As button:
+            Height: =125
+            OnSelect: |-
+                =If(Value(TextInput4.Text) = otp,Navigate(
+                    'Audit Form v1',
+                    ScreenTransition.Fade
+                ));
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =24
+            Text: ="Verify"
+            Width: =280
+            X: =227
+            Y: =895
+            ZIndex: =6
 

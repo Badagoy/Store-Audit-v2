@@ -645,6 +645,57 @@
             );
             Set(C11Q347_varYNA,If(IsBlank(First(colC11Q347A).Resp_Desc),"NA",C11Q347_varYNA) ); 
             
+            //colC11Q348
+            ClearCollect(colC11Q348,Filter(colResponseDTL, 'Question ID' = 348));
+            ClearCollect(
+                colC11Q348A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q348).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q348_varYNA,If(IsBlank(First(colC11Q348A).Resp_Desc),"NA",C11Q348_varYNA) ); 
+            
+            //colC11Q349
+            ClearCollect(colC11Q349,Filter(colResponseDTL, 'Question ID' = 349));
+            ClearCollect(
+                colC11Q349A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q349).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q349_varYNA,If(IsBlank(First(colC11Q349A).Resp_Desc),"NA",C11Q349_varYNA) ); 
+            
+            //colC11Q350
+            ClearCollect(colC11Q350,Filter(colResponseDTL, 'Question ID' = 350));
+            ClearCollect(
+                colC11Q350A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q350).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q350_varYNA,If(IsBlank(First(colC11Q350A).Resp_Desc),"NA",C11Q350_varYNA) ); 
+            
+            //colC11Q351
+            ClearCollect(colC11Q351,Filter(colResponseDTL, 'Question ID' = 351));
+            ClearCollect(
+                colC11Q351A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q351).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q351_varYNA,If(IsBlank(First(colC11Q351A).Resp_Desc),"NA",C11Q351_varYNA) ); 
             
             Set(Q7_varChk1,false);
             Set(Q7_varChk2,false);

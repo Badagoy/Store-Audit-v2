@@ -117,3 +117,24 @@
             Y: =60
             ZIndex: =3
 
+        TextInput4 As text:
+            Default: =""
+            Height: =170
+            HintText: ="2FA Code"
+            Size: =50
+            Width: =325
+            X: =210
+            Y: =715
+            ZIndex: =4
+
+        Label24 As label:
+            Align: =Align.Center
+            Color: =App.Theme.Colors.Primary
+            Height: =160
+            Size: =50
+            Text: ="2FA Code"
+            Width: =615
+            X: =60
+            Y: =515
+            ZIndex: =5
+

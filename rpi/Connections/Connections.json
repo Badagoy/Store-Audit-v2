@@ -174,8 +174,7 @@
     },
     "datasets": {},
     "dataSources": [
-      "Office365Outlook",
-      "Office365Outlook_1"
+      "Office365Outlook"
     ],
     "dependencies": {},
     "dependents": [
@@ -193,7 +192,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-10-05 06:47:35",
+        "modifiedOn": "2023-10-05 06:34:35",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

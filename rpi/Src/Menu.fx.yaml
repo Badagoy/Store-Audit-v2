@@ -158,14 +158,24 @@ Menu As screen:
 
     ButtonCanvas1 As Button:
         DisplayMode: =DisplayMode.Edit
-        Height: =225
+        Height: =189
         OnSelect: |-
             =Set(var2,"test_btn");
             
             Set(var2,"philip");
         Text: ="TEST BTN"
-        Width: =272
-        X: =394
-        Y: =490
+        Width: =248
+        X: =343
+        Y: =450
         ZIndex: =14
+
+    Label17 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =185
+        Size: =40
+        Text: ="This is a test text input"
+        Width: =433
+        X: =353
+        Y: =679
+        ZIndex: =15
 

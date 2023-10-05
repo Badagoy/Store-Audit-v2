@@ -1,6 +1,6 @@
 "'Question 02 011' As screen":
 
-    C2Q9_Container_2 As groupContainer.manualLayoutContainer:
+    C2Q11_Container_2 As groupContainer.manualLayoutContainer:
         Height: =500
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -21,7 +21,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
                 Size: =fontSize
-                Text: ="10. " & LookUp(colQuestion,Question_ID = 71,Question_Desc)
+                Text: ="11. " & LookUp(colQuestion,Question_ID = 71,Question_Desc)
                 Width: =Parent.Width
                 X: |
                     =0
@@ -113,7 +113,7 @@
                             Width: =80
                             ZIndex: =4
 
-    C2Q10_Camera_1 As camera:
+    C2Q11_Camera As camera:
         Camera: =0
         Height: =572
         StreamRate: =200
@@ -122,7 +122,7 @@
         Y: =630
         ZIndex: =2
 
-    C2Q10_txtRemarks_1 As text:
+    C2Q11_txtRemarks As text:
         Align: =Align.Center
         Default: =""
         Height: =64
@@ -133,13 +133,13 @@
         Y: =1210
         ZIndex: =3
 
-    C2Q10_btnCapture_1 As button:
+    C2Q11_btnCapture As button:
         Fill: =App.Theme.Colors.Primary
         Height: =80
         OnSelect: |-
             =
             Set(varMax,Max(colC02Q10A,ID+1));
-            Collect(colC02Q10A,{C02Q10_Image:C2Q10_Camera_1.Stream,Remarks:C2Q10_txtRemarks_1.Text,ID:varMax});
+            Collect(colC02Q10A,{C02Q10_Image:C2Q11_Camera.Stream,Remarks:C2Q11_txtRemarks.Text,ID:varMax});
         Size: =24
         Text: ="📸  Capture"
         Width: =746

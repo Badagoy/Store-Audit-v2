@@ -1,6 +1,6 @@
 "'Question 02 010' As screen":
 
-    C2Q9_Container_1 As groupContainer.manualLayoutContainer:
+    C2Q10_Container_1 As groupContainer.manualLayoutContainer:
         Height: =500
         Width: |
             =Parent.Width - (leftMargin * 2)
@@ -8,7 +8,7 @@
         Y: =130
         ZIndex: =1
 
-        C2Q9_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
+        C2Q10_SubCon_1 As groupContainer.verticalAutoLayoutContainer:
             Height: =500
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
@@ -16,7 +16,7 @@
             Width: =Parent.Width
             ZIndex: =1
 
-            C2Q9_lbl_1 As label:
+            C2Q10_lbl_1 As label:
                 Height: =114
                 LayoutMinHeight: =70
                 LayoutMinWidth: =560
@@ -27,7 +27,7 @@
                     =0
                 ZIndex: =1
 
-            C2Q9_YesNo_1 As toggleSwitch:
+            C2Q10_YesNo As toggleSwitch:
                 Default: =If(First(colQ4).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
@@ -40,7 +40,7 @@
                 Y: =100
                 ZIndex: =2
 
-            "C2Q9_gal_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "C2Q10_gal As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 BorderThickness: =2
                 DelayItemLoading: =true

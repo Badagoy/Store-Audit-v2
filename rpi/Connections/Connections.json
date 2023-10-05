@@ -30,6 +30,34 @@
     "dependents": [],
     "id": "74b2f8d7-49b4-4e22-bb91-ae0abefaac81"
   },
+  "75732ef9-ec5f-4f1f-ad30-ff2de98bec6b": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "5ab94306-6cc0-4041-803a-25cfbce61d42"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "5ab94306-6cc0-4041-803a-25cfbce61d42"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SendEmailOTP"
+    ],
+    "dependencies": {
+      "shared_office365": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
+    },
+    "dependents": [],
+    "id": "75732ef9-ec5f-4f1f-ad30-ff2de98bec6b"
+  },
   "8611ad49-0a86-4bc8-87a1-6ac32834f3da": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -116,13 +144,35 @@
       "SpatialServices_73",
       "SpatialServices_74",
       "SpatialServices_78",
-      "SpatialServices_79"
+      "SpatialServices_79",
+      "SpatialServices_80"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "8cdedd32-f3fa-4b4b-9112-28691b0163a1"
   },
-  "ba2cf92e-31f7-4213-b71c-8194a08bc93e": {
+  "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/master/1.0.1653.3400/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "8611ad49-0a86-4bc8-87a1-6ac32834f3da",
+      "dc93e231-59f4-4be8-ba7e-afed31da45b7",
+      "75732ef9-ec5f-4f1f-ad30-ff2de98bec6b"
+    ],
+    "id": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
+  },
+  "dc93e231-59f4-4be8-ba7e-afed31da45b7": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
@@ -161,27 +211,7 @@
       "shared_sharepointonline": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
     },
     "dependents": [],
-    "id": "ba2cf92e-31f7-4213-b71c-8194a08bc93e"
-  },
-  "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Office 365 Outlook",
-      "iconUri": "https://connectoricons-prod.azureedge.net/master/1.0.1653.3400/office365/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {},
-    "dataSources": [
-      "Office365Outlook"
-    ],
-    "dependencies": {},
-    "dependents": [
-      "8611ad49-0a86-4bc8-87a1-6ac32834f3da",
-      "ba2cf92e-31f7-4213-b71c-8194a08bc93e"
-    ],
-    "id": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
+    "id": "dc93e231-59f4-4be8-ba7e-afed31da45b7"
   },
   "e4ba1250-88c2-4ef7-89d1-7169284c1a27": {
     "connectionRef": {
@@ -192,7 +222,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-10-05 06:34:35",
+        "modifiedOn": "2023-10-05 07:06:48",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },
@@ -253,7 +283,7 @@
     ],
     "dependencies": {},
     "dependents": [
-      "ba2cf92e-31f7-4213-b71c-8194a08bc93e"
+      "dc93e231-59f4-4be8-ba7e-afed31da45b7"
     ],
     "id": "f9a02d70-fcc0-4944-9abf-1bc3d62efd85"
   }

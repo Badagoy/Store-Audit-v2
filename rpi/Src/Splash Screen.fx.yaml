@@ -66,7 +66,9 @@
                 )
             );
             
-            Office365Outlook.SendEmail(User().Email,"OTP Verifation-Store Audit","Your OTP is " & otp);
+            Office365Outlook.SendEmailV2(User().Email,"OTP Verifation-Store Audit","Your OTP is " & otp);
+            
+            SendEmailOTP.Run(User().Email,otp);
             
             Set(bolShow2FA,true);
         OnTimerStart: =Set(bolShow2FA,false)

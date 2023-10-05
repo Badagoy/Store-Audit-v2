@@ -82,7 +82,7 @@
 
     Container7 As groupContainer.manualLayoutContainer:
         Height: =1360
-        Visible: =false
+        Visible: =bolShow2FA 
         Width: =745
         X: =20
         Y: =150

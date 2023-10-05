@@ -170,12 +170,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
+          "value": "shared_office365"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "5ab94306-6cc0-4041-803a-25cfbce61d42"
         }
       },
       "parameterHintsV2": {
+        "shared_office365": {
+          "value": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "5ab94306-6cc0-4041-803a-25cfbce61d42"
@@ -222,7 +228,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-10-05 07:15:48",
+        "modifiedOn": "2023-10-05 07:16:47",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

@@ -54,7 +54,7 @@
 
     Timer1 As timer:
         AutoStart: =true
-        Duration: =2000
+        Duration: =4000
         Height: =70
         OnTimerEnd: =Navigate('Audit Form v1',ScreenTransition.Fade)
         Size: =30

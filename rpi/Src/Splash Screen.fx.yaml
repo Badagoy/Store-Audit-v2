@@ -33,12 +33,12 @@
         ZIndex: =2
 
     Image3 As image:
-        Height: =130
+        Height: =230
         Image: =loading1
         ImagePosition: =ImagePosition.Stretch
-        Width: =336
-        X: =450
-        Y: =1456
+        Width: =261
+        X: =525
+        Y: =1356
         ZIndex: =3
 
     Image1_3 As image:

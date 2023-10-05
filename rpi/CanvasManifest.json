@@ -132,9 +132,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "Splash Screen",
     "Audit Form v1",
     "Audit Form",
-    "Splash Screen",
     "Customer Master",
     "Local Audits",
     "Menu",

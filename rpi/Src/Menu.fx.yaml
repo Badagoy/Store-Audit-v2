@@ -165,6 +165,8 @@ Menu As screen:
             Set(var2,"philip");
             
             Set(var2,"1");
+            
+            Set(var2,"john");
         Text: ="TEST BTN"
         Width: =248
         X: =343

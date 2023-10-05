@@ -136,7 +136,7 @@
             Align: =Align.Center
             Default: =""
             Height: =170
-            HintText: =""
+            HintText: ="Input"
             Size: =50
             Width: =325
             X: =212

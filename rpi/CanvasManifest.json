@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 3289,
+    "BindingErrorCount": 3271,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -141,7 +141,6 @@
     "Picture Screen",
     "Question 01 001-003",
     "Question 01 004-010",
-    "Question 01 004-010_1",
     "Question 01 004-010_3",
     "Question 01 008",
     "Question 010 Security Guard/SIC Compliance",

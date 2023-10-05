@@ -62,6 +62,9 @@ App As appinfo:
             ClearCollect(col013_3_2Qa,{Date:"01/01/2023",inv_no:"0",vendor:""});
             Clear(col013_3_2Qa);
             
+            ClearCollect(colC2Q2A,{Expense_Type:"0",Amount:"0",Lack_Doc:""});
+            Clear(colC2Q2A);
+            
             // testing to save image
             ClearCollect(colC02Q10A,{C02Q10_Image:"",Remarks:"",Id:0});  
             Clear(colC02Q10A);

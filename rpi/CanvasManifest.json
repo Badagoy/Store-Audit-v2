@@ -98,7 +98,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 3660,
+    "BindingErrorCount": 3395,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 2000,
     "DocumentAppType": "Phone",
@@ -147,9 +147,7 @@
     "Question 010 Security Guard/SIC Compliance",
     "Question 011 Facilities and Equipment 001-002",
     "Question 011 Facilities and Equipment 003-004",
-    "Question 011 Facilities and Equipment 003_1-004",
     "Question 011 Facilities and Equipment 005-006",
-    "Question 011 Facilities and Equipment 005_1-006",
     "Question 011 Facilities and Equipment 007-008",
     "Question 011 Facilities and Equipment 009-010",
     "Question 011 Facilities and Equipment 011-012",

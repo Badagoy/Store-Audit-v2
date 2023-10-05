@@ -529,7 +529,7 @@
             Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
             
             //colC11Q339
-            ClearCollect(colC11Q339,Filter(colResponseDTL, 'Question ID' = 338));
+            ClearCollect(colC11Q339,Filter(colResponseDTL, 'Question ID' = 339));
             ClearCollect(
                 colC11Q339A,
                 ForAll(
@@ -541,6 +541,109 @@
             );
             Set(C11Q338_varYNA,If(IsBlank(First(colC11Q339A).Resp_Desc),"NA",C11Q339_varYNA) ); 
             
+            //colC11Q340
+            ClearCollect(colC11Q340,Filter(colResponseDTL, 'Question ID' = 340));
+            ClearCollect(
+                colC11Q340A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q340).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q340_varYNA,If(IsBlank(First(colC11Q340A).Resp_Desc),"NA",C11Q340_varYNA) ); 
+            
+            //colC11Q341
+            ClearCollect(colC11Q341,Filter(colResponseDTL, 'Question ID' = 341));
+            ClearCollect(
+                colC11Q341A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q341).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q341_varYNA,If(IsBlank(First(colC11Q341A).Resp_Desc),"NA",C11Q341_varYNA) ); 
+            
+            //colC11Q342
+            ClearCollect(colC11Q342,Filter(colResponseDTL, 'Question ID' = 342));
+            ClearCollect(
+                colC11Q342A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q342).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q342_varYNA,If(IsBlank(First(colC11Q342A).Resp_Desc),"NA",C11Q342_varYNA) ); 
+            
+            //colC11Q343
+            ClearCollect(colC11Q343,Filter(colResponseDTL, 'Question ID' = 343));
+            ClearCollect(
+                colC11Q343A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q343).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q343_varYNA,If(IsBlank(First(colC11Q343A).Resp_Desc),"NA",C11Q343_varYNA) ); 
+            
+            //colC11Q344
+            ClearCollect(colC11Q344,Filter(colResponseDTL, 'Question ID' = 344));
+            ClearCollect(
+                colC11Q344A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q344).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q344_varYNA,If(IsBlank(First(colC11Q344A).Resp_Desc),"NA",C11Q344_varYNA) ); 
+            
+            //colC11Q345
+            ClearCollect(colC11Q345,Filter(colResponseDTL, 'Question ID' = 345));
+            ClearCollect(
+                colC11Q345A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q345).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q345_varYNA,If(IsBlank(First(colC11Q345A).Resp_Desc),"NA",C11Q345_varYNA) ); 
+            
+            //colC11Q346
+            ClearCollect(colC11Q346,Filter(colResponseDTL, 'Question ID' = 346));
+            ClearCollect(
+                colC11Q346A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q346).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q346_varYNA,If(IsBlank(First(colC11Q346A).Resp_Desc),"NA",C11Q346_varYNA) ); 
+            
+            //colC11Q347
+            ClearCollect(colC11Q347,Filter(colResponseDTL, 'Question ID' = 347));
+            ClearCollect(
+                colC11Q347A,
+                ForAll(
+                    Table(ParseJSON(First(colC11Q347).'Response Desc')),
+                    {
+                        Resp_Desc:    Text(Value.Resp_Desc) 
+                    }
+                )
+            );
+            Set(C11Q347_varYNA,If(IsBlank(First(colC11Q347A).Resp_Desc),"NA",C11Q347_varYNA) ); 
             
             
             Set(Q7_varChk1,false);

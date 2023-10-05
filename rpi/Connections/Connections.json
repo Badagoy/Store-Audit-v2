@@ -165,40 +165,6 @@
     "dependents": [],
     "id": "8cdedd32-f3fa-4b4b-9112-28691b0163a1"
   },
-  "ad87646c-70b1-4e15-8ab0-3bf183a84fb3": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
-          "value": "shared_office365"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "5ab94306-6cc0-4041-803a-25cfbce61d42"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_office365": {
-          "value": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "5ab94306-6cc0-4041-803a-25cfbce61d42"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "SendEmailOTP"
-    ],
-    "dependencies": {
-      "shared_office365": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
-    },
-    "dependents": [],
-    "id": "ad87646c-70b1-4e15-8ab0-3bf183a84fb3"
-  },
   "d747a957-6aad-4063-ad90-8d0f10c0bf9d": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -215,8 +181,7 @@
     "dependencies": {},
     "dependents": [
       "8611ad49-0a86-4bc8-87a1-6ac32834f3da",
-      "1707dff1-ee72-4de9-8966-6f88589a1a90",
-      "ad87646c-70b1-4e15-8ab0-3bf183a84fb3"
+      "1707dff1-ee72-4de9-8966-6f88589a1a90"
     ],
     "id": "d747a957-6aad-4063-ad90-8d0f10c0bf9d"
   },
@@ -229,7 +194,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23093.15",
-        "modifiedOn": "2023-10-05 07:19:56",
+        "modifiedOn": "2023-10-05 07:34:17",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[saa].[tgpcustomermaster]\":[\"get\"]}}",
         "version": 1
       },

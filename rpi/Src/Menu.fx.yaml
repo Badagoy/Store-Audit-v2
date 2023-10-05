@@ -156,3 +156,12 @@ Menu As screen:
             Width: =Parent.Width
             ZIndex: =2
 
+    ButtonCanvas1 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =225
+        Text: ="TEST BTN"
+        Width: =272
+        X: =394
+        Y: =490
+        ZIndex: =14
+

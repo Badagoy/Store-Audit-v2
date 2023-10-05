@@ -43,74 +43,12 @@
             LayoutMinHeight: =70
             LayoutMinWidth: =280
             OnSelect: |-
-                =//Q1 OR Question ID = 1 
+                =//C11Q346 OR Question ID = 346 
                 
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=1 And Batch_No = batch_no), 
-                            Defaults(lstSA_ResponseDTL)
-                        )
-                    ,
-                    {
-                        Branch_Code: branch_code,
-                        User_Info: userInfo,
-                        Title: "",
-                        Batch_No: batch_no,
-                        'Question ID': 1,
-                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"[]"),
-                        Res_Option: Q1_YesNo_2.Value
-                    }
-                );
-                //Q2 OR Question ID = 6
-                Patch(
-                    lstSA_ResponseDTL,
-                    Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=6  And Batch_No = batch_no), 
-                            Defaults(lstSA_ResponseDTL)
-                        ),
-                    {   
-                        Branch_Code: branch_code,
-                        User_Info: userInfo,
-                        Title: "",
-                        Batch_No: batch_no,
-                        'Question ID': 6,
-                        'Response Desc': 
-                            "[{""Q2_txt1"":" & If(IsBlank(Q2_txt1_2.Text),0,Q2_txt1_2.Text) & "," & 
-                             """Q2_txt2"":" & If(IsBlank(Q2_txt2_2.Text),0,Q2_txt2_2.Text) & "," &
-                             """Q2_txt3"":" & If(IsBlank(Q2_txt3_2.Text),0,Q2_txt3_2.Text) & "," &
-                             """Q2_txt4"":" & If(IsBlank(Q2_txt4_2.Text),0,Q2_txt4_2.Text) & "}]" 
-                      &""
-                    }
-                );
-                
-                //Q3.1 OR Question ID = 8
-                Patch(
-                    lstSA_ResponseDTL,
-                    Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=8  And Batch_No = batch_no), 
-                            Defaults(lstSA_ResponseDTL)
-                        ),
-                    {   
-                        Branch_Code: branch_code,
-                        User_Info: userInfo,
-                        Title: "",
-                        Batch_No: batch_no,
-                        'Question ID': 8,
-                        'Response Desc': 
-                            "[{""Q3_txt1"":" & If(IsBlank(Q3_txt1_2.Text),0,Q3_txt1_2.Text) & "," & 
-                             """Q3_txt2"":" & If(IsBlank(Q3_txt2_2.Text),0,Q3_txt2_2.Text) & "," &
-                             """Q3_txt3"":" & If(IsBlank(Q3_txt3_2.Text),0,Q3_txt3_2.Text) & "," &
-                             """Q3_txt4"":" & If(IsBlank(Q3_txt4_2.Text),0,Q3_txt4_2.Text) & "}]"
-                      &""
-                    }
-                );
-                
-                //Q3.2 OR Question ID = 10
-                Patch(
-                    lstSA_ResponseDTL,
-                    Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=10  And Batch_No = batch_no), 
+                            LookUp(lstSA_ResponseDTL,'Question ID'=346  And Batch_No = batch_no), 
                             Defaults(lstSA_ResponseDTL)
                         ),
                     {
@@ -118,15 +56,32 @@
                         User_Info: userInfo,
                         Title: "",
                         Batch_No: batch_no,
-                        'Question ID': 10,
-                        'Response Desc': JSON(colQ3_2A)
-                        
-                        
+                        'Question ID': 346,
+                        'Response Desc':  If(IsBlank(Q11_1_9.Text),"",Q11_1_9.Text)  
+                        ,Res_Option: Switch(C11Q346_varYNA,"Yes","true","No","false","NA","")
+                         
                     }
                 );
                 
-                Navigate('crushed-Question 01 004-010')
-                //ExportData.Run("",User().Email); Export and email
+                //C11Q347 OR Question ID = 347 
+                
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=347  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 347,
+                        'Response Desc':  If(IsBlank(Q11_1_10.Text),"",Q11_1_10.Text)  
+                        ,Res_Option: Switch(C11Q347_varYNA,"Yes","true","No","false","NA","")
+                         
+                    }
+                );
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50
@@ -377,45 +332,71 @@
                 Y: =149
                 ZIndex: =3
 
-            Q6_ConH01_97 As groupContainer.horizontalAutoLayoutContainer:
+            Label20_42 As label:
+                Height: =70
+                Size: =21
+                Text: |-
+                    ="2. E-Ticket #"
+                Visible: =If(C11Q346_varYNA = "No", true, false)
+                Width: =560
+                X: =98
+                Y: =299
+                ZIndex: =4
+
+            Q11_1_9 As text:
+                Default: =First(colC11Q346A).Resp_Desc
+                Height: =90
+                HintText: =""
+                OnSelect: =If(C11Q346_varYNA = "Yes", "", "")
+                Reset: =true
+                Size: =21
+                Visible: =If(C11Q346_varYNA = "No", true, false)
+                Width: =500
+                X: =138
+                Y: =366
+                ZIndex: =5
+
+            Q7_ConH01_86 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
-                Height: =76
+                Height: =80
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
-                Width: =550
-                X: =158
+                Width: =615
+                X: =121
                 Y: =219
-                ZIndex: =5
+                ZIndex: =6
 
-                btn_Yes_96 As button:
+                Q7_btn_Yes_86 As button:
                     Align: =Align.Left
-                    AlignInContainer: =AlignInContainer.Stretch
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
-                    HoverFill: =App.Theme.Colors.Primary
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
                     LayoutMinHeight: =60
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1_1,!varCheck1_1);Set(varCheck2_1,false);Set(varCheck3_1,false)
+                    OnSelect: =Set(C11Q346_varYNA,"Yes");Reset(Q11_1_9)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck1_1 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                    Width: =170
+                    Text: =If(C11Q346_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
                     ZIndex: =1
 
-                btn_No_96 As button:
+                Q7_btn_No_86 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
+                    BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =1
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -425,66 +406,49 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1_1,false);Set(varCheck2_1,!varCheck2_1);Set(varCheck3_1,false)
+                    OnSelect: =Set(C11Q346_varYNA,"No")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck2_1 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                    Width: =170
+                    Text: =If(C11Q346_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
                     ZIndex: =2
 
-                btn_NA_83 As button:
+                Q7_btn_NA_83 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
                     HoverColor: =App.Theme.Colors.Primary
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1_1,false);Set(varCheck2_1,false);Set(varCheck3_1,!varCheck3_1)
+                    OnSelect: =Set(C11Q346_varYNA,"NA");Reset(Q11_1_9)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck3_1 = true Or (varCheck1_1=false And varCheck2_1=false And varCheck3_1=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                    Width: =170
+                    Text: =If(C11Q346_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
                     ZIndex: =3
-
-            Label20_44 As label:
-                Height: =70
-                Size: =21
-                Text: |-
-                    ="2. E-Ticket #"
-                Visible: =If(varCheck2_1 = true, true, false)
-                Width: =560
-                X: =98
-                Y: =309
-                ZIndex: =6
-
-            TextInput4_224 As text:
-                Default: =""
-                Height: =90
-                HintText: =""
-                Size: =21
-                Visible: =If(varCheck2_1 = true, true, false)
-                Width: =500
-                X: =158
-                Y: =379
-                ZIndex: =7
 
         Container5_15 As groupContainer.manualLayoutContainer:
             Height: =584
@@ -509,44 +473,71 @@
                 Y: =70
                 ZIndex: =2
 
-            Q6_ConH01_98 As groupContainer.horizontalAutoLayoutContainer:
+            Label20_43 As label:
+                Height: =70
+                Size: =21
+                Text: |-
+                    ="2. E-Ticket #"
+                Visible: =If(C11Q347_varYNA = "No", true, false)
+                Width: =560
+                X: =126
+                Y: =235
+                ZIndex: =3
+
+            Q11_1_10 As text:
+                Default: =First(colC11Q347A).Resp_Desc
+                Height: =90
+                HintText: =""
+                OnSelect: =If(C11Q345_varYNA = "Yes", "", "")
+                Reset: =true
+                Size: =21
+                Visible: =If(C11Q347_varYNA = "No", true, false)
+                Width: =500
+                X: =156
+                Y: =320
+                ZIndex: =4
+
+            Q7_ConH01_87 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
-                Height: =76
+                Height: =80
                 LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowX: =LayoutOverflow.Scroll
-                Width: =550
-                X: =161
+                Width: =615
+                X: =141
                 Y: =140
-                ZIndex: =3
+                ZIndex: =5
 
-                btn_Yes_97 As button:
+                Q7_btn_Yes_87 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
-                    HoverFill: =App.Theme.Colors.Primary
-                    LayoutMinHeight: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1_2,!varCheck1_2);Set(varCheck2_2,false);Set(varCheck3_2,false)
+                    OnSelect: =Set(C11Q347_varYNA,"Yes");Reset(Q11_1_10)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck1_2 = true,"✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
-                    Width: =170
+                    Text: =If(C11Q347_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
                     ZIndex: =1
 
-                btn_No_97 As button:
+                Q7_btn_No_87 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
+                    BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =1
                     Color: =RGBA(246, 88, 16, 1)
                     Fill: =RGBA(255, 255, 255, 1)
@@ -556,64 +547,47 @@
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1_2,false);Set(varCheck2_2,!varCheck2_2);Set(varCheck3_2,false)
+                    OnSelect: =Set(C11Q347_varYNA,"No")
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck2_2 = true,"✅ No","⭕ No") // "⚪✅⭕✔ Yes"
-                    Width: =170
+                    Text: =If(C11Q347_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
                     ZIndex: =2
 
-                btn_NA_84 As button:
+                Q7_btn_NA_84 As button:
                     Align: =Align.Left
-                    BorderColor: =App.Theme.Colors.Primary
-                    BorderThickness: =1
-                    Color: =RGBA(246, 88, 16, 1)
+                    BorderColor: =
+                    BorderThickness: =0
+                    Color: =App.Theme.Colors.Primary
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =70
+                    HoverBorderColor: =RGBA(0,0,0,0)
                     HoverColor: =App.Theme.Colors.Primary
                     HoverFill: =
                     LayoutMinHeight: =70
                     LayoutMinWidth: =280
-                    OnSelect: =Set(varCheck1_2,false);Set(varCheck2_2,false);Set(varCheck3_2,!varCheck3)
+                    OnSelect: =Set(C11Q347_varYNA,"NA");Reset(Q11_1_10)
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =
                     RadiusBottomLeft: =1
                     RadiusBottomRight: =1
                     RadiusTopLeft: =1
                     RadiusTopRight: =1
                     Size: =24
-                    Text: =If(varCheck3_2 = true Or (varCheck1_2=false And varCheck2_2=false And varCheck3_2=false),"✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
-                    Width: =170
+                    Text: =If(C11Q347_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
+                    Width: =200
                     ZIndex: =3
-
-            Label20_45 As label:
-                Height: =70
-                Size: =21
-                Text: |-
-                    ="2. E-Ticket #"
-                Visible: =If(varCheck2_2 = true, true, false)
-                Width: =560
-                X: =126
-                Y: =237
-                ZIndex: =4
-
-            TextInput4_225 As text:
-                Default: =""
-                Height: =90
-                HintText: =""
-                Size: =21
-                Visible: =If(varCheck2_2 = true, true, false)
-                Width: =500
-                X: =161
-                Y: =307
-                ZIndex: =5
 

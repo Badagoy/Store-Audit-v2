@@ -69,7 +69,10 @@ App As appinfo:
         
             ClearCollect(colC2Q2A,{Expense_Type:"0",Amount:"0",Lack_Doc:""});
             Clear(colC2Q2A);
-            
+        
+            ClearCollect(colC2Q3A,{PvcErNO:"0",Expense_Type:"0",Amount:"0"});
+            Clear(colC2Q3A);
+        
             ClearCollect(colC02Q10A,{C02Q10_Image:"",Remarks:"",Id:0});  
             Clear(colC02Q10A);
         //  ===== END CATERGORY 2 COLLECTION =======

@@ -658,6 +658,7 @@
                              """Q2_txt3"":" & If(IsBlank(Q2_txt3_1.Text),0,Q2_txt3_1.Text) & "," &
                              """Q2_txt4"":" & If(IsBlank(Q2_txt4_1.Text),0,Q2_txt4_1.Text) & "}]" 
                       &""
+                     
                     }
                 );
                 
@@ -698,7 +699,7 @@
                         'Question ID': 10,
                         'Response Desc': JSON(colQ3_2A),
                         Res_Option:Q3_1_YesNo_1.Value
-                        
+                        ,Res_Rating:  If(Q3_1_YesNo_1.Value=true,1,0)
                         
                     }
                 );

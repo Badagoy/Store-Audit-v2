@@ -605,6 +605,42 @@
                         ,Res_Option:Q9_varYNA
                     }
                 );
+                
+                //C02Q1 OR Question ID = 34   
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=34  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 34
+                        //'Response Desc':  C2Q1_YesNo.Value
+                        ,Res_Option:C2Q1_YesNo.Value
+                    }
+                );
+                
+                //C02Q2 OR Question ID = 38   
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=38  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 38
+                        ,'Response Desc':  JSON(colC2Q2A)
+                        ,Res_Option:C2Q2_YesNo.Value
+                    }
+                );
                 Navigate('Question 02 003');
             RadiusBottomRight: |
                 =50

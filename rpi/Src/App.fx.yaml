@@ -9,7 +9,7 @@ App As appinfo:
         
         // Global Variables
         //=================//
-            //Collections 
+            //     Initialize Collections 
             //====================================================================
             //  FORMATION shouldbe VARTYPE CATEGORYID QUESTIONID _SUBQID PREFIX
             //  colC01Q25_1A
@@ -110,6 +110,9 @@ App As appinfo:
         
             ClearCollect(colC11Q351A,{Resp_Desc:""});
             Clear(colC11Q351A);
+        
+         
+          
             //=========================  END    ===============================
         
             //User

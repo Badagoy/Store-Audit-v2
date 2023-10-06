@@ -514,9 +514,9 @@
                     ForAll(
                         Table(ParseJSON(First(colC2Q2).'Response Desc')),
                         {
-                            ExpenseType: Text(Value.ExpenseType) 
+                            Expense_Type: Text(Value.Expense_Type) 
                             ,Amount: Text(Value.Amount) 
-                            ,LackingDoc: Text(Value.LackingDoc) 
+                            ,Lack_Doc: Text(Value.Lack_Doc) 
                         }
                     )
                 );

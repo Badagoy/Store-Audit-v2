@@ -103,8 +103,9 @@
                                 
                             }
                         );
-                        //Reset(Q5_txtSDate);
-                        //Reset(Q5_txtSNo);
+                        Reset(C2Q2_ExpenseType);
+                        Reset(C2Q2_Amount);
+                        Reset(C2Q2_LackDOc);
                     Width: =39
                     X: =Parent.Width-Self.Width 
                     Y: =150

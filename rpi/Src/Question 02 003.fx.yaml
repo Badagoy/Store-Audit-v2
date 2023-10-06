@@ -356,8 +356,8 @@
                             Defaults(colQ4a),
                             {
                                 DateX: C2Q3_dtSales.SelectedDate
-                                ,Sales_No:C2Q3_LackDOc_1.Text
-                                ,Amount:C2Q3_Amount_1.Text
+                                ,Sales_No:C2Q3_txtAmount.Text
+                                ,Amount:C2Q3_txtExpenseType.Text
                                 ,Cnt_Delayed:C2Q3_DaysDelayed.Text
                                 
                             }
@@ -499,7 +499,7 @@
                 Y: =40
                 ZIndex: =3
 
-                C2Q3_ExpenseType_1 As text:
+                C2Q3_txtPVCER As text:
                     Default: =""
                     Height: =44
                     HintText: ="PVC/ER No"
@@ -511,7 +511,7 @@
                     Y: =150
                     ZIndex: =1
 
-                C2Q3_Amount_1 As text:
+                C2Q3_txtExpenseType As text:
                     Default: =""
                     Height: =44
                     HintText: ="Expense Type"
@@ -523,7 +523,7 @@
                     Y: =150
                     ZIndex: =2
 
-                C2Q3_LackDOc_1 As text:
+                C2Q3_txtAmount As text:
                     Default: =""
                     Height: =44
                     HintText: ="Amount"
@@ -544,8 +544,8 @@
                             Defaults(colQ4a),
                             {
                                 DateX: C2Q3_dtSales.SelectedDate
-                                ,Sales_No:C2Q3_LackDOc_1.Text
-                                ,Amount:C2Q3_Amount_1.Text
+                                ,Sales_No:C2Q3_txtAmount.Text
+                                ,Amount:C2Q3_txtExpenseType.Text
                                 ,Cnt_Delayed:C2Q3_DaysDelayed.Text
                                 
                             }
@@ -563,7 +563,7 @@
                 Fill: =RGBA(241, 244, 249, 1)
                 FillPortions: =0
                 Height: =200
-                Items: =colQ4a
+                Items: =colC2Q3A
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =320
@@ -583,7 +583,7 @@
                     ZIndex: =6
 
                     C2Q3_ExpenseType1_1 As text:
-                        Default: =ThisItem.DateX
+                        Default: =ThisItem.p
                         DisabledBorderColor: =RGBA(0, 134, 208, 1)
                         DisplayMode: =DisplayMode.View
                         Height: =44

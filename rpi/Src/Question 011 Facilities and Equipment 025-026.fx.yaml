@@ -518,17 +518,6 @@
                 Y: =70
                 ZIndex: =2
 
-            Label20_58 As label:
-                Height: =70
-                Size: =21
-                Text: |-
-                    ="2. E-Ticket #"
-                Visible: =If(C11Q362_varYNA = "No", true, false)
-                Width: =560
-                X: =126
-                Y: =235
-                ZIndex: =3
-
             Q11_3_5 As text:
                 Default: =First(colC11Q362A).Resp_Desc
                 Height: =90

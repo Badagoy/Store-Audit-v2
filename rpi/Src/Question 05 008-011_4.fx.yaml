@@ -548,3 +548,13 @@
                 Y: =366
                 ZIndex: =5
 
+            Label20_15 As label:
+                Height: =70
+                Size: =21
+                Text: ="3. OR Details"
+                Visible: =If(C11Q342_varYNA = "Yes", true, false)
+                Width: =560
+                X: =65
+                Y: =436
+                ZIndex: =6
+

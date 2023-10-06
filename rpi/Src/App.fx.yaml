@@ -111,8 +111,18 @@ App As appinfo:
             ClearCollect(colC11Q351A,{Resp_Desc:""});
             Clear(colC11Q351A);
         
-         
-          
+            ClearCollect(colC11Q352A,{Resp_Desc:""});
+            Clear(colC11Q352A);
+        
+            ClearCollect(colC11Q353A,{Resp_Desc:""});
+            Clear(colC11Q353A);
+        
+            ClearCollect(colC11Q354A,{Resp_Desc:""});
+            Clear(colC11Q354A);
+        
+            ClearCollect(colC11Q355A,{Resp_Desc:""});
+            Clear(colC11Q355A);
+        
             //=========================  END    ===============================
         
             //User

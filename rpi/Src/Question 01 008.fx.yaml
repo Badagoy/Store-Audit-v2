@@ -215,7 +215,7 @@
                 ZIndex: =1
 
             C2Q1_YesNo As toggleSwitch:
-                Default: =If(First(colQ5).Res_Option ="true",true,false)
+                Default: =If(First(colC2Q1).Res_Option ="true",true,false)
                 FalseText: ="No"
                 Height: =44
                 LayoutMinHeight: =49
@@ -264,7 +264,7 @@
                         ZIndex: =1
 
                     C2Q1_txt1 As text:
-                        Default: =First(colQ5A).Deposit_Amount
+                        Default: =First(colC2Q1A).Remarks
                         Height: =70
                         LayoutMinHeight: =70
                         LayoutMinWidth: =288

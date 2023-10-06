@@ -494,6 +494,20 @@
             Set(Q7_varYNA,First(colC01Q7).Res_Option); 
             If(IsBlank(Q7_varYNA),"NA",Q7_varYNA);
             
+            //  ====================================
+            //  ===== CATERGORY 2 COLLECTION =======
+            //  colC2Q1
+            ClearCollect(colC2Q1,Filter(colResponseDTL, 'Question ID' = 66));
+            ClearCollect(
+                colC2Q1A,
+                ForAll(
+                    Table(ParseJSON(First(colC2Q1).'Response Desc')),
+                    {
+                        Remarks: Text(Value.Remarks) 
+                    }
+                )
+            );
+            
             
             // colC02Q10
             ClearCollect(colC02Q10,Filter(colResponseDTL, 'Question ID' = 66));
@@ -506,6 +520,9 @@
                     }
                 )
             );
+            //  ===== END CATERGORY 2 COLLECTION =======
+            //  ========================================
+            
             
             //C01Q7   ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
             //ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));

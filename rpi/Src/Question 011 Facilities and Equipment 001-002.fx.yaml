@@ -57,8 +57,10 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 338,
-                        'Response Desc':  If(IsBlank(Q11_1_2.Text),"",Q11_1_2.Text) 
-                        ,Res_Option: Switch(C11Q338_varYNA,"Yes","true","No","false","NA","")
+                        'Response Desc':  If(IsBlank(Q11_1_2.Text),"",Q11_1_2.Text), 
+                         Res_Option: Switch(C11Q338_varYNA,"Yes","true","No","false","NA",""),
+                         Res_Rating: Switch(C11Q338_varYNA,"Yes",1,"No",0,"NA","")
+                        // If(Q1_YesNo_1.Value=true,1,0)
                          
                     }
                 );
@@ -77,8 +79,9 @@
                         Title: "",
                         Batch_No: batch_no,
                         'Question ID': 338,
-                        'Response Desc':  If(IsBlank(Q11_1_2.Text),"",Q11_1_2.Text)  
-                        ,Res_Option: Switch(C11Q338_varYNA,"Yes","true","No","false","NA","")
+                        'Response Desc':  If(IsBlank(Q11_1_2.Text),"",Q11_1_2.Text), 
+                         Res_Option: Switch(C11Q338_varYNA,"Yes","true","No","false","NA",""),
+                         Res_Rating: Switch(C11Q338_varYNA,"Yes",1,"No",0,"NA","")
                          
                     }
                 );
@@ -98,7 +101,8 @@
                         Batch_No: batch_no,
                         'Question ID': 339,
                         'Response Desc':  If(IsBlank(Q11_2_2.Text),"",Q11_2_2.Text)  
-                        ,Res_Option: Switch(C11Q339_varYNA,"Yes","true","No","false","NA","")
+                        ,Res_Option: Switch(C11Q339_varYNA,"Yes","true","No","false","NA",""),
+                         Res_Rating: Switch(C11Q339_varYNA,"Yes",1,"No",0,"NA","")
                          
                     }
                 );

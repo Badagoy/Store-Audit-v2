@@ -59,7 +59,7 @@
                         'Question ID': 350,
                         'Response Desc':  If(IsBlank(Q11_2_3.Text),"",Q11_2_3.Text)  
                         ,Res_Option: Switch(C11Q350_varYNA,"Yes","true","No","false","NA","")
-                         
+                        ,Res_Rating: Switch(C11Q350_varYNA,"Yes",1,"No",0,"NA","") 
                     }
                 );
                 
@@ -79,7 +79,7 @@
                         'Question ID': 351,
                         'Response Desc':  If(IsBlank(Q11_2_4.Text),"",Q11_2_4.Text)  
                         ,Res_Option: Switch(C11Q351_varYNA,"Yes","true","No","false","NA","")
-                         
+                        ,Res_Rating: Switch(C11Q351_varYNA,"Yes",1,"No",0,"NA","")
                     }
                 );
             RadiusBottomRight: |

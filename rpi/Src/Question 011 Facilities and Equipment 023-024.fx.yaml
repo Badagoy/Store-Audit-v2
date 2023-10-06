@@ -278,9 +278,10 @@
                 ZIndex: =1
 
         Container5_24 As groupContainer.manualLayoutContainer:
-            Height: =584
+            DropShadow: =DropShadow.None
+            Height: =430
             Width: =756
-            Y: =140
+            Y: =109
             ZIndex: =3
 
             Label17_55 As label:
@@ -417,4 +418,11 @@
                     Text: =If(C11Q360_varYNA="NA","✅ NA","⭕ NA") // "⚪✅⭕✔ Yes"
                     Width: =200
                     ZIndex: =3
+
+        Container3_79 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =498
+            Width: =746
+            Y: =539
+            ZIndex: =4
 

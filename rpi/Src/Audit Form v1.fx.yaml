@@ -494,6 +494,16 @@
             Set(Q7_varYNA,First(colC01Q7).Res_Option); 
             If(IsBlank(Q7_varYNA),"NA",Q7_varYNA);
             
+            //C01Q8   
+            ClearCollect(colC01Q8,Filter(colResponseDTL, 'Question ID' = 31));
+            Set(Q8_varYNA,First(colC01Q8).Res_Option); 
+            If(IsBlank(Q8_varYNA),"NA",Q8_varYNA);
+            
+            //C01Q9   
+            ClearCollect(colC01Q9,Filter(colResponseDTL, 'Question ID' = 32));
+            Set(Q9_varYNA,First(colC01Q9).Res_Option); 
+            If(IsBlank(Q9_varYNA),"NA",Q9_varYNA);
+            
             //  ====================================
             //  ===== CATERGORY 2 COLLECTION =======
             //  colC2Q1

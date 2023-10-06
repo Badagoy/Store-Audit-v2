@@ -1,6 +1,6 @@
-Screen2 As screen:
+"'Question 05 008-011' As screen":
 
-    Bottom_CNT_21 As groupContainer.horizontalAutoLayoutContainer:
+    Bottom_CNT_24 As groupContainer.horizontalAutoLayoutContainer:
         Height: =141
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -11,7 +11,7 @@ Screen2 As screen:
         Y: =1444
         ZIndex: =1
 
-        Button4_21 As button:
+        Button4_24 As button:
             Color: =Color.White
             Fill: =App.Theme.Colors.Primary
             Height: =70
@@ -27,7 +27,7 @@ Screen2 As screen:
             Width: =180
             ZIndex: =1
 
-        Label11_22 As label:
+        Label11_25 As label:
             Align: =Align.Center
             Height: =70
             LayoutMinHeight: =70
@@ -37,7 +37,7 @@ Screen2 As screen:
             Width: =100
             ZIndex: =2
 
-        Button16_21 As button:
+        Button16_24 As button:
             Fill: =App.Theme.Colors.Primary
             Height: =70
             LayoutMinHeight: =70
@@ -135,7 +135,7 @@ Screen2 As screen:
             Width: =180
             ZIndex: =3
 
-    HeaderContainer_22 As groupContainer.horizontalAutoLayoutContainer:
+    HeaderContainer_25 As groupContainer.horizontalAutoLayoutContainer:
         Fill: =App.Theme.Colors.Primary
         Height: =130
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -147,7 +147,7 @@ Screen2 As screen:
         Width: =Parent.Width
         ZIndex: =2
 
-        Container5_40 As groupContainer.horizontalAutoLayoutContainer:
+        Container5_49 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =56.80
@@ -168,7 +168,7 @@ Screen2 As screen:
             Y: =0.00
             ZIndex: =1
 
-            img_Profile_22 As image:
+            img_Profile_25 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 134, 208, 1)
                 BorderStyle: =BorderStyle.None
@@ -199,7 +199,7 @@ Screen2 As screen:
                 Y: =18.93
                 ZIndex: =2
 
-        Container4_27 As groupContainer.verticalAutoLayoutContainer:
+        Container4_30 As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =7
             Height: =56.80
@@ -217,7 +217,7 @@ Screen2 As screen:
             Y: =0.00
             ZIndex: =4
 
-            lbl_Hellow_22 As label:
+            lbl_Hellow_25 As label:
                 AlignInContainer: =AlignInContainer.Start
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -242,7 +242,7 @@ Screen2 As screen:
                 Y: =22.61
                 ZIndex: =1
 
-            lbl_Name_21 As label:
+            lbl_Name_24 As label:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
@@ -265,7 +265,7 @@ Screen2 As screen:
                 Y: =27.35
                 ZIndex: =2
 
-        Container7_22 As groupContainer.horizontalAutoLayoutContainer:
+        Container7_25 As groupContainer.horizontalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             FillPortions: =0
             Height: =56.80
@@ -283,7 +283,7 @@ Screen2 As screen:
             Y: =0.00
             ZIndex: =6
 
-            icon_Notification_22 As icon.Bell:
+            icon_Notification_25 As icon.Bell:
                 AlignInContainer: =AlignInContainer.Stretch
                 BorderColor: =RGBA(166, 166, 166, 1)
                 Color: =Color.AntiqueWhite
@@ -309,7 +309,7 @@ Screen2 As screen:
                 Y: =0.00
                 ZIndex: =1
 
-    Q1_lbl_26 As label:
+    Q1_lbl_29 As label:
         FontWeight: =FontWeight.Bold
         Height: =70
         Size: =25
@@ -318,58 +318,40 @@ Screen2 As screen:
         Y: =130
         ZIndex: =3
 
-    Container1_11 As groupContainer.manualLayoutContainer:
+    Container1_14 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =1269
+        Height: =1289
         Width: =756
         X: =15
-        Y: =200
+        Y: =180
         ZIndex: =4
 
-        Container3_11 As groupContainer.manualLayoutContainer:
-            Height: =328
-            Width: =738
-            X: =10
+        Container3_19 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =263
+            Width: =748
             Y: =2
             ZIndex: =4
 
-            Label16_41 As label:
-                Height: =70
+            Label16_111 As label:
+                Height: =96
                 Size: =21
-                Text: ="7. BIR Form 1921 = Authority to Print (ATP)"
+                Text: ="8. BIR Form 0605 = Coporate Annual Registration displayed in store?"
                 Width: =730
                 X: =8
                 Y: =8
                 ZIndex: =1
 
-            Label17_3 As label:
+            Label17_15 As label:
                 Height: =70
                 Size: =21
                 Text: ="1. Available?"
                 Width: =560
-                X: =64
-                Y: =52
+                X: =70
+                Y: =98
                 ZIndex: =3
 
-            Label20_3 As label:
-                Height: =70
-                Size: =21
-                Text: ="2. Expiration Date"
-                Width: =560
-                X: =64
-                Y: =187
-                ZIndex: =4
-
-            DatePicker1_3 As datepicker:
-                Height: =58
-                Size: =24
-                Visible: =If(C11Q342_varYNA = "Yes", true, false)
-                Width: =407
-                X: =90
-                Y: =257
-                ZIndex: =5
-
-            Q7_ConH01_98 As groupContainer.horizontalAutoLayoutContainer:
+            Q7_ConH01_106 As groupContainer.horizontalAutoLayoutContainer:
                 DropShadow: =DropShadow.None
                 Height: =80
                 LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -377,10 +359,10 @@ Screen2 As screen:
                 LayoutOverflowX: =LayoutOverflow.Scroll
                 Width: =615
                 X: =90
-                Y: =122
+                Y: =168
                 ZIndex: =6
 
-                Q7_btn_Yes_98 As button:
+                Q7_btn_Yes_106 As button:
                     Align: =Align.Left
                     BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =0
@@ -407,7 +389,337 @@ Screen2 As screen:
                     Width: =200
                     ZIndex: =1
 
-                Q7_btn_No_98 As button:
+                Q7_btn_No_106 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C11Q342_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C11Q342_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+        Container3_23 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =367
+            Width: =748
+            Y: =289
+            ZIndex: =5
+
+            Label16_115 As label:
+                Height: =96
+                Size: =21
+                Text: ="9. Annual Reg. Payment Receiot (eFPS Payment Details) is dated in the same current year and displayed in store?"
+                Width: =740
+                X: =8
+                Y: =8
+                ZIndex: =1
+
+            Label17_125 As label:
+                Height: =70
+                Size: =21
+                Text: ="1. Available?"
+                Width: =560
+                X: =64
+                Y: =78
+                ZIndex: =3
+
+            Label20_11 As label:
+                Height: =70
+                Size: =21
+                Text: ="2. Expiration Date"
+                Visible: =If(C11Q342_varYNA = "Yes", true, false)
+                Width: =560
+                X: =64
+                Y: =207
+                ZIndex: =4
+
+            DatePicker1_11 As datepicker:
+                Height: =58
+                Size: =24
+                Visible: =If(C11Q342_varYNA = "Yes", true, false)
+                Width: =407
+                X: =90
+                Y: =283
+                ZIndex: =5
+
+            Q7_ConH01_122 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =80
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =615
+                X: =90
+                Y: =140
+                ZIndex: =6
+
+                Q7_btn_Yes_122 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C11Q342_varYNA,"Yes");Reset(Q11_1_5)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C11Q342_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_122 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C11Q342_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C11Q342_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+        Container3_24 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =328
+            Width: =756
+            Y: =656
+            ZIndex: =6
+
+            Label16_116 As label:
+                Height: =70
+                Size: =21
+                Text: ="10. Mayors Permit/ Business Permit"
+                Width: =730
+                X: =8
+                Y: =8
+                ZIndex: =1
+
+            Label17_127 As label:
+                Height: =70
+                Size: =21
+                Text: ="1. Available?"
+                Width: =560
+                X: =64
+                Y: =52
+                ZIndex: =3
+
+            Label20_13 As label:
+                Height: =70
+                Size: =21
+                Text: ="2. Expiration Date"
+                Visible: =If(C11Q342_varYNA = "Yes", true, false)
+                Width: =560
+                X: =64
+                Y: =187
+                ZIndex: =4
+
+            DatePicker1_13 As datepicker:
+                Height: =58
+                Size: =24
+                Visible: =If(C11Q342_varYNA = "Yes", true, false)
+                Width: =407
+                X: =90
+                Y: =257
+                ZIndex: =5
+
+            Q7_ConH01_123 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =80
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =615
+                X: =90
+                Y: =122
+                ZIndex: =6
+
+                Q7_btn_Yes_123 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C11Q342_varYNA,"Yes");Reset(Q11_1_5)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C11Q342_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_123 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =1
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverBorderColor: =
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =
+                    LayoutMinHeight: =70
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C11Q342_varYNA,"No")
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C11Q342_varYNA="No","✅ No","⭕ No") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =2
+
+        Container3_26 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =328
+            Width: =756
+            Y: =951
+            ZIndex: =7
+
+            Label16_117 As label:
+                Height: =70
+                Size: =21
+                Text: ="11. Sanitary Permit"
+                Width: =730
+                X: =8
+                Y: =8
+                ZIndex: =1
+
+            Label17_128 As label:
+                Height: =70
+                Size: =21
+                Text: ="1. Available?"
+                Width: =560
+                X: =64
+                Y: =52
+                ZIndex: =3
+
+            Label20_14 As label:
+                Height: =70
+                Size: =21
+                Text: ="2. Expiration Date"
+                Visible: =If(C11Q342_varYNA = "Yes", true, false)
+                Width: =560
+                X: =64
+                Y: =187
+                ZIndex: =4
+
+            DatePicker1_14 As datepicker:
+                Height: =58
+                Size: =24
+                Visible: =If(C11Q342_varYNA = "Yes", true, false)
+                Width: =407
+                X: =90
+                Y: =257
+                ZIndex: =5
+
+            Q7_ConH01_124 As groupContainer.horizontalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                Height: =80
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowX: =LayoutOverflow.Scroll
+                Width: =615
+                X: =90
+                Y: =122
+                ZIndex: =6
+
+                Q7_btn_Yes_124 As button:
+                    Align: =Align.Left
+                    BorderColor: =RGBA(0,0,0,0)
+                    BorderThickness: =0
+                    Color: =RGBA(246, 88, 16, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =70
+                    HoverColor: =App.Theme.Colors.Primary
+                    HoverFill: =RGBA(0,0,0,0)
+                    LayoutMinHeight: =60
+                    LayoutMinWidth: =280
+                    OnSelect: =Set(C11Q342_varYNA,"Yes");Reset(Q11_1_5)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =App.Theme.Colors.Primary
+                    PressedFill: =RGBA(0,0,0,0)
+                    RadiusBottomLeft: =1
+                    RadiusBottomRight: =1
+                    RadiusTopLeft: =1
+                    RadiusTopRight: =1
+                    Size: =24
+                    Text: =If(C11Q342_varYNA="Yes","✅ Yes","⭕ Yes") // "⚪✅⭕✔ Yes"
+                    Width: =200
+                    ZIndex: =1
+
+                Q7_btn_No_124 As button:
                     Align: =Align.Left
                     BorderColor: =RGBA(0,0,0,0)
                     BorderThickness: =1

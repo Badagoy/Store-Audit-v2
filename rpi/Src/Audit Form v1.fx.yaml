@@ -497,7 +497,7 @@
             //  ====================================
             //  ===== CATERGORY 2 COLLECTION =======
             //  colC2Q1
-                ClearCollect(colC2Q1,Filter(colResponseDTL, 'Question ID' = 66));
+                ClearCollect(colC2Q1,Filter(colResponseDTL, 'Question ID' = 34));
                 ClearCollect(
                     colC2Q1A,
                     ForAll(
@@ -508,7 +508,7 @@
                     )
                 );
             //  colC2Q2
-                ClearCollect(colC2Q2,Filter(colResponseDTL, 'Question ID' = 66));
+                ClearCollect(colC2Q2,Filter(colResponseDTL, 'Question ID' = 38));
                 ClearCollect(
                     colC2Q2A,
                     ForAll(

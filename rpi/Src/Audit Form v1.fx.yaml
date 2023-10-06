@@ -361,7 +361,7 @@
                 Notify(
                     "Successfully Saved",
                     NotificationType.Success,
-                    1000
+                    500
                 );
             
                 Navigate('Question 01 001-003');
@@ -494,27 +494,47 @@
             Set(Q7_varYNA,First(colC01Q7).Res_Option); 
             If(IsBlank(Q7_varYNA),"NA",Q7_varYNA);
             
+            //  ====================================
+            //  ===== CATERGORY 2 COLLECTION =======
+            //  colC2Q1
+                ClearCollect(colC2Q1,Filter(colResponseDTL, 'Question ID' = 66));
+                ClearCollect(
+                    colC2Q1A,
+                    ForAll(
+                        Table(ParseJSON(First(colC2Q1).'Response Desc')),
+                        {
+                            Remarks: Text(Value.Remarks) 
+                        }
+                    )
+                );
+            //  colC2Q2
+                ClearCollect(colC2Q2,Filter(colResponseDTL, 'Question ID' = 66));
+                ClearCollect(
+                    colC2Q2A,
+                    ForAll(
+                        Table(ParseJSON(First(colC2Q2).'Response Desc')),
+                        {
+                            Expense_Type: Text(Value.Expense_Type) 
+                            ,Amount: Text(Value.Amount) 
+                            ,Lack_Doc: Text(Value.Lack_Doc) 
+                        }
+                    )
+                );
+                // colC02Q10
+                ClearCollect(colC02Q10,Filter(colResponseDTL, 'Question ID' = 66));
+                ClearCollect(
+                    colC02Q10A,
+                    ForAll(
+                        Table(ParseJSON(First(colC02Q10).'Response Desc')),
+                        {
+                            C02Q10_Image:    Text(Value.C02Q10_Image) 
+                        }
+                    )
+                );
+            //  ===== END CATERGORY 2 COLLECTION =======
+            //  ========================================
             
-            // colC02Q10
-            ClearCollect(colC02Q10,Filter(colResponseDTL, 'Question ID' = 66));
-            ClearCollect(
-                colC02Q10A,
-                ForAll(
-                    Table(ParseJSON(First(colC02Q10).'Response Desc')),
-                    {
-                        C02Q10_Image:    Text(Value.C02Q10_Image) 
-                    }
-                )
-            );
-            
-            //C01Q7   ClearCollect(colC01Q7A,{Utility_Fund:"0",Cash_OnHand:"0",Total_Account:"0"});
-            //ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));
-            //ClearCollect(
-               //colC11Q338A,
-                 //First(colC11Q338).'Response Desc');
-            
-            //Set(C11Q338_varYNA,If(IsBlank(First(colC11Q338A).Resp_Desc),"NA",C11Q338_varYNA) ); 
-            
+             
             //colC11Q338
             ClearCollect(colC11Q338,Filter(colResponseDTL, 'Question ID' = 338));
             ClearCollect(

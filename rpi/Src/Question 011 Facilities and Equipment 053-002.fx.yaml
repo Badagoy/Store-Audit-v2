@@ -43,74 +43,12 @@
             LayoutMinHeight: =70
             LayoutMinWidth: =280
             OnSelect: |-
-                =//Q1 OR Question ID = 1 
+                =//C11Q390 OR Question ID = 390
                 
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=1 And Batch_No = batch_no), 
-                            Defaults(lstSA_ResponseDTL)
-                        )
-                    ,
-                    {
-                        Branch_Code: branch_code,
-                        User_Info: userInfo,
-                        Title: "",
-                        Batch_No: batch_no,
-                        'Question ID': 1,
-                        'Response Desc': If(CountRows(colNamePos)>0, JSON(colNamePos),"[]"),
-                        Res_Option: Q1_YesNo_2.Value
-                    }
-                );
-                //Q2 OR Question ID = 6
-                Patch(
-                    lstSA_ResponseDTL,
-                    Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=6  And Batch_No = batch_no), 
-                            Defaults(lstSA_ResponseDTL)
-                        ),
-                    {   
-                        Branch_Code: branch_code,
-                        User_Info: userInfo,
-                        Title: "",
-                        Batch_No: batch_no,
-                        'Question ID': 6,
-                        'Response Desc': 
-                            "[{""Q2_txt1"":" & If(IsBlank(Q2_txt1_2.Text),0,Q2_txt1_2.Text) & "," & 
-                             """Q2_txt2"":" & If(IsBlank(Q2_txt2_2.Text),0,Q2_txt2_2.Text) & "," &
-                             """Q2_txt3"":" & If(IsBlank(Q2_txt3_2.Text),0,Q2_txt3_2.Text) & "," &
-                             """Q2_txt4"":" & If(IsBlank(Q2_txt4_2.Text),0,Q2_txt4_2.Text) & "}]" 
-                      &""
-                    }
-                );
-                
-                //Q3.1 OR Question ID = 8
-                Patch(
-                    lstSA_ResponseDTL,
-                    Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=8  And Batch_No = batch_no), 
-                            Defaults(lstSA_ResponseDTL)
-                        ),
-                    {   
-                        Branch_Code: branch_code,
-                        User_Info: userInfo,
-                        Title: "",
-                        Batch_No: batch_no,
-                        'Question ID': 8,
-                        'Response Desc': 
-                            "[{""Q3_txt1"":" & If(IsBlank(Q3_txt1_2.Text),0,Q3_txt1_2.Text) & "," & 
-                             """Q3_txt2"":" & If(IsBlank(Q3_txt2_2.Text),0,Q3_txt2_2.Text) & "," &
-                             """Q3_txt3"":" & If(IsBlank(Q3_txt3_2.Text),0,Q3_txt3_2.Text) & "," &
-                             """Q3_txt4"":" & If(IsBlank(Q3_txt4_2.Text),0,Q3_txt4_2.Text) & "}]"
-                      &""
-                    }
-                );
-                
-                //Q3.2 OR Question ID = 10
-                Patch(
-                    lstSA_ResponseDTL,
-                    Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=10  And Batch_No = batch_no), 
+                            LookUp(lstSA_ResponseDTL,'Question ID'=390  And Batch_No = batch_no), 
                             Defaults(lstSA_ResponseDTL)
                         ),
                     {
@@ -118,15 +56,32 @@
                         User_Info: userInfo,
                         Title: "",
                         Batch_No: batch_no,
-                        'Question ID': 10,
-                        'Response Desc': JSON(colQ3_2A)
-                        
-                        
+                        'Question ID': 390,
+                        'Response Desc':  If(IsBlank(Q11_6_3.Text),"",Q11_6_3.Text)  
+                        ,Res_Option: Switch(C11Q390_varYNA,"Yes","true","No","false","NA","")
+                        ,Res_Rating: Switch(C11Q390_varYNA,"Yes",1,"No",0,"NA","") 
                     }
                 );
                 
-                Navigate('crushed-Question 01 004-010')
-                //ExportData.Run("",User().Email); Export and email
+                //C11Q391 OR Question ID = 391
+                
+                Patch(
+                    lstSA_ResponseDTL,
+                    Coalesce(
+                            LookUp(lstSA_ResponseDTL,'Question ID'=391  And Batch_No = batch_no), 
+                            Defaults(lstSA_ResponseDTL)
+                        ),
+                    {
+                        Branch_Code: branch_code,
+                        User_Info: userInfo,
+                        Title: "",
+                        Batch_No: batch_no,
+                        'Question ID': 391,
+                        'Response Desc':  If(IsBlank(Q11_6_4.Text),"",Q11_6_4.Text)  
+                        ,Res_Option: Switch(C11Q391_varYNA,"Yes","true","No","false","NA","")
+                        ,Res_Rating: Switch(C11Q391_varYNA,"Yes",1,"No",0,"NA","") 
+                    }
+                );
             RadiusBottomRight: |
                 =50
             RadiusTopRight: =50

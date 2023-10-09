@@ -78,8 +78,8 @@
                         Batch_No: batch_no,
                         'Question ID': 353,
                         'Response Desc':  If(IsBlank(Q11_2_6.Text),"",Q11_2_6.Text)  
-                        ,Res_Option: Switch(C11Q351_varYNA,"Yes","true","No","false","NA","")
-                        ,Res_Rating: Switch(C11Q351_varYNA,"Yes",1,"No",0,"NA","")
+                        ,Res_Option: Switch(C11Q353_varYNA,"Yes","true","No","false","NA","")
+                        ,Res_Rating: Switch(C11Q353_varYNA,"Yes",1,"No",0,"NA","")
                     }
                 );
             RadiusBottomRight: |

@@ -43,12 +43,12 @@
             LayoutMinHeight: =70
             LayoutMinWidth: =280
             OnSelect: |-
-                =//C11Q390 OR Question ID = 390
+                =//C11Q388 OR Question ID = 388
                 
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=390  And Batch_No = batch_no), 
+                            LookUp(lstSA_ResponseDTL,'Question ID'=388  And Batch_No = batch_no), 
                             Defaults(lstSA_ResponseDTL)
                         ),
                     {
@@ -56,19 +56,19 @@
                         User_Info: userInfo,
                         Title: "",
                         Batch_No: batch_no,
-                        'Question ID': 390,
-                        'Response Desc':  If(IsBlank(Q11_6_3.Text),"",Q11_6_3.Text)  
-                        ,Res_Option: Switch(C11Q390_varYNA,"Yes","true","No","false","NA","")
-                        ,Res_Rating: Switch(C11Q390_varYNA,"Yes",1,"No",0,"NA","") 
+                        'Question ID': 388,
+                        'Response Desc':  If(IsBlank(Q11_6_1.Text),"",Q11_6_1.Text)  
+                        ,Res_Option: Switch(C11Q388_varYNA,"Yes","true","No","false","NA","")
+                        ,Res_Rating: Switch(C11Q388_varYNA,"Yes",1,"No",0,"NA","") 
                     }
                 );
                 
-                //C11Q391 OR Question ID = 391
+                //C11Q389 OR Question ID = 389
                 
                 Patch(
                     lstSA_ResponseDTL,
                     Coalesce(
-                            LookUp(lstSA_ResponseDTL,'Question ID'=391  And Batch_No = batch_no), 
+                            LookUp(lstSA_ResponseDTL,'Question ID'=389  And Batch_No = batch_no), 
                             Defaults(lstSA_ResponseDTL)
                         ),
                     {
@@ -76,10 +76,10 @@
                         User_Info: userInfo,
                         Title: "",
                         Batch_No: batch_no,
-                        'Question ID': 391,
-                        'Response Desc':  If(IsBlank(Q11_6_4.Text),"",Q11_6_4.Text)  
-                        ,Res_Option: Switch(C11Q391_varYNA,"Yes","true","No","false","NA","")
-                        ,Res_Rating: Switch(C11Q391_varYNA,"Yes",1,"No",0,"NA","") 
+                        'Question ID': 389,
+                        'Response Desc':  If(IsBlank(Q11_6_2.Text),"",Q11_6_2.Text)  
+                        ,Res_Option: Switch(C11Q389_varYNA,"Yes","true","No","false","NA","")
+                        ,Res_Rating: Switch(C11Q389_varYNA,"Yes",1,"No",0,"NA","") 
                     }
                 );
             RadiusBottomRight: |

@@ -131,6 +131,110 @@ App As appinfo:
             ClearCollect(colC11Q355A,{Resp_Desc:""});
             Clear(colC11Q355A);
         
+             ClearCollect(colC11Q357A,{Resp_Desc:""});
+            Clear(colC11Q357A);
+        
+            ClearCollect(colC11Q358A,{Resp_Desc:""});
+            Clear(colC11Q358A);
+        
+            ClearCollect(colC11Q359A,{Resp_Desc:""});
+            Clear(colC11Q359A);
+        
+            ClearCollect(colC11Q360A,{Resp_Desc:""});
+            Clear(colC11Q360A);
+        
+            ClearCollect(colC11Q361A,{Resp_Desc:""});
+            Clear(colC11Q361A);
+        
+            ClearCollect(colC11Q362A,{Resp_Desc:""});
+            Clear(colC11Q362A);
+        
+            ClearCollect(colC11Q363A,{Resp_Desc:""});
+            Clear(colC11Q363A);
+        
+            ClearCollect(colC11Q364A,{Resp_Desc:""});
+            Clear(colC11Q364A);
+        
+            ClearCollect(colC11Q365A,{Resp_Desc:""});
+            Clear(colC11Q365A);
+        
+            ClearCollect(colC11Q366A,{Resp_Desc:""});
+            Clear(colC11Q366A);
+        
+            ClearCollect(colC11Q367A,{Resp_Desc:""});
+            Clear(colC11Q367A);
+        
+            ClearCollect(colC11Q368A,{Resp_Desc:""});
+            Clear(colC11Q368A);
+        
+            ClearCollect(colC11Q369A,{Resp_Desc:""});
+            Clear(colC11Q369A);
+        
+            ClearCollect(colC11Q370A,{Resp_Desc:""});
+            Clear(colC11Q370A);
+        
+            ClearCollect(colC11Q371A,{Resp_Desc:""});
+            Clear(colC11Q371A);
+        
+            ClearCollect(colC11Q372A,{Resp_Desc:""});
+            Clear(colC11Q372A);
+        
+            ClearCollect(colC11Q373A,{Resp_Desc:""});
+            Clear(colC11Q373A);
+        
+            ClearCollect(colC11Q374A,{Resp_Desc:""});
+            Clear(colC11Q374A);
+        
+            ClearCollect(colC11Q375A,{Resp_Desc:""});
+            Clear(colC11Q375A);
+        
+            ClearCollect(colC11Q376A,{Resp_Desc:""});
+            Clear(colC11Q376A);
+        
+            ClearCollect(colC11Q377A,{Resp_Desc:""});
+            Clear(colC11Q377A);
+        
+            ClearCollect(colC11Q378A,{Resp_Desc:""});
+            Clear(colC11Q378A);
+        
+            ClearCollect(colC11Q379A,{Resp_Desc:""});
+            Clear(colC11Q379A);
+        
+            ClearCollect(colC11Q380A,{Resp_Desc:""});
+            Clear(colC11Q380A);
+        
+            ClearCollect(colC11Q381A,{Resp_Desc:""});
+            Clear(colC11Q381A);
+        
+            ClearCollect(colC11Q382A,{Resp_Desc:""});
+            Clear(colC11Q382A);
+        
+            ClearCollect(colC11Q383A,{Resp_Desc:""});
+            Clear(colC11Q383A);
+        
+            ClearCollect(colC11Q384A,{Resp_Desc:""});
+            Clear(colC11Q384A);
+        
+            ClearCollect(colC11Q385A,{Resp_Desc:""});
+            Clear(colC11Q385A);
+        
+            ClearCollect(colC11Q386A,{Resp_Desc:""});
+            Clear(colC11Q386A);
+        
+            ClearCollect(colC11Q387A,{Resp_Desc:""});
+            Clear(colC11Q387A);
+        
+            ClearCollect(colC11Q388A,{Resp_Desc:""});
+            Clear(colC11Q388A);
+        
+            ClearCollect(colC11Q389A,{Resp_Desc:""});
+            Clear(colC11Q389A);
+        
+            ClearCollect(colC11Q390A,{Resp_Desc:""});
+            Clear(colC11Q390A);
+        
+            ClearCollect(colC11Q391A,{Resp_Desc:""});
+            Clear(colC11Q391A);
             //=========================  END    ===============================
         
             //User
